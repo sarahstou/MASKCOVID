@@ -1,0 +1,81 @@
+/* CSS Stylesheet - Homescreen*/
+
+#wrapper { 
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+}
+
+div { 
+    position: relative; 
+    margin: 0;
+}
+
+button {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto 35px;
+    border-left: 15px solid;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1.5px solid;
+    background-color: #F1F1F1;
+    font-size: 18pt;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    color: #5C5C5C;
+}
+
+button:active {
+    background-color: lightskyblue;
+}
+
+#button1 {
+    border-color: #001B29;
+}
+
+#button2 {
+    border-color: #003D5C;
+}
+
+#button3 {
+    border-color: #005F8F;
+}
+
+#button4 {
+    border-color: #0070A9;
+}
+
+#button5 {
+    border-color: #66A3C2;
+}
+
+#button6 {
+    border-color: #A7D0E5;
+}
+
+h1 {
+    font-size: 55pt;
+    margin: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #5C5C5C;
+}
+h3 {
+    font-size: 30pt;
+    margin: 10px 0;
+    margin-top: 0px;
+    text-align: center;
+    color: #5C5C5C;
+}
+
+.emptyLabel {
+    visibility: hidden;
+}

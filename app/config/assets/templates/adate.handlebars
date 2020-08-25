@@ -1,0 +1,64 @@
+<div id="container-{{promptId}}">
+    <form action="javascript:void(0);" onsubmit="odkLeaveField(this);"> 
+        <div class="form-group">
+            <div class="container">
+                <label for="picker-{{promptId}}">{{> labelHint}}</label>
+                <br />
+                <select class="adate-dayselect" id="daypicker--{{promptId}}"
+                    tabindex="0" 
+                    name="day--{{name}}"
+                    style="background-color:#ffffff"
+                    {{#eachProperty inputAttributes}}
+                        {{property}}="{{value}}"
+                    {{/eachProperty}}
+                    {{#if disabled}}
+                        style="background-color:lightgray;"
+                        disabled="true"
+                    {{/if}}
+                >
+                    <option value="">{{dayLabel}}</option>
+                {{#each days}}
+                    <option>{{this}}</option>
+                {{/each}}    
+                </select>
+                /
+                <select class="adate-monthselect" id="monthpicker--{{promptId}}"
+                    tabindex="1" 
+                    name="month--{{name}}"
+                    style="background-color:#ffffff"
+                    {{#eachProperty inputAttributes}}
+                        {{property}}="{{value}}"
+                    {{/eachProperty}}
+                    {{#if disabled}}
+                        style="background-color:lightgray;"
+                        disabled="true"
+                    {{/if}}
+                >
+                    <option value="">{{monthLabel}}</option>
+                {{#each months}}
+                    <option>{{this}}</option>
+                {{/each}}   
+                </select>
+                /
+                <select class="adate-yearselect" id="yearpicker--{{promptId}}"
+                    tabindex="2" 
+                    name="year--{{name}}"
+                    style="background-color:#ffffff"
+                    {{#eachProperty inputAttributes}}
+                        {{property}}="{{value}}"
+                    {{/eachProperty}}
+                    {{#if disabled}}
+                        style="background-color:lightgray;"
+                        disabled="true"
+                    {{/if}}
+                >
+                    <option value="">{{yearLabel}}</option>
+                {{#each years}}
+                    <option>{{this}}</option>
+                {{/each}}   
+                </select>
+            </div>
+        </div>
+    </form>
+    <small class="adate-ageInYears" style="margin-left: 4vw;font-size:small;"></small>
+</div>
