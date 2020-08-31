@@ -36,7 +36,7 @@ function getMasterList(data) {
     for (var row = 1; row < allRows.length; row++) {  // start at row = 1 to skip header
             allRows[row] = allRows[row].replace(/"/g,""); // remove quotes from strings
             var rowValues = allRows[row].split(",");
-            var p = {bairroName: rowValues[0], bairro: rowValues[1], tabz: rowValues[2], zone: rowValues[3], houseGroup: rowValues[4], camo: rowValues[5], fam: rowValues[6], famName: rowValues[7]};
+            var p = {bairro: rowValues[0], tabz: rowValues[1], zone: rowValues[2], houseGroup: rowValues[3], camo: rowValues[4], fam: rowValues[5], famName: rowValues[6]};
             masterFamList.push(p);
     }
 }
