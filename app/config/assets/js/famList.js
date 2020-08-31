@@ -3,15 +3,19 @@
  */
 'use strict';
 
-var participants, masterFamList, date, bairro;
+var participants, masterFamList, date, bairro, tabz, zone, houseGroup, camo;
 function display() {
     console.log("TABZ list loading");
     date = util.getQueryParameter('date');
     bairro = util.getQueryParameter('bairro');
+    tabz = util.getQueryParameter('tabz');
+    zone = util.getQueryParameter('zone');
+    houseGroup = util.getQueryParameter('houseGroup');    
+    camo = util.getQueryParameter('camo');
     
     var bairroName = {1: "Bandim I", 2: "Bandim II", 3: "Belem", 4: "Mindara", 7: "Cuntum I", 9: "Cuntum II"};
     var head = $('#main');
-    head.prepend("<h1>" + bairroName[bairro] + " </br> <h3> Zonas");
+    head.prepend("<h1>" + bairroName[bairro] + " - " + zone + " - " + houseGroup + " - " + camo + " </br> <h3> Família");
     
     doSanityCheck();
     getList();
@@ -101,40 +105,42 @@ function initButtons() {
     // Zone buttons
     var ul = $('#li');
     console.log("initB",masterFamList);
-    
-    const listFromMaster = []; 
+
+    const listFromMaster = [];
     const map = new Map();
     for (const item of masterFamList) {
-        if (item.bairro == bairro) {
-            if(!map.has(item.tabz)){
-                map.set(item.tabz, true);    // set any value to Map
+        if (item.bairro == bairro & item.tabz == tabz & item.houseGroup == houseGroup & item.camo == camo) {
+            if(!map.has(item.fam)){
+                map.set(item.fam, true);    // set any value to Map
                 listFromMaster.push({
                     bairro: item.bairro,
                     tabz: item.tabz,
-                    zone: item.zone
+                    zone: item.zone,
+                    houseGroup: item.houseGroup,
+                    camo: item.camo,
+                    fam: item.fam,
+                    famName: item.famName
                 });
             }
         }
     }
 
-    console.log("listFromMaster", listFromMaster);
-
     $.each(listFromMaster, function() {
         var that = this;
-        // list
-        ul.append($("<li />").append($("<button />").attr('id',this.tabz).attr('class','btn' + this.bairro).append(this.zone).append(" " + getCount(this.tabz))));
+            // list
+            ul.append($("<li />").append($("<button />").attr('id',this.fam).attr('class','btn' + this.bairro).append(this.fam + ": " + this.famName).append(" " + getCount(this.fam))));
         
         // Buttons
-        var btn = ul.find('#' + this.tabz);
+        var btn = ul.find('#' + this.fam);
         btn.on("click", function() {
-            var queryParams = util.setQuerystringParams(date, that.bairro, that.tabz, that.zone);
-            odkTables.launchHTML(null, 'config/assets/houseGroupList.html' + queryParams);
+            var queryParams = util.setQuerystringParams(date, that.bairro, that.tabz, that.zone, that.houseGroup, that.camo, that.fam, that.famName);
+            odkTables.launchHTML(null, 'config/assets/list.html' + queryParams);
         })        
     });
 }
 
 
-function getCount(tabz) { 
+function getCount(fam) { 
     // only for test
     return "(X/X)"
 }
