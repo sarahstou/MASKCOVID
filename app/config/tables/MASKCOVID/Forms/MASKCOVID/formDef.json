@@ -2299,12 +2299,12 @@
         "_row_num": 80
       },
       {
-        "choice_list_name": "TypeMask3",
+        "choice_list_name": "TypeMask2",
         "data_value": 2,
         "display": {
           "title": {
             "text": {
-              "english": "Pano",
+              "english": "Cloth",
               "default": "Pano"
             }
           }
@@ -3868,16 +3868,14 @@
             }
           },
           "_row_num": 80
-        }
-      ],
-      "TypeMask3": [
+        },
         {
-          "choice_list_name": "TypeMask3",
+          "choice_list_name": "TypeMask2",
           "data_value": 2,
           "display": {
             "title": {
               "text": {
-                "english": "Pano",
+                "english": "Cloth",
                 "default": "Pano"
               }
             }
@@ -8733,7 +8731,7 @@
         "_aspect": "MASCARA3",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"TypeMask2\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Surgery\",\"default\":\"Cirúrgia\"}}},\"_row_num\":80}]"
+        "_value": "[{\"choice_list_name\":\"TypeMask2\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Surgery\",\"default\":\"Cirúrgia\"}}},\"_row_num\":80},{\"choice_list_name\":\"TypeMask2\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Cloth\",\"default\":\"Pano\"}}},\"_row_num\":81}]"
       },
       {
         "_partition": "Column",
