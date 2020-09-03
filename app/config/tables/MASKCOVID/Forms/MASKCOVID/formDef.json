@@ -2026,6 +2026,7 @@
         "_row_num": 54
       },
       {
+        "choice_list_name": "Events",
         "data_value": 2,
         "display": {
           "title": {
@@ -2038,6 +2039,7 @@
         "_row_num": 55
       },
       {
+        "choice_list_name": "Events",
         "data_value": 3,
         "display": {
           "title": {
@@ -2050,6 +2052,7 @@
         "_row_num": 56
       },
       {
+        "choice_list_name": "Events",
         "data_value": 4,
         "display": {
           "title": {
@@ -2062,6 +2065,7 @@
         "_row_num": 57
       },
       {
+        "choice_list_name": "Events",
         "data_value": 5,
         "display": {
           "title": {
@@ -2074,6 +2078,7 @@
         "_row_num": 58
       },
       {
+        "choice_list_name": "Events",
         "data_value": 6,
         "display": {
           "title": {
@@ -2086,6 +2091,7 @@
         "_row_num": 59
       },
       {
+        "choice_list_name": "Events",
         "data_value": 7,
         "display": {
           "title": {
@@ -2098,6 +2104,7 @@
         "_row_num": 60
       },
       {
+        "choice_list_name": "Events",
         "data_value": 8,
         "display": {
           "title": {
@@ -2110,6 +2117,7 @@
         "_row_num": 61
       },
       {
+        "choice_list_name": "Events",
         "data_value": 9,
         "display": {
           "title": {
@@ -2122,6 +2130,7 @@
         "_row_num": 62
       },
       {
+        "choice_list_name": "Events",
         "data_value": 10,
         "display": {
           "title": {
@@ -2147,6 +2156,7 @@
         "_row_num": 65
       },
       {
+        "choice_list_name": "NumberEvent",
         "data_value": 2,
         "display": {
           "title": {
@@ -2159,6 +2169,7 @@
         "_row_num": 66
       },
       {
+        "choice_list_name": "NumberEvent",
         "data_value": 3,
         "display": {
           "title": {
@@ -2171,6 +2182,7 @@
         "_row_num": 67
       },
       {
+        "choice_list_name": "NumberEvent",
         "data_value": 4,
         "display": {
           "title": {
@@ -2196,6 +2208,7 @@
         "_row_num": 70
       },
       {
+        "choice_list_name": "PlaceEvent",
         "data_value": 2,
         "display": {
           "title": {
@@ -2221,6 +2234,7 @@
         "_row_num": 73
       },
       {
+        "choice_list_name": "PartiEvent",
         "data_value": 2,
         "display": {
           "title": {
@@ -2233,6 +2247,7 @@
         "_row_num": 74
       },
       {
+        "choice_list_name": "PartiEvent",
         "data_value": 3,
         "display": {
           "title": {
@@ -2258,6 +2273,7 @@
         "_row_num": 77
       },
       {
+        "choice_list_name": "TypeMask",
         "data_value": 2,
         "display": {
           "title": {
@@ -2283,6 +2299,7 @@
         "_row_num": 80
       },
       {
+        "choice_list_name": "TypeMask3",
         "data_value": 2,
         "display": {
           "title": {
@@ -2308,6 +2325,7 @@
         "_row_num": 83
       },
       {
+        "choice_list_name": "WhenMask",
         "data_value": 2,
         "display": {
           "title": {
@@ -2333,6 +2351,7 @@
         "_row_num": 86
       },
       {
+        "choice_list_name": "CovidTest",
         "data_value": 2,
         "display": {
           "title": {
@@ -3566,6 +3585,123 @@
             }
           },
           "_row_num": 54
+        },
+        {
+          "choice_list_name": "Events",
+          "data_value": 2,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Funeral",
+                "default": "Funeral"
+              }
+            }
+          },
+          "_row_num": 55
+        },
+        {
+          "choice_list_name": "Events",
+          "data_value": 3,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Choro",
+                "default": "Choro"
+              }
+            }
+          },
+          "_row_num": 56
+        },
+        {
+          "choice_list_name": "Events",
+          "data_value": 4,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Marriage",
+                "default": "Casamento"
+              }
+            }
+          },
+          "_row_num": 57
+        },
+        {
+          "choice_list_name": "Events",
+          "data_value": 5,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Birthday",
+                "default": "Anivarsario"
+              }
+            }
+          },
+          "_row_num": 58
+        },
+        {
+          "choice_list_name": "Events",
+          "data_value": 6,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Ceremony",
+                "default": "Ceremonia"
+              }
+            }
+          },
+          "_row_num": 59
+        },
+        {
+          "choice_list_name": "Events",
+          "data_value": 7,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Fera",
+                "default": "Fera"
+              }
+            }
+          },
+          "_row_num": 60
+        },
+        {
+          "choice_list_name": "Events",
+          "data_value": 8,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Pray",
+                "default": "Reza"
+              }
+            }
+          },
+          "_row_num": 61
+        },
+        {
+          "choice_list_name": "Events",
+          "data_value": 9,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Family meeting",
+                "default": "Reunião famíliar"
+              }
+            }
+          },
+          "_row_num": 62
+        },
+        {
+          "choice_list_name": "Events",
+          "data_value": 10,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Other",
+                "default": "Outro"
+              }
+            }
+          },
+          "_row_num": 63
         }
       ],
       "NumberEvent": [
@@ -3581,6 +3717,45 @@
             }
           },
           "_row_num": 65
+        },
+        {
+          "choice_list_name": "NumberEvent",
+          "data_value": 2,
+          "display": {
+            "title": {
+              "text": {
+                "english": "2-10 times",
+                "default": "2-10 vezes"
+              }
+            }
+          },
+          "_row_num": 66
+        },
+        {
+          "choice_list_name": "NumberEvent",
+          "data_value": 3,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Almost every day",
+                "default": "Quas tudo dia"
+              }
+            }
+          },
+          "_row_num": 67
+        },
+        {
+          "choice_list_name": "NumberEvent",
+          "data_value": 4,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Every day",
+                "default": "Tudo dia"
+              }
+            }
+          },
+          "_row_num": 68
         }
       ],
       "PlaceEvent": [
@@ -3596,6 +3771,19 @@
             }
           },
           "_row_num": 70
+        },
+        {
+          "choice_list_name": "PlaceEvent",
+          "data_value": 2,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Inside",
+                "default": "Dentro"
+              }
+            }
+          },
+          "_row_num": 71
         }
       ],
       "PartiEvent": [
@@ -3611,6 +3799,32 @@
             }
           },
           "_row_num": 73
+        },
+        {
+          "choice_list_name": "PartiEvent",
+          "data_value": 2,
+          "display": {
+            "title": {
+              "text": {
+                "english": "31-50",
+                "default": "31-50"
+              }
+            }
+          },
+          "_row_num": 74
+        },
+        {
+          "choice_list_name": "PartiEvent",
+          "data_value": 3,
+          "display": {
+            "title": {
+              "text": {
+                "english": ">50",
+                "default": ">50"
+              }
+            }
+          },
+          "_row_num": 75
         }
       ],
       "TypeMask": [
@@ -3626,6 +3840,19 @@
             }
           },
           "_row_num": 77
+        },
+        {
+          "choice_list_name": "TypeMask",
+          "data_value": 2,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Other",
+                "default": "Outro"
+              }
+            }
+          },
+          "_row_num": 78
         }
       ],
       "TypeMask2": [
@@ -3643,6 +3870,21 @@
           "_row_num": 80
         }
       ],
+      "TypeMask3": [
+        {
+          "choice_list_name": "TypeMask3",
+          "data_value": 2,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Pano",
+                "default": "Pano"
+              }
+            }
+          },
+          "_row_num": 81
+        }
+      ],
       "WhenMask": [
         {
           "choice_list_name": "WhenMask",
@@ -3656,6 +3898,19 @@
             }
           },
           "_row_num": 83
+        },
+        {
+          "choice_list_name": "WhenMask",
+          "data_value": 2,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Always",
+                "default": "Sempre"
+              }
+            }
+          },
+          "_row_num": 84
         }
       ],
       "CovidTest": [
@@ -3671,6 +3926,19 @@
             }
           },
           "_row_num": 86
+        },
+        {
+          "choice_list_name": "CovidTest",
+          "data_value": 2,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Other",
+                "default": "Outro"
+              }
+            }
+          },
+          "_row_num": 87
         }
       ]
     },
@@ -8353,7 +8621,7 @@
         "_aspect": "COVID3",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"CovidTest\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Throat and nose test\",\"default\":\"Teste de gaganta & nariz\"}}},\"_row_num\":86}]"
+        "_value": "[{\"choice_list_name\":\"CovidTest\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Throat and nose test\",\"default\":\"Teste de gaganta & nariz\"}}},\"_row_num\":86},{\"choice_list_name\":\"CovidTest\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":87}]"
       },
       {
         "_partition": "Column",
@@ -8388,28 +8656,28 @@
         "_aspect": "EVENTO2",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Events\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Lunch\",\"default\":\"Almoso\"}}},\"_row_num\":54}]"
+        "_value": "[{\"choice_list_name\":\"Events\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Lunch\",\"default\":\"Almoso\"}}},\"_row_num\":54},{\"choice_list_name\":\"Events\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Funeral\",\"default\":\"Funeral\"}}},\"_row_num\":55},{\"choice_list_name\":\"Events\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Choro\",\"default\":\"Choro\"}}},\"_row_num\":56},{\"choice_list_name\":\"Events\",\"data_value\":4,\"display\":{\"title\":{\"text\":{\"english\":\"Marriage\",\"default\":\"Casamento\"}}},\"_row_num\":57},{\"choice_list_name\":\"Events\",\"data_value\":5,\"display\":{\"title\":{\"text\":{\"english\":\"Birthday\",\"default\":\"Anivarsario\"}}},\"_row_num\":58},{\"choice_list_name\":\"Events\",\"data_value\":6,\"display\":{\"title\":{\"text\":{\"english\":\"Ceremony\",\"default\":\"Ceremonia\"}}},\"_row_num\":59},{\"choice_list_name\":\"Events\",\"data_value\":7,\"display\":{\"title\":{\"text\":{\"english\":\"Fera\",\"default\":\"Fera\"}}},\"_row_num\":60},{\"choice_list_name\":\"Events\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Pray\",\"default\":\"Reza\"}}},\"_row_num\":61},{\"choice_list_name\":\"Events\",\"data_value\":9,\"display\":{\"title\":{\"text\":{\"english\":\"Family meeting\",\"default\":\"Reunião famíliar\"}}},\"_row_num\":62},{\"choice_list_name\":\"Events\",\"data_value\":10,\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":63}]"
       },
       {
         "_partition": "Column",
         "_aspect": "EVENTO3",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"NumberEvent\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"1 time\",\"default\":\"1 veze\"}}},\"_row_num\":65}]"
+        "_value": "[{\"choice_list_name\":\"NumberEvent\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"1 time\",\"default\":\"1 veze\"}}},\"_row_num\":65},{\"choice_list_name\":\"NumberEvent\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"2-10 times\",\"default\":\"2-10 vezes\"}}},\"_row_num\":66},{\"choice_list_name\":\"NumberEvent\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Almost every day\",\"default\":\"Quas tudo dia\"}}},\"_row_num\":67},{\"choice_list_name\":\"NumberEvent\",\"data_value\":4,\"display\":{\"title\":{\"text\":{\"english\":\"Every day\",\"default\":\"Tudo dia\"}}},\"_row_num\":68}]"
       },
       {
         "_partition": "Column",
         "_aspect": "EVENTO4",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"PlaceEvent\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Outside\",\"default\":\"Fora\"}}},\"_row_num\":70}]"
+        "_value": "[{\"choice_list_name\":\"PlaceEvent\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Outside\",\"default\":\"Fora\"}}},\"_row_num\":70},{\"choice_list_name\":\"PlaceEvent\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Inside\",\"default\":\"Dentro\"}}},\"_row_num\":71}]"
       },
       {
         "_partition": "Column",
         "_aspect": "EVENTO5",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"PartiEvent\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"20-30\",\"default\":\"20-30\"}}},\"_row_num\":73}]"
+        "_value": "[{\"choice_list_name\":\"PartiEvent\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"20-30\",\"default\":\"20-30\"}}},\"_row_num\":73},{\"choice_list_name\":\"PartiEvent\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"31-50\",\"default\":\"31-50\"}}},\"_row_num\":74},{\"choice_list_name\":\"PartiEvent\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\">50\",\"default\":\">50\"}}},\"_row_num\":75}]"
       },
       {
         "_partition": "Column",
@@ -8458,7 +8726,7 @@
         "_aspect": "MASCARA2",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"TypeMask\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Mask from study\",\"default\":\"Mascara di study\"}}},\"_row_num\":77}]"
+        "_value": "[{\"choice_list_name\":\"TypeMask\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Mask from study\",\"default\":\"Mascara di study\"}}},\"_row_num\":77},{\"choice_list_name\":\"TypeMask\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":78}]"
       },
       {
         "_partition": "Column",
@@ -8472,7 +8740,7 @@
         "_aspect": "MASCARA4",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"WhenMask\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"When I go out\",\"default\":\"Quando sai\"}}},\"_row_num\":83}]"
+        "_value": "[{\"choice_list_name\":\"WhenMask\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"When I go out\",\"default\":\"Quando sai\"}}},\"_row_num\":83},{\"choice_list_name\":\"WhenMask\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Always\",\"default\":\"Sempre\"}}},\"_row_num\":84}]"
       },
       {
         "_partition": "Column",
