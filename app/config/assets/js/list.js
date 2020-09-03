@@ -16,7 +16,7 @@ function display() {
     famName = util.getQueryParameter('famName');
     
     var head = $('#main');
-    head.prepend("<h3>" + tabz + " - " + houseGroup + " - " + camo + " - " + famName);
+    head.prepend("<h1>" + tabz + " - " + houseGroup + " - " + camo + " </br> <h3> " + famName);
     // populate list
     loadPersons();
 }
