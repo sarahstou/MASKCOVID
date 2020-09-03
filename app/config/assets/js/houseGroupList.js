@@ -3,15 +3,16 @@
  */
 'use strict';
 
-var participants, masterFamList, date, bairro;
+var participants, masterFamList, date, bairro, tabz, zone;
 function display() {
     console.log("TABZ list loading");
     date = util.getQueryParameter('date');
     bairro = util.getQueryParameter('bairro');
+    tabz = util.getQueryParameter('tabz');
+    zone = util.getQueryParameter('zone');
     
-    var bairroName = {1: "Bandim I", 2: "Bandim II", 3: "Belem", 4: "Mindara", 7: "Cuntum I", 9: "Cuntum II"};
     var head = $('#main');
-    head.prepend("<h1>" + bairroName[bairro] + " </br> <h3> Zonas");
+    head.prepend("<h1>" + tabz + " </br> <h3> Grupos de Casas");
     
     doSanityCheck();
     getList();
@@ -101,17 +102,18 @@ function initButtons() {
     // Zone buttons
     var ul = $('#li');
     console.log("initB",masterFamList);
-    
-    const listFromMaster = []; 
+
+    const listFromMaster = [];
     const map = new Map();
     for (const item of masterFamList) {
-        if (item.bairro == bairro) {
-            if(!map.has(item.tabz)){
-                map.set(item.tabz, true);    // set any value to Map
+        if (item.bairro == bairro & item.tabz == tabz) {
+            if(!map.has(item.houseGroup)){
+                map.set(item.houseGroup, true);    // set any value to Map
                 listFromMaster.push({
                     bairro: item.bairro,
                     tabz: item.tabz,
-                    zone: item.zone
+                    zone: item.zone,
+                    houseGroup: item.houseGroup
                 });
             }
         }
@@ -122,19 +124,19 @@ function initButtons() {
     $.each(listFromMaster, function() {
         var that = this;
         // list
-        ul.append($("<li />").append($("<button />").attr('id',this.tabz).attr('class','btn' + this.bairro).append(this.zone).append(" " + getCount(this.tabz))));
+        ul.append($("<li />").append($("<button />").attr('id',this.houseGroup).attr('class','btn' + this.bairro).append(this.houseGroup).append(" " + getCount(this.houseGroup))));
         
         // Buttons
-        var btn = ul.find('#' + this.tabz);
+        var btn = ul.find('#' + this.houseGroup);
         btn.on("click", function() {
-            var queryParams = util.setQuerystringParams(date, that.bairro, that.tabz, that.zone);
-            odkTables.launchHTML(null, 'config/assets/houseGroupList.html' + queryParams);
+            var queryParams = util.setQuerystringParams(date, that.bairro, that.tabz, that.zone, that.houseGroup);
+            odkTables.launchHTML(null, 'config/assets/camoList.html' + queryParams);
         })        
     });
 }
 
 
-function getCount(tabz) { 
+function getCount(houseGroup) { 
     // only for test
     return "(X/X)"
 }

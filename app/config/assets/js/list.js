@@ -3,20 +3,20 @@
  */
 'use strict';
 
-var participants, bairro, tabz, zone, date;
+var participants, date, bairro, tabz, zone, houseGroup, camo, fam, famName;
 function display() {
-    console.log("List loading");
-    bairro = util.getQueryParameter('region');
-    tabz = util.getQueryParameter('tabanca');
-    zone = util.getQueryParameter('assistant');
+    console.log("TABZ list loading");
     date = util.getQueryParameter('date');
+    bairro = util.getQueryParameter('bairro');
+    tabz = util.getQueryParameter('tabz');
+    zone = util.getQueryParameter('zone');
+    houseGroup = util.getQueryParameter('houseGroup');
+    camo = util.getQueryParameter('camo');
+    fam = util.getQueryParameter('fam');
+    famName = util.getQueryParameter('famName');
     
-    console.log("Preparing list with bairro = " + bairro + " and tabz = " + tabz);
-    // Set the header to zone choosen
-
-    var bairroName = {1: "Bandim I", 2: "Bandim II", 3: "Belem", 4: "Mindara", 7: "Cuntum I", 9: "Cuntum II"};
     var head = $('#main');
-    head.prepend("<h1>" + bairroName[bairro] + " </br> <h3>" + zone);
+    head.prepend("<h1>" + tabz + " - " + houseGroup + " - " + camo + " </br> <h3> " + famName);
     // populate list
     loadPersons();
 }
@@ -25,7 +25,7 @@ function loadPersons() {
     // SQL to get persons
     var varNames = "_id, _savepoint_type, BAIRRO, CALLBACK, CAMO, COVID, DATINC, DATSEG, DOB, ESTADO, FU, GETRESULTS, LASTINTERVIEW, LASTTELSUC, NOME, NUMEST, POID, SEX, TABZ, TELE, TELMTN1, TELMTN2, TELMTN3, TELORA1, TELORA2, TELORA3, TELOU1, TELOU2, TELSUC, TESTERESUL";
     var sql = "SELECT " + varNames +
-        " FROM OPVCOVID" + 
+        " FROM MASKCOVID" + 
         " WHERE BAIRRO = " + bairro + " AND TABZ = " + tabz + 
         " GROUP BY POID HAVING MAX(FU)" +
         " ORDER BY CAMO, POID";
@@ -99,7 +99,7 @@ function loadPersons() {
         console.error(sql);
         alert("Program error Unable to look up persons.");
     }
-    odkData.arbitraryQuery('OPVCOVID', sql, null, null, null, successFn, failureFn);
+    odkData.arbitraryQuery('MASKCOVID', sql, null, null, null, successFn, failureFn);
 }
 
 function populateView() {

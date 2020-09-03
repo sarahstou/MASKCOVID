@@ -9,7 +9,7 @@ function display() {
     selYea = $('#selDateYear');
     
     doSanityCheck();
-    getList();
+    initDate();
 }
 
 
@@ -21,7 +21,7 @@ function doSanityCheck() {
 function getList() {
     // SQL to get children
     var sql = "SELECT _savepoint_type, BAIRRO, CALLBACK, COVID, DATINC, DATSEG, ESTADO, FU, LASTINTERVIEW, POID, TESTERESUL " + 
-        " FROM OPVCOVID " +
+        " FROM MASKCOVID " +
         " GROUP BY POID HAVING MAX(FU)"; 
     participants = [];
     console.log("Querying database for participants...");
@@ -73,7 +73,7 @@ function getList() {
         console.error(sql);
         alert("Program error Unable to look up persons.");
     }
-    odkData.arbitraryQuery('OPVCOVID', sql, null, null, null, successFn, failureFn);
+    odkData.arbitraryQuery('MASKCOVID', sql, null, null, null, successFn, failureFn);
 }
 
 function initDate() {
@@ -125,7 +125,7 @@ function initButtons() {
     btn01.on("click", function() {
         var bairro = 1;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(bairro, null, null, null, date);
+        var queryParams = util.setQuerystringParams(date, bairro);
         odkTables.launchHTML(null, 'config/assets/tabzList.html' + queryParams);
     });
     var btn02 = $('#btn02');
@@ -133,7 +133,7 @@ function initButtons() {
     btn02.on("click", function() {
         var bairro = 2;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(bairro, null, null, null, date);
+        var queryParams = util.setQuerystringParams(date, bairro);
         odkTables.launchHTML(null, 'config/assets/tabzList.html' + queryParams);
     });
     var btn03 = $('#btn03');
@@ -141,7 +141,7 @@ function initButtons() {
     btn03.on("click", function() {
         var bairro = 3;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(bairro, null, null, null, date);
+        var queryParams = util.setQuerystringParams(date, bairro);
         odkTables.launchHTML(null, 'config/assets/tabzList.html' + queryParams);
     });
     var btn04 = $('#btn04');
@@ -149,7 +149,7 @@ function initButtons() {
     btn04.on("click", function() {
         var bairro = 4;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(bairro, null, null, null, date);
+        var queryParams = util.setQuerystringParams(date, bairro);
         odkTables.launchHTML(null, 'config/assets/tabzList.html' + queryParams);
     });
     var btn05 = $('#btn05');
@@ -157,7 +157,7 @@ function initButtons() {
     btn05.on("click", function() {
         var bairro = 7;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(bairro, null, null, null, date);
+        var queryParams = util.setQuerystringParams(date, bairro);
         odkTables.launchHTML(null, 'config/assets/tabzList.html' + queryParams);
     });
     var btn06 = $('#btn06');
@@ -165,11 +165,18 @@ function initButtons() {
     btn06.on("click", function() {
         var bairro = 9;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(bairro, null, null, null, date);
+        var queryParams = util.setQuerystringParams(date, bairro);
         odkTables.launchHTML(null, 'config/assets/tabzList.html' + queryParams);
     });
 }
 
+function getCount(bairro) { 
+    // only for test
+    return "(X/X)"
+}
+
+
+/* disabled while testing
 function getCount(bairro) {
     var today = new Date(selYea.val(), selMon.val()-1, selDay.val());
     var todayAdate = "D:" + today.getDate() + ",M:" + (Number(today.getMonth()) + 1) + ",Y:" + today.getFullYear();
@@ -179,4 +186,4 @@ function getCount(bairro) {
     var count = "(" + checked + "/" + total + ")";
     return count;
 }
-
+*/
