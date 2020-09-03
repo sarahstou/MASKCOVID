@@ -15,9 +15,8 @@ function display() {
     fam = util.getQueryParameter('fam');
     famName = util.getQueryParameter('famName');
     
-    var bairroName = {1: "Bandim I", 2: "Bandim II", 3: "Belem", 4: "Mindara", 7: "Cuntum I", 9: "Cuntum II"};
     var head = $('#main');
-    head.prepend("<h3>" + bairroName[bairro] + " - " + zone + " - " + houseGroup + " - " + camo + " - " + famName);
+    head.prepend("<h3>" + tabz + " - " + houseGroup + " - " + camo + " - " + famName);
     // populate list
     loadPersons();
 }

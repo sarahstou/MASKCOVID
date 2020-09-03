@@ -12,9 +12,8 @@ function display() {
     zone = util.getQueryParameter('zone');
     houseGroup = util.getQueryParameter('houseGroup');
     
-    var bairroName = {1: "Bandim I", 2: "Bandim II", 3: "Belem", 4: "Mindara", 7: "Cuntum I", 9: "Cuntum II"};
     var head = $('#main');
-    head.prepend("<h1>" + bairroName[bairro] + " - " + zone + " - " + houseGroup + " </br> <h3> Camo");
+    head.prepend("<h1>" + tabz + " - " + houseGroup + " </br> <h3> Camo");
     
     doSanityCheck();
     getList();
