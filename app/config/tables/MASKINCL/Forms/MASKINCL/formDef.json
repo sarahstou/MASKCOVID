@@ -266,7 +266,7 @@
           "prompt": {
             "text": {
               "english": "Phone number",
-              "default": "Phone number"
+              "default": "Número de telefone"
             }
           }
         },
@@ -275,7 +275,7 @@
       {
         "type": "select_one",
         "values_list": "Phone",
-        "name": "TELE1",
+        "name": "TELE1_VERI",
         "display": {
           "prompt": {
             "text": {
@@ -289,7 +289,7 @@
       {
         "type": "select_one",
         "values_list": "Phone",
-        "name": "TELE2",
+        "name": "TELE2_VERI",
         "display": {
           "prompt": {
             "text": {
@@ -301,12 +301,69 @@
         "_row_num": 27
       },
       {
-        "clause": "end screen",
+        "type": "select_one",
+        "values_list": "YesNo",
+        "name": "newNumber",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Add other number?",
+              "default": "Adicionar outro número?"
+            }
+          }
+        },
         "_row_num": 28
       },
       {
-        "clause": "begin screen",
+        "clause": "end screen",
         "_row_num": 29
+      },
+      {
+        "clause": "if",
+        "condition": "data(\"newNumber\") == \"1\"",
+        "_row_num": 30
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 31
+      },
+      {
+        "type": "integer",
+        "name": "NOVONUM1",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "New number 1",
+              "default": "Novo número 1"
+            }
+          }
+        },
+        "_row_num": 32
+      },
+      {
+        "type": "integer",
+        "name": "NOVONUM2",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "New number 2",
+              "default": "Novo número 2"
+            }
+          }
+        },
+        "_row_num": 33
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 34
+      },
+      {
+        "clause": "end if",
+        "_row_num": 35
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 36
       },
       {
         "type": "select_one",
@@ -320,12 +377,12 @@
             }
           }
         },
-        "_row_num": 30
+        "_row_num": 37
       },
       {
         "clause": "if",
         "condition": "data(\"MASC\") == \"2\"",
-        "_row_num": 31
+        "_row_num": 38
       },
       {
         "type": "select_one",
@@ -339,49 +396,49 @@
             }
           }
         },
-        "_row_num": 32
+        "_row_num": 39
       },
       {
         "clause": "end if",
-        "_row_num": 33
+        "_row_num": 40
       },
       {
         "clause": "if",
         "condition": "data(\"ACCEPT\") == \"2\"",
-        "_row_num": 34
+        "_row_num": 41
       },
       {
         "type": "assign",
         "name": "MASC",
         "calculation": 2,
-        "_row_num": 35
+        "_row_num": 42
       },
       {
         "clause": "end if",
-        "_row_num": 36
+        "_row_num": 43
       },
       {
         "clause": "if",
         "condition": "data(\"GRUPO2\") == \"2\"",
-        "_row_num": 37
+        "_row_num": 44
       },
       {
         "type": "assign",
         "name": "MASC",
         "calculation": 8,
-        "_row_num": 38
+        "_row_num": 45
       },
       {
         "clause": "end if",
-        "_row_num": 39
+        "_row_num": 46
       },
       {
         "clause": "end screen",
-        "_row_num": 40
+        "_row_num": 47
       },
       {
         "clause": "begin screen",
-        "_row_num": 41
+        "_row_num": 48
       },
       {
         "type": "select_one",
@@ -395,12 +452,12 @@
             }
           }
         },
-        "_row_num": 42
+        "_row_num": 49
       },
       {
         "clause": "if",
         "condition": "data(\"INTENCAO\") == \"1\"",
-        "_row_num": 43
+        "_row_num": 50
       },
       {
         "type": "select_one",
@@ -414,16 +471,16 @@
             }
           }
         },
-        "_row_num": 44
+        "_row_num": 51
       },
       {
         "clause": "end if",
-        "_row_num": 45
+        "_row_num": 52
       },
       {
         "clause": "if",
         "condition": "data(\"INTENCAO\") == \"2\" || data(\"INTENCAO\") == \"3\"",
-        "_row_num": 46
+        "_row_num": 53
       },
       {
         "type": "select_one",
@@ -437,11 +494,11 @@
             }
           }
         },
-        "_row_num": 47
+        "_row_num": 54
       },
       {
         "clause": "end if",
-        "_row_num": 48
+        "_row_num": 55
       },
       {
         "type": "async_assign_single_string",
@@ -450,11 +507,11 @@
         "display": {
           "hide_adate": true
         },
-        "_row_num": 49
+        "_row_num": 56
       },
       {
         "clause": "end screen",
-        "_row_num": 50
+        "_row_num": 57
       }
     ],
     "choices": [
@@ -654,7 +711,7 @@
         "_row_num": 18
       },
       {
-        "choice_list_name": "Mask",
+        "choice_list_name": "YesNo",
         "data_value": 1,
         "display": {
           "title": {
@@ -667,6 +724,32 @@
         "_row_num": 20
       },
       {
+        "choice_list_name": "YesNo",
+        "data_value": 2,
+        "display": {
+          "title": {
+            "text": {
+              "english": "No",
+              "default": "Não"
+            }
+          }
+        },
+        "_row_num": 21
+      },
+      {
+        "choice_list_name": "Mask",
+        "data_value": 1,
+        "display": {
+          "title": {
+            "text": {
+              "english": "Yes",
+              "default": "Sim"
+            }
+          }
+        },
+        "_row_num": 23
+      },
+      {
         "choice_list_name": "Mask",
         "data_value": 2,
         "display": {
@@ -677,7 +760,7 @@
             }
           }
         },
-        "_row_num": 21
+        "_row_num": 24
       },
       {
         "choice_list_name": "Mask",
@@ -690,7 +773,7 @@
             }
           }
         },
-        "_row_num": 22
+        "_row_num": 25
       },
       {
         "choice_list_name": "Mask",
@@ -703,7 +786,7 @@
             }
           }
         },
-        "_row_num": 23
+        "_row_num": 26
       },
       {
         "choice_list_name": "Intension",
@@ -716,7 +799,7 @@
             }
           }
         },
-        "_row_num": 25
+        "_row_num": 28
       },
       {
         "choice_list_name": "Intension",
@@ -729,7 +812,7 @@
             }
           }
         },
-        "_row_num": 26
+        "_row_num": 29
       },
       {
         "choice_list_name": "Intension",
@@ -742,7 +825,7 @@
             }
           }
         },
-        "_row_num": 27
+        "_row_num": 30
       },
       {
         "choice_list_name": "Intension",
@@ -755,7 +838,7 @@
             }
           }
         },
-        "_row_num": 28
+        "_row_num": 31
       },
       {
         "choice_list_name": "MaskWhen",
@@ -768,7 +851,7 @@
             }
           }
         },
-        "_row_num": 30
+        "_row_num": 33
       },
       {
         "choice_list_name": "MaskWhen",
@@ -781,7 +864,7 @@
             }
           }
         },
-        "_row_num": 31
+        "_row_num": 34
       },
       {
         "choice_list_name": "MaskWhen",
@@ -794,7 +877,7 @@
             }
           }
         },
-        "_row_num": 32
+        "_row_num": 35
       },
       {
         "choice_list_name": "NoMask",
@@ -807,7 +890,7 @@
             }
           }
         },
-        "_row_num": 34
+        "_row_num": 37
       },
       {
         "choice_list_name": "NoMask",
@@ -820,7 +903,7 @@
             }
           }
         },
-        "_row_num": 35
+        "_row_num": 38
       },
       {
         "choice_list_name": "NoMask",
@@ -833,7 +916,7 @@
             }
           }
         },
-        "_row_num": 36
+        "_row_num": 39
       },
       {
         "choice_list_name": "NoMask",
@@ -846,7 +929,7 @@
             }
           }
         },
-        "_row_num": 37
+        "_row_num": 40
       },
       {
         "choice_list_name": "NoMask",
@@ -859,7 +942,7 @@
             }
           }
         },
-        "_row_num": 38
+        "_row_num": 41
       }
     ],
     "queries": [
@@ -966,82 +1049,112 @@
         "_row_num": 10
       },
       {
-        "name": "ESTADO",
-        "type": "integer",
-        "isSessionVariable": false,
-        "_row_num": 12
-      },
-      {
-        "name": "DATASAI",
-        "type": "adate",
-        "isSessionVariable": false,
-        "_row_num": 13
-      },
-      {
-        "name": "ONDE",
-        "type": "text",
-        "isSessionVariable": false,
-        "_row_num": 14
-      },
-      {
-        "name": "ACCEPT",
-        "type": "integer",
-        "isSessionVariable": false,
-        "_row_num": 15
-      },
-      {
         "name": "TELE1",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 16
+        "_row_num": 11
       },
       {
         "name": "TELE2",
         "type": "integer",
         "isSessionVariable": false,
+        "_row_num": 12
+      },
+      {
+        "name": "ESTADO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 14
+      },
+      {
+        "name": "DATASAI",
+        "type": "adate",
+        "isSessionVariable": false,
+        "_row_num": 15
+      },
+      {
+        "name": "ONDE",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 16
+      },
+      {
+        "name": "ACCEPT",
+        "type": "integer",
+        "isSessionVariable": false,
         "_row_num": 17
       },
       {
-        "name": "MASC",
+        "name": "TELE1_VERI",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 18
+      },
+      {
+        "name": "TELE2_VERI",
         "type": "integer",
         "isSessionVariable": false,
         "_row_num": 19
       },
       {
-        "name": "RECEB_QUEM",
-        "type": "text",
+        "name": "NOVONUM1",
+        "type": "integer",
         "isSessionVariable": false,
         "_row_num": 20
       },
       {
-        "name": "INTENCAO",
+        "name": "NOVONUM2",
         "type": "integer",
         "isSessionVariable": false,
         "_row_num": 21
       },
       {
-        "name": "QUANDO",
-        "type": "integer",
-        "isSessionVariable": false,
-        "_row_num": 22
-      },
-      {
-        "name": "MOTIVO",
+        "name": "MASC",
         "type": "integer",
         "isSessionVariable": false,
         "_row_num": 23
       },
       {
-        "name": "HHOID",
+        "name": "RECEB_QUEM",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 24
+      },
+      {
+        "name": "INTENCAO",
         "type": "integer",
         "isSessionVariable": false,
         "_row_num": 25
       },
       {
+        "name": "QUANDO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 26
+      },
+      {
+        "name": "MOTIVO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 27
+      },
+      {
+        "name": "HHOID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 29
+      },
+      {
         "name": "id_RECEB_QUEM",
         "type": "text",
         "isSessionVariable": true,
-        "_row_num": 26
+        "_row_num": 30
+      },
+      {
+        "name": "newNumber",
+        "type": "integer",
+        "isSessionVariable": true,
+        "_row_num": 31
       }
     ]
   },
@@ -1373,9 +1486,9 @@
           "_row_num": 18
         }
       ],
-      "Mask": [
+      "YesNo": [
         {
-          "choice_list_name": "Mask",
+          "choice_list_name": "YesNo",
           "data_value": 1,
           "display": {
             "title": {
@@ -1388,6 +1501,34 @@
           "_row_num": 20
         },
         {
+          "choice_list_name": "YesNo",
+          "data_value": 2,
+          "display": {
+            "title": {
+              "text": {
+                "english": "No",
+                "default": "Não"
+              }
+            }
+          },
+          "_row_num": 21
+        }
+      ],
+      "Mask": [
+        {
+          "choice_list_name": "Mask",
+          "data_value": 1,
+          "display": {
+            "title": {
+              "text": {
+                "english": "Yes",
+                "default": "Sim"
+              }
+            }
+          },
+          "_row_num": 23
+        },
+        {
           "choice_list_name": "Mask",
           "data_value": 2,
           "display": {
@@ -1398,7 +1539,7 @@
               }
             }
           },
-          "_row_num": 21
+          "_row_num": 24
         },
         {
           "choice_list_name": "Mask",
@@ -1411,7 +1552,7 @@
               }
             }
           },
-          "_row_num": 22
+          "_row_num": 25
         },
         {
           "choice_list_name": "Mask",
@@ -1424,7 +1565,7 @@
               }
             }
           },
-          "_row_num": 23
+          "_row_num": 26
         }
       ],
       "Intension": [
@@ -1439,7 +1580,7 @@
               }
             }
           },
-          "_row_num": 25
+          "_row_num": 28
         },
         {
           "choice_list_name": "Intension",
@@ -1452,7 +1593,7 @@
               }
             }
           },
-          "_row_num": 26
+          "_row_num": 29
         },
         {
           "choice_list_name": "Intension",
@@ -1465,7 +1606,7 @@
               }
             }
           },
-          "_row_num": 27
+          "_row_num": 30
         },
         {
           "choice_list_name": "Intension",
@@ -1478,7 +1619,7 @@
               }
             }
           },
-          "_row_num": 28
+          "_row_num": 31
         }
       ],
       "MaskWhen": [
@@ -1493,7 +1634,7 @@
               }
             }
           },
-          "_row_num": 30
+          "_row_num": 33
         },
         {
           "choice_list_name": "MaskWhen",
@@ -1506,7 +1647,7 @@
               }
             }
           },
-          "_row_num": 31
+          "_row_num": 34
         },
         {
           "choice_list_name": "MaskWhen",
@@ -1519,7 +1660,7 @@
               }
             }
           },
-          "_row_num": 32
+          "_row_num": 35
         }
       ],
       "NoMask": [
@@ -1534,7 +1675,7 @@
               }
             }
           },
-          "_row_num": 34
+          "_row_num": 37
         },
         {
           "choice_list_name": "NoMask",
@@ -1547,7 +1688,7 @@
               }
             }
           },
-          "_row_num": 35
+          "_row_num": 38
         },
         {
           "choice_list_name": "NoMask",
@@ -1560,7 +1701,7 @@
               }
             }
           },
-          "_row_num": 36
+          "_row_num": 39
         },
         {
           "choice_list_name": "NoMask",
@@ -1573,7 +1714,7 @@
               }
             }
           },
-          "_row_num": 37
+          "_row_num": 40
         },
         {
           "choice_list_name": "NoMask",
@@ -1586,7 +1727,7 @@
               }
             }
           },
-          "_row_num": 38
+          "_row_num": 41
         }
       ]
     },
@@ -1740,6 +1881,28 @@
         "comment": "bed",
         "elementKey": "BED"
       },
+      "TELE1": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TELE1"
+      },
+      "TELE2": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TELE2"
+      },
       "ESTADO": {
         "type": "integer",
         "valuesList": "VitalStatus",
@@ -1749,7 +1912,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 12,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
@@ -1769,7 +1932,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 13,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -1784,7 +1947,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 14,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -1800,14 +1963,14 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 15,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "ACCEPT"
       },
-      "TELE1": {
+      "TELE1_VERI": {
         "type": "integer",
         "valuesList": "Phone",
         "_defn": [
@@ -1816,14 +1979,14 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 16,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "TELE1"
+        "elementKey": "TELE1_VERI"
       },
-      "TELE2": {
+      "TELE2_VERI": {
         "type": "integer",
         "valuesList": "Phone",
         "_defn": [
@@ -1832,23 +1995,53 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 17,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "TELE2"
+        "elementKey": "TELE2_VERI"
+      },
+      "NOVONUM1": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 32,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NOVONUM1"
+      },
+      "NOVONUM2": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 33,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NOVONUM2"
       },
       "MASC": {
         "type": "integer",
         "valuesList": "Mask",
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 37,
             "section_name": "survey"
           },
           {
-            "_row_num": 19,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -1861,11 +2054,11 @@
         "valuesList": "person_name",
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 56,
             "section_name": "survey"
           },
           {
-            "_row_num": 20,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -1877,11 +2070,11 @@
         "valuesList": "Intension",
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 49,
             "section_name": "survey"
           },
           {
-            "_row_num": 21,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -1893,11 +2086,11 @@
         "valuesList": "MaskWhen",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 51,
             "section_name": "survey"
           },
           {
-            "_row_num": 22,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -1909,11 +2102,11 @@
         "valuesList": "NoMask",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 54,
             "section_name": "survey"
           },
           {
-            "_row_num": 23,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -1924,7 +2117,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -1936,16 +2129,32 @@
         "valuesList": "persons",
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 39,
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
         "isSessionVariable": true,
         "elementKey": "id_RECEB_QUEM"
+      },
+      "newNumber": {
+        "type": "integer",
+        "valuesList": "YesNo",
+        "_defn": [
+          {
+            "_row_num": 28,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 31,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "newNumber"
       }
     },
     "section_names": [
@@ -2174,7 +2383,7 @@
               "prompt": {
                 "text": {
                   "english": "Phone number",
-                  "default": "Phone number"
+                  "default": "Número de telefone"
                 }
               }
             },
@@ -2188,7 +2397,7 @@
           {
             "type": "select_one",
             "values_list": "Phone",
-            "name": "TELE1",
+            "name": "TELE1_VERI",
             "display": {
               "prompt": {
                 "text": {
@@ -2207,7 +2416,7 @@
           {
             "type": "select_one",
             "values_list": "Phone",
-            "name": "TELE2",
+            "name": "TELE2_VERI",
             "display": {
               "prompt": {
                 "text": {
@@ -2225,6 +2434,61 @@
           },
           {
             "type": "select_one",
+            "values_list": "YesNo",
+            "name": "newNumber",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Add other number?",
+                  "default": "Adicionar outro número?"
+                }
+              }
+            },
+            "_row_num": 28,
+            "__rowNum__": 27,
+            "_token_type": "prompt",
+            "_type": "select_one",
+            "_branch_label_enclosing_screen": "survey/_screen24",
+            "promptIdx": 15
+          },
+          {
+            "type": "integer",
+            "name": "NOVONUM1",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "New number 1",
+                  "default": "Novo número 1"
+                }
+              }
+            },
+            "_row_num": 32,
+            "__rowNum__": 31,
+            "_token_type": "prompt",
+            "_type": "integer",
+            "_branch_label_enclosing_screen": "survey/_screen31",
+            "promptIdx": 16
+          },
+          {
+            "type": "integer",
+            "name": "NOVONUM2",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "New number 2",
+                  "default": "Novo número 2"
+                }
+              }
+            },
+            "_row_num": 33,
+            "__rowNum__": 32,
+            "_token_type": "prompt",
+            "_type": "integer",
+            "_branch_label_enclosing_screen": "survey/_screen31",
+            "promptIdx": 17
+          },
+          {
+            "type": "select_one",
             "values_list": "Mask",
             "name": "MASC",
             "display": {
@@ -2235,12 +2499,12 @@
                 }
               }
             },
-            "_row_num": 30,
-            "__rowNum__": 29,
+            "_row_num": 37,
+            "__rowNum__": 36,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen29",
-            "promptIdx": 15
+            "_branch_label_enclosing_screen": "survey/_screen36",
+            "promptIdx": 18
           },
           {
             "type": "select_one",
@@ -2254,12 +2518,12 @@
                 }
               }
             },
-            "_row_num": 32,
-            "__rowNum__": 31,
+            "_row_num": 39,
+            "__rowNum__": 38,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen29",
-            "promptIdx": 16
+            "_branch_label_enclosing_screen": "survey/_screen36",
+            "promptIdx": 19
           },
           {
             "type": "select_one",
@@ -2273,12 +2537,12 @@
                 }
               }
             },
-            "_row_num": 42,
-            "__rowNum__": 41,
+            "_row_num": 49,
+            "__rowNum__": 48,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen41",
-            "promptIdx": 17
+            "_branch_label_enclosing_screen": "survey/_screen48",
+            "promptIdx": 20
           },
           {
             "type": "select_one",
@@ -2292,12 +2556,12 @@
                 }
               }
             },
-            "_row_num": 44,
-            "__rowNum__": 43,
+            "_row_num": 51,
+            "__rowNum__": 50,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen41",
-            "promptIdx": 18
+            "_branch_label_enclosing_screen": "survey/_screen48",
+            "promptIdx": 21
           },
           {
             "type": "select_one",
@@ -2311,12 +2575,12 @@
                 }
               }
             },
-            "_row_num": 47,
-            "__rowNum__": 46,
+            "_row_num": 54,
+            "__rowNum__": 53,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen41",
-            "promptIdx": 19
+            "_branch_label_enclosing_screen": "survey/_screen48",
+            "promptIdx": 22
           },
           {
             "type": "async_assign_single_string",
@@ -2325,20 +2589,20 @@
             "display": {
               "hide_adate": true
             },
-            "_row_num": 49,
-            "__rowNum__": 48,
+            "_row_num": 56,
+            "__rowNum__": 55,
             "_token_type": "prompt",
             "_type": "async_assign_single_string",
-            "_branch_label_enclosing_screen": "survey/_screen41",
-            "promptIdx": 20
+            "_branch_label_enclosing_screen": "survey/_screen48",
+            "promptIdx": 23
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 51,
-            "_branch_label_enclosing_screen": "survey/_screen51",
-            "promptIdx": 21
+            "_row_num": 58,
+            "_branch_label_enclosing_screen": "survey/_screen58",
+            "promptIdx": 24
           }
         ],
         "validation_tag_map": {
@@ -2394,61 +2658,98 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 28,
-              "__rowNum__": 27,
+              "_row_num": 29,
+              "__rowNum__": 28,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 3
           },
           {
-            "clause": "begin screen",
-            "_row_num": 29,
-            "__rowNum__": 28,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 40,
-              "__rowNum__": 39,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(15);\nif (data(\"MASC\") == \"2\") {\nactivePromptIndicies.push(16);\n}\nif (data(\"ACCEPT\") == \"2\") {\nassign('MASC', 2);\n}\nif (data(\"GRUPO2\") == \"2\") {\nassign('MASC', 8);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "clause": "if",
+            "condition": "data(\"newNumber\") == \"1\"",
+            "_row_num": 30,
+            "__rowNum__": 29,
+            "_token_type": "goto_label",
+            "_branch_label": "_then30",
             "operationIdx": 4
           },
           {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else35",
+            "_row_num": 35,
+            "operationIdx": 5
+          },
+          {
             "clause": "begin screen",
-            "_row_num": 41,
-            "__rowNum__": 40,
+            "_row_num": 31,
+            "__rowNum__": 30,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 50,
-              "__rowNum__": 49,
+              "_row_num": 34,
+              "__rowNum__": 33,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(17);\nif (data(\"INTENCAO\") == \"1\") {\nactivePromptIndicies.push(18);\n}\nif (data(\"INTENCAO\") == \"2\" || data(\"INTENCAO\") == \"3\") {\nactivePromptIndicies.push(19);\n}\nactivePromptIndicies.push(20);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 5
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 6
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif35",
+            "_row_num": 35,
+            "operationIdx": 7
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 36,
+            "__rowNum__": 35,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 47,
+              "__rowNum__": 46,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(18);\nif (data(\"MASC\") == \"2\") {\nactivePromptIndicies.push(19);\n}\nif (data(\"ACCEPT\") == \"2\") {\nassign('MASC', 2);\n}\nif (data(\"GRUPO2\") == \"2\") {\nassign('MASC', 8);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 8
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 48,
+            "__rowNum__": 47,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 57,
+              "__rowNum__": 56,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(20);\nif (data(\"INTENCAO\") == \"1\") {\nactivePromptIndicies.push(21);\n}\nif (data(\"INTENCAO\") == \"2\" || data(\"INTENCAO\") == \"3\") {\nactivePromptIndicies.push(22);\n}\nactivePromptIndicies.push(23);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 9
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 51,
-            "operationIdx": 6
+            "_row_num": 58,
+            "operationIdx": 10
           },
           {
-            "_row_num": 51,
+            "_row_num": 58,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(21);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(24);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 7
+            "operationIdx": 11
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 51,
-            "operationIdx": 8
+            "_row_num": 58,
+            "operationIdx": 12
           }
         ],
         "branch_label_map": {
@@ -2456,10 +2757,14 @@
           "_screen12": 1,
           "_screen21": 2,
           "_screen24": 3,
-          "_screen29": 4,
-          "_screen41": 5,
-          "_contents": 7,
-          "_screen51": 7
+          "_then30": 6,
+          "_screen31": 6,
+          "_else35": 8,
+          "_endif35": 8,
+          "_screen36": 8,
+          "_screen48": 9,
+          "_contents": 11,
+          "_screen58": 11
         }
       },
       "initial": {
@@ -2791,6 +3096,34 @@
         "elementSet": "data",
         "elementPath": "BED"
       },
+      "TELE1": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TELE1",
+        "elementName": "TELE1",
+        "elementSet": "data",
+        "elementPath": "TELE1"
+      },
+      "TELE2": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TELE2",
+        "elementName": "TELE2",
+        "elementSet": "data",
+        "elementPath": "TELE2"
+      },
       "ESTADO": {
         "type": "integer",
         "valuesList": "VitalStatus",
@@ -2800,7 +3133,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 12,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
@@ -2823,7 +3156,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 13,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -2841,7 +3174,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 14,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -2860,7 +3193,7 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 15,
+            "_row_num": 17,
             "section_name": "model"
           }
         ],
@@ -2870,7 +3203,7 @@
         "elementSet": "data",
         "elementPath": "ACCEPT"
       },
-      "TELE1": {
+      "TELE1_VERI": {
         "type": "integer",
         "valuesList": "Phone",
         "_defn": [
@@ -2879,17 +3212,17 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 16,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "TELE1",
-        "elementName": "TELE1",
+        "elementKey": "TELE1_VERI",
+        "elementName": "TELE1_VERI",
         "elementSet": "data",
-        "elementPath": "TELE1"
+        "elementPath": "TELE1_VERI"
       },
-      "TELE2": {
+      "TELE2_VERI": {
         "type": "integer",
         "valuesList": "Phone",
         "_defn": [
@@ -2898,26 +3231,62 @@
             "section_name": "survey"
           },
           {
-            "_row_num": 17,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "TELE2",
-        "elementName": "TELE2",
+        "elementKey": "TELE2_VERI",
+        "elementName": "TELE2_VERI",
         "elementSet": "data",
-        "elementPath": "TELE2"
+        "elementPath": "TELE2_VERI"
+      },
+      "NOVONUM1": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 32,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 20,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NOVONUM1",
+        "elementName": "NOVONUM1",
+        "elementSet": "data",
+        "elementPath": "NOVONUM1"
+      },
+      "NOVONUM2": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 33,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NOVONUM2",
+        "elementName": "NOVONUM2",
+        "elementSet": "data",
+        "elementPath": "NOVONUM2"
       },
       "MASC": {
         "type": "integer",
         "valuesList": "Mask",
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 37,
             "section_name": "survey"
           },
           {
-            "_row_num": 19,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -2933,11 +3302,11 @@
         "valuesList": "person_name",
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 56,
             "section_name": "survey"
           },
           {
-            "_row_num": 20,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -2952,11 +3321,11 @@
         "valuesList": "Intension",
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 49,
             "section_name": "survey"
           },
           {
-            "_row_num": 21,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -2971,11 +3340,11 @@
         "valuesList": "MaskWhen",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 51,
             "section_name": "survey"
           },
           {
-            "_row_num": 22,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -2990,11 +3359,11 @@
         "valuesList": "NoMask",
         "_defn": [
           {
-            "_row_num": 47,
+            "_row_num": 54,
             "section_name": "survey"
           },
           {
-            "_row_num": 23,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -3008,7 +3377,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -3023,11 +3392,11 @@
         "valuesList": "persons",
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 39,
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -3036,6 +3405,25 @@
         "elementName": "id_RECEB_QUEM",
         "elementSet": "data",
         "elementPath": "id_RECEB_QUEM"
+      },
+      "newNumber": {
+        "type": "integer",
+        "valuesList": "YesNo",
+        "_defn": [
+          {
+            "_row_num": 28,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 31,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
+        "elementKey": "newNumber",
+        "elementName": "newNumber",
+        "elementSet": "data",
+        "elementPath": "newNumber"
       },
       "_id": {
         "type": "string",
@@ -3170,39 +3558,39 @@
         "_aspect": "INTENCAO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Intension\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":25},{\"choice_list_name\":\"Intension\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":26},{\"choice_list_name\":\"Intension\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Do not know yet\",\"default\":\"Ainda não sabe\"}}},\"_row_num\":27},{\"choice_list_name\":\"Intension\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":28}]"
+        "_value": "[{\"choice_list_name\":\"Intension\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":28},{\"choice_list_name\":\"Intension\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":29},{\"choice_list_name\":\"Intension\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Do not know yet\",\"default\":\"Ainda não sabe\"}}},\"_row_num\":30},{\"choice_list_name\":\"Intension\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":31}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MASC",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Mask\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":20},{\"choice_list_name\":\"Mask\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Absent, left with other household member\",\"default\":\"Ausente, foi deixada com outro/a\"}}},\"_row_num\":21},{\"choice_list_name\":\"Mask\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"Mask\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":23}]"
+        "_value": "[{\"choice_list_name\":\"Mask\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":23},{\"choice_list_name\":\"Mask\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Absent, left with other household member\",\"default\":\"Ausente, foi deixada com outro/a\"}}},\"_row_num\":24},{\"choice_list_name\":\"Mask\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":25},{\"choice_list_name\":\"Mask\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":26}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MOTIVO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"NoMask\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Note able to wear a mask\",\"default\":\"Não consegue usar máscara\"}}},\"_row_num\":34},{\"choice_list_name\":\"NoMask\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Prefer surgery mask or other mask\",\"default\":\"Prefere usar a máscara cirurgica ou outra\"}}},\"_row_num\":35},{\"choice_list_name\":\"NoMask\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Can't explain why\",\"default\":\"Não sabe explicar\"}}},\"_row_num\":36},{\"choice_list_name\":\"NoMask\",\"data_value\":4,\"display\":{\"title\":{\"text\":{\"english\":\"Other reason\",\"default\":\"Outro\"}}},\"_row_num\":37},{\"choice_list_name\":\"NoMask\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":38}]"
+        "_value": "[{\"choice_list_name\":\"NoMask\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Note able to wear a mask\",\"default\":\"Não consegue usar máscara\"}}},\"_row_num\":37},{\"choice_list_name\":\"NoMask\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Prefer surgery mask or other mask\",\"default\":\"Prefere usar a máscara cirurgica ou outra\"}}},\"_row_num\":38},{\"choice_list_name\":\"NoMask\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Can't explain why\",\"default\":\"Não sabe explicar\"}}},\"_row_num\":39},{\"choice_list_name\":\"NoMask\",\"data_value\":4,\"display\":{\"title\":{\"text\":{\"english\":\"Other reason\",\"default\":\"Outro\"}}},\"_row_num\":40},{\"choice_list_name\":\"NoMask\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":41}]"
       },
       {
         "_partition": "Column",
         "_aspect": "QUANDO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"MaskWhen\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"When leaving the house\",\"default\":\"Quando sai\"}}},\"_row_num\":30},{\"choice_list_name\":\"MaskWhen\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Often\",\"default\":\"Sempre\"}}},\"_row_num\":31},{\"choice_list_name\":\"MaskWhen\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":32}]"
+        "_value": "[{\"choice_list_name\":\"MaskWhen\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"When leaving the house\",\"default\":\"Quando sai\"}}},\"_row_num\":33},{\"choice_list_name\":\"MaskWhen\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Often\",\"default\":\"Sempre\"}}},\"_row_num\":34},{\"choice_list_name\":\"MaskWhen\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":35}]"
       },
       {
         "_partition": "Column",
-        "_aspect": "TELE1",
+        "_aspect": "TELE1_VERI",
         "_key": "displayChoicesList",
         "_type": "object",
         "_value": "[{\"choice_list_name\":\"Phone\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":14},{\"choice_list_name\":\"Phone\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":15},{\"choice_list_name\":\"Phone\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":16},{\"choice_list_name\":\"Phone\",\"data_value\":4,\"display\":{\"title\":{\"text\":{\"english\":\"Other person in the household\",\"default\":\"Outra pessoa na casa\"}}},\"_row_num\":17},{\"choice_list_name\":\"Phone\",\"data_value\":7,\"display\":{\"title\":{\"text\":{\"english\":\"Do not have a phone number\",\"default\":\"Não tem um número de telefone\"}}},\"_row_num\":18}]"
       },
       {
         "_partition": "Column",
-        "_aspect": "TELE2",
+        "_aspect": "TELE2_VERI",
         "_key": "displayChoicesList",
         "_type": "object",
         "_value": "[{\"choice_list_name\":\"Phone\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":14},{\"choice_list_name\":\"Phone\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":15},{\"choice_list_name\":\"Phone\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":16},{\"choice_list_name\":\"Phone\",\"data_value\":4,\"display\":{\"title\":{\"text\":{\"english\":\"Other person in the household\",\"default\":\"Outra pessoa na casa\"}}},\"_row_num\":17},{\"choice_list_name\":\"Phone\",\"data_value\":7,\"display\":{\"title\":{\"text\":{\"english\":\"Do not have a phone number\",\"default\":\"Não tem um número de telefone\"}}},\"_row_num\":18}]"
