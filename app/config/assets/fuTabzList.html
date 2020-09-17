@@ -13,55 +13,51 @@
         <script type="text/javascript" src="../../system/tables/js/odkTables.js"></script>
         
         <script type="text/javascript" src="js/util.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/fuTabzList.js"></script>
         <style>
         .form-group {
             margin:30px 0;
         }
-        .btnInc {
-            background-color: darkseagreen;
-            color: white;
-            font-size: 25px;
-            border-radius: 4px;
-            display: inline-block;
-            border: none;
-            margin: 0;
+        ul {
+            list-style:none;
         }
-        .btnFU {
-            background-color: lightseagreen;
-            color: white;
-            font-size: 25px;
-            border-radius: 4px;
-            display: inline-block;
+        button {
+            text-align:left;
+            font-size: x-large;
+            margin:15px;
+            height:auto;
+            width:90%;
             border: none;
-            margin: 0;
+            border-radius: 4px;
+            color: white; 
         }
-        .btnSync {
-            background-color: purple;
-            color: white;
-            font-size: 25px;
-            border-radius: 4px;
-            display: inline-block;
-            border: none;
-            margin-top: 0;
+        .btn1 {
+            background-color: #045815;
+        }
+        .btn2 {
+            background-color: #0B823C;
+        }
+        .btn3 {
+            background-color: #17A871;
+        }
+        .btn4 {
+            background-color: #41B56E;
+        }
+        .btn7 {
+            background-color: #6AC378;
+        }
+        .btn9 {
+            background-color: #98D293;
         }
         </style>
     </head>
 
     <body onload="display();">
+
         <div id="main" class="container" style="height: 100vh;">
-            <h1>Estudo de máscara</h1>
-            <div id="wrapper">
-                <div class="form-group">
-                    <button id="btnInc" class="btnInc">Inclusão</button> 
-                </div>
-                <div class="form-group">
-                    <button id="btnFU" class="btnFU">Seguimento</button> 
-                </div>
-                <hr/>
-                <div class="form-group">
-                    <button id="btnSync" class="btnSync">Sincronizar</button>
-                </div>
+            <div class="form-group">
+                <ul id="li">            
+                </ul>
             </div>
         </div>
     </body>

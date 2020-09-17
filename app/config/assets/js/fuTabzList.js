@@ -128,7 +128,7 @@ function initButtons() {
         var btn = ul.find('#' + this.tabz);
         btn.on("click", function() {
             var queryParams = util.setQuerystringParams(date, that.bairro, that.tabz, that.zone);
-            odkTables.launchHTML(null, 'config/assets/houseGroupList.html' + queryParams);
+            odkTables.launchHTML(null, 'config/assets/fuHouseGroupList.html' + queryParams);
         })        
     });
 }
