@@ -252,17 +252,11 @@ var adate = promptTypes.input_type.extend({
     }
 });
 
-var custom_date = promptTypes.datetime.extend({
-    type: "date",
-    showTime: false,
-    timeTemplate: "DD / MM / YYYY"
-});
-
 var async_assign = promptTypes.base.extend({
     type: "async_assign",
     debug: false,
     valid: true,
-    templatePath: '../config/tables/MIF/forms/MIF/templates/async_assign.handlebars',
+    templatePath: '../config/assets/templates/adate.handlebars',
     _cachedSelection: null,
     getLinkedTableId: function() {
         var queryDefn = opendatakit.getQueriesDefinition(this.values_list);
@@ -300,9 +294,9 @@ var async_assign = promptTypes.base.extend({
     },
     getFormPath: function() {
         if ( this.getLinkedFormId() === "framework" ) {
-            return '../config/assets/framework/forms/framework/';
+            return '../config/assets/framework/forms/framework/'; 
         } else {
-            return '../config/tables/' + this.getLinkedTableId() + '/forms/' + this.getLinkedFormId() + '/';
+            return '../config/tables/' + this.getLinkedTableId() + '/forms/' + this.getLinkedFormId() + '/'; 
         }
     },
     convertSelection: function(linkedMdl) {
@@ -337,7 +331,7 @@ var async_assign = promptTypes.base.extend({
                 that._linkedCachedInstanceName = null;
             }
             database.readTableDefinition($.extend({}, ctxt, {success:function(tlo) {
-                ctxt.log('D',"prompts." + that.type +
+                ctxt.log('D',"prompts." + that.type + 
                     'getLinkedMdl.readTableDefinition.success', "px: " + that.promptIdx );
                 that._linkedCachedMdl = tlo;
                 ctxt.success(tlo);
@@ -369,7 +363,7 @@ var async_assign = promptTypes.base.extend({
                 valueList = _.filter(valueList, function(value) {
                     return value !== null && value !== undefined;
                 });
-
+                
                 var aggValue;
                 if ( valueList.length === 0 ) {
                     // set aggValue to null
@@ -392,8 +386,10 @@ var async_assign = promptTypes.base.extend({
                         aggValue = sum;
                     } else if ( that.type === "async_assign_count" ) {
                         aggValue = valueList.length;
-} else if (that.type === "async_assign_num_value" || that.type === "async_assign_text_value" || that.type === "async_assign_date") {
-                        aggValue = _.last(valueList);
+                    } else if ( that.type === "async_assign_single_string") {
+                        if (valueList.length === 1) {
+                            aggValue = valueList[0];
+                        }
                     } else {
                         ctxt.log('E',"prompts." + that.type + ".configureRenderContext.unrecognizedPromptType", "px: " + that.promptIdx);
                         aggValue = null;
@@ -404,7 +400,7 @@ var async_assign = promptTypes.base.extend({
                 that.renderContext.type = that.type;
                 that.renderContext.valueList = JSON.stringify(valueList);
                 that.renderContext.aggValue = (aggValue === null) ? "null" : ((aggValue === undefined) ? "undefined" : aggValue);
-
+                
                 ctxt.log('D',"prompts." + that.type + ".configureRenderContext.success.get_linked_instances.success", "px: " + that.promptIdx + " instanceList: " + instanceList.length);
                 ctxt.success();
             }}), dbTableName, selString, selArgs, displayElementName, null);
@@ -414,41 +410,32 @@ var async_assign = promptTypes.base.extend({
 return {
 	"adate" : adate,
 	"async_assign" : async_assign,
-	"custom_date" : custom_date,
-	"async_assign_num_value" : async_assign.extend({
-	    type: "async_assign_num_value",
-		datatype: "number"
-	}),
-	"async_assign_text_value" : async_assign.extend({
-	    type: "async_assign_text_value",
-		datatype: "string"
-	}),
 	"async_assign_max" : async_assign.extend({
-	    type: "async_assign_max",
-	    datatype: "number"
-	}),
-	"async_assign_min" : async_assign.extend({
-	    type: "async_assign_min",
-	    datatype: "number"
-	}),
-	"async_assign_avg" : async_assign.extend({
-	    type: "async_assign_avg",
-	    datatype: "number"
-	}),
-	"async_assign_sum" : async_assign.extend({
-	    type: "async_assign_sum",
-	    datatype: "number"
-	}),
-	"async_assign_total" : async_assign.extend({
-	    type: "async_assign_total",
-	    datatype: "number"
-	}),
-	"async_assign_count" : async_assign.extend({
-	    type: "async_assign_count",
-	    datatype: "integer"
-	}),
-	"async_assign_date" : async_assign.extend({
-	    type: "async_assign_date",
-	    datatype: "date"
-	})
+        type: "async_assign_max",
+        datatype: "number"
+    }),
+    "async_assign_min" : async_assign.extend({
+        type: "async_assign_min",
+        datatype: "number"
+    }),
+    "async_assign_avg" : async_assign.extend({
+        type: "async_assign_avg",
+        datatype: "number"
+    }),
+    "async_assign_sum" : async_assign.extend({
+        type: "async_assign_sum",
+        datatype: "number"
+    }),
+    "async_assign_total" : async_assign.extend({
+        type: "async_assign_total",
+        datatype: "number"
+    }),
+    "async_assign_count" : async_assign.extend({
+        type: "async_assign_count",
+        datatype: "integer"
+    }),
+    "async_assign_single_string" : async_assign.extend({
+        type: "async_assign_single_string",
+        datatype: "sting"
+    })
 	}});

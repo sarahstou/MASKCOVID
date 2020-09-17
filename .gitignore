@@ -6,3 +6,4 @@ tempZipDir
 .idea/*
 app/output/*
 ~*.xlsx*
+*.db

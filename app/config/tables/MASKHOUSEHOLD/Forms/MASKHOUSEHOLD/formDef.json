@@ -116,32 +116,20 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "name of family",
-              "default": "name of family"
+              "english": "grupo de estudio",
+              "default": "grupo de estudio"
             }
           }
         },
         "_row_num": 7
       },
       {
-        "type": "note",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "grupo de estudio",
-              "default": "grupo de estudio"
-            }
-          }
-        },
+        "clause": "end screen",
         "_row_num": 8
       },
       {
-        "clause": "end screen",
-        "_row_num": 9
-      },
-      {
         "clause": "begin screen",
-        "_row_num": 10
+        "_row_num": 9
       },
       {
         "type": "adate",
@@ -154,7 +142,7 @@
             }
           }
         },
-        "_row_num": 11
+        "_row_num": 10
       },
       {
         "type": "select_one_with_other",
@@ -168,15 +156,15 @@
             }
           }
         },
-        "_row_num": 12
+        "_row_num": 11
       },
       {
         "clause": "end screen",
-        "_row_num": 13
+        "_row_num": 12
       },
       {
         "clause": "begin screen",
-        "_row_num": 14
+        "_row_num": 13
       },
       {
         "type": "select_one",
@@ -190,7 +178,7 @@
             }
           }
         },
-        "_row_num": 15
+        "_row_num": 14
       },
       {
         "type": "select_one",
@@ -204,7 +192,7 @@
             }
           }
         },
-        "_row_num": 16
+        "_row_num": 15
       },
       {
         "type": "select_one",
@@ -218,7 +206,7 @@
             }
           }
         },
-        "_row_num": 17
+        "_row_num": 16
       },
       {
         "type": "select_one",
@@ -232,7 +220,7 @@
             }
           }
         },
-        "_row_num": 18
+        "_row_num": 17
       },
       {
         "type": "select_one",
@@ -246,31 +234,34 @@
             }
           }
         },
-        "_row_num": 19
+        "_row_num": 18
       },
       {
         "clause": "end screen",
-        "_row_num": 20
+        "_row_num": 19
       },
       {
         "clause": "begin screen",
-        "_row_num": 21
+        "_row_num": 20
       },
       {
-        "type": "note",
+        "type": "linked_table",
+        "values_list": "persons",
         "display": {
           "prompt": {
             "text": {
               "english": "linked table",
               "default": "linked table"
             }
-          }
+          },
+          "hide_delete_button": true,
+          "hide_add_instance": true
         },
-        "_row_num": 22
+        "_row_num": 21
       },
       {
         "clause": "end screen",
-        "_row_num": 23
+        "_row_num": 22
       }
     ],
     "choices": [
@@ -559,6 +550,107 @@
           }
         },
         "_row_num": 27
+      }
+    ],
+    "queries": [
+      {
+        "query_name": "persons",
+        "query_type": "linked_table",
+        "linked_form_id": "MASKINCL",
+        "linked_table_id": "MASKINCL",
+        "selection": "HHOID = ?",
+        "selectionArgs": "[data('HHOID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "_row_num": 2
+      }
+    ],
+    "model": [
+      {
+        "name": "BAIRRO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 2
+      },
+      {
+        "name": "TABZ",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 3
+      },
+      {
+        "name": "CAMO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 4
+      },
+      {
+        "name": "FAM",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 5
+      },
+      {
+        "name": "HOUSEGRP",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 6
+      },
+      {
+        "name": "RANGROUP",
+        "type": "integer",
+        "isSessionVariable": false,
+        "comment": "Randomization variable",
+        "_row_num": 7
+      },
+      {
+        "name": "DATEX",
+        "type": "adate",
+        "isSessionVariable": false,
+        "_row_num": 9
+      },
+      {
+        "name": "PREENCHIDO",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 10
+      },
+      {
+        "name": "COBERTURA",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 12
+      },
+      {
+        "name": "VARANDA",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 13
+      },
+      {
+        "name": "TECTO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 14
+      },
+      {
+        "name": "FONTE",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 15
+      },
+      {
+        "name": "INFO_COVID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 16
+      },
+      {
+        "name": "HHOID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "comment": "Other variables",
+        "_row_num": 18
       }
     ],
     "prompt_types": [
@@ -993,87 +1085,215 @@
     "table_specific_definitions": {
       "_tokens": {}
     },
-    "queries": {},
+    "queries": {
+      "persons": {
+        "query_name": "persons",
+        "query_type": "linked_table",
+        "linked_form_id": "MASKINCL",
+        "linked_table_id": "MASKINCL",
+        "selection": "HHOID = ?",
+        "selectionArgs": "[data('HHOID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "_row_num": 2
+      }
+    },
     "calculates": {},
     "model": {
-      "DATEX": {
+      "BAIRRO": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 11,
-            "section_name": "survey"
+            "_row_num": 2,
+            "section_name": "model"
           }
         ],
+        "isSessionVariable": false,
+        "elementKey": "BAIRRO"
+      },
+      "TABZ": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TABZ"
+      },
+      "CAMO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CAMO"
+      },
+      "FAM": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "FAM"
+      },
+      "HOUSEGRP": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "HOUSEGRP"
+      },
+      "RANGROUP": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "Randomization variable",
+        "elementKey": "RANGROUP"
+      },
+      "DATEX": {
         "prompt_type_name": "adate",
         "type": "string",
         "elementType": "string",
         "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "DATEX"
       },
       "PREENCHIDO": {
-        "_defn": [
-          {
-            "_row_num": 12,
-            "section_name": "survey"
-          }
-        ],
         "type": "string",
         "valuesList": "Assistant",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "PREENCHIDO"
       },
       "COBERTURA": {
+        "type": "integer",
+        "valuesList": "Roof",
+        "_defn": [
+          {
+            "_row_num": 14,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "COBERTURA"
+      },
+      "VARANDA": {
+        "type": "integer",
+        "valuesList": "Veranda",
         "_defn": [
           {
             "_row_num": 15,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "Roof",
-        "elementKey": "COBERTURA"
+        "isSessionVariable": false,
+        "elementKey": "VARANDA"
       },
-      "VARANDA": {
+      "TECTO": {
+        "type": "integer",
+        "valuesList": "YesNo",
         "_defn": [
           {
             "_row_num": 16,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "Veranda",
-        "elementKey": "VARANDA"
+        "isSessionVariable": false,
+        "elementKey": "TECTO"
       },
-      "TECTO": {
+      "FONTE": {
+        "type": "integer",
+        "valuesList": "Water",
         "_defn": [
           {
             "_row_num": 17,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNo",
-        "elementKey": "TECTO"
+        "isSessionVariable": false,
+        "elementKey": "FONTE"
       },
-      "FONTE": {
+      "INFO_COVID": {
+        "type": "integer",
+        "valuesList": "YesNo",
         "_defn": [
           {
             "_row_num": 18,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "Water",
-        "elementKey": "FONTE"
+        "isSessionVariable": false,
+        "elementKey": "INFO_COVID"
       },
-      "INFO_COVID": {
+      "HHOID": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 19,
-            "section_name": "survey"
+            "_row_num": 18,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNo",
-        "elementKey": "INFO_COVID"
+        "isSessionVariable": false,
+        "comment": "Other variables",
+        "elementKey": "HHOID"
       }
     },
     "section_names": [
@@ -1159,8 +1379,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "name of family",
-                  "default": "name of family"
+                  "english": "grupo de estudio",
+                  "default": "grupo de estudio"
                 }
               }
             },
@@ -1170,23 +1390,6 @@
             "_type": "note",
             "_branch_label_enclosing_screen": "survey/_screen2",
             "promptIdx": 4
-          },
-          {
-            "type": "note",
-            "display": {
-              "prompt": {
-                "text": {
-                  "english": "grupo de estudio",
-                  "default": "grupo de estudio"
-                }
-              }
-            },
-            "_row_num": 8,
-            "__rowNum__": 7,
-            "_token_type": "prompt",
-            "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 5
           },
           {
             "type": "adate",
@@ -1199,12 +1402,12 @@
                 }
               }
             },
-            "_row_num": 11,
-            "__rowNum__": 10,
+            "_row_num": 10,
+            "__rowNum__": 9,
             "_token_type": "prompt",
             "_type": "adate",
-            "_branch_label_enclosing_screen": "survey/_screen10",
-            "promptIdx": 6
+            "_branch_label_enclosing_screen": "survey/_screen9",
+            "promptIdx": 5
           },
           {
             "type": "select_one_with_other",
@@ -1218,12 +1421,12 @@
                 }
               }
             },
-            "_row_num": 12,
-            "__rowNum__": 11,
+            "_row_num": 11,
+            "__rowNum__": 10,
             "_token_type": "prompt",
             "_type": "select_one_with_other",
-            "_branch_label_enclosing_screen": "survey/_screen10",
-            "promptIdx": 7
+            "_branch_label_enclosing_screen": "survey/_screen9",
+            "promptIdx": 6
           },
           {
             "type": "select_one",
@@ -1237,12 +1440,12 @@
                 }
               }
             },
-            "_row_num": 15,
-            "__rowNum__": 14,
+            "_row_num": 14,
+            "__rowNum__": 13,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen14",
-            "promptIdx": 8
+            "_branch_label_enclosing_screen": "survey/_screen13",
+            "promptIdx": 7
           },
           {
             "type": "select_one",
@@ -1256,12 +1459,12 @@
                 }
               }
             },
-            "_row_num": 16,
-            "__rowNum__": 15,
+            "_row_num": 15,
+            "__rowNum__": 14,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen14",
-            "promptIdx": 9
+            "_branch_label_enclosing_screen": "survey/_screen13",
+            "promptIdx": 8
           },
           {
             "type": "select_one",
@@ -1275,12 +1478,12 @@
                 }
               }
             },
-            "_row_num": 17,
-            "__rowNum__": 16,
+            "_row_num": 16,
+            "__rowNum__": 15,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen14",
-            "promptIdx": 10
+            "_branch_label_enclosing_screen": "survey/_screen13",
+            "promptIdx": 9
           },
           {
             "type": "select_one",
@@ -1294,12 +1497,12 @@
                 }
               }
             },
-            "_row_num": 18,
-            "__rowNum__": 17,
+            "_row_num": 17,
+            "__rowNum__": 16,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen14",
-            "promptIdx": 11
+            "_branch_label_enclosing_screen": "survey/_screen13",
+            "promptIdx": 10
           },
           {
             "type": "select_one",
@@ -1313,37 +1516,40 @@
                 }
               }
             },
-            "_row_num": 19,
-            "__rowNum__": 18,
+            "_row_num": 18,
+            "__rowNum__": 17,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen14",
-            "promptIdx": 12
+            "_branch_label_enclosing_screen": "survey/_screen13",
+            "promptIdx": 11
           },
           {
-            "type": "note",
+            "type": "linked_table",
+            "values_list": "persons",
             "display": {
               "prompt": {
                 "text": {
                   "english": "linked table",
                   "default": "linked table"
                 }
-              }
+              },
+              "hide_delete_button": true,
+              "hide_add_instance": true
             },
-            "_row_num": 22,
-            "__rowNum__": 21,
+            "_row_num": 21,
+            "__rowNum__": 20,
             "_token_type": "prompt",
-            "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen21",
-            "promptIdx": 13
+            "_type": "linked_table",
+            "_branch_label_enclosing_screen": "survey/_screen20",
+            "promptIdx": 12
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 24,
-            "_branch_label_enclosing_screen": "survey/_screen24",
-            "promptIdx": 14
+            "_row_num": 23,
+            "_branch_label_enclosing_screen": "survey/_screen23",
+            "promptIdx": 13
           }
         ],
         "validation_tag_map": {
@@ -1357,65 +1563,65 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 9,
-              "__rowNum__": 8,
+              "_row_num": 8,
+              "__rowNum__": 7,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 0
           },
           {
             "clause": "begin screen",
-            "_row_num": 10,
-            "__rowNum__": 9,
+            "_row_num": 9,
+            "__rowNum__": 8,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 13,
-              "__rowNum__": 12,
+              "_row_num": 12,
+              "__rowNum__": 11,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 1
           },
           {
             "clause": "begin screen",
-            "_row_num": 14,
-            "__rowNum__": 13,
+            "_row_num": 13,
+            "__rowNum__": 12,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 20,
-              "__rowNum__": 19,
+              "_row_num": 19,
+              "__rowNum__": 18,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 2
           },
           {
             "clause": "begin screen",
-            "_row_num": 21,
-            "__rowNum__": 20,
+            "_row_num": 20,
+            "__rowNum__": 19,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 23,
-              "__rowNum__": 22,
+              "_row_num": 22,
+              "__rowNum__": 21,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(13);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(12);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 3
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 24,
+            "_row_num": 23,
             "operationIdx": 4
           },
           {
-            "_row_num": 24,
+            "_row_num": 23,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(14);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(13);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
@@ -1424,17 +1630,17 @@
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 24,
+            "_row_num": 23,
             "operationIdx": 6
           }
         ],
         "branch_label_map": {
           "_screen2": 0,
-          "_screen10": 1,
-          "_screen14": 2,
-          "_screen21": 3,
+          "_screen9": 1,
+          "_screen13": 2,
+          "_screen20": 3,
           "_contents": 5,
-          "_screen24": 5
+          "_screen23": 5
         }
       },
       "initial": {
@@ -1619,105 +1825,242 @@
       }
     },
     "dataTableModel": {
-      "DATEX": {
+      "BAIRRO": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 11,
-            "section_name": "survey"
+            "_row_num": 2,
+            "section_name": "model"
           }
         ],
+        "isSessionVariable": false,
+        "elementKey": "BAIRRO",
+        "elementName": "BAIRRO",
+        "elementSet": "data",
+        "elementPath": "BAIRRO"
+      },
+      "TABZ": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 3,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TABZ",
+        "elementName": "TABZ",
+        "elementSet": "data",
+        "elementPath": "TABZ"
+      },
+      "CAMO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 4,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CAMO",
+        "elementName": "CAMO",
+        "elementSet": "data",
+        "elementPath": "CAMO"
+      },
+      "FAM": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "FAM",
+        "elementName": "FAM",
+        "elementSet": "data",
+        "elementPath": "FAM"
+      },
+      "HOUSEGRP": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 6,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "HOUSEGRP",
+        "elementName": "HOUSEGRP",
+        "elementSet": "data",
+        "elementPath": "HOUSEGRP"
+      },
+      "RANGROUP": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 7,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "Randomization variable",
+        "elementKey": "RANGROUP",
+        "elementName": "RANGROUP",
+        "elementSet": "data",
+        "elementPath": "RANGROUP"
+      },
+      "DATEX": {
         "prompt_type_name": "adate",
         "type": "string",
         "elementType": "string",
         "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "DATEX",
         "elementName": "DATEX",
         "elementSet": "data",
         "elementPath": "DATEX"
       },
       "PREENCHIDO": {
-        "_defn": [
-          {
-            "_row_num": 12,
-            "section_name": "survey"
-          }
-        ],
         "type": "string",
         "valuesList": "Assistant",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "PREENCHIDO",
         "elementName": "PREENCHIDO",
         "elementSet": "data",
         "elementPath": "PREENCHIDO"
       },
       "COBERTURA": {
+        "type": "integer",
+        "valuesList": "Roof",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 14,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 12,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "Roof",
+        "isSessionVariable": false,
         "elementKey": "COBERTURA",
         "elementName": "COBERTURA",
         "elementSet": "data",
         "elementPath": "COBERTURA"
       },
       "VARANDA": {
+        "type": "integer",
+        "valuesList": "Veranda",
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 15,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 13,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "Veranda",
+        "isSessionVariable": false,
         "elementKey": "VARANDA",
         "elementName": "VARANDA",
         "elementSet": "data",
         "elementPath": "VARANDA"
       },
       "TECTO": {
+        "type": "integer",
+        "valuesList": "YesNo",
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 16,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 14,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNo",
+        "isSessionVariable": false,
         "elementKey": "TECTO",
         "elementName": "TECTO",
         "elementSet": "data",
         "elementPath": "TECTO"
       },
       "FONTE": {
+        "type": "integer",
+        "valuesList": "Water",
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 17,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 15,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "Water",
+        "isSessionVariable": false,
         "elementKey": "FONTE",
         "elementName": "FONTE",
         "elementSet": "data",
         "elementPath": "FONTE"
       },
       "INFO_COVID": {
+        "type": "integer",
+        "valuesList": "YesNo",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 18,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 16,
+            "section_name": "model"
           }
         ],
-        "type": "string",
-        "valuesList": "YesNo",
+        "isSessionVariable": false,
         "elementKey": "INFO_COVID",
         "elementName": "INFO_COVID",
         "elementSet": "data",
         "elementPath": "INFO_COVID"
+      },
+      "HHOID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 18,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "Other variables",
+        "elementKey": "HHOID",
+        "elementName": "HHOID",
+        "elementSet": "data",
+        "elementPath": "HHOID"
       },
       "_id": {
         "type": "string",
