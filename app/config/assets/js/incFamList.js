@@ -3,10 +3,9 @@
  */
 'use strict';
 
-var participants, masterFamList, date, bairro, tabz, zone, houseGroup, camo;
+var participants, masterFamList, bairro, tabz, zone, houseGroup, camo;
 function display() {
     console.log("TABZ list loading");
-    date = util.getQueryParameter('date');
     bairro = util.getQueryParameter('bairro');
     tabz = util.getQueryParameter('tabz');
     zone = util.getQueryParameter('zone');
@@ -37,7 +36,7 @@ function getMasterList(data) {
     for (var row = 1; row < allRows.length; row++) {  // start at row = 1 to skip header
             allRows[row] = allRows[row].replace(/"/g,""); // remove quotes from strings
             var rowValues = allRows[row].split(",");
-            var p = {bairro: rowValues[0], tabz: rowValues[1], zone: rowValues[2], houseGroup: rowValues[3], camo: rowValues[4], fam: rowValues[5], famName: titleCase(rowValues[6])};
+            var p = {bairro: rowValues[0], tabz: rowValues[1], zone: rowValues[2], houseGroup: rowValues[3], camo: rowValues[4], fam: rowValues[5], famName: titleCase(rowValues[6]), hhoid: rowValues[7]};
             masterFamList.push(p);
     }
 }
@@ -66,25 +65,7 @@ function getList() {
             var TABZ = result.getData(row,"TABZ");
             var TESTERESUL = result.getData(row,"TESTERESUL");
 
-            // generate follow-up date (28 days after last interview with succes follow up)
-            if (FU == 1 & (COVID == null | CALLBACK == "1" | TESTERESUL == "3")) {
-                var incD = Number(DATINC.slice(2, DATINC.search("M")-1));
-                var incM = DATINC.slice(DATINC.search("M")+2, DATINC.search("Y")-1);
-                var incY = DATINC.slice(DATINC.search("Y")+2);
-                var FUDate = new Date(incY, incM-1, incD + 28);
-            } else if (COVID == null | CALLBACK == "1" | TESTERESUL == "3") {
-                var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
-                var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
-                var segY = DATSEG.slice(DATSEG.search("Y")+2);
-                var FUDate = new Date(segY, segM-1, segD);
-            } else {
-                var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
-                var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
-                var segY = DATSEG.slice(DATSEG.search("Y")+2);
-                var FUDate = new Date(segY, segM-1, segD + 28);
-            }   
-
-            var p = { type: 'person', savepoint, BAIRRO, CALLBACK, COVID, DATINC, DATSEG, ESTADO, FU, FUDate, LASTINTERVIEW, POID, TABZ, TESTERESUL};
+            var p = { type: 'person', savepoint, BAIRRO, CALLBACK, COVID, DATINC, DATSEG, ESTADO, FU, LASTINTERVIEW, POID, TABZ, TESTERESUL};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -118,7 +99,8 @@ function initButtons() {
                     houseGroup: item.houseGroup,
                     camo: item.camo,
                     fam: item.fam,
-                    famName: item.famName
+                    famName: item.famName,
+                    hhoid: item.hhoid
                 });
             }
         }
@@ -132,7 +114,7 @@ function initButtons() {
         // Buttons
         var btn = ul.find('#' + this.fam);
         btn.on("click", function() {
-            var queryParams = util.setQuerystringParams(date, that.bairro, that.tabz, that.zone, that.houseGroup, that.camo, that.fam, that.famName);
+            var queryParams = util.setQuerystringParams(null, that.bairro, that.tabz, that.zone, that.houseGroup, that.camo, that.fam, that.famName, that.hhoid);
             odkTables.launchHTML(null, 'config/assets/incList.html' + queryParams);
         })        
     });

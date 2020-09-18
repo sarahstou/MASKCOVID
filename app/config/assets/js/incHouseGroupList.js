@@ -3,10 +3,9 @@
  */
 'use strict';
 
-var participants, masterFamList, date, bairro, tabz, zone;
+var participants, masterFamList, bairro, tabz, zone;
 function display() {
     console.log("TABZ list loading");
-    date = util.getQueryParameter('date');
     bairro = util.getQueryParameter('bairro');
     tabz = util.getQueryParameter('tabz');
     zone = util.getQueryParameter('zone');
@@ -64,25 +63,7 @@ function getList() {
             var TABZ = result.getData(row,"TABZ");
             var TESTERESUL = result.getData(row,"TESTERESUL");
 
-            // generate follow-up date (28 days after last interview with succes follow up)
-            if (FU == 1 & (COVID == null | CALLBACK == "1" | TESTERESUL == "3")) {
-                var incD = Number(DATINC.slice(2, DATINC.search("M")-1));
-                var incM = DATINC.slice(DATINC.search("M")+2, DATINC.search("Y")-1);
-                var incY = DATINC.slice(DATINC.search("Y")+2);
-                var FUDate = new Date(incY, incM-1, incD + 28);
-            } else if (COVID == null | CALLBACK == "1" | TESTERESUL == "3") {
-                var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
-                var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
-                var segY = DATSEG.slice(DATSEG.search("Y")+2);
-                var FUDate = new Date(segY, segM-1, segD);
-            } else {
-                var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
-                var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
-                var segY = DATSEG.slice(DATSEG.search("Y")+2);
-                var FUDate = new Date(segY, segM-1, segD + 28);
-            }   
-
-            var p = { type: 'person', savepoint, BAIRRO, CALLBACK, COVID, DATINC, DATSEG, ESTADO, FU, FUDate, LASTINTERVIEW, POID, TABZ, TESTERESUL};
+            var p = { type: 'person', savepoint, BAIRRO, CALLBACK, COVID, DATINC, DATSEG, ESTADO, FU, LASTINTERVIEW, POID, TABZ, TESTERESUL};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -129,8 +110,8 @@ function initButtons() {
         // Buttons
         var btn = ul.find('#' + this.houseGroup);
         btn.on("click", function() {
-            var queryParams = util.setQuerystringParams(date, that.bairro, that.tabz, that.zone, that.houseGroup);
-            odkTables.launchHTML(null, 'config/assets/fuCamoList.html' + queryParams);
+            var queryParams = util.setQuerystringParams(null, that.bairro, that.tabz, that.zone, that.houseGroup);
+            odkTables.launchHTML(null, 'config/assets/incCamoList.html' + queryParams);
         })        
     });
 }

@@ -130,7 +130,7 @@ function initButtons() {
         var btn = ul.find('#' + this.houseGroup);
         btn.on("click", function() {
             var queryParams = util.setQuerystringParams(date, that.bairro, that.tabz, that.zone, that.houseGroup);
-            odkTables.launchHTML(null, 'config/assets/incCamoList.html' + queryParams);
+            odkTables.launchHTML(null, 'config/assets/fuCamoList.html' + queryParams);
         })        
     });
 }
