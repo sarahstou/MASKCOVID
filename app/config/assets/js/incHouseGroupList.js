@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var participants, masterFamList, bairro, tabz, zone;
+var households, masterFamList, bairro, tabz, zone;
 function display() {
     console.log("TABZ list loading");
     bairro = util.getQueryParameter('bairro');
@@ -40,43 +40,37 @@ function getMasterList(data) {
 }
 
 function getList() {
-    // SQL to get participants
-    var sql = "SELECT _savepoint_type " + 
-        " FROM MASKCOVID "; 
-    participants = [];
-    console.log("Querying database for participants...");
+    // SQL to get households
+    var varNames = "_savepoint_type, HOUSEGRP, TABZ, VISITA";
+    var sql = "SELECT " + varNames +
+        " FROM MASKHOUSEHOLD " + 
+        " WHERE TABZ = " + tabz
+    households = [];
+    console.log("Querying database for households...");
     console.log(sql);
     var successFn = function( result ) {
-        console.log("Found " + result.getCount() + " participants");
+        console.log("Found " + result.getCount() + " households");
         for (var row = 0; row < result.getCount(); row++) {
             var savepoint = result.getData(row,"_savepoint_type");
 
-            var BAIRRO = result.getData(row,"BAIRRO");
-            var CALLBACK = result.getData(row,"CALLBACK");
-            var COVID = result.getData(row,"COVID");
-            var DATINC = result.getData(row,"DATINC");
-            var DATSEG = result.getData(row,"DATSEG");
-            var ESTADO = result.getData(row,"ESTADO");
-            var FU = result.getData(row,"FU");
-            var LASTINTERVIEW = result.getData(row,"LASTINTERVIEW");
-            var POID = result.getData(row,"POID");
+            var HOUSEGRP = result.getData(row,"HOUSEGRP");
             var TABZ = result.getData(row,"TABZ");
-            var TESTERESUL = result.getData(row,"TESTERESUL");
+            var VISITA = result.getData(row,"VISITA")
 
-            var p = { type: 'person', savepoint, BAIRRO, CALLBACK, COVID, DATINC, DATSEG, ESTADO, FU, LASTINTERVIEW, POID, TABZ, TESTERESUL};
-            participants.push(p);
+            var p = { type: 'household', savepoint, HOUSEGRP, TABZ, VISITA};
+            households.push(p);
         }
-        console.log("Participants:", participants)
+        console.log("households:", households)
         initButtons();
         return;
     }
     var failureFn = function( errorMsg ) {
-        console.error('Failed to get participants from database: ' + errorMsg);
+        console.error('Failed to get households from database: ' + errorMsg);
         console.error('Trying to execute the following SQL:');
         console.error(sql);
         alert("Program error Unable to look up persons.");
     }
-    odkData.arbitraryQuery('MASKCOVID', sql, null, null, null, successFn, failureFn);
+    odkData.arbitraryQuery('MASKHOUSEHOLD', sql, null, null, null, successFn, failureFn);
 }
 
 function initButtons() {
@@ -116,24 +110,12 @@ function initButtons() {
     });
 }
 
-
-function getCount(houseGroup) { 
-    // only for test
-    return "(X/X)"
-}
-
-
-/* disabled while testing
-function getCount(tabz) {
-    var today = new Date(date);
-    var todayAdate = "D:" + today.getDate() + ",M:" + (Number(today.getMonth()) + 1) + ",Y:" + today.getFullYear();
-
-    var total = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & (person.FUDate <= today & ((person.ESTADO != "2" & person.ESTADO != "3") | person.CALLBACK == "1" | person.TESTERESUL == "3") | person.DATSEG == todayAdate)).length;
-    var checked = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.DATSEG == todayAdate & person.savepoint == "COMPLETE").length;
-    var count = "(" + checked + "/" + total + ")";
+function getCount(houseGroup) {
+    var total = households.filter(household => household.TABZ == tabz & household.HOUSEGRP == houseGroup).length;
+    var visited = households.filter(household => household.TABZ == tabz & household.HOUSEGRP == houseGroup & household.VISITA != null & household.savepoint == "COMPLETE").length;
+    var count = "(" + visited + "/" + total + ")";
     return count;
 }
-*/
 
 function titleCase(str) {
     if (!str) return str;

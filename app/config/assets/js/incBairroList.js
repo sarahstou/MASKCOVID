@@ -2,7 +2,7 @@
  * Responsible for rendering the select region screen 
  */
 'use strict';
-var participants, masterFamList;
+var households, masterFamList;
 function display() {
     
     doSanityCheck();
@@ -14,55 +14,36 @@ function doSanityCheck() {
     console.log(odkData);
 }
 
-// Get tabz from CSV
-$.ajax({
-    url: 'masterFamList.csv',
-    dataType: 'text',
-}).done(getMasterList);
-
-function getMasterList(data) {
-    masterFamList = [];
-    var allRows = data.split(/\r?\n|\r/);
-    for (var row = 1; row < allRows.length; row++) {  // start at row = 1 to skip header
-            allRows[row] = allRows[row].replace(/"/g,""); // remove quotes from strings
-            var rowValues = allRows[row].split(",");
-            var p = {bairro: rowValues[0], tabz: rowValues[1], zone: rowValues[2], houseGroup: rowValues[3], camo: rowValues[4], fam: rowValues[5], famName: rowValues[6]};
-            masterFamList.push(p);
-    }
-}
-
-
 function getList() {
-    // SQL to get children
-    var varNames = "_savepoint_type, BAIRRO, HHOID, MASC";
+    // SQL to get households
+    var varNames = "_savepoint_type, BAIRRO, VISITA";
     var sql = "SELECT " + varNames +
-        " FROM MASKINCL"
-    participants = [];
-    console.log("Querying database for participants...");
+        " FROM MASKHOUSEHOLD"
+    households = [];
+    console.log("Querying database for households...");
     console.log(sql);
     var successFn = function( result ) {
-        console.log("Found " + result.getCount() + " participants");
+        console.log("Found " + result.getCount() + " households");
         for (var row = 0; row < result.getCount(); row++) {
             var savepoint = result.getData(row,"_savepoint_type");
 
             var BAIRRO = result.getData(row,"BAIRRO");
-            var HHOID = result.getData(row,"HHOID");
-            var MASC = result.getData(row,"MASC");
+            var VISITA = result.getData(row,"VISITA")
 
-            var p = { type: 'person', savepoint, BAIRRO, HHOID, MASC};
-            participants.push(p);
+            var p = { type: 'household', savepoint, BAIRRO, VISITA};
+            households.push(p);
         }
-        console.log("Participants:", participants)
+        console.log("households:", households)
         initButtons();
         return;
     }
     var failureFn = function( errorMsg ) {
-        console.error('Failed to get participants from database: ' + errorMsg);
+        console.error('Failed to get households from database: ' + errorMsg);
         console.error('Trying to execute the following SQL:');
         console.error(sql);
         alert("Program error Unable to look up persons.");
     }
-    odkData.arbitraryQuery('MASKINCL', sql, null, null, null, successFn, failureFn);
+    odkData.arbitraryQuery('MASKHOUSEHOLD', sql, null, null, null, successFn, failureFn);
 }
 
 function initButtons() {
@@ -109,38 +90,12 @@ function initButtons() {
         var queryParams = util.setQuerystringParams(null, bairro);
         odkTables.launchHTML(null, 'config/assets/incTabzList.html' + queryParams);
     });
-    var count = 0;
-    $.each(masterFamList, function() {
-        if(this.bairro == "1") {
-            count++;
-        }
-    });
-    console.log("masterFam", masterFamList)
-    console.log("test", count)
 }
 
 
 function getCount(bairro) {
-/*const listFromMaster = [];
-    const map = new Map();
-    for (const item of masterFamList) {
-        if (item.bairro == bairro & item.tabz == tabz & item.houseGroup == houseGroup) {
-            if(!map.has(item.camo)){
-                map.set(item.camo, true);    // set any value to Map
-                listFromMaster.push({
-                    bairro: item.bairro,
-                    tabz: item.tabz,
-                    zone: item.zone,
-                    houseGroup: item.houseGroup,
-                    camo: item.camo
-                });
-            }
-        }
-    }
-
-
-    var total = participants.filter(person => person.BAIRRO == bairro & (person.FUDate <= today & ((person.ESTADO != "2" & person.ESTADO != "3") | person.CALLBACK == "1" | person.TESTERESUL == "3") | person.DATSEG == todayAdate)).length;
-    var visited = participants.filter(person => person.BAIRRO == bairro & person.DATSEG == todayAdate & person.savepoint == "COMPLETE").length;
+    var total = households.filter(household => household.BAIRRO == bairro).length;
+    var visited = households.filter(household => household.BAIRRO == bairro & household.VISITA != null & household.savepoint == "COMPLETE").length;
     var count = "(" + visited + "/" + total + ")";
-    */return "count";
+    return count;
 }

@@ -43,8 +43,10 @@ function getMasterList(data) {
 
 function getList() {
     // SQL to get participants
-    var sql = "SELECT _savepoint_type " + 
-        " FROM MASKCOVID "; 
+    var varNames = "_savepoint_type, CAMO, ESTADO, HHOID, HOUSEGRP, TABZ"
+    var sql = "SELECT " + varNames +  
+        " FROM MASKINCL " + 
+        " WHERE TABZ = " + tabz + " AND HOUSEGRP = '" + houseGroup + "' AND CAMO = " + camo; 
     participants = [];
     console.log("Querying database for participants...");
     console.log(sql);
@@ -53,19 +55,13 @@ function getList() {
         for (var row = 0; row < result.getCount(); row++) {
             var savepoint = result.getData(row,"_savepoint_type");
 
-            var BAIRRO = result.getData(row,"BAIRRO");
-            var CALLBACK = result.getData(row,"CALLBACK");
-            var COVID = result.getData(row,"COVID");
-            var DATINC = result.getData(row,"DATINC");
-            var DATSEG = result.getData(row,"DATSEG");
+            var CAMO = result.getData(row,"CAMO");
             var ESTADO = result.getData(row,"ESTADO");
-            var FU = result.getData(row,"FU");
-            var LASTINTERVIEW = result.getData(row,"LASTINTERVIEW");
-            var POID = result.getData(row,"POID");
+            var HHOID = result.getData(row,"HHOID");
+            var HOUSEGRP = result.getData(row,"HOUSEGRP");
             var TABZ = result.getData(row,"TABZ");
-            var TESTERESUL = result.getData(row,"TESTERESUL");
 
-            var p = { type: 'person', savepoint, BAIRRO, CALLBACK, COVID, DATINC, DATSEG, ESTADO, FU, LASTINTERVIEW, POID, TABZ, TESTERESUL};
+            var p = { type: 'person', savepoint, CAMO, ESTADO, HHOID, HOUSEGRP, TABZ};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -78,7 +74,7 @@ function getList() {
         console.error(sql);
         alert("Program error Unable to look up persons.");
     }
-    odkData.arbitraryQuery('MASKCOVID', sql, null, null, null, successFn, failureFn);
+    odkData.arbitraryQuery('MASKINCL', sql, null, null, null, successFn, failureFn);
 }
 
 function initButtons() {
@@ -107,9 +103,36 @@ function initButtons() {
     }
 
     $.each(listFromMaster, function() {
+        // Not visited people
+        const notVisitedPeople = [];
+        for (const item of participants) {
+        if (item.HHOID == this.hhoid) {
+            notVisitedPeople.push({
+                savepoint: item.savepoint
+                });
+            }   
+        }    
+        console.log("notVis",notVisitedPeople)
+        // Visited people
+        const visitedPeople = [];
+        for (const item of participants) {
+        if (item.HHOID == this.hhoid & item.savepoint == "COMPLETE" & item.ESTADO != null) {
+            visitedPeople.push({
+                savepoint: item.savepoint,
+                ESTADO: item.ESTADO
+                });
+            }   
+        }   
+        console.log("vis",visitedPeople)
+        // Check if visited     
+        var visited = '';
+        if (notVisitedPeople.length == visitedPeople.length) {
+            visited = "visited";
+        };
+
         var that = this;
             // list
-            ul.append($("<li />").append($("<button />").attr('id',this.fam).attr('class','btn' + this.bairro).append(this.fam + ": " + this.famName).append(" " + getCount(this.fam))));
+            ul.append($("<li />").append($("<button />").attr('id',this.fam).attr('class', visited + ' btn' + this.bairro).append(this.fam + ": " + this.famName)));
         
         // Buttons
         var btn = ul.find('#' + this.fam);
@@ -119,25 +142,6 @@ function initButtons() {
         })        
     });
 }
-
-
-function getCount(fam) { 
-    // only for test
-    return "(X/X)"
-}
-
-
-/* disabled while testing
-function getCount(tabz) {
-    var today = new Date(date);
-    var todayAdate = "D:" + today.getDate() + ",M:" + (Number(today.getMonth()) + 1) + ",Y:" + today.getFullYear();
-
-    var total = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & (person.FUDate <= today & ((person.ESTADO != "2" & person.ESTADO != "3") | person.CALLBACK == "1" | person.TESTERESUL == "3") | person.DATSEG == todayAdate)).length;
-    var checked = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.DATSEG == todayAdate & person.savepoint == "COMPLETE").length;
-    var count = "(" + checked + "/" + total + ")";
-    return count;
-}
-*/
 
 function titleCase(str) {
     if (!str) return str;

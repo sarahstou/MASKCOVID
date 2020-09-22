@@ -60,7 +60,7 @@ function loadHouseHold() {
 
 function loadPersons() {
     // SQL to get persons
-    var varNames = "_savepoint_type, DOB, HHOID, MASC, NOME, SEX";
+    var varNames = "_savepoint_type, DOB, ESTADO, HHOID, MASC, NOME, SEX";
     var sql = "SELECT " + varNames +
         " FROM MASKINCL" + 
         " WHERE HHOID = " + hhoid
@@ -73,12 +73,13 @@ function loadPersons() {
             var savepoint = result.getData(row,"_savepoint_type");
             
             var DOB = result.getData(row,"DOB");
+            var ESTADO = result.getData(row,"ESTADO");
             var HHOID = result.getData(row,"HHOID");
             var MASC = result.getData(row,"MASC");
             var NOME = titleCase(result.getData(row,"NOME"));
             var SEX = result.getData(row,"SEX");
 
-            var p = {type: 'participant', savepoint, DOB, HHOID, MASC, NOME, SEX};
+            var p = {type: 'participant', savepoint, DOB, ESTADO, HHOID, MASC, NOME, SEX};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -99,10 +100,10 @@ function populateView() {
     // check if all visited
     const visitedPeople = [];
     for (const item of participants) {
-        if (item.savepoint == "COMPLETE" & item.MASC != null) {
+        if (item.savepoint == "COMPLETE" & item.ESTADO != null) {
             visitedPeople.push({
                 savepoint: item.savepoint,
-                MASC: item.MASC
+                ESTADO: item.ESTADO
             });
         }
     }  
@@ -135,7 +136,7 @@ function populateView() {
         
         // Check if called today
         var visited = '';
-        if (this.savepoint == "COMPLETE" & this.MASC != null) {
+        if (this.savepoint == "COMPLETE" & this.ESTADO != null) {
             visited = "visited";
         };
 

@@ -73,8 +73,8 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "name",
-              "default": "name"
+              "english": "Name: {{data.NOME}}",
+              "default": "Nome: {{data.NOME}}"
             }
           }
         },
@@ -85,23 +85,16 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "mother",
-              "default": "mother"
+              "english": "Mother: {{data.NOMEMAE}}",
+              "default": "Mae: {{data.NOMEMAE}}"
             }
           }
         },
         "_row_num": 4
       },
       {
-        "type": "note",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "dob",
-              "default": "dob"
-            }
-          }
-        },
+        "clause": "if",
+        "condition": "data(\"SEX\") == \"1\"",
         "_row_num": 5
       },
       {
@@ -109,23 +102,15 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "regida",
-              "default": "regida"
+              "english": "Sex: Male",
+              "default": "Sexo: Masculino"
             }
           }
         },
         "_row_num": 6
       },
       {
-        "type": "note",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "sex",
-              "default": "sex"
-            }
-          }
-        },
+        "clause": "else",
         "_row_num": 7
       },
       {
@@ -133,23 +118,15 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "xdia",
-              "default": "xdia"
+              "english": "Sex: Female",
+              "default": "Sexo: Feminino"
             }
           }
         },
         "_row_num": 8
       },
       {
-        "type": "note",
-        "display": {
-          "prompt": {
-            "text": {
-              "english": "grupo de estudio",
-              "default": "grupo de estudio"
-            }
-          }
-        },
+        "clause": "end if",
         "_row_num": 9
       },
       {
@@ -157,8 +134,8 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "room",
-              "default": "room"
+              "english": "Date of birth: {{calculates.displayDOB}}",
+              "default": "Nascimento: {{calculates.displayDOB}}"
             }
           }
         },
@@ -169,20 +146,89 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "bed",
-              "default": "bed"
+              "english": "Regdia: {{calculates.displayREGDIA}}",
+              "default": "Regdia: {{calculates.displayREGDIA}}"
             }
           }
         },
         "_row_num": 11
       },
       {
-        "clause": "end screen",
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "XDIA: {{calculates.displayXDIA}}",
+              "default": "XDIA: {{calculates.displayXDIA}}"
+            }
+          }
+        },
         "_row_num": 12
       },
       {
-        "clause": "begin screen",
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Room: {{data.ROOM}}",
+              "default": "Quarto: {{data.ROOM}}"
+            }
+          }
+        },
         "_row_num": 13
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Bed: {{data.BED}}",
+              "default": "Cama: C:{{data.BED}}"
+            }
+          }
+        },
+        "_row_num": 14
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Group in study: {{data.RANGROUP}}",
+              "default": "Grupo de estudo: {{data.RANGROUP}}"
+            }
+          }
+        },
+        "_row_num": 15
+      },
+      {
+        "clause": "if",
+        "condition": "data(\"OBS_IDADE\") != null",
+        "_row_num": 16
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "<center><b><font color = \"red\">{{data.OBS_IDADE}}</font></b></center>",
+              "default": "<center><b><font color = \"red\">{{data.OBS_IDADE}}</font></b></center>"
+            }
+          }
+        },
+        "_row_num": 17
+      },
+      {
+        "clause": "end if",
+        "_row_num": 18
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 19
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 20
       },
       {
         "type": "select_one",
@@ -196,12 +242,12 @@
             }
           }
         },
-        "_row_num": 14
+        "_row_num": 21
       },
       {
         "clause": "if",
         "condition": "data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"5\"",
-        "_row_num": 15
+        "_row_num": 22
       },
       {
         "type": "adate",
@@ -214,12 +260,12 @@
             }
           }
         },
-        "_row_num": 16
+        "_row_num": 23
       },
       {
         "clause": "if",
         "condition": "data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"5\"",
-        "_row_num": 17
+        "_row_num": 24
       },
       {
         "type": "text",
@@ -232,23 +278,50 @@
             }
           }
         },
-        "_row_num": 18
+        "_row_num": 25
       },
       {
         "clause": "end if",
-        "_row_num": 19
+        "_row_num": 26
       },
       {
         "clause": "end if",
-        "_row_num": 20
+        "_row_num": 27
+      },
+      {
+        "clause": "if",
+        "condition": "data(\"ESTADO\") == \"8\"",
+        "_row_num": 28
+      },
+      {
+        "type": "text",
+        "name": "DUPLO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Equal to whom?",
+              "default": "Igual a quem?"
+            }
+          }
+        },
+        "_row_num": 29
+      },
+      {
+        "clause": "end if",
+        "_row_num": 30
       },
       {
         "clause": "end screen",
-        "_row_num": 21
+        "_row_num": 31
+      },
+      {
+        "clause": "if",
+        "condition": "(data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"5\" ) && data(\"OBS_IDADE\") == null",
+        "_row_num": 32
       },
       {
         "clause": "begin screen",
-        "_row_num": 22
+        "_row_num": 33
       },
       {
         "type": "select_one",
@@ -262,15 +335,20 @@
             }
           }
         },
-        "_row_num": 23
+        "_row_num": 34
       },
       {
         "clause": "end screen",
-        "_row_num": 24
+        "_row_num": 35
+      },
+      {
+        "clause": "if",
+        "condition": "data(\"ACCEPT\") == \"1\"",
+        "_row_num": 36
       },
       {
         "clause": "begin screen",
-        "_row_num": 25
+        "_row_num": 37
       },
       {
         "type": "note",
@@ -282,7 +360,7 @@
             }
           }
         },
-        "_row_num": 26
+        "_row_num": 38
       },
       {
         "type": "select_one",
@@ -291,12 +369,12 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "TELE1",
-              "default": "TELE1"
+              "english": "TELE1: {{data.TELE1}}",
+              "default": "TELE1: {{data.TELE1}}"
             }
           }
         },
-        "_row_num": 27
+        "_row_num": 39
       },
       {
         "type": "select_one",
@@ -305,12 +383,12 @@
         "display": {
           "prompt": {
             "text": {
-              "english": "TELE2",
-              "default": "TELE2"
+              "english": "TELE2: {{data.TELE2}}",
+              "default": "TELE2: {{data.TELE2}}"
             }
           }
         },
-        "_row_num": 28
+        "_row_num": 40
       },
       {
         "type": "select_one",
@@ -324,23 +402,23 @@
             }
           }
         },
-        "_row_num": 29
+        "_row_num": 41
       },
       {
         "clause": "end screen",
-        "_row_num": 30
+        "_row_num": 42
       },
       {
         "clause": "if",
         "condition": "data(\"newNumber\") == \"1\"",
-        "_row_num": 31
+        "_row_num": 43
       },
       {
         "clause": "begin screen",
-        "_row_num": 32
+        "_row_num": 44
       },
       {
-        "type": "integer",
+        "type": "text",
         "name": "NOVONUM1",
         "display": {
           "prompt": {
@@ -350,10 +428,13 @@
             }
           }
         },
-        "_row_num": 33
+        "inputAttributes": {
+          "type": "number"
+        },
+        "_row_num": 45
       },
       {
-        "type": "integer",
+        "type": "text",
         "name": "NOVONUM2",
         "display": {
           "prompt": {
@@ -363,19 +444,22 @@
             }
           }
         },
-        "_row_num": 34
+        "inputAttributes": {
+          "type": "number"
+        },
+        "_row_num": 46
       },
       {
         "clause": "end screen",
-        "_row_num": 35
+        "_row_num": 47
       },
       {
         "clause": "end if",
-        "_row_num": 36
+        "_row_num": 48
       },
       {
         "clause": "begin screen",
-        "_row_num": 37
+        "_row_num": 49
       },
       {
         "type": "select_one",
@@ -389,12 +473,12 @@
             }
           }
         },
-        "_row_num": 38
+        "_row_num": 50
       },
       {
         "clause": "if",
         "condition": "data(\"MASC\") == \"2\"",
-        "_row_num": 39
+        "_row_num": 51
       },
       {
         "type": "select_one",
@@ -408,49 +492,49 @@
             }
           }
         },
-        "_row_num": 40
+        "_row_num": 52
       },
       {
         "clause": "end if",
-        "_row_num": 41
+        "_row_num": 53
       },
       {
         "clause": "if",
-        "condition": "data(\"ACCEPT\") == \"2\"",
-        "_row_num": 42
+        "condition": "data(\"RANGROUP\") == \"2\"",
+        "_row_num": 54
       },
       {
         "type": "assign",
         "name": "MASC",
-        "calculation": 2,
-        "_row_num": 43
+        "calculation": "8",
+        "_row_num": 55
       },
       {
         "clause": "end if",
-        "_row_num": 44
+        "_row_num": 56
       },
       {
         "clause": "if",
-        "condition": "data(\"GRUPO2\") == \"2\"",
-        "_row_num": 45
+        "condition": "data(\"ESTADO\") != \"1\" && data(\"RANGROUP\") == \"1\"",
+        "_row_num": 57
       },
       {
         "type": "assign",
         "name": "MASC",
-        "calculation": 8,
-        "_row_num": 46
+        "calculation": "2",
+        "_row_num": 58
       },
       {
         "clause": "end if",
-        "_row_num": 47
+        "_row_num": 59
       },
       {
         "clause": "end screen",
-        "_row_num": 48
+        "_row_num": 60
       },
       {
         "clause": "begin screen",
-        "_row_num": 49
+        "_row_num": 61
       },
       {
         "type": "select_one",
@@ -464,12 +548,12 @@
             }
           }
         },
-        "_row_num": 50
+        "_row_num": 62
       },
       {
         "clause": "if",
         "condition": "data(\"INTENCAO\") == \"1\"",
-        "_row_num": 51
+        "_row_num": 63
       },
       {
         "type": "select_one",
@@ -483,16 +567,16 @@
             }
           }
         },
-        "_row_num": 52
+        "_row_num": 64
       },
       {
         "clause": "end if",
-        "_row_num": 53
+        "_row_num": 65
       },
       {
         "clause": "if",
         "condition": "data(\"INTENCAO\") == \"2\" || data(\"INTENCAO\") == \"3\"",
-        "_row_num": 54
+        "_row_num": 66
       },
       {
         "type": "select_one",
@@ -506,11 +590,11 @@
             }
           }
         },
-        "_row_num": 55
+        "_row_num": 67
       },
       {
         "clause": "end if",
-        "_row_num": 56
+        "_row_num": 68
       },
       {
         "type": "async_assign_single_string",
@@ -519,17 +603,55 @@
         "display": {
           "hide_adate": true
         },
-        "_row_num": 57
+        "_row_num": 69
+      },
+      {
+        "clause": "if",
+        "condition": "data(\"RANDGROUP\") == \"2\"",
+        "_row_num": 70
+      },
+      {
+        "type": "assign",
+        "name": "INTENCAO",
+        "calculation": "8",
+        "_row_num": 71
+      },
+      {
+        "clause": "end if",
+        "_row_num": 72
+      },
+      {
+        "clause": "if",
+        "condition": "data(\"ESTADO\") != \"1\" || data(\"RANDGROUP\") == \"1\"",
+        "_row_num": 73
+      },
+      {
+        "type": "assign",
+        "name": "INTENCAO",
+        "calculation": "8",
+        "_row_num": 74
+      },
+      {
+        "clause": "end if",
+        "_row_num": 75
       },
       {
         "clause": "end screen",
-        "_row_num": 58
+        "_row_num": 76
+      },
+      {
+        "clause": "end if",
+        "_row_num": 77
+      },
+      {
+        "clause": "end if",
+        "_row_num": 78
       }
     ],
     "choices": [
       {
         "choice_list_name": "VitalStatus",
-        "data_value": 1,
+        "data_value": "1",
         "display": {
           "title": {
             "text": {
@@ -542,7 +664,7 @@
       },
       {
         "choice_list_name": "VitalStatus",
-        "data_value": 2,
+        "data_value": "2",
         "display": {
           "title": {
             "text": {
@@ -555,7 +677,7 @@
       },
       {
         "choice_list_name": "VitalStatus",
-        "data_value": 3,
+        "data_value": "3",
         "display": {
           "title": {
             "text": {
@@ -568,7 +690,7 @@
       },
       {
         "choice_list_name": "VitalStatus",
-        "data_value": 4,
+        "data_value": "4",
         "display": {
           "title": {
             "text": {
@@ -581,7 +703,7 @@
       },
       {
         "choice_list_name": "VitalStatus",
-        "data_value": 5,
+        "data_value": "5",
         "display": {
           "title": {
             "text": {
@@ -594,7 +716,7 @@
       },
       {
         "choice_list_name": "VitalStatus",
-        "data_value": 6,
+        "data_value": "6",
         "display": {
           "title": {
             "text": {
@@ -607,7 +729,7 @@
       },
       {
         "choice_list_name": "VitalStatus",
-        "data_value": 8,
+        "data_value": "8",
         "display": {
           "title": {
             "text": {
@@ -620,7 +742,7 @@
       },
       {
         "choice_list_name": "YesNoDontknow",
-        "data_value": 1,
+        "data_value": "1",
         "display": {
           "title": {
             "text": {
@@ -633,7 +755,7 @@
       },
       {
         "choice_list_name": "YesNoDontknow",
-        "data_value": 2,
+        "data_value": "2",
         "display": {
           "title": {
             "text": {
@@ -646,7 +768,7 @@
       },
       {
         "choice_list_name": "YesNoDontknow",
-        "data_value": 3,
+        "data_value": "3",
         "display": {
           "title": {
             "text": {
@@ -659,7 +781,7 @@
       },
       {
         "choice_list_name": "Phone",
-        "data_value": 1,
+        "data_value": "1",
         "display": {
           "title": {
             "text": {
@@ -672,7 +794,7 @@
       },
       {
         "choice_list_name": "Phone",
-        "data_value": 2,
+        "data_value": "2",
         "display": {
           "title": {
             "text": {
@@ -685,7 +807,7 @@
       },
       {
         "choice_list_name": "Phone",
-        "data_value": 3,
+        "data_value": "3",
         "display": {
           "title": {
             "text": {
@@ -698,12 +820,12 @@
       },
       {
         "choice_list_name": "Phone",
-        "data_value": 4,
+        "data_value": "4",
         "display": {
           "title": {
             "text": {
               "english": "Other person in the household",
-              "default": "Outra pessoa na casa"
+              "default": "Commune"
             }
           }
         },
@@ -711,7 +833,7 @@
       },
       {
         "choice_list_name": "Phone",
-        "data_value": 7,
+        "data_value": "7",
         "display": {
           "title": {
             "text": {
@@ -724,7 +846,7 @@
       },
       {
         "choice_list_name": "YesNo",
-        "data_value": 1,
+        "data_value": "1",
         "display": {
           "title": {
             "text": {
@@ -737,7 +859,7 @@
       },
       {
         "choice_list_name": "YesNo",
-        "data_value": 2,
+        "data_value": "2",
         "display": {
           "title": {
             "text": {
@@ -750,7 +872,7 @@
       },
       {
         "choice_list_name": "Mask",
-        "data_value": 1,
+        "data_value": "1",
         "display": {
           "title": {
             "text": {
@@ -763,7 +885,7 @@
       },
       {
         "choice_list_name": "Mask",
-        "data_value": 2,
+        "data_value": "2",
         "display": {
           "title": {
             "text": {
@@ -776,7 +898,7 @@
       },
       {
         "choice_list_name": "Mask",
-        "data_value": 3,
+        "data_value": "3",
         "display": {
           "title": {
             "text": {
@@ -789,7 +911,7 @@
       },
       {
         "choice_list_name": "Mask",
-        "data_value": 8,
+        "data_value": "8",
         "display": {
           "title": {
             "text": {
@@ -802,7 +924,7 @@
       },
       {
         "choice_list_name": "Intension",
-        "data_value": 1,
+        "data_value": "1",
         "display": {
           "title": {
             "text": {
@@ -815,7 +937,7 @@
       },
       {
         "choice_list_name": "Intension",
-        "data_value": 2,
+        "data_value": "2",
         "display": {
           "title": {
             "text": {
@@ -828,7 +950,7 @@
       },
       {
         "choice_list_name": "Intension",
-        "data_value": 3,
+        "data_value": "3",
         "display": {
           "title": {
             "text": {
@@ -841,7 +963,7 @@
       },
       {
         "choice_list_name": "Intension",
-        "data_value": 8,
+        "data_value": "8",
         "display": {
           "title": {
             "text": {
@@ -854,7 +976,7 @@
       },
       {
         "choice_list_name": "MaskWhen",
-        "data_value": 1,
+        "data_value": "1",
         "display": {
           "title": {
             "text": {
@@ -867,7 +989,7 @@
       },
       {
         "choice_list_name": "MaskWhen",
-        "data_value": 2,
+        "data_value": "2",
         "display": {
           "title": {
             "text": {
@@ -879,21 +1001,8 @@
         "_row_num": 34
       },
       {
-        "choice_list_name": "MaskWhen",
-        "data_value": 8,
-        "display": {
-          "title": {
-            "text": {
-              "english": "Not applicable",
-              "default": "Não aplicavel"
-            }
-          }
-        },
-        "_row_num": 35
-      },
-      {
         "choice_list_name": "NoMask",
-        "data_value": 1,
+        "data_value": "1",
         "display": {
           "title": {
             "text": {
@@ -902,11 +1011,11 @@
             }
           }
         },
-        "_row_num": 37
+        "_row_num": 36
       },
       {
         "choice_list_name": "NoMask",
-        "data_value": 2,
+        "data_value": "2",
         "display": {
           "title": {
             "text": {
@@ -915,11 +1024,11 @@
             }
           }
         },
-        "_row_num": 38
+        "_row_num": 37
       },
       {
         "choice_list_name": "NoMask",
-        "data_value": 3,
+        "data_value": "3",
         "display": {
           "title": {
             "text": {
@@ -928,11 +1037,11 @@
             }
           }
         },
-        "_row_num": 39
+        "_row_num": 38
       },
       {
         "choice_list_name": "NoMask",
-        "data_value": 4,
+        "data_value": "4",
         "display": {
           "title": {
             "text": {
@@ -941,20 +1050,7 @@
             }
           }
         },
-        "_row_num": 40
-      },
-      {
-        "choice_list_name": "NoMask",
-        "data_value": 8,
-        "display": {
-          "title": {
-            "text": {
-              "english": "Not applicable",
-              "default": "Não aplicavel"
-            }
-          }
-        },
-        "_row_num": 41
+        "_row_num": 39
       }
     ],
     "queries": [
@@ -978,8 +1074,25 @@
         "selectionArgs": "[data('id_RECEB_QUEM')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
-        "fieldName": "NOME",
+        "fieldName": "FNO",
         "_row_num": 3
+      }
+    ],
+    "calculates": [
+      {
+        "calculation_name": "displayDOB",
+        "calculation": "adate.display(data(\"DOB\"))",
+        "_row_num": 2
+      },
+      {
+        "calculation_name": "displayREGDIA",
+        "calculation": "adate.display(data(\"REGDIA\"))",
+        "_row_num": 3
+      },
+      {
+        "calculation_name": "displayXDIA",
+        "calculation": "adate.display(data(\"XDIA\"))",
+        "_row_num": 4
       }
     ],
     "prompt_types": [
@@ -1055,7 +1168,7 @@
       },
       {
         "name": "ROOM",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "comment": "room",
         "_row_num": 10
@@ -1069,19 +1182,19 @@
       },
       {
         "name": "TELE1",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 12
       },
       {
         "name": "TELE2",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 13
       },
       {
         "name": "ESTADO",
-        "type": "integer",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 15
       },
@@ -1092,123 +1205,155 @@
         "_row_num": 16
       },
       {
-        "name": "ONDE",
+        "name": "DUPLO",
         "type": "text",
         "isSessionVariable": false,
         "_row_num": 17
       },
       {
-        "name": "ACCEPT",
-        "type": "integer",
+        "name": "ONDE",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 18
       },
       {
-        "name": "TELE1_VERI",
-        "type": "integer",
+        "name": "ACCEPT",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 19
       },
       {
-        "name": "TELE2_VERI",
-        "type": "integer",
+        "name": "TELE1_VERI",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 20
       },
       {
-        "name": "NOVONUM1",
-        "type": "integer",
+        "name": "TELE2_VERI",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 21
       },
       {
-        "name": "NOVONUM2",
-        "type": "integer",
+        "name": "NOVONUM1",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 22
       },
       {
-        "name": "MASC",
-        "type": "integer",
+        "name": "NOVONUM2",
+        "type": "text",
         "isSessionVariable": false,
-        "_row_num": 24
+        "_row_num": 23
+      },
+      {
+        "name": "MASC",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 25
       },
       {
         "name": "RECEB_QUEM",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 25
-      },
-      {
-        "name": "INTENCAO",
-        "type": "integer",
-        "isSessionVariable": false,
         "_row_num": 26
       },
       {
-        "name": "QUANDO",
-        "type": "integer",
+        "name": "INTENCAO",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 27
       },
       {
-        "name": "MOTIVO",
-        "type": "integer",
+        "name": "QUANDO",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 28
+      },
+      {
+        "name": "MOTIVO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 29
       },
       {
         "name": "HHOID",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 30
+        "_row_num": 31
       },
       {
         "name": "id_RECEB_QUEM",
         "type": "text",
         "isSessionVariable": true,
-        "_row_num": 31
+        "_row_num": 32
       },
       {
         "name": "newNumber",
         "type": "integer",
         "isSessionVariable": true,
-        "_row_num": 32
+        "_row_num": 33
       },
       {
         "name": "BAIRRO",
         "type": "integer",
         "isSessionVariable": false,
         "comment": "for logic",
-        "_row_num": 33
+        "_row_num": 34
       },
       {
         "name": "TABZ",
         "type": "integer",
         "isSessionVariable": false,
         "comment": "for logic",
-        "_row_num": 34
+        "_row_num": 35
       },
       {
         "name": "CAMO",
         "type": "integer",
         "isSessionVariable": false,
         "comment": "for logic",
-        "_row_num": 35
+        "_row_num": 36
       },
       {
         "name": "HOUSEGRP",
         "type": "text",
         "isSessionVariable": false,
         "comment": "for logic",
-        "_row_num": 36
+        "_row_num": 37
       },
       {
         "name": "FAM",
         "type": "integer",
         "isSessionVariable": false,
         "comment": "for logic",
-        "_row_num": 37
+        "_row_num": 38
+      },
+      {
+        "name": "FNO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "comment": "fno id",
+        "_row_num": 39
+      },
+      {
+        "name": "OBS_IDADE",
+        "type": "text",
+        "isSessionVariable": false,
+        "comment": "obs age",
+        "_row_num": 40
+      },
+      {
+        "name": "POID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 41
+      },
+      {
+        "name": "IDOID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 42
       }
     ]
   },
@@ -1342,7 +1487,7 @@
       "VitalStatus": [
         {
           "choice_list_name": "VitalStatus",
-          "data_value": 1,
+          "data_value": "1",
           "display": {
             "title": {
               "text": {
@@ -1355,7 +1500,7 @@
         },
         {
           "choice_list_name": "VitalStatus",
-          "data_value": 2,
+          "data_value": "2",
           "display": {
             "title": {
               "text": {
@@ -1368,7 +1513,7 @@
         },
         {
           "choice_list_name": "VitalStatus",
-          "data_value": 3,
+          "data_value": "3",
           "display": {
             "title": {
               "text": {
@@ -1381,7 +1526,7 @@
         },
         {
           "choice_list_name": "VitalStatus",
-          "data_value": 4,
+          "data_value": "4",
           "display": {
             "title": {
               "text": {
@@ -1394,7 +1539,7 @@
         },
         {
           "choice_list_name": "VitalStatus",
-          "data_value": 5,
+          "data_value": "5",
           "display": {
             "title": {
               "text": {
@@ -1407,7 +1552,7 @@
         },
         {
           "choice_list_name": "VitalStatus",
-          "data_value": 6,
+          "data_value": "6",
           "display": {
             "title": {
               "text": {
@@ -1420,7 +1565,7 @@
         },
         {
           "choice_list_name": "VitalStatus",
-          "data_value": 8,
+          "data_value": "8",
           "display": {
             "title": {
               "text": {
@@ -1435,7 +1580,7 @@
       "YesNoDontknow": [
         {
           "choice_list_name": "YesNoDontknow",
-          "data_value": 1,
+          "data_value": "1",
           "display": {
             "title": {
               "text": {
@@ -1448,7 +1593,7 @@
         },
         {
           "choice_list_name": "YesNoDontknow",
-          "data_value": 2,
+          "data_value": "2",
           "display": {
             "title": {
               "text": {
@@ -1461,7 +1606,7 @@
         },
         {
           "choice_list_name": "YesNoDontknow",
-          "data_value": 3,
+          "data_value": "3",
           "display": {
             "title": {
               "text": {
@@ -1476,7 +1621,7 @@
       "Phone": [
         {
           "choice_list_name": "Phone",
-          "data_value": 1,
+          "data_value": "1",
           "display": {
             "title": {
               "text": {
@@ -1489,7 +1634,7 @@
         },
         {
           "choice_list_name": "Phone",
-          "data_value": 2,
+          "data_value": "2",
           "display": {
             "title": {
               "text": {
@@ -1502,7 +1647,7 @@
         },
         {
           "choice_list_name": "Phone",
-          "data_value": 3,
+          "data_value": "3",
           "display": {
             "title": {
               "text": {
@@ -1515,12 +1660,12 @@
         },
         {
           "choice_list_name": "Phone",
-          "data_value": 4,
+          "data_value": "4",
           "display": {
             "title": {
               "text": {
                 "english": "Other person in the household",
-                "default": "Outra pessoa na casa"
+                "default": "Commune"
               }
             }
           },
@@ -1528,7 +1673,7 @@
         },
         {
           "choice_list_name": "Phone",
-          "data_value": 7,
+          "data_value": "7",
           "display": {
             "title": {
               "text": {
@@ -1543,7 +1688,7 @@
       "YesNo": [
         {
           "choice_list_name": "YesNo",
-          "data_value": 1,
+          "data_value": "1",
           "display": {
             "title": {
               "text": {
@@ -1556,7 +1701,7 @@
         },
         {
           "choice_list_name": "YesNo",
-          "data_value": 2,
+          "data_value": "2",
           "display": {
             "title": {
               "text": {
@@ -1571,7 +1716,7 @@
       "Mask": [
         {
           "choice_list_name": "Mask",
-          "data_value": 1,
+          "data_value": "1",
           "display": {
             "title": {
               "text": {
@@ -1584,7 +1729,7 @@
         },
         {
           "choice_list_name": "Mask",
-          "data_value": 2,
+          "data_value": "2",
           "display": {
             "title": {
               "text": {
@@ -1597,7 +1742,7 @@
         },
         {
           "choice_list_name": "Mask",
-          "data_value": 3,
+          "data_value": "3",
           "display": {
             "title": {
               "text": {
@@ -1610,7 +1755,7 @@
         },
         {
           "choice_list_name": "Mask",
-          "data_value": 8,
+          "data_value": "8",
           "display": {
             "title": {
               "text": {
@@ -1625,7 +1770,7 @@
       "Intension": [
         {
           "choice_list_name": "Intension",
-          "data_value": 1,
+          "data_value": "1",
           "display": {
             "title": {
               "text": {
@@ -1638,7 +1783,7 @@
         },
         {
           "choice_list_name": "Intension",
-          "data_value": 2,
+          "data_value": "2",
           "display": {
             "title": {
               "text": {
@@ -1651,7 +1796,7 @@
         },
         {
           "choice_list_name": "Intension",
-          "data_value": 3,
+          "data_value": "3",
           "display": {
             "title": {
               "text": {
@@ -1664,7 +1809,7 @@
         },
         {
           "choice_list_name": "Intension",
-          "data_value": 8,
+          "data_value": "8",
           "display": {
             "title": {
               "text": {
@@ -1679,7 +1824,7 @@
       "MaskWhen": [
         {
           "choice_list_name": "MaskWhen",
-          "data_value": 1,
+          "data_value": "1",
           "display": {
             "title": {
               "text": {
@@ -1692,7 +1837,7 @@
         },
         {
           "choice_list_name": "MaskWhen",
-          "data_value": 2,
+          "data_value": "2",
           "display": {
             "title": {
               "text": {
@@ -1702,25 +1847,12 @@
             }
           },
           "_row_num": 34
-        },
-        {
-          "choice_list_name": "MaskWhen",
-          "data_value": 8,
-          "display": {
-            "title": {
-              "text": {
-                "english": "Not applicable",
-                "default": "Não aplicavel"
-              }
-            }
-          },
-          "_row_num": 35
         }
       ],
       "NoMask": [
         {
           "choice_list_name": "NoMask",
-          "data_value": 1,
+          "data_value": "1",
           "display": {
             "title": {
               "text": {
@@ -1729,11 +1861,11 @@
               }
             }
           },
-          "_row_num": 37
+          "_row_num": 36
         },
         {
           "choice_list_name": "NoMask",
-          "data_value": 2,
+          "data_value": "2",
           "display": {
             "title": {
               "text": {
@@ -1742,11 +1874,11 @@
               }
             }
           },
-          "_row_num": 38
+          "_row_num": 37
         },
         {
           "choice_list_name": "NoMask",
-          "data_value": 3,
+          "data_value": "3",
           "display": {
             "title": {
               "text": {
@@ -1755,11 +1887,11 @@
               }
             }
           },
-          "_row_num": 39
+          "_row_num": 38
         },
         {
           "choice_list_name": "NoMask",
-          "data_value": 4,
+          "data_value": "4",
           "display": {
             "title": {
               "text": {
@@ -1768,20 +1900,7 @@
               }
             }
           },
-          "_row_num": 40
-        },
-        {
-          "choice_list_name": "NoMask",
-          "data_value": 8,
-          "display": {
-            "title": {
-              "text": {
-                "english": "Not applicable",
-                "default": "Não aplicavel"
-              }
-            }
-          },
-          "_row_num": 41
+          "_row_num": 39
         }
       ]
     },
@@ -1809,11 +1928,27 @@
         "selectionArgs": "[data('id_RECEB_QUEM')]",
         "newRowInitialElementKeyToValueMap": "{}",
         "openRowInitialElementKeyToValueMap": "{}",
-        "fieldName": "NOME",
+        "fieldName": "FNO",
         "_row_num": 3
       }
     },
-    "calculates": {},
+    "calculates": {
+      "displayDOB": {
+        "calculation_name": "displayDOB",
+        "calculation": "adate.display(data(\"DOB\"))",
+        "_row_num": 2
+      },
+      "displayREGDIA": {
+        "calculation_name": "displayREGDIA",
+        "calculation": "adate.display(data(\"REGDIA\"))",
+        "_row_num": 3
+      },
+      "displayXDIA": {
+        "calculation_name": "displayXDIA",
+        "calculation": "adate.display(data(\"XDIA\"))",
+        "_row_num": 4
+      }
+    },
     "model": {
       "ID": {
         "type": "integer",
@@ -1924,7 +2059,7 @@
         "elementKey": "RANGROUP"
       },
       "ROOM": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 10,
@@ -1948,7 +2083,7 @@
         "elementKey": "BED"
       },
       "TELE1": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 12,
@@ -1959,7 +2094,7 @@
         "elementKey": "TELE1"
       },
       "TELE2": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 13,
@@ -1970,11 +2105,11 @@
         "elementKey": "TELE2"
       },
       "ESTADO": {
-        "type": "integer",
+        "type": "string",
         "valuesList": "VitalStatus",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 21,
             "section_name": "survey"
           },
           {
@@ -1994,7 +2129,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 23,
             "section_name": "survey"
           },
           {
@@ -2005,11 +2140,11 @@
         "isSessionVariable": false,
         "elementKey": "DATASAI"
       },
-      "ONDE": {
+      "DUPLO": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 29,
             "section_name": "survey"
           },
           {
@@ -2018,14 +2153,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ONDE"
+        "elementKey": "DUPLO"
       },
-      "ACCEPT": {
-        "type": "integer",
-        "valuesList": "YesNoDontknow",
+      "ONDE": {
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 25,
             "section_name": "survey"
           },
           {
@@ -2034,14 +2168,14 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "ACCEPT"
+        "elementKey": "ONDE"
       },
-      "TELE1_VERI": {
-        "type": "integer",
-        "valuesList": "Phone",
+      "ACCEPT": {
+        "type": "string",
+        "valuesList": "YesNoDontknow",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 34,
             "section_name": "survey"
           },
           {
@@ -2050,14 +2184,14 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "TELE1_VERI"
+        "elementKey": "ACCEPT"
       },
-      "TELE2_VERI": {
-        "type": "integer",
+      "TELE1_VERI": {
+        "type": "string",
         "valuesList": "Phone",
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 39,
             "section_name": "survey"
           },
           {
@@ -2066,13 +2200,14 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "TELE2_VERI"
+        "elementKey": "TELE1_VERI"
       },
-      "NOVONUM1": {
-        "type": "integer",
+      "TELE2_VERI": {
+        "type": "string",
+        "valuesList": "Phone",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 40,
             "section_name": "survey"
           },
           {
@@ -2081,13 +2216,13 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "NOVONUM1"
+        "elementKey": "TELE2_VERI"
       },
-      "NOVONUM2": {
-        "type": "integer",
+      "NOVONUM1": {
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 45,
             "section_name": "survey"
           },
           {
@@ -2096,18 +2231,33 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "NOVONUM2"
+        "elementKey": "NOVONUM1"
       },
-      "MASC": {
-        "type": "integer",
-        "valuesList": "Mask",
+      "NOVONUM2": {
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 46,
             "section_name": "survey"
           },
           {
-            "_row_num": 24,
+            "_row_num": 23,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NOVONUM2"
+      },
+      "MASC": {
+        "type": "string",
+        "valuesList": "Mask",
+        "_defn": [
+          {
+            "_row_num": 50,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -2120,23 +2270,7 @@
         "valuesList": "person_name",
         "_defn": [
           {
-            "_row_num": 57,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 25,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "RECEB_QUEM"
-      },
-      "INTENCAO": {
-        "type": "integer",
-        "valuesList": "Intension",
-        "_defn": [
-          {
-            "_row_num": 50,
+            "_row_num": 69,
             "section_name": "survey"
           },
           {
@@ -2145,14 +2279,14 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "INTENCAO"
+        "elementKey": "RECEB_QUEM"
       },
-      "QUANDO": {
-        "type": "integer",
-        "valuesList": "MaskWhen",
+      "INTENCAO": {
+        "type": "string",
+        "valuesList": "Intension",
         "_defn": [
           {
-            "_row_num": 52,
+            "_row_num": 62,
             "section_name": "survey"
           },
           {
@@ -2161,18 +2295,34 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "QUANDO"
+        "elementKey": "INTENCAO"
       },
-      "MOTIVO": {
-        "type": "integer",
-        "valuesList": "NoMask",
+      "QUANDO": {
+        "type": "string",
+        "valuesList": "MaskWhen",
         "_defn": [
           {
-            "_row_num": 55,
+            "_row_num": 64,
             "section_name": "survey"
           },
           {
             "_row_num": 28,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "QUANDO"
+      },
+      "MOTIVO": {
+        "type": "string",
+        "valuesList": "NoMask",
+        "_defn": [
+          {
+            "_row_num": 67,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -2183,7 +2333,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -2195,11 +2345,11 @@
         "valuesList": "persons",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 52,
             "section_name": "survey"
           },
           {
-            "_row_num": 31,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -2211,11 +2361,11 @@
         "valuesList": "YesNo",
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 41,
             "section_name": "survey"
           },
           {
-            "_row_num": 32,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -2226,7 +2376,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -2238,7 +2388,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -2250,7 +2400,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -2262,7 +2412,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 36,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -2274,13 +2424,59 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "comment": "for logic",
         "elementKey": "FAM"
+      },
+      "FNO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 39,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "fno id",
+        "elementKey": "FNO"
+      },
+      "OBS_IDADE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 40,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "obs age",
+        "elementKey": "OBS_IDADE"
+      },
+      "POID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "POID"
+      },
+      "IDOID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 42,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDOID"
       }
     },
     "section_names": [
@@ -2298,8 +2494,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "name",
-                  "default": "name"
+                  "english": "Name: {{data.NOME}}",
+                  "default": "Nome: {{data.NOME}}"
                 }
               }
             },
@@ -2315,8 +2511,8 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "mother",
-                  "default": "mother"
+                  "english": "Mother: {{data.NOMEMAE}}",
+                  "default": "Mae: {{data.NOMEMAE}}"
                 }
               }
             },
@@ -2332,13 +2528,13 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "dob",
-                  "default": "dob"
+                  "english": "Sex: Male",
+                  "default": "Sexo: Masculino"
                 }
               }
             },
-            "_row_num": 5,
-            "__rowNum__": 4,
+            "_row_num": 6,
+            "__rowNum__": 5,
             "_token_type": "prompt",
             "_type": "note",
             "_branch_label_enclosing_screen": "survey/_screen2",
@@ -2349,13 +2545,13 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "regida",
-                  "default": "regida"
+                  "english": "Sex: Female",
+                  "default": "Sexo: Feminino"
                 }
               }
             },
-            "_row_num": 6,
-            "__rowNum__": 5,
+            "_row_num": 8,
+            "__rowNum__": 7,
             "_token_type": "prompt",
             "_type": "note",
             "_branch_label_enclosing_screen": "survey/_screen2",
@@ -2366,13 +2562,13 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "sex",
-                  "default": "sex"
+                  "english": "Date of birth: {{calculates.displayDOB}}",
+                  "default": "Nascimento: {{calculates.displayDOB}}"
                 }
               }
             },
-            "_row_num": 7,
-            "__rowNum__": 6,
+            "_row_num": 10,
+            "__rowNum__": 9,
             "_token_type": "prompt",
             "_type": "note",
             "_branch_label_enclosing_screen": "survey/_screen2",
@@ -2383,13 +2579,13 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "xdia",
-                  "default": "xdia"
+                  "english": "Regdia: {{calculates.displayREGDIA}}",
+                  "default": "Regdia: {{calculates.displayREGDIA}}"
                 }
               }
             },
-            "_row_num": 8,
-            "__rowNum__": 7,
+            "_row_num": 11,
+            "__rowNum__": 10,
             "_token_type": "prompt",
             "_type": "note",
             "_branch_label_enclosing_screen": "survey/_screen2",
@@ -2400,13 +2596,13 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "grupo de estudio",
-                  "default": "grupo de estudio"
+                  "english": "XDIA: {{calculates.displayXDIA}}",
+                  "default": "XDIA: {{calculates.displayXDIA}}"
                 }
               }
             },
-            "_row_num": 9,
-            "__rowNum__": 8,
+            "_row_num": 12,
+            "__rowNum__": 11,
             "_token_type": "prompt",
             "_type": "note",
             "_branch_label_enclosing_screen": "survey/_screen2",
@@ -2417,13 +2613,13 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "room",
-                  "default": "room"
+                  "english": "Room: {{data.ROOM}}",
+                  "default": "Quarto: {{data.ROOM}}"
                 }
               }
             },
-            "_row_num": 10,
-            "__rowNum__": 9,
+            "_row_num": 13,
+            "__rowNum__": 12,
             "_token_type": "prompt",
             "_type": "note",
             "_branch_label_enclosing_screen": "survey/_screen2",
@@ -2434,17 +2630,51 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "bed",
-                  "default": "bed"
+                  "english": "Bed: {{data.BED}}",
+                  "default": "Cama: C:{{data.BED}}"
                 }
               }
             },
-            "_row_num": 11,
-            "__rowNum__": 10,
+            "_row_num": 14,
+            "__rowNum__": 13,
             "_token_type": "prompt",
             "_type": "note",
             "_branch_label_enclosing_screen": "survey/_screen2",
             "promptIdx": 8
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Group in study: {{data.RANGROUP}}",
+                  "default": "Grupo de estudo: {{data.RANGROUP}}"
+                }
+              }
+            },
+            "_row_num": 15,
+            "__rowNum__": 14,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 9
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "<center><b><font color = \"red\">{{data.OBS_IDADE}}</font></b></center>",
+                  "default": "<center><b><font color = \"red\">{{data.OBS_IDADE}}</font></b></center>"
+                }
+              }
+            },
+            "_row_num": 17,
+            "__rowNum__": 16,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 10
           },
           {
             "type": "select_one",
@@ -2458,12 +2688,12 @@
                 }
               }
             },
-            "_row_num": 14,
-            "__rowNum__": 13,
+            "_row_num": 21,
+            "__rowNum__": 20,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen13",
-            "promptIdx": 9
+            "_branch_label_enclosing_screen": "survey/_screen20",
+            "promptIdx": 11
           },
           {
             "type": "adate",
@@ -2476,12 +2706,12 @@
                 }
               }
             },
-            "_row_num": 16,
-            "__rowNum__": 15,
+            "_row_num": 23,
+            "__rowNum__": 22,
             "_token_type": "prompt",
             "_type": "adate",
-            "_branch_label_enclosing_screen": "survey/_screen13",
-            "promptIdx": 10
+            "_branch_label_enclosing_screen": "survey/_screen20",
+            "promptIdx": 12
           },
           {
             "type": "text",
@@ -2494,12 +2724,30 @@
                 }
               }
             },
-            "_row_num": 18,
-            "__rowNum__": 17,
+            "_row_num": 25,
+            "__rowNum__": 24,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen13",
-            "promptIdx": 11
+            "_branch_label_enclosing_screen": "survey/_screen20",
+            "promptIdx": 13
+          },
+          {
+            "type": "text",
+            "name": "DUPLO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Equal to whom?",
+                  "default": "Igual a quem?"
+                }
+              }
+            },
+            "_row_num": 29,
+            "__rowNum__": 28,
+            "_token_type": "prompt",
+            "_type": "text",
+            "_branch_label_enclosing_screen": "survey/_screen20",
+            "promptIdx": 14
           },
           {
             "type": "select_one",
@@ -2513,12 +2761,12 @@
                 }
               }
             },
-            "_row_num": 23,
-            "__rowNum__": 22,
+            "_row_num": 34,
+            "__rowNum__": 33,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen22",
-            "promptIdx": 12
+            "_branch_label_enclosing_screen": "survey/_screen33",
+            "promptIdx": 15
           },
           {
             "type": "note",
@@ -2530,12 +2778,12 @@
                 }
               }
             },
-            "_row_num": 26,
-            "__rowNum__": 25,
+            "_row_num": 38,
+            "__rowNum__": 37,
             "_token_type": "prompt",
             "_type": "note",
-            "_branch_label_enclosing_screen": "survey/_screen25",
-            "promptIdx": 13
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 16
           },
           {
             "type": "select_one",
@@ -2544,17 +2792,17 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "TELE1",
-                  "default": "TELE1"
+                  "english": "TELE1: {{data.TELE1}}",
+                  "default": "TELE1: {{data.TELE1}}"
                 }
               }
             },
-            "_row_num": 27,
-            "__rowNum__": 26,
+            "_row_num": 39,
+            "__rowNum__": 38,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen25",
-            "promptIdx": 14
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 17
           },
           {
             "type": "select_one",
@@ -2563,17 +2811,17 @@
             "display": {
               "prompt": {
                 "text": {
-                  "english": "TELE2",
-                  "default": "TELE2"
+                  "english": "TELE2: {{data.TELE2}}",
+                  "default": "TELE2: {{data.TELE2}}"
                 }
               }
             },
-            "_row_num": 28,
-            "__rowNum__": 27,
+            "_row_num": 40,
+            "__rowNum__": 39,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen25",
-            "promptIdx": 15
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 18
           },
           {
             "type": "select_one",
@@ -2587,15 +2835,15 @@
                 }
               }
             },
-            "_row_num": 29,
-            "__rowNum__": 28,
+            "_row_num": 41,
+            "__rowNum__": 40,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen25",
-            "promptIdx": 16
+            "_branch_label_enclosing_screen": "survey/_screen37",
+            "promptIdx": 19
           },
           {
-            "type": "integer",
+            "type": "text",
             "name": "NOVONUM1",
             "display": {
               "prompt": {
@@ -2605,15 +2853,18 @@
                 }
               }
             },
-            "_row_num": 33,
-            "__rowNum__": 32,
+            "inputAttributes": {
+              "type": "number"
+            },
+            "_row_num": 45,
+            "__rowNum__": 44,
             "_token_type": "prompt",
-            "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen32",
-            "promptIdx": 17
+            "_type": "text",
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 20
           },
           {
-            "type": "integer",
+            "type": "text",
             "name": "NOVONUM2",
             "display": {
               "prompt": {
@@ -2623,12 +2874,15 @@
                 }
               }
             },
-            "_row_num": 34,
-            "__rowNum__": 33,
+            "inputAttributes": {
+              "type": "number"
+            },
+            "_row_num": 46,
+            "__rowNum__": 45,
             "_token_type": "prompt",
-            "_type": "integer",
-            "_branch_label_enclosing_screen": "survey/_screen32",
-            "promptIdx": 18
+            "_type": "text",
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 21
           },
           {
             "type": "select_one",
@@ -2642,12 +2896,12 @@
                 }
               }
             },
-            "_row_num": 38,
-            "__rowNum__": 37,
+            "_row_num": 50,
+            "__rowNum__": 49,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen37",
-            "promptIdx": 19
+            "_branch_label_enclosing_screen": "survey/_screen49",
+            "promptIdx": 22
           },
           {
             "type": "select_one",
@@ -2661,12 +2915,12 @@
                 }
               }
             },
-            "_row_num": 40,
-            "__rowNum__": 39,
+            "_row_num": 52,
+            "__rowNum__": 51,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen37",
-            "promptIdx": 20
+            "_branch_label_enclosing_screen": "survey/_screen49",
+            "promptIdx": 23
           },
           {
             "type": "select_one",
@@ -2680,12 +2934,12 @@
                 }
               }
             },
-            "_row_num": 50,
-            "__rowNum__": 49,
+            "_row_num": 62,
+            "__rowNum__": 61,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen49",
-            "promptIdx": 21
+            "_branch_label_enclosing_screen": "survey/_screen61",
+            "promptIdx": 24
           },
           {
             "type": "select_one",
@@ -2699,12 +2953,12 @@
                 }
               }
             },
-            "_row_num": 52,
-            "__rowNum__": 51,
+            "_row_num": 64,
+            "__rowNum__": 63,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen49",
-            "promptIdx": 22
+            "_branch_label_enclosing_screen": "survey/_screen61",
+            "promptIdx": 25
           },
           {
             "type": "select_one",
@@ -2718,12 +2972,12 @@
                 }
               }
             },
-            "_row_num": 55,
-            "__rowNum__": 54,
+            "_row_num": 67,
+            "__rowNum__": 66,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen49",
-            "promptIdx": 23
+            "_branch_label_enclosing_screen": "survey/_screen61",
+            "promptIdx": 26
           },
           {
             "type": "async_assign_single_string",
@@ -2732,20 +2986,20 @@
             "display": {
               "hide_adate": true
             },
-            "_row_num": 57,
-            "__rowNum__": 56,
+            "_row_num": 69,
+            "__rowNum__": 68,
             "_token_type": "prompt",
             "_type": "async_assign_single_string",
-            "_branch_label_enclosing_screen": "survey/_screen49",
-            "promptIdx": 24
+            "_branch_label_enclosing_screen": "survey/_screen61",
+            "promptIdx": 27
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 59,
-            "_branch_label_enclosing_screen": "survey/_screen59",
-            "promptIdx": 25
+            "_row_num": 79,
+            "_branch_label_enclosing_screen": "survey/_screen79",
+            "promptIdx": 28
           }
         ],
         "validation_tag_map": {
@@ -2759,75 +3013,47 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 12,
-              "__rowNum__": 11,
+              "_row_num": 19,
+              "__rowNum__": 18,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\nif (data(\"SEX\") == \"1\") {\nactivePromptIndicies.push(2);\n}\nelse {\nactivePromptIndicies.push(3);\n}\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nif (data(\"OBS_IDADE\") != null) {\nactivePromptIndicies.push(10);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 0
           },
           {
             "clause": "begin screen",
-            "_row_num": 13,
-            "__rowNum__": 12,
+            "_row_num": 20,
+            "__rowNum__": 19,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 21,
-              "__rowNum__": 20,
+              "_row_num": 31,
+              "__rowNum__": 30,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(9);\nif (data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"5\") {\nactivePromptIndicies.push(10);\nif (data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"5\") {\nactivePromptIndicies.push(11);\n}\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(11);\nif (data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"5\") {\nactivePromptIndicies.push(12);\nif (data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"5\") {\nactivePromptIndicies.push(13);\n}\n}\nif (data(\"ESTADO\") == \"8\") {\nactivePromptIndicies.push(14);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 1
           },
           {
-            "clause": "begin screen",
-            "_row_num": 22,
-            "__rowNum__": 21,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 24,
-              "__rowNum__": 23,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(12);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 2
-          },
-          {
-            "clause": "begin screen",
-            "_row_num": 25,
-            "__rowNum__": 24,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 30,
-              "__rowNum__": 29,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\nactivePromptIndicies.push(16);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 3
-          },
-          {
             "clause": "if",
-            "condition": "data(\"newNumber\") == \"1\"",
-            "_row_num": 31,
-            "__rowNum__": 30,
+            "condition": "(data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"5\" ) && data(\"OBS_IDADE\") == null",
+            "_row_num": 32,
+            "__rowNum__": 31,
             "_token_type": "goto_label",
-            "_branch_label": "_then31",
-            "operationIdx": 4
+            "_branch_label": "_then32",
+            "operationIdx": 2
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else36",
-            "_row_num": 36,
-            "operationIdx": 5
+            "_branch_label": "_else78",
+            "_row_num": 78,
+            "operationIdx": 3
           },
           {
             "clause": "begin screen",
-            "_row_num": 32,
-            "__rowNum__": 31,
+            "_row_num": 33,
+            "__rowNum__": 32,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
@@ -2835,15 +3061,24 @@
               "__rowNum__": 34,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 6
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(15);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 4
+          },
+          {
+            "clause": "if",
+            "condition": "data(\"ACCEPT\") == \"1\"",
+            "_row_num": 36,
+            "__rowNum__": 35,
+            "_token_type": "goto_label",
+            "_branch_label": "_then36",
+            "operationIdx": 5
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif36",
-            "_row_num": 36,
-            "operationIdx": 7
+            "_branch_label": "_else77",
+            "_row_num": 77,
+            "operationIdx": 6
           },
           {
             "clause": "begin screen",
@@ -2852,12 +3087,49 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 48,
-              "__rowNum__": 47,
+              "_row_num": 42,
+              "__rowNum__": 41,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(19);\nif (data(\"MASC\") == \"2\") {\nactivePromptIndicies.push(20);\n}\nif (data(\"ACCEPT\") == \"2\") {\nassign('MASC', 2);\n}\nif (data(\"GRUPO2\") == \"2\") {\nassign('MASC', 8);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\nactivePromptIndicies.push(19);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 7
+          },
+          {
+            "clause": "if",
+            "condition": "data(\"newNumber\") == \"1\"",
+            "_row_num": 43,
+            "__rowNum__": 42,
+            "_token_type": "goto_label",
+            "_branch_label": "_then43",
             "operationIdx": 8
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else48",
+            "_row_num": 48,
+            "operationIdx": 9
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 44,
+            "__rowNum__": 43,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 47,
+              "__rowNum__": 46,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(20);\nactivePromptIndicies.push(21);\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 10
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif48",
+            "_row_num": 48,
+            "operationIdx": 11
           },
           {
             "clause": "begin screen",
@@ -2866,48 +3138,82 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 58,
-              "__rowNum__": 57,
+              "_row_num": 60,
+              "__rowNum__": 59,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(21);\nif (data(\"INTENCAO\") == \"1\") {\nactivePromptIndicies.push(22);\n}\nif (data(\"INTENCAO\") == \"2\" || data(\"INTENCAO\") == \"3\") {\nactivePromptIndicies.push(23);\n}\nactivePromptIndicies.push(24);\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 9
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(22);\nif (data(\"MASC\") == \"2\") {\nactivePromptIndicies.push(23);\n}\nif (data(\"RANGROUP\") == \"2\") {\nassign('MASC', 8);\n}\nif (data(\"ESTADO\") != \"1\" && data(\"RANGROUP\") == \"1\") {\nassign('MASC', 2);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 12
+          },
+          {
+            "clause": "begin screen",
+            "_row_num": 61,
+            "__rowNum__": 60,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 76,
+              "__rowNum__": 75,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(24);\nif (data(\"INTENCAO\") == \"1\") {\nactivePromptIndicies.push(25);\n}\nif (data(\"INTENCAO\") == \"2\" || data(\"INTENCAO\") == \"3\") {\nactivePromptIndicies.push(26);\n}\nactivePromptIndicies.push(27);\nif (data(\"RANDGROUP\") == \"2\") {\nassign('INTENCAO', 8);\n}\nif (data(\"ESTADO\") != \"1\" || data(\"RANDGROUP\") == \"1\") {\nassign('INTENCAO', 8);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "operationIdx": 13
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif77",
+            "_row_num": 77,
+            "operationIdx": 14
+          },
+          {
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif78",
+            "_row_num": 78,
+            "operationIdx": 15
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 59,
-            "operationIdx": 10
+            "_row_num": 79,
+            "operationIdx": 16
           },
           {
-            "_row_num": 59,
+            "_row_num": 79,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(25);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(28);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 11
+            "operationIdx": 17
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 59,
-            "operationIdx": 12
+            "_row_num": 79,
+            "operationIdx": 18
           }
         ],
         "branch_label_map": {
           "_screen2": 0,
-          "_screen13": 1,
-          "_screen22": 2,
-          "_screen25": 3,
-          "_then31": 6,
-          "_screen32": 6,
-          "_else36": 8,
-          "_endif36": 8,
-          "_screen37": 8,
-          "_screen49": 9,
-          "_contents": 11,
-          "_screen59": 11
+          "_screen20": 1,
+          "_then32": 4,
+          "_screen33": 4,
+          "_then36": 7,
+          "_screen37": 7,
+          "_then43": 10,
+          "_screen44": 10,
+          "_else48": 12,
+          "_endif48": 12,
+          "_screen49": 12,
+          "_screen61": 13,
+          "_else77": 15,
+          "_endif77": 15,
+          "_else78": 16,
+          "_endif78": 16,
+          "_contents": 17,
+          "_screen79": 17
         }
       },
       "initial": {
@@ -3225,7 +3531,7 @@
         "elementPath": "RANGROUP"
       },
       "ROOM": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 10,
@@ -3255,7 +3561,7 @@
         "elementPath": "BED"
       },
       "TELE1": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 12,
@@ -3269,7 +3575,7 @@
         "elementPath": "TELE1"
       },
       "TELE2": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 13,
@@ -3283,11 +3589,11 @@
         "elementPath": "TELE2"
       },
       "ESTADO": {
-        "type": "integer",
+        "type": "string",
         "valuesList": "VitalStatus",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 21,
             "section_name": "survey"
           },
           {
@@ -3310,7 +3616,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 23,
             "section_name": "survey"
           },
           {
@@ -3324,15 +3630,33 @@
         "elementSet": "data",
         "elementPath": "DATASAI"
       },
-      "ONDE": {
+      "DUPLO": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 29,
             "section_name": "survey"
           },
           {
             "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DUPLO",
+        "elementName": "DUPLO",
+        "elementSet": "data",
+        "elementPath": "DUPLO"
+      },
+      "ONDE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 25,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -3343,15 +3667,15 @@
         "elementPath": "ONDE"
       },
       "ACCEPT": {
-        "type": "integer",
+        "type": "string",
         "valuesList": "YesNoDontknow",
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 34,
             "section_name": "survey"
           },
           {
-            "_row_num": 18,
+            "_row_num": 19,
             "section_name": "model"
           }
         ],
@@ -3362,15 +3686,15 @@
         "elementPath": "ACCEPT"
       },
       "TELE1_VERI": {
-        "type": "integer",
+        "type": "string",
         "valuesList": "Phone",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 39,
             "section_name": "survey"
           },
           {
-            "_row_num": 19,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -3381,15 +3705,15 @@
         "elementPath": "TELE1_VERI"
       },
       "TELE2_VERI": {
-        "type": "integer",
+        "type": "string",
         "valuesList": "Phone",
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 40,
             "section_name": "survey"
           },
           {
-            "_row_num": 20,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -3400,14 +3724,14 @@
         "elementPath": "TELE2_VERI"
       },
       "NOVONUM1": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 45,
             "section_name": "survey"
           },
           {
-            "_row_num": 21,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -3418,14 +3742,14 @@
         "elementPath": "NOVONUM1"
       },
       "NOVONUM2": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 46,
             "section_name": "survey"
           },
           {
-            "_row_num": 22,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -3436,15 +3760,15 @@
         "elementPath": "NOVONUM2"
       },
       "MASC": {
-        "type": "integer",
+        "type": "string",
         "valuesList": "Mask",
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 50,
             "section_name": "survey"
           },
           {
-            "_row_num": 24,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -3460,11 +3784,11 @@
         "valuesList": "person_name",
         "_defn": [
           {
-            "_row_num": 57,
+            "_row_num": 69,
             "section_name": "survey"
           },
           {
-            "_row_num": 25,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -3475,15 +3799,15 @@
         "elementPath": "RECEB_QUEM"
       },
       "INTENCAO": {
-        "type": "integer",
+        "type": "string",
         "valuesList": "Intension",
         "_defn": [
           {
-            "_row_num": 50,
+            "_row_num": 62,
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -3494,15 +3818,15 @@
         "elementPath": "INTENCAO"
       },
       "QUANDO": {
-        "type": "integer",
+        "type": "string",
         "valuesList": "MaskWhen",
         "_defn": [
           {
-            "_row_num": 52,
+            "_row_num": 64,
             "section_name": "survey"
           },
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -3513,15 +3837,15 @@
         "elementPath": "QUANDO"
       },
       "MOTIVO": {
-        "type": "integer",
+        "type": "string",
         "valuesList": "NoMask",
         "_defn": [
           {
-            "_row_num": 55,
+            "_row_num": 67,
             "section_name": "survey"
           },
           {
-            "_row_num": 28,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -3535,7 +3859,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -3550,11 +3874,11 @@
         "valuesList": "persons",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 52,
             "section_name": "survey"
           },
           {
-            "_row_num": 31,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -3569,11 +3893,11 @@
         "valuesList": "YesNo",
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 41,
             "section_name": "survey"
           },
           {
-            "_row_num": 32,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -3587,7 +3911,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -3602,7 +3926,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 35,
             "section_name": "model"
           }
         ],
@@ -3617,7 +3941,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -3632,7 +3956,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 36,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -3647,7 +3971,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -3657,6 +3981,64 @@
         "elementName": "FAM",
         "elementSet": "data",
         "elementPath": "FAM"
+      },
+      "FNO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 39,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "fno id",
+        "elementKey": "FNO",
+        "elementName": "FNO",
+        "elementSet": "data",
+        "elementPath": "FNO"
+      },
+      "OBS_IDADE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 40,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "obs age",
+        "elementKey": "OBS_IDADE",
+        "elementName": "OBS_IDADE",
+        "elementSet": "data",
+        "elementPath": "OBS_IDADE"
+      },
+      "POID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "POID",
+        "elementName": "POID",
+        "elementSet": "data",
+        "elementPath": "POID"
+      },
+      "IDOID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 42,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDOID",
+        "elementName": "IDOID",
+        "elementSet": "data",
+        "elementPath": "IDOID"
       },
       "_id": {
         "type": "string",
@@ -3777,56 +4159,56 @@
         "_aspect": "ACCEPT",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":10},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":11},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":12}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":10},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":11},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":12}]"
       },
       {
         "_partition": "Column",
         "_aspect": "ESTADO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"VitalStatus\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":2},{\"choice_list_name\":\"VitalStatus\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Moved\",\"default\":\"Mudou\"}}},\"_row_num\":3},{\"choice_list_name\":\"VitalStatus\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":4},{\"choice_list_name\":\"VitalStatus\",\"data_value\":4,\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":5},{\"choice_list_name\":\"VitalStatus\",\"data_value\":5,\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":6},{\"choice_list_name\":\"VitalStatus\",\"data_value\":6,\"display\":{\"title\":{\"text\":{\"english\":\"Not found\",\"default\":\"Não encontrado\"}}},\"_row_num\":7},{\"choice_list_name\":\"VitalStatus\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Double\",\"default\":\"Duplo\"}}},\"_row_num\":8}]"
+        "_value": "[{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":2},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved\",\"default\":\"Mudou\"}}},\"_row_num\":3},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":4},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":5},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":6},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Not found\",\"default\":\"Não encontrado\"}}},\"_row_num\":7},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Double\",\"default\":\"Duplo\"}}},\"_row_num\":8}]"
       },
       {
         "_partition": "Column",
         "_aspect": "INTENCAO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Intension\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":28},{\"choice_list_name\":\"Intension\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":29},{\"choice_list_name\":\"Intension\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Do not know yet\",\"default\":\"Ainda não sabe\"}}},\"_row_num\":30},{\"choice_list_name\":\"Intension\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":31}]"
+        "_value": "[{\"choice_list_name\":\"Intension\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":28},{\"choice_list_name\":\"Intension\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":29},{\"choice_list_name\":\"Intension\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Do not know yet\",\"default\":\"Ainda não sabe\"}}},\"_row_num\":30},{\"choice_list_name\":\"Intension\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":31}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MASC",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Mask\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":23},{\"choice_list_name\":\"Mask\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Absent, left with other household member\",\"default\":\"Ausente, foi deixada com outro/a\"}}},\"_row_num\":24},{\"choice_list_name\":\"Mask\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":25},{\"choice_list_name\":\"Mask\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":26}]"
+        "_value": "[{\"choice_list_name\":\"Mask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":23},{\"choice_list_name\":\"Mask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent, left with other household member\",\"default\":\"Ausente, foi deixada com outro/a\"}}},\"_row_num\":24},{\"choice_list_name\":\"Mask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":25},{\"choice_list_name\":\"Mask\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":26}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MOTIVO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"NoMask\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Note able to wear a mask\",\"default\":\"Não consegue usar máscara\"}}},\"_row_num\":37},{\"choice_list_name\":\"NoMask\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Prefer surgery mask or other mask\",\"default\":\"Prefere usar a máscara cirurgica ou outra\"}}},\"_row_num\":38},{\"choice_list_name\":\"NoMask\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Can't explain why\",\"default\":\"Não sabe explicar\"}}},\"_row_num\":39},{\"choice_list_name\":\"NoMask\",\"data_value\":4,\"display\":{\"title\":{\"text\":{\"english\":\"Other reason\",\"default\":\"Outro\"}}},\"_row_num\":40},{\"choice_list_name\":\"NoMask\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":41}]"
+        "_value": "[{\"choice_list_name\":\"NoMask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Note able to wear a mask\",\"default\":\"Não consegue usar máscara\"}}},\"_row_num\":36},{\"choice_list_name\":\"NoMask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Prefer surgery mask or other mask\",\"default\":\"Prefere usar a máscara cirurgica ou outra\"}}},\"_row_num\":37},{\"choice_list_name\":\"NoMask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Can't explain why\",\"default\":\"Não sabe explicar\"}}},\"_row_num\":38},{\"choice_list_name\":\"NoMask\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Other reason\",\"default\":\"Outro\"}}},\"_row_num\":39}]"
       },
       {
         "_partition": "Column",
         "_aspect": "QUANDO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"MaskWhen\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"When leaving the house\",\"default\":\"Quando sai\"}}},\"_row_num\":33},{\"choice_list_name\":\"MaskWhen\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"Often\",\"default\":\"Sempre\"}}},\"_row_num\":34},{\"choice_list_name\":\"MaskWhen\",\"data_value\":8,\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":35}]"
+        "_value": "[{\"choice_list_name\":\"MaskWhen\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"When leaving the house\",\"default\":\"Quando sai\"}}},\"_row_num\":33},{\"choice_list_name\":\"MaskWhen\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Often\",\"default\":\"Sempre\"}}},\"_row_num\":34}]"
       },
       {
         "_partition": "Column",
         "_aspect": "TELE1_VERI",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Phone\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":14},{\"choice_list_name\":\"Phone\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":15},{\"choice_list_name\":\"Phone\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":16},{\"choice_list_name\":\"Phone\",\"data_value\":4,\"display\":{\"title\":{\"text\":{\"english\":\"Other person in the household\",\"default\":\"Outra pessoa na casa\"}}},\"_row_num\":17},{\"choice_list_name\":\"Phone\",\"data_value\":7,\"display\":{\"title\":{\"text\":{\"english\":\"Do not have a phone number\",\"default\":\"Não tem um número de telefone\"}}},\"_row_num\":18}]"
+        "_value": "[{\"choice_list_name\":\"Phone\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":14},{\"choice_list_name\":\"Phone\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":15},{\"choice_list_name\":\"Phone\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":16},{\"choice_list_name\":\"Phone\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Other person in the household\",\"default\":\"Commune\"}}},\"_row_num\":17},{\"choice_list_name\":\"Phone\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Do not have a phone number\",\"default\":\"Não tem um número de telefone\"}}},\"_row_num\":18}]"
       },
       {
         "_partition": "Column",
         "_aspect": "TELE2_VERI",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Phone\",\"data_value\":1,\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":14},{\"choice_list_name\":\"Phone\",\"data_value\":2,\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":15},{\"choice_list_name\":\"Phone\",\"data_value\":3,\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":16},{\"choice_list_name\":\"Phone\",\"data_value\":4,\"display\":{\"title\":{\"text\":{\"english\":\"Other person in the household\",\"default\":\"Outra pessoa na casa\"}}},\"_row_num\":17},{\"choice_list_name\":\"Phone\",\"data_value\":7,\"display\":{\"title\":{\"text\":{\"english\":\"Do not have a phone number\",\"default\":\"Não tem um número de telefone\"}}},\"_row_num\":18}]"
+        "_value": "[{\"choice_list_name\":\"Phone\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":14},{\"choice_list_name\":\"Phone\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":15},{\"choice_list_name\":\"Phone\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":16},{\"choice_list_name\":\"Phone\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Other person in the household\",\"default\":\"Commune\"}}},\"_row_num\":17},{\"choice_list_name\":\"Phone\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Do not have a phone number\",\"default\":\"Não tem um número de telefone\"}}},\"_row_num\":18}]"
       },
       {
         "_partition": "FormType",
