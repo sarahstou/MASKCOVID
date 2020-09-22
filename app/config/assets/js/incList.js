@@ -11,7 +11,7 @@ function display() {
     zone = util.getQueryParameter('zone');
     houseGroup = util.getQueryParameter('houseGroup');
     camo = util.getQueryParameter('camo');
-    fam = util.getQueryParameter('fam');
+    fam = Number(util.getQueryParameter('fam'));
     famName = util.getQueryParameter('famName');
     hhoid = util.getQueryParameter('hhoid');
     
@@ -23,7 +23,7 @@ function display() {
 
 function loadHouseHold() {
     // SQL to get persons
-    var varNames = "_id, _savepoint_type, BAIRRO, CAMO, FAM, HOUSEGRP, TABZ";
+    var varNames = "_id, _savepoint_type, BAIRRO, CAMO, FAM, HOUSEGRP, TABZ, VISITA";
     var sql = "SELECT " + varNames +
         " FROM MASKHOUSEHOLD" + 
         " WHERE BAIRRO = " + bairro + " AND TABZ = " + tabz + " AND HOUSEGRP = '" + houseGroup + "' AND CAMO = " + camo + " AND FAM = " + fam
@@ -41,8 +41,9 @@ function loadHouseHold() {
             var FAM = result.getData(row,"FAM");
             var HOUSEGRP = result.getData(row,"HOUSEGRP");
             var TABZ = result.getData(row,"TABZ");
+            var VISITA = result.getData(row,"VISITA");
 
-            var p = {type: 'household', rowId, savepoint, BAIRRO, CAMO, FAM, HOUSEGRP, TABZ};
+            var p = {type: 'household', rowId, savepoint, BAIRRO, CAMO, FAM, HOUSEGRP, TABZ, VISITA};
             household.push(p);
         }
         console.log("household:", household)
@@ -60,10 +61,11 @@ function loadHouseHold() {
 
 function loadPersons() {
     // SQL to get persons
-    var varNames = "_savepoint_type, DOB, ESTADO, HHOID, MASC, NOME, SEX";
+    var varNames = "_savepoint_type, DOB, ESTADO, FNO, HHOID, MASC, NOME, SEX";
     var sql = "SELECT " + varNames +
         " FROM MASKINCL" + 
-        " WHERE HHOID = " + hhoid
+        " WHERE HHOID = " + hhoid + 
+        " ORDER BY FNO";
     participants = [];
     console.log("Querying database for participants...");
     console.log(sql);
@@ -115,7 +117,7 @@ function populateView() {
         
         // Check if visited today      
         var visited = '';
-        if (visitedPeople.length == participants.length) {
+        if (visitedPeople.length == participants.length | this.VISITA == 2) {
             visited = "visited";
         };
 
@@ -133,10 +135,9 @@ function populateView() {
     var ul = $('#li');
     $.each(participants, function() {
         var that = this;  
-        
         // Check if called today
         var visited = '';
-        if (this.savepoint == "COMPLETE" & this.ESTADO != null) {
+        if (this.savepoint == "COMPLETE" & this.ESTADO != null | household[0]["VISITA"] == 2) {
             visited = "visited";
         };
 

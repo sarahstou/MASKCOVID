@@ -415,6 +415,32 @@
         "_row_num": 9
       },
       {
+        "choice_list_name": "Assistant",
+        "data_value": "OID",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Odies",
+              "default": "Oides"
+            }
+          }
+        },
+        "_row_num": 10
+      },
+      {
+        "choice_list_name": "Assistant",
+        "data_value": "KEL",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Kelbit",
+              "default": "Kelbit"
+            }
+          }
+        },
+        "_row_num": 11
+      },
+      {
         "choice_list_name": "Roof",
         "data_value": "1",
         "display": {
@@ -425,7 +451,7 @@
             }
           }
         },
-        "_row_num": 11
+        "_row_num": 13
       },
       {
         "choice_list_name": "Roof",
@@ -438,7 +464,7 @@
             }
           }
         },
-        "_row_num": 12
+        "_row_num": 14
       },
       {
         "choice_list_name": "Roof",
@@ -451,7 +477,7 @@
             }
           }
         },
-        "_row_num": 13
+        "_row_num": 15
       },
       {
         "choice_list_name": "Roof",
@@ -464,7 +490,7 @@
             }
           }
         },
-        "_row_num": 14
+        "_row_num": 16
       },
       {
         "choice_list_name": "Roof",
@@ -477,7 +503,7 @@
             }
           }
         },
-        "_row_num": 15
+        "_row_num": 17
       },
       {
         "choice_list_name": "Veranda",
@@ -490,7 +516,7 @@
             }
           }
         },
-        "_row_num": 17
+        "_row_num": 19
       },
       {
         "choice_list_name": "Veranda",
@@ -503,7 +529,7 @@
             }
           }
         },
-        "_row_num": 18
+        "_row_num": 20
       },
       {
         "choice_list_name": "Veranda",
@@ -516,7 +542,7 @@
             }
           }
         },
-        "_row_num": 19
+        "_row_num": 21
       },
       {
         "choice_list_name": "YesNo",
@@ -529,7 +555,7 @@
             }
           }
         },
-        "_row_num": 21
+        "_row_num": 23
       },
       {
         "choice_list_name": "YesNo",
@@ -542,7 +568,7 @@
             }
           }
         },
-        "_row_num": 22
+        "_row_num": 24
       },
       {
         "choice_list_name": "Water",
@@ -555,7 +581,7 @@
             }
           }
         },
-        "_row_num": 24
+        "_row_num": 26
       },
       {
         "choice_list_name": "Water",
@@ -568,7 +594,7 @@
             }
           }
         },
-        "_row_num": 25
+        "_row_num": 27
       },
       {
         "choice_list_name": "Water",
@@ -581,7 +607,7 @@
             }
           }
         },
-        "_row_num": 26
+        "_row_num": 28
       },
       {
         "choice_list_name": "Water",
@@ -594,7 +620,7 @@
             }
           }
         },
-        "_row_num": 27
+        "_row_num": 29
       }
     ],
     "queries": [
@@ -940,6 +966,32 @@
             }
           },
           "_row_num": 9
+        },
+        {
+          "choice_list_name": "Assistant",
+          "data_value": "OID",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Odies",
+                "default": "Oides"
+              }
+            }
+          },
+          "_row_num": 10
+        },
+        {
+          "choice_list_name": "Assistant",
+          "data_value": "KEL",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Kelbit",
+                "default": "Kelbit"
+              }
+            }
+          },
+          "_row_num": 11
         }
       ],
       "Roof": [
@@ -954,7 +1006,7 @@
               }
             }
           },
-          "_row_num": 11
+          "_row_num": 13
         },
         {
           "choice_list_name": "Roof",
@@ -967,7 +1019,7 @@
               }
             }
           },
-          "_row_num": 12
+          "_row_num": 14
         },
         {
           "choice_list_name": "Roof",
@@ -980,7 +1032,7 @@
               }
             }
           },
-          "_row_num": 13
+          "_row_num": 15
         },
         {
           "choice_list_name": "Roof",
@@ -993,7 +1045,7 @@
               }
             }
           },
-          "_row_num": 14
+          "_row_num": 16
         },
         {
           "choice_list_name": "Roof",
@@ -1006,7 +1058,7 @@
               }
             }
           },
-          "_row_num": 15
+          "_row_num": 17
         }
       ],
       "Veranda": [
@@ -1021,7 +1073,7 @@
               }
             }
           },
-          "_row_num": 17
+          "_row_num": 19
         },
         {
           "choice_list_name": "Veranda",
@@ -1034,7 +1086,7 @@
               }
             }
           },
-          "_row_num": 18
+          "_row_num": 20
         },
         {
           "choice_list_name": "Veranda",
@@ -1047,7 +1099,7 @@
               }
             }
           },
-          "_row_num": 19
+          "_row_num": 21
         }
       ],
       "YesNo": [
@@ -1062,7 +1114,7 @@
               }
             }
           },
-          "_row_num": 21
+          "_row_num": 23
         },
         {
           "choice_list_name": "YesNo",
@@ -1075,7 +1127,7 @@
               }
             }
           },
-          "_row_num": 22
+          "_row_num": 24
         }
       ],
       "Water": [
@@ -1090,7 +1142,7 @@
               }
             }
           },
-          "_row_num": 24
+          "_row_num": 26
         },
         {
           "choice_list_name": "Water",
@@ -1103,7 +1155,7 @@
               }
             }
           },
-          "_row_num": 25
+          "_row_num": 27
         },
         {
           "choice_list_name": "Water",
@@ -1116,7 +1168,7 @@
               }
             }
           },
-          "_row_num": 26
+          "_row_num": 28
         },
         {
           "choice_list_name": "Water",
@@ -1129,7 +1181,7 @@
               }
             }
           },
-          "_row_num": 27
+          "_row_num": 29
         }
       ]
     },
@@ -2342,49 +2394,49 @@
         "_aspect": "COBERTURA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Roof\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Straw\",\"default\":\"Palha\"}}},\"_row_num\":11},{\"choice_list_name\":\"Roof\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Zinc\",\"default\":\"Zinco\"}}},\"_row_num\":12},{\"choice_list_name\":\"Roof\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Tiles\",\"default\":\"Telha\"}}},\"_row_num\":13},{\"choice_list_name\":\"Roof\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Cement\",\"default\":\"Fibra cimento\"}}},\"_row_num\":14},{\"choice_list_name\":\"Roof\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":15}]"
+        "_value": "[{\"choice_list_name\":\"Roof\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Straw\",\"default\":\"Palha\"}}},\"_row_num\":13},{\"choice_list_name\":\"Roof\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Zinc\",\"default\":\"Zinco\"}}},\"_row_num\":14},{\"choice_list_name\":\"Roof\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Tiles\",\"default\":\"Telha\"}}},\"_row_num\":15},{\"choice_list_name\":\"Roof\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Cement\",\"default\":\"Fibra cimento\"}}},\"_row_num\":16},{\"choice_list_name\":\"Roof\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":17}]"
       },
       {
         "_partition": "Column",
         "_aspect": "FONTE",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Water\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Tab inside\",\"default\":\"Torneira dentro casa\"}}},\"_row_num\":24},{\"choice_list_name\":\"Water\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Tab outside\",\"default\":\"Torneira fora\"}}},\"_row_num\":25},{\"choice_list_name\":\"Water\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Small well\",\"default\":\"Fonte (poco)\"}}},\"_row_num\":26},{\"choice_list_name\":\"Water\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Public well\",\"default\":\"Fontenario publico\"}}},\"_row_num\":27}]"
+        "_value": "[{\"choice_list_name\":\"Water\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Tab inside\",\"default\":\"Torneira dentro casa\"}}},\"_row_num\":26},{\"choice_list_name\":\"Water\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Tab outside\",\"default\":\"Torneira fora\"}}},\"_row_num\":27},{\"choice_list_name\":\"Water\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Small well\",\"default\":\"Fonte (poco)\"}}},\"_row_num\":28},{\"choice_list_name\":\"Water\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Public well\",\"default\":\"Fontenario publico\"}}},\"_row_num\":29}]"
       },
       {
         "_partition": "Column",
         "_aspect": "INFO_COVID",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":23},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":24}]"
       },
       {
         "_partition": "Column",
         "_aspect": "PREENCHIDO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAL\",\"display\":{\"title\":{\"text\":{\"english\":\"Malam\",\"default\":\"Malam\"}}},\"_row_num\":2},{\"choice_list_name\":\"Assistant\",\"data_value\":\"NEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Nene Mario\",\"default\":\"Nene Mario\"}}},\"_row_num\":3},{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAU\",\"display\":{\"title\":{\"text\":{\"english\":\"Maudu\",\"default\":\"Maudu\"}}},\"_row_num\":4},{\"choice_list_name\":\"Assistant\",\"data_value\":\"DEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Demba\",\"default\":\"Demba\"}}},\"_row_num\":5},{\"choice_list_name\":\"Assistant\",\"data_value\":\"WIL\",\"display\":{\"title\":{\"text\":{\"english\":\"William\",\"default\":\"William\"}}},\"_row_num\":6},{\"choice_list_name\":\"Assistant\",\"data_value\":\"IAI\",\"display\":{\"title\":{\"text\":{\"english\":\"Iaia\",\"default\":\"Iaia\"}}},\"_row_num\":7},{\"choice_list_name\":\"Assistant\",\"data_value\":\"EDU\",\"display\":{\"title\":{\"text\":{\"english\":\"Eduardo\",\"default\":\"Eduardo\"}}},\"_row_num\":8},{\"choice_list_name\":\"Assistant\",\"data_value\":\"ARM\",\"display\":{\"title\":{\"text\":{\"english\":\"Armando\",\"default\":\"Armando\"}}},\"_row_num\":9}]"
+        "_value": "[{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAL\",\"display\":{\"title\":{\"text\":{\"english\":\"Malam\",\"default\":\"Malam\"}}},\"_row_num\":2},{\"choice_list_name\":\"Assistant\",\"data_value\":\"NEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Nene Mario\",\"default\":\"Nene Mario\"}}},\"_row_num\":3},{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAU\",\"display\":{\"title\":{\"text\":{\"english\":\"Maudu\",\"default\":\"Maudu\"}}},\"_row_num\":4},{\"choice_list_name\":\"Assistant\",\"data_value\":\"DEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Demba\",\"default\":\"Demba\"}}},\"_row_num\":5},{\"choice_list_name\":\"Assistant\",\"data_value\":\"WIL\",\"display\":{\"title\":{\"text\":{\"english\":\"William\",\"default\":\"William\"}}},\"_row_num\":6},{\"choice_list_name\":\"Assistant\",\"data_value\":\"IAI\",\"display\":{\"title\":{\"text\":{\"english\":\"Iaia\",\"default\":\"Iaia\"}}},\"_row_num\":7},{\"choice_list_name\":\"Assistant\",\"data_value\":\"EDU\",\"display\":{\"title\":{\"text\":{\"english\":\"Eduardo\",\"default\":\"Eduardo\"}}},\"_row_num\":8},{\"choice_list_name\":\"Assistant\",\"data_value\":\"ARM\",\"display\":{\"title\":{\"text\":{\"english\":\"Armando\",\"default\":\"Armando\"}}},\"_row_num\":9},{\"choice_list_name\":\"Assistant\",\"data_value\":\"OID\",\"display\":{\"title\":{\"text\":{\"english\":\"Odies\",\"default\":\"Oides\"}}},\"_row_num\":10},{\"choice_list_name\":\"Assistant\",\"data_value\":\"KEL\",\"display\":{\"title\":{\"text\":{\"english\":\"Kelbit\",\"default\":\"Kelbit\"}}},\"_row_num\":11}]"
       },
       {
         "_partition": "Column",
         "_aspect": "TECTO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":23},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":24}]"
       },
       {
         "_partition": "Column",
         "_aspect": "VARANDA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Veranda\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Mosaic\",\"default\":\"Mosaico\"}}},\"_row_num\":17},{\"choice_list_name\":\"Veranda\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Cement\",\"default\":\"Cimento\"}}},\"_row_num\":18},{\"choice_list_name\":\"Veranda\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Stamped soil\",\"default\":\"Tera batida\"}}},\"_row_num\":19}]"
+        "_value": "[{\"choice_list_name\":\"Veranda\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Mosaic\",\"default\":\"Mosaico\"}}},\"_row_num\":19},{\"choice_list_name\":\"Veranda\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Cement\",\"default\":\"Cimento\"}}},\"_row_num\":20},{\"choice_list_name\":\"Veranda\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Stamped soil\",\"default\":\"Tera batida\"}}},\"_row_num\":21}]"
       },
       {
         "_partition": "Column",
         "_aspect": "VISITA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":23},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":24}]"
       },
       {
         "_partition": "FormType",
