@@ -13,53 +13,52 @@
         <script type="text/javascript" src="../../system/tables/js/odkTables.js"></script>
         
         <script type="text/javascript" src="js/util.js"></script>
-        <script type="text/javascript" src="js/list.js"></script>
+        <script type="text/javascript" src="js/fuFamList.js"></script>
         <style>
+        .form-group {
+            margin:30px 0;
+        }
         ul {
             list-style:none;
         }
-        button.participant {
-            background-color: darkseagreen;
+        button {
             text-align:left;
             font-size: x-large;
-            padding-left: 10px;
-            margin:10px;
+            margin:15px;
             height:auto;
-            width:100%;
-            color: darkslategray; 
+            width:90%;
+            border: none;
+            border-radius: 4px;
+            color: white; 
         }
-        button.participantgetResults {
-            background-color: goldenrod;
-            text-align:left;
-            font-size: x-large;
-            padding-left: 10px;
-            margin:10px;
-            height:auto;
-            width:100%;
-            color: darkslategray; 
+        .btn1 {
+            background-color: #045815;
         }
-        button.called{
-            opacity:.5;
-            background-image: url(./img/checkMarkBlack.png);
-            background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain;
+        .btn2 {
+            background-color: #0B823C;
+        }
+        .btn3 {
+            background-color: #17A871;
+        }
+        .btn4 {
+            background-color: #41B56E;
+        }
+        .btn7 {
+            background-color: #6AC378;
+        }
+        .btn9 {
+            background-color: #98D293;
         }
         </style>
     </head>
 
-   
-    <body>
+    <body onload="display();">
+
         <div id="main" class="container" style="height: 100vh;">
             <div class="form-group">
-                <ul id="li" style="padding:20px;">            
+                <ul id="li">            
                 </ul>
             </div>
         </div>
-        <script>
-        $(function() {
-            display();
-        });
-        </script>
     </body>
 </html>
