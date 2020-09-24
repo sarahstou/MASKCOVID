@@ -10,7 +10,7 @@ util.DEBUG = false;
  * Get a string to append to a url that will contain information the date and
  * time. The values can then be retrieved using getQueryParameter.
  */
-util.setQuerystringParams = function(date, bairro, tabz, zone, houseGroup, camo, fam, famName, hhoid) {
+util.setQuerystringParams = function(date, bairro, tabz, zone, houseGroup, camo, fam, famName, hhoid, assistant) {
 
     var that = this;
     var first = true;
@@ -52,6 +52,10 @@ util.setQuerystringParams = function(date, bairro, tabz, zone, houseGroup, camo,
 
     if (hhoid) {
         adaptProps['hhoid'] = hhoid;
+    } 
+
+    if (assistant) {
+        adaptProps['assistant'] = assistant;
     } 
 
     for (var prop in adaptProps) {

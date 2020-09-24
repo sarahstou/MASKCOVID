@@ -1611,7 +1611,7 @@
         "display": {
           "title": {
             "text": {
-              "english": "Odies",
+              "english": "Oides",
               "default": "Oides"
             }
           }
@@ -3246,7 +3246,7 @@
           "display": {
             "title": {
               "text": {
-                "english": "Odies",
+                "english": "Oides",
                 "default": "Oides"
               }
             }
@@ -8678,7 +8678,7 @@
         "_aspect": "ASSISTENTE",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAL\",\"display\":{\"title\":{\"text\":{\"english\":\"Malam\",\"default\":\"Malam\"}}},\"_row_num\":2},{\"choice_list_name\":\"Assistant\",\"data_value\":\"NEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Nene Mario\",\"default\":\"Nene Mario\"}}},\"_row_num\":3},{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAU\",\"display\":{\"title\":{\"text\":{\"english\":\"Maudu\",\"default\":\"Maudu\"}}},\"_row_num\":4},{\"choice_list_name\":\"Assistant\",\"data_value\":\"DEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Demba\",\"default\":\"Demba\"}}},\"_row_num\":5},{\"choice_list_name\":\"Assistant\",\"data_value\":\"WIL\",\"display\":{\"title\":{\"text\":{\"english\":\"William\",\"default\":\"William\"}}},\"_row_num\":6},{\"choice_list_name\":\"Assistant\",\"data_value\":\"IAI\",\"display\":{\"title\":{\"text\":{\"english\":\"Iaia\",\"default\":\"Iaia\"}}},\"_row_num\":7},{\"choice_list_name\":\"Assistant\",\"data_value\":\"EDU\",\"display\":{\"title\":{\"text\":{\"english\":\"Eduardo\",\"default\":\"Eduardo\"}}},\"_row_num\":8},{\"choice_list_name\":\"Assistant\",\"data_value\":\"ARM\",\"display\":{\"title\":{\"text\":{\"english\":\"Armando\",\"default\":\"Armando\"}}},\"_row_num\":9},{\"choice_list_name\":\"Assistant\",\"data_value\":\"OID\",\"display\":{\"title\":{\"text\":{\"english\":\"Odies\",\"default\":\"Oides\"}}},\"_row_num\":10},{\"choice_list_name\":\"Assistant\",\"data_value\":\"KEL\",\"display\":{\"title\":{\"text\":{\"english\":\"Kelbit\",\"default\":\"Kelbit\"}}},\"_row_num\":11}]"
+        "_value": "[{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAL\",\"display\":{\"title\":{\"text\":{\"english\":\"Malam\",\"default\":\"Malam\"}}},\"_row_num\":2},{\"choice_list_name\":\"Assistant\",\"data_value\":\"NEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Nene Mario\",\"default\":\"Nene Mario\"}}},\"_row_num\":3},{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAU\",\"display\":{\"title\":{\"text\":{\"english\":\"Maudu\",\"default\":\"Maudu\"}}},\"_row_num\":4},{\"choice_list_name\":\"Assistant\",\"data_value\":\"DEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Demba\",\"default\":\"Demba\"}}},\"_row_num\":5},{\"choice_list_name\":\"Assistant\",\"data_value\":\"WIL\",\"display\":{\"title\":{\"text\":{\"english\":\"William\",\"default\":\"William\"}}},\"_row_num\":6},{\"choice_list_name\":\"Assistant\",\"data_value\":\"IAI\",\"display\":{\"title\":{\"text\":{\"english\":\"Iaia\",\"default\":\"Iaia\"}}},\"_row_num\":7},{\"choice_list_name\":\"Assistant\",\"data_value\":\"EDU\",\"display\":{\"title\":{\"text\":{\"english\":\"Eduardo\",\"default\":\"Eduardo\"}}},\"_row_num\":8},{\"choice_list_name\":\"Assistant\",\"data_value\":\"ARM\",\"display\":{\"title\":{\"text\":{\"english\":\"Armando\",\"default\":\"Armando\"}}},\"_row_num\":9},{\"choice_list_name\":\"Assistant\",\"data_value\":\"OID\",\"display\":{\"title\":{\"text\":{\"english\":\"Oides\",\"default\":\"Oides\"}}},\"_row_num\":10},{\"choice_list_name\":\"Assistant\",\"data_value\":\"KEL\",\"display\":{\"title\":{\"text\":{\"english\":\"Kelbit\",\"default\":\"Kelbit\"}}},\"_row_num\":11}]"
       },
       {
         "_partition": "Column",

@@ -2,27 +2,43 @@
  * Responsible for rendering the select region screen 
  */
 'use strict';
-var participants, selDay, selMon, selYea, date;
+var assistants, participants, selDay, selMon, selYea, selAssistant, date;
 function display() {
     selDay = $('#selDateDay');
     selMon = $('#selDateMonth');
     selYea = $('#selDateYear');
+    selAssistant = $('#selAssistant');
     
     doSanityCheck();
-    initDate();
+    getList();
 }
-
 
 function doSanityCheck() {
     console.log("Checking things");
     console.log(odkData);
 }
 
+// Get assistants from CSV
+$.ajax({
+    url: 'assistants.csv',
+    dataType: 'text',
+}).done(getAssistants);
+
+function getAssistants(data) {
+    assistants = [];
+    var allRows = data.split(/\r?\n|\r/);
+    for (var row = 1; row < allRows.length; row++) {  // start at row = 1 to skip header
+        var rowValues = allRows[row].split(",");
+        var p = {code: rowValues[0], name: rowValues[1]};
+        assistants.push(p);
+    }
+    console.log('Assistants', assistants);
+}
+
 function getList() {
     // SQL to get children
-    var sql = "SELECT _savepoint_type, BAIRRO, CALLBACK, COVID, DATINC, DATSEG, ESTADO, FU, LASTINTERVIEW, POID, TESTERESUL " + 
-        " FROM MASKCOVID " +
-        " GROUP BY POID HAVING MAX(FU)"; 
+    var sql = "SELECT _savepoint_type " + 
+        " FROM MASKFU "; 
     participants = [];
     console.log("Querying database for participants...");
     console.log(sql);
@@ -31,36 +47,7 @@ function getList() {
         for (var row = 0; row < result.getCount(); row++) {
             var savepoint = result.getData(row,"_savepoint_type");
 
-            var BAIRRO = result.getData(row,"BAIRRO");
-            var CALLBACK = result.getData(row,"CALLBACK");
-            var COVID = result.getData(row,"COVID");
-            var DATINC = result.getData(row,"DATINC");
-            var DATSEG = result.getData(row,"DATSEG");
-            var ESTADO = result.getData(row,"ESTADO");
-            var FU = result.getData(row,"FU");
-            var LASTINTERVIEW = result.getData(row,"LASTINTERVIEW");
-            var POID = result.getData(row,"POID");
-            var TESTERESUL = result.getData(row,"TESTERESUL");
-
-            // generate follow-up date (28 days after last interview with succes follow up)
-            if (FU == 1 & (COVID == null | CALLBACK == "1" | TESTERESUL == "3")) {
-                var incD = Number(DATINC.slice(2, DATINC.search("M")-1));
-                var incM = DATINC.slice(DATINC.search("M")+2, DATINC.search("Y")-1);
-                var incY = DATINC.slice(DATINC.search("Y")+2);
-                var FUDate = new Date(incY, incM-1, incD + 28);
-            } else if (COVID == null | CALLBACK == "1" | TESTERESUL == "3") {
-                var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
-                var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
-                var segY = DATSEG.slice(DATSEG.search("Y")+2);
-                var FUDate = new Date(segY, segM-1, segD);
-            } else {
-                var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
-                var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
-                var segY = DATSEG.slice(DATSEG.search("Y")+2);
-                var FUDate = new Date(segY, segM-1, segD + 28);
-            }   
-
-            var p = { type: 'person', savepoint, BAIRRO, CALLBACK, COVID, DATINC, DATSEG, ESTADO, FU, FUDate, LASTINTERVIEW, POID, TESTERESUL};
+            var p = { type: 'person', savepoint};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -73,7 +60,7 @@ function getList() {
         console.error(sql);
         alert("Program error Unable to look up persons.");
     }
-    odkData.arbitraryQuery('MASKCOVID', sql, null, null, null, successFn, failureFn);
+    odkData.arbitraryQuery('MASKFU', sql, null, null, null, successFn, failureFn);
 }
 
 function initDate() {
@@ -112,60 +99,96 @@ function initDate() {
             selYea.append($("<option />").val(this).text(this));
         }
     })
+    
+    // Assistants dropdown
+    selAssistant.append($("<option />").val(-1).text("Assistente"));
+    $.each(assistants, function() {
+        selAssistant.append($("<option />").val(this.code).text(this.name));
+    })
+    
     document.getElementById("selDateDay").onchange = function() {initButtons()};
     document.getElementById("selDateMonth").onchange = function() {initButtons()};
     document.getElementById("selDateYear").onchange = function() {initButtons()};
+    document.getElementById("selAssistant").onchange = function() {initButtons()};
+    
     initButtons();
 }
 
+
 function initButtons() {
     // Bairro buttons
+    var assistant = selAssistant.val();
+    console.log("assbtn", assistant)
     var btn01 = $('#btn01');
     btn01.html("Bandim I <br />" + getCount(1));
     btn01.on("click", function() {
+        if (!assistant || assistant < 0 ) {
+            selAssistant.css('background-color','pink');
+            return false;
+        }
         var bairro = 1;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(date, bairro);
+        var queryParams = util.setQuerystringParams(date, bairro, null, null, null, null, null, null, null, assistant);
         odkTables.launchHTML(null, 'config/assets/fuTabzList.html' + queryParams);
     });
     var btn02 = $('#btn02');
     btn02.html("Bandim II <br />" + getCount(2));
     btn02.on("click", function() {
+        if (!assistant || assistant < 0 ) {
+            selAssistant.css('background-color','pink');
+            return false;
+        }
         var bairro = 2;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(date, bairro);
+        var queryParams = util.setQuerystringParams(date, bairro, null, null, null, null, null, null, null, assistant);
         odkTables.launchHTML(null, 'config/assets/fuTabzList.html' + queryParams);
     });
     var btn03 = $('#btn03');
     btn03.html("Belem <br />" + getCount(3));
     btn03.on("click", function() {
+        if (!assistant || assistant < 0 ) {
+            selAssistant.css('background-color','pink');
+            return false;
+        }
         var bairro = 3;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(date, bairro);
+        var queryParams = util.setQuerystringParams(date, bairro, null, null, null, null, null, null, null, assistant);
         odkTables.launchHTML(null, 'config/assets/fuTabzList.html' + queryParams);
     });
     var btn04 = $('#btn04');
     btn04.html("Mindara <br />" + getCount(4));
     btn04.on("click", function() {
+        if (!assistant || assistant < 0 ) {
+            selAssistant.css('background-color','pink');
+            return false;
+        }
         var bairro = 4;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(date, bairro);
+        var queryParams = util.setQuerystringParams(date, bairro, null, null, null, null, null, null, null, assistant);
         odkTables.launchHTML(null, 'config/assets/fuTabzList.html' + queryParams);
     });
     var btn05 = $('#btn05');
     btn05.html("Cuntum I <br />" + getCount(7));
     btn05.on("click", function() {
+        if (!assistant || assistant < 0 ) {
+            selAssistant.css('background-color','pink');
+            return false;
+        }
         var bairro = 7;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(date, bairro);
+        var queryParams = util.setQuerystringParams(date, bairro, null, null, null, null, null, null, null, assistant);
         odkTables.launchHTML(null, 'config/assets/fuTabzList.html' + queryParams);
     });
     var btn06 = $('#btn06');
     btn06.html("Cuntum II <br />" + getCount(9));
     btn06.on("click", function() {
+        if (!assistant || assistant < 0 ) {
+            selAssistant.css('background-color','pink');
+            return false;
+        }
         var bairro = 9;
         var date = new Date(selYea.val(), selMon.val()-1, selDay.val());
-        var queryParams = util.setQuerystringParams(date, bairro);
+        var queryParams = util.setQuerystringParams(date, bairro, null, null, null, null, null, null, null, assistant);
         odkTables.launchHTML(null, 'config/assets/fuTabzList.html' + queryParams);
     });
 }
