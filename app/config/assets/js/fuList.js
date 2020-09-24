@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var participants, date, bairro, tabz, zone, houseGroup, camo, fam, famName;
+var participants, date, bairro, tabz, zone, houseGroup, camo, fam, famName, assistant;
 function display() {
     console.log("TABZ list loading");
     date = util.getQueryParameter('date');
@@ -14,6 +14,7 @@ function display() {
     camo = util.getQueryParameter('camo');
     fam = util.getQueryParameter('fam');
     famName = util.getQueryParameter('famName');
+    assistant = util.getQueryParameter('assistant');
     
     var head = $('#main');
     head.prepend("<h1>" + tabz + " - " + houseGroup + " - " + camo + " </br> <h3> " + famName);
@@ -23,13 +24,17 @@ function display() {
 
 function loadPersons() {
     // SQL to get persons
-    var varNames = "_id, _savepoint_type, BAIRRO, CALLBACK, CAMO, COVID, DATINC, DATSEG, DOB, ESTADO, FU, GETRESULTS, LASTINTERVIEW, LASTTELSUC, NOME, NUMEST, POID, SEX, TABZ, TELE, TELMTN1, TELMTN2, TELMTN3, TELORA1, TELORA2, TELORA3, TELOU1, TELOU2, TELSUC, TESTERESUL";
-    var sql = "SELECT " + varNames +
-        " FROM MASKCOVID" + 
-        " WHERE BAIRRO = " + bairro + " AND TABZ = " + tabz + 
-        " GROUP BY POID HAVING MAX(FU)" +
-        " ORDER BY CAMO, POID";
-        participants = [];
+    var varNamesIncl = "I._id, I._savepoint_type, I.BAIRRO, I.CAMO, I.DOB, I.HHOID, I.NOME, I.POID, I.SEX, I.TABZ, ";
+    var varNamesHH = "H.DATEX, ";
+    var varNamesFU = "F.FU";
+    var sql = "SELECT " + varNamesIncl + varNamesHH + varNamesFU + 
+        " FROM MASKINCL AS I" + 
+        " LEFT JOIN MASKFU AS F ON I.POID = F.POID" + 
+        " INNER JOIN MASKHOUSEHOLD AS H ON I.HHOID = H.HHOID" +
+        " WHERE I.BAIRRO = " + bairro + " AND I.TABZ = " + tabz + " AND I.HOUSEGRP = '" + houseGroup + "' AND I.CAMO = " + camo + " AND I.FAM = " + fam +
+        " GROUP BY I.POID HAVING MAX(F.FU) OR F.FU IS NULL" +
+        " ORDER BY I.FAM";
+    participants = [];
     console.log("Querying database for participants...");
     console.log(sql);
     var successFn = function( result ) {
@@ -99,7 +104,7 @@ function loadPersons() {
         console.error(sql);
         alert("Program error Unable to look up persons.");
     }
-    odkData.arbitraryQuery('MASKCOVID', sql, null, null, null, successFn, failureFn);
+    odkData.arbitraryQuery('MASKFU', sql, null, null, null, successFn, failureFn);
 }
 
 function populateView() {

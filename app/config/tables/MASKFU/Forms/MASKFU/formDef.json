@@ -3005,6 +3005,52 @@
         "type": "text",
         "isSessionVariable": false,
         "_row_num": 72
+      },
+      {
+        "name": "HHOID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 74
+      },
+      {
+        "name": "BAIRRO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "comment": "for logic",
+        "_row_num": 75
+      },
+      {
+        "name": "HOUSEGRP",
+        "type": "text",
+        "isSessionVariable": false,
+        "comment": "for logic",
+        "_row_num": 76
+      },
+      {
+        "name": "FAM",
+        "type": "integer",
+        "isSessionVariable": false,
+        "comment": "for logic",
+        "_row_num": 77
+      },
+      {
+        "name": "FNO",
+        "type": "integer",
+        "isSessionVariable": false,
+        "comment": "fno id",
+        "_row_num": 78
+      },
+      {
+        "name": "POID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 79
+      },
+      {
+        "name": "IDOID",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 80
       }
     ]
   },
@@ -5240,6 +5286,87 @@
         ],
         "isSessionVariable": false,
         "elementKey": "HOSPDIAGQ"
+      },
+      "HHOID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 74,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "HHOID"
+      },
+      "BAIRRO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 75,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "for logic",
+        "elementKey": "BAIRRO"
+      },
+      "HOUSEGRP": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 76,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "for logic",
+        "elementKey": "HOUSEGRP"
+      },
+      "FAM": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 77,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "for logic",
+        "elementKey": "FAM"
+      },
+      "FNO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 78,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "fno id",
+        "elementKey": "FNO"
+      },
+      "POID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 79,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "POID"
+      },
+      "IDOID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 80,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDOID"
       },
       "TELES": {
         "_defn": [
@@ -8426,6 +8553,108 @@
         "elementName": "HOSPDIAGQ",
         "elementSet": "data",
         "elementPath": "HOSPDIAGQ"
+      },
+      "HHOID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 74,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "HHOID",
+        "elementName": "HHOID",
+        "elementSet": "data",
+        "elementPath": "HHOID"
+      },
+      "BAIRRO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 75,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "for logic",
+        "elementKey": "BAIRRO",
+        "elementName": "BAIRRO",
+        "elementSet": "data",
+        "elementPath": "BAIRRO"
+      },
+      "HOUSEGRP": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 76,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "for logic",
+        "elementKey": "HOUSEGRP",
+        "elementName": "HOUSEGRP",
+        "elementSet": "data",
+        "elementPath": "HOUSEGRP"
+      },
+      "FAM": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 77,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "for logic",
+        "elementKey": "FAM",
+        "elementName": "FAM",
+        "elementSet": "data",
+        "elementPath": "FAM"
+      },
+      "FNO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 78,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "comment": "fno id",
+        "elementKey": "FNO",
+        "elementName": "FNO",
+        "elementSet": "data",
+        "elementPath": "FNO"
+      },
+      "POID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 79,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "POID",
+        "elementName": "POID",
+        "elementSet": "data",
+        "elementPath": "POID"
+      },
+      "IDOID": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 80,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDOID",
+        "elementName": "IDOID",
+        "elementSet": "data",
+        "elementPath": "IDOID"
       },
       "TELES": {
         "_defn": [

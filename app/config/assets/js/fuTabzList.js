@@ -3,12 +3,13 @@
  */
 'use strict';
 
-var participants, masterFamList, date, bairro;
+var participants, masterFamList, date, bairro, assistant;
 function display() {
     console.log("TABZ list loading");
     date = util.getQueryParameter('date');
     bairro = util.getQueryParameter('bairro');
-    
+    assistant = util.getQueryParameter('assistant');
+
     var bairroName = {1: "Bandim I", 2: "Bandim II", 3: "Belem", 4: "Mindara", 7: "Cuntum I", 9: "Cuntum II"};
     var head = $('#main');
     head.prepend("<h1>" + bairroName[bairro] + " </br> <h3> Zonas");
@@ -42,7 +43,7 @@ function getMasterList(data) {
 function getList() {
     // SQL to get participants
     var sql = "SELECT _savepoint_type " + 
-        " FROM MASKCOVID "; 
+        " FROM MASKFU "; 
     participants = [];
     console.log("Querying database for participants...");
     console.log(sql);
@@ -94,7 +95,7 @@ function getList() {
         console.error(sql);
         alert("Program error Unable to look up persons.");
     }
-    odkData.arbitraryQuery('MASKCOVID', sql, null, null, null, successFn, failureFn);
+    odkData.arbitraryQuery('MASKFU', sql, null, null, null, successFn, failureFn);
 }
 
 function initButtons() {
@@ -127,7 +128,7 @@ function initButtons() {
         // Buttons
         var btn = ul.find('#' + this.tabz);
         btn.on("click", function() {
-            var queryParams = util.setQuerystringParams(date, that.bairro, that.tabz, that.zone);
+            var queryParams = util.setQuerystringParams(date, that.bairro, that.tabz, that.zone, null, null, null, null, null, assistant);
             odkTables.launchHTML(null, 'config/assets/fuHouseGroupList.html' + queryParams);
         })        
     });
