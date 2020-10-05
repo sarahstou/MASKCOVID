@@ -316,7 +316,7 @@
       },
       {
         "clause": "if",
-        "condition": "(data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"5\" ) && data(\"OBS_IDADE\") == null",
+        "condition": "(data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"5\"  || data(\"ESTADO\") == \"99\") && data(\"OBS_IDADE\") == null",
         "_row_num": 32
       },
       {
@@ -359,13 +359,13 @@
       },
       {
         "type": "select_one",
-        "values_list": "Phone",
+        "values_list": "YesNo",
         "name": "TELE1_VERI",
         "display": {
           "prompt": {
             "text": {
-              "english": "TELE1: {{data.TELE1}}",
-              "default": "TELE1: {{data.TELE1}}"
+              "english": "Number 1: {{data.TELE1}}",
+              "default": "Número 1: {{data.TELE1}}"
             }
           }
         },
@@ -373,13 +373,13 @@
       },
       {
         "type": "select_one",
-        "values_list": "Phone",
+        "values_list": "YesNo",
         "name": "TELE2_VERI",
         "display": {
           "prompt": {
             "text": {
-              "english": "TELE2: {{data.TELE2}}",
-              "default": "TELE2: {{data.TELE2}}"
+              "english": "Number 2: {{data.TELE2}}",
+              "default": "Número 2: {{data.TELE2}}"
             }
           }
         },
@@ -387,30 +387,17 @@
       },
       {
         "type": "select_one",
-        "values_list": "YesNo",
-        "name": "newNumber",
+        "values_list": "Phone",
+        "name": "TELEOU_VERI",
         "display": {
           "prompt": {
             "text": {
-              "english": "Add other number?",
-              "default": "Adicionar outro número?"
+              "english": "Other number",
+              "default": "Outro número"
             }
           }
         },
         "_row_num": 40
-      },
-      {
-        "clause": "end screen",
-        "_row_num": 41
-      },
-      {
-        "clause": "if",
-        "condition": "data(\"newNumber\") == \"1\"",
-        "_row_num": 42
-      },
-      {
-        "clause": "begin screen",
-        "_row_num": 43
       },
       {
         "type": "text",
@@ -426,7 +413,7 @@
         "inputAttributes": {
           "type": "number"
         },
-        "_row_num": 44
+        "_row_num": 41
       },
       {
         "type": "text",
@@ -442,19 +429,15 @@
         "inputAttributes": {
           "type": "number"
         },
-        "_row_num": 45
+        "_row_num": 42
       },
       {
         "clause": "end screen",
-        "_row_num": 46
-      },
-      {
-        "clause": "end if",
-        "_row_num": 47
+        "_row_num": 43
       },
       {
         "clause": "begin screen",
-        "_row_num": 48
+        "_row_num": 44
       },
       {
         "type": "select_one",
@@ -468,27 +451,12 @@
             }
           }
         },
-        "_row_num": 49
-      },
-      {
-        "clause": "if",
-        "condition": "data(\"ESTADO\") != \"1\" && data(\"RANGROUP\") == \"1\"",
-        "_row_num": 50
-      },
-      {
-        "type": "assign",
-        "name": "MASC",
-        "calculation": "2",
-        "_row_num": 51
-      },
-      {
-        "clause": "end if",
-        "_row_num": 52
+        "_row_num": 45
       },
       {
         "clause": "if",
         "condition": "data(\"MASC\") == \"2\"",
-        "_row_num": 53
+        "_row_num": 46
       },
       {
         "type": "select_one",
@@ -502,59 +470,19 @@
             }
           }
         },
-        "_row_num": 54
+        "_row_num": 47
       },
       {
         "clause": "end if",
-        "_row_num": 55
-      },
-      {
-        "clause": "if",
-        "condition": "data(\"ACCEPT\") == \"2\"",
-        "_row_num": 56
-      },
-      {
-        "type": "assign",
-        "name": "MASC",
-        "calculation": "3",
-        "_row_num": 57
-      },
-      {
-        "type": "assign",
-        "name": "INTENCAO",
-        "calculation": "2",
-        "_row_num": 58
-      },
-      {
-        "clause": "else",
-        "_row_num": 59
-      },
-      {
-        "clause": "if",
-        "condition": "data(\"RANGROUP\") == \"2\"",
-        "_row_num": 60
-      },
-      {
-        "type": "assign",
-        "name": "MASC",
-        "calculation": "8",
-        "_row_num": 61
-      },
-      {
-        "clause": "end if",
-        "_row_num": 62
-      },
-      {
-        "clause": "end if",
-        "_row_num": 63
+        "_row_num": 48
       },
       {
         "clause": "end screen",
-        "_row_num": 64
+        "_row_num": 49
       },
       {
         "clause": "begin screen",
-        "_row_num": 65
+        "_row_num": 50
       },
       {
         "type": "select_one",
@@ -568,12 +496,12 @@
             }
           }
         },
-        "_row_num": 66
+        "_row_num": 51
       },
       {
         "clause": "if",
         "condition": "data(\"INTENCAO\") == \"1\"",
-        "_row_num": 67
+        "_row_num": 52
       },
       {
         "type": "select_one",
@@ -587,16 +515,16 @@
             }
           }
         },
-        "_row_num": 68
+        "_row_num": 53
       },
       {
         "clause": "end if",
-        "_row_num": 69
+        "_row_num": 54
       },
       {
         "clause": "if",
         "condition": "data(\"INTENCAO\") == \"2\" || data(\"INTENCAO\") == \"3\"",
-        "_row_num": 70
+        "_row_num": 55
       },
       {
         "type": "select_one",
@@ -610,55 +538,16 @@
             }
           }
         },
-        "_row_num": 71
+        "_row_num": 56
       },
       {
         "clause": "end if",
-        "_row_num": 72
-      },
-      {
-        "clause": "if",
-        "condition": "data(\"ACCEPT\") != \"2\"",
-        "_row_num": 73
-      },
-      {
-        "clause": "if",
-        "condition": "data(\"RANDGROUP\") == \"2\"",
-        "_row_num": 74
-      },
-      {
-        "type": "assign",
-        "name": "INTENCAO",
-        "calculation": "8",
-        "_row_num": 75
-      },
-      {
-        "clause": "end if",
-        "_row_num": 76
-      },
-      {
-        "clause": "if",
-        "condition": "data(\"ESTADO\") != \"1\" || data(\"RANDGROUP\") == \"1\"",
-        "_row_num": 77
-      },
-      {
-        "type": "assign",
-        "name": "INTENCAO",
-        "calculation": "8",
-        "_row_num": 78
-      },
-      {
-        "clause": "end if",
-        "_row_num": 79
-      },
-      {
-        "clause": "end if",
-        "_row_num": 80
+        "_row_num": 57
       },
       {
         "clause": "if",
         "condition": "data(\"id_RECEB_QUEM\") != null",
-        "_row_num": 81
+        "_row_num": 58
       },
       {
         "type": "async_assign_single_string",
@@ -667,19 +556,19 @@
         "display": {
           "hide_adate": true
         },
-        "_row_num": 82
+        "_row_num": 59
       },
       {
         "clause": "end if",
-        "_row_num": 83
+        "_row_num": 60
       },
       {
         "clause": "end screen",
-        "_row_num": 84
+        "_row_num": 61
       },
       {
         "clause": "end if",
-        "_row_num": 85
+        "_row_num": 62
       }
     ],
     "choices": [
@@ -775,6 +664,19 @@
         "_row_num": 8
       },
       {
+        "choice_list_name": "VitalStatus",
+        "data_value": "99",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Missing information",
+              "default": "Falta informação"
+            }
+          }
+        },
+        "_row_num": 9
+      },
+      {
         "choice_list_name": "YesNoDontknow",
         "data_value": "1",
         "display": {
@@ -782,19 +684,6 @@
             "text": {
               "english": "Yes",
               "default": "Sim"
-            }
-          }
-        },
-        "_row_num": 10
-      },
-      {
-        "choice_list_name": "YesNoDontknow",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "english": "No",
-              "default": "Não"
             }
           }
         },
@@ -802,32 +691,6 @@
       },
       {
         "choice_list_name": "YesNoDontknow",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Don't know",
-              "default": "Não sabe"
-            }
-          }
-        },
-        "_row_num": 12
-      },
-      {
-        "choice_list_name": "Phone",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Yes",
-              "default": "Sim"
-            }
-          }
-        },
-        "_row_num": 14
-      },
-      {
-        "choice_list_name": "Phone",
         "data_value": "2",
         "display": {
           "title": {
@@ -837,10 +700,10 @@
             }
           }
         },
-        "_row_num": 15
+        "_row_num": 12
       },
       {
-        "choice_list_name": "Phone",
+        "choice_list_name": "YesNoDontknow",
         "data_value": "3",
         "display": {
           "title": {
@@ -850,7 +713,20 @@
             }
           }
         },
-        "_row_num": 16
+        "_row_num": 13
+      },
+      {
+        "choice_list_name": "YesNoDontknow",
+        "data_value": "9",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Missing information",
+              "default": "Falta informação"
+            }
+          }
+        },
+        "_row_num": 14
       },
       {
         "choice_list_name": "Phone",
@@ -863,7 +739,33 @@
             }
           }
         },
+        "_row_num": 16
+      },
+      {
+        "choice_list_name": "Phone",
+        "data_value": "8",
+        "display": {
+          "title": {
+            "text": {
+              "english": "New Number",
+              "default": "Nobu número"
+            }
+          }
+        },
         "_row_num": 17
+      },
+      {
+        "choice_list_name": "Phone",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Don't know",
+              "default": "Não sabe"
+            }
+          }
+        },
+        "_row_num": 18
       },
       {
         "choice_list_name": "Phone",
@@ -876,7 +778,7 @@
             }
           }
         },
-        "_row_num": 18
+        "_row_num": 19
       },
       {
         "choice_list_name": "YesNo",
@@ -889,7 +791,7 @@
             }
           }
         },
-        "_row_num": 20
+        "_row_num": 21
       },
       {
         "choice_list_name": "YesNo",
@@ -902,7 +804,20 @@
             }
           }
         },
-        "_row_num": 21
+        "_row_num": 22
+      },
+      {
+        "choice_list_name": "YesNo",
+        "data_value": "9",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Missing information",
+              "default": "Falta informação"
+            }
+          }
+        },
+        "_row_num": 23
       },
       {
         "choice_list_name": "Mask",
@@ -915,7 +830,7 @@
             }
           }
         },
-        "_row_num": 23
+        "_row_num": 25
       },
       {
         "choice_list_name": "Mask",
@@ -928,7 +843,7 @@
             }
           }
         },
-        "_row_num": 24
+        "_row_num": 26
       },
       {
         "choice_list_name": "Mask",
@@ -941,7 +856,7 @@
             }
           }
         },
-        "_row_num": 25
+        "_row_num": 27
       },
       {
         "choice_list_name": "Mask",
@@ -954,7 +869,20 @@
             }
           }
         },
-        "_row_num": 26
+        "_row_num": 28
+      },
+      {
+        "choice_list_name": "Mask",
+        "data_value": "9",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Missing information",
+              "default": "Falta informação"
+            }
+          }
+        },
+        "_row_num": 29
       },
       {
         "choice_list_name": "Intension",
@@ -967,7 +895,7 @@
             }
           }
         },
-        "_row_num": 28
+        "_row_num": 31
       },
       {
         "choice_list_name": "Intension",
@@ -980,7 +908,7 @@
             }
           }
         },
-        "_row_num": 29
+        "_row_num": 32
       },
       {
         "choice_list_name": "Intension",
@@ -993,7 +921,7 @@
             }
           }
         },
-        "_row_num": 30
+        "_row_num": 33
       },
       {
         "choice_list_name": "Intension",
@@ -1006,7 +934,20 @@
             }
           }
         },
-        "_row_num": 31
+        "_row_num": 34
+      },
+      {
+        "choice_list_name": "Intension",
+        "data_value": "9",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Missing information",
+              "default": "Falta informação"
+            }
+          }
+        },
+        "_row_num": 35
       },
       {
         "choice_list_name": "MaskWhen",
@@ -1019,7 +960,7 @@
             }
           }
         },
-        "_row_num": 33
+        "_row_num": 37
       },
       {
         "choice_list_name": "MaskWhen",
@@ -1032,7 +973,20 @@
             }
           }
         },
-        "_row_num": 34
+        "_row_num": 38
+      },
+      {
+        "choice_list_name": "MaskWhen",
+        "data_value": "9",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Missing information",
+              "default": "Falta informação"
+            }
+          }
+        },
+        "_row_num": 39
       },
       {
         "choice_list_name": "NoMask",
@@ -1045,7 +999,7 @@
             }
           }
         },
-        "_row_num": 36
+        "_row_num": 41
       },
       {
         "choice_list_name": "NoMask",
@@ -1058,7 +1012,7 @@
             }
           }
         },
-        "_row_num": 37
+        "_row_num": 42
       },
       {
         "choice_list_name": "NoMask",
@@ -1071,7 +1025,7 @@
             }
           }
         },
-        "_row_num": 38
+        "_row_num": 43
       },
       {
         "choice_list_name": "NoMask",
@@ -1084,7 +1038,20 @@
             }
           }
         },
-        "_row_num": 39
+        "_row_num": 44
+      },
+      {
+        "choice_list_name": "NoMask",
+        "data_value": "9",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Missing information",
+              "default": "Falta informação"
+            }
+          }
+        },
+        "_row_num": 45
       }
     ],
     "queries": [
@@ -1146,7 +1113,7 @@
     "model": [
       {
         "name": "ID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "comment": "id",
         "_row_num": 2
@@ -1269,62 +1236,62 @@
         "_row_num": 21
       },
       {
-        "name": "NOVONUM1",
-        "type": "text",
+        "name": "TELEOU_VERI",
+        "type": "select_one",
         "isSessionVariable": false,
         "_row_num": 22
       },
       {
-        "name": "NOVONUM2",
+        "name": "NOVONUM1",
         "type": "text",
         "isSessionVariable": false,
         "_row_num": 23
       },
       {
+        "name": "NOVONUM2",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 24
+      },
+      {
         "name": "MASC",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 25
+        "_row_num": 26
       },
       {
         "name": "RECEB_QUEM",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 26
+        "_row_num": 27
       },
       {
         "name": "INTENCAO",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 27
+        "_row_num": 28
       },
       {
         "name": "QUANDO",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 28
+        "_row_num": 29
       },
       {
         "name": "MOTIVO",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 29
+        "_row_num": 30
       },
       {
         "name": "HHOID",
         "type": "integer",
         "isSessionVariable": false,
-        "_row_num": 31
+        "_row_num": 32
       },
       {
         "name": "id_RECEB_QUEM",
         "type": "text",
-        "isSessionVariable": true,
-        "_row_num": 32
-      },
-      {
-        "name": "newNumber",
-        "type": "integer",
         "isSessionVariable": true,
         "_row_num": 33
       },
@@ -1379,13 +1346,13 @@
       },
       {
         "name": "POID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 41
       },
       {
         "name": "IDOID",
-        "type": "integer",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 42
       }
@@ -1609,6 +1576,19 @@
             }
           },
           "_row_num": 8
+        },
+        {
+          "choice_list_name": "VitalStatus",
+          "data_value": "99",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Missing information",
+                "default": "Falta informação"
+              }
+            }
+          },
+          "_row_num": 9
         }
       ],
       "YesNoDontknow": [
@@ -1623,51 +1603,10 @@
               }
             }
           },
-          "_row_num": 10
-        },
-        {
-          "choice_list_name": "YesNoDontknow",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "english": "No",
-                "default": "Não"
-              }
-            }
-          },
           "_row_num": 11
         },
         {
           "choice_list_name": "YesNoDontknow",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Don't know",
-                "default": "Não sabe"
-              }
-            }
-          },
-          "_row_num": 12
-        }
-      ],
-      "Phone": [
-        {
-          "choice_list_name": "Phone",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Yes",
-                "default": "Sim"
-              }
-            }
-          },
-          "_row_num": 14
-        },
-        {
-          "choice_list_name": "Phone",
           "data_value": "2",
           "display": {
             "title": {
@@ -1677,10 +1616,10 @@
               }
             }
           },
-          "_row_num": 15
+          "_row_num": 12
         },
         {
-          "choice_list_name": "Phone",
+          "choice_list_name": "YesNoDontknow",
           "data_value": "3",
           "display": {
             "title": {
@@ -1690,8 +1629,23 @@
               }
             }
           },
-          "_row_num": 16
+          "_row_num": 13
         },
+        {
+          "choice_list_name": "YesNoDontknow",
+          "data_value": "9",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Missing information",
+                "default": "Falta informação"
+              }
+            }
+          },
+          "_row_num": 14
+        }
+      ],
+      "Phone": [
         {
           "choice_list_name": "Phone",
           "data_value": "4",
@@ -1703,7 +1657,33 @@
               }
             }
           },
+          "_row_num": 16
+        },
+        {
+          "choice_list_name": "Phone",
+          "data_value": "8",
+          "display": {
+            "title": {
+              "text": {
+                "english": "New Number",
+                "default": "Nobu número"
+              }
+            }
+          },
           "_row_num": 17
+        },
+        {
+          "choice_list_name": "Phone",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Don't know",
+                "default": "Não sabe"
+              }
+            }
+          },
+          "_row_num": 18
         },
         {
           "choice_list_name": "Phone",
@@ -1716,7 +1696,7 @@
               }
             }
           },
-          "_row_num": 18
+          "_row_num": 19
         }
       ],
       "YesNo": [
@@ -1731,7 +1711,7 @@
               }
             }
           },
-          "_row_num": 20
+          "_row_num": 21
         },
         {
           "choice_list_name": "YesNo",
@@ -1744,7 +1724,20 @@
               }
             }
           },
-          "_row_num": 21
+          "_row_num": 22
+        },
+        {
+          "choice_list_name": "YesNo",
+          "data_value": "9",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Missing information",
+                "default": "Falta informação"
+              }
+            }
+          },
+          "_row_num": 23
         }
       ],
       "Mask": [
@@ -1759,7 +1752,7 @@
               }
             }
           },
-          "_row_num": 23
+          "_row_num": 25
         },
         {
           "choice_list_name": "Mask",
@@ -1772,7 +1765,7 @@
               }
             }
           },
-          "_row_num": 24
+          "_row_num": 26
         },
         {
           "choice_list_name": "Mask",
@@ -1785,7 +1778,7 @@
               }
             }
           },
-          "_row_num": 25
+          "_row_num": 27
         },
         {
           "choice_list_name": "Mask",
@@ -1798,7 +1791,20 @@
               }
             }
           },
-          "_row_num": 26
+          "_row_num": 28
+        },
+        {
+          "choice_list_name": "Mask",
+          "data_value": "9",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Missing information",
+                "default": "Falta informação"
+              }
+            }
+          },
+          "_row_num": 29
         }
       ],
       "Intension": [
@@ -1813,7 +1819,7 @@
               }
             }
           },
-          "_row_num": 28
+          "_row_num": 31
         },
         {
           "choice_list_name": "Intension",
@@ -1826,7 +1832,7 @@
               }
             }
           },
-          "_row_num": 29
+          "_row_num": 32
         },
         {
           "choice_list_name": "Intension",
@@ -1839,7 +1845,7 @@
               }
             }
           },
-          "_row_num": 30
+          "_row_num": 33
         },
         {
           "choice_list_name": "Intension",
@@ -1852,7 +1858,20 @@
               }
             }
           },
-          "_row_num": 31
+          "_row_num": 34
+        },
+        {
+          "choice_list_name": "Intension",
+          "data_value": "9",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Missing information",
+                "default": "Falta informação"
+              }
+            }
+          },
+          "_row_num": 35
         }
       ],
       "MaskWhen": [
@@ -1867,7 +1886,7 @@
               }
             }
           },
-          "_row_num": 33
+          "_row_num": 37
         },
         {
           "choice_list_name": "MaskWhen",
@@ -1880,7 +1899,20 @@
               }
             }
           },
-          "_row_num": 34
+          "_row_num": 38
+        },
+        {
+          "choice_list_name": "MaskWhen",
+          "data_value": "9",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Missing information",
+                "default": "Falta informação"
+              }
+            }
+          },
+          "_row_num": 39
         }
       ],
       "NoMask": [
@@ -1895,7 +1927,7 @@
               }
             }
           },
-          "_row_num": 36
+          "_row_num": 41
         },
         {
           "choice_list_name": "NoMask",
@@ -1908,7 +1940,7 @@
               }
             }
           },
-          "_row_num": 37
+          "_row_num": 42
         },
         {
           "choice_list_name": "NoMask",
@@ -1921,7 +1953,7 @@
               }
             }
           },
-          "_row_num": 38
+          "_row_num": 43
         },
         {
           "choice_list_name": "NoMask",
@@ -1934,7 +1966,20 @@
               }
             }
           },
-          "_row_num": 39
+          "_row_num": 44
+        },
+        {
+          "choice_list_name": "NoMask",
+          "data_value": "9",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Missing information",
+                "default": "Falta informação"
+              }
+            }
+          },
+          "_row_num": 45
         }
       ]
     },
@@ -1985,7 +2030,7 @@
     },
     "model": {
       "ID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 2,
@@ -2222,7 +2267,7 @@
       },
       "TELE1_VERI": {
         "type": "string",
-        "valuesList": "Phone",
+        "valuesList": "YesNo",
         "_defn": [
           {
             "_row_num": 38,
@@ -2238,7 +2283,7 @@
       },
       "TELE2_VERI": {
         "type": "string",
-        "valuesList": "Phone",
+        "valuesList": "YesNo",
         "_defn": [
           {
             "_row_num": 39,
@@ -2252,15 +2297,31 @@
         "isSessionVariable": false,
         "elementKey": "TELE2_VERI"
       },
-      "NOVONUM1": {
+      "TELEOU_VERI": {
         "type": "string",
+        "valuesList": "Phone",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 40,
             "section_name": "survey"
           },
           {
             "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TELEOU_VERI"
+      },
+      "NOVONUM1": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -2271,11 +2332,11 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 42,
             "section_name": "survey"
           },
           {
-            "_row_num": 23,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -2287,11 +2348,11 @@
         "valuesList": "Mask",
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 45,
             "section_name": "survey"
           },
           {
-            "_row_num": 25,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -2304,11 +2365,11 @@
         "valuesList": "person_name",
         "_defn": [
           {
-            "_row_num": 82,
+            "_row_num": 59,
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -2320,11 +2381,11 @@
         "valuesList": "Intension",
         "_defn": [
           {
-            "_row_num": 66,
+            "_row_num": 51,
             "section_name": "survey"
           },
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -2336,11 +2397,11 @@
         "valuesList": "MaskWhen",
         "_defn": [
           {
-            "_row_num": 68,
+            "_row_num": 53,
             "section_name": "survey"
           },
           {
-            "_row_num": 28,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -2352,11 +2413,11 @@
         "valuesList": "NoMask",
         "_defn": [
           {
-            "_row_num": 71,
+            "_row_num": 56,
             "section_name": "survey"
           },
           {
-            "_row_num": 29,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -2367,7 +2428,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 31,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -2379,23 +2440,7 @@
         "valuesList": "persons",
         "_defn": [
           {
-            "_row_num": 54,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 32,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "id_RECEB_QUEM"
-      },
-      "newNumber": {
-        "type": "integer",
-        "valuesList": "YesNo",
-        "_defn": [
-          {
-            "_row_num": 40,
+            "_row_num": 47,
             "section_name": "survey"
           },
           {
@@ -2404,7 +2449,7 @@
           }
         ],
         "isSessionVariable": true,
-        "elementKey": "newNumber"
+        "elementKey": "id_RECEB_QUEM"
       },
       "BAIRRO": {
         "type": "integer",
@@ -2491,7 +2536,7 @@
         "elementKey": "OBS_IDADE"
       },
       "POID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 41,
@@ -2502,7 +2547,7 @@
         "elementKey": "POID"
       },
       "IDOID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 42,
@@ -2821,13 +2866,13 @@
           },
           {
             "type": "select_one",
-            "values_list": "Phone",
+            "values_list": "YesNo",
             "name": "TELE1_VERI",
             "display": {
               "prompt": {
                 "text": {
-                  "english": "TELE1: {{data.TELE1}}",
-                  "default": "TELE1: {{data.TELE1}}"
+                  "english": "Number 1: {{data.TELE1}}",
+                  "default": "Número 1: {{data.TELE1}}"
                 }
               }
             },
@@ -2840,13 +2885,13 @@
           },
           {
             "type": "select_one",
-            "values_list": "Phone",
+            "values_list": "YesNo",
             "name": "TELE2_VERI",
             "display": {
               "prompt": {
                 "text": {
-                  "english": "TELE2: {{data.TELE2}}",
-                  "default": "TELE2: {{data.TELE2}}"
+                  "english": "Number 2: {{data.TELE2}}",
+                  "default": "Número 2: {{data.TELE2}}"
                 }
               }
             },
@@ -2859,13 +2904,13 @@
           },
           {
             "type": "select_one",
-            "values_list": "YesNo",
-            "name": "newNumber",
+            "values_list": "Phone",
+            "name": "TELEOU_VERI",
             "display": {
               "prompt": {
                 "text": {
-                  "english": "Add other number?",
-                  "default": "Adicionar outro número?"
+                  "english": "Other number",
+                  "default": "Outro número"
                 }
               }
             },
@@ -2890,11 +2935,11 @@
             "inputAttributes": {
               "type": "number"
             },
-            "_row_num": 44,
-            "__rowNum__": 43,
+            "_row_num": 41,
+            "__rowNum__": 40,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen43",
+            "_branch_label_enclosing_screen": "survey/_screen36",
             "promptIdx": 20
           },
           {
@@ -2911,11 +2956,11 @@
             "inputAttributes": {
               "type": "number"
             },
-            "_row_num": 45,
-            "__rowNum__": 44,
+            "_row_num": 42,
+            "__rowNum__": 41,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen43",
+            "_branch_label_enclosing_screen": "survey/_screen36",
             "promptIdx": 21
           },
           {
@@ -2930,11 +2975,11 @@
                 }
               }
             },
-            "_row_num": 49,
-            "__rowNum__": 48,
+            "_row_num": 45,
+            "__rowNum__": 44,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen48",
+            "_branch_label_enclosing_screen": "survey/_screen44",
             "promptIdx": 22
           },
           {
@@ -2949,11 +2994,11 @@
                 }
               }
             },
-            "_row_num": 54,
-            "__rowNum__": 53,
+            "_row_num": 47,
+            "__rowNum__": 46,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen48",
+            "_branch_label_enclosing_screen": "survey/_screen44",
             "promptIdx": 23
           },
           {
@@ -2968,11 +3013,11 @@
                 }
               }
             },
-            "_row_num": 66,
-            "__rowNum__": 65,
+            "_row_num": 51,
+            "__rowNum__": 50,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen65",
+            "_branch_label_enclosing_screen": "survey/_screen50",
             "promptIdx": 24
           },
           {
@@ -2987,11 +3032,11 @@
                 }
               }
             },
-            "_row_num": 68,
-            "__rowNum__": 67,
+            "_row_num": 53,
+            "__rowNum__": 52,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen65",
+            "_branch_label_enclosing_screen": "survey/_screen50",
             "promptIdx": 25
           },
           {
@@ -3006,11 +3051,11 @@
                 }
               }
             },
-            "_row_num": 71,
-            "__rowNum__": 70,
+            "_row_num": 56,
+            "__rowNum__": 55,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen65",
+            "_branch_label_enclosing_screen": "survey/_screen50",
             "promptIdx": 26
           },
           {
@@ -3020,19 +3065,19 @@
             "display": {
               "hide_adate": true
             },
-            "_row_num": 82,
-            "__rowNum__": 81,
+            "_row_num": 59,
+            "__rowNum__": 58,
             "_token_type": "prompt",
             "_type": "async_assign_single_string",
-            "_branch_label_enclosing_screen": "survey/_screen65",
+            "_branch_label_enclosing_screen": "survey/_screen50",
             "promptIdx": 27
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 86,
-            "_branch_label_enclosing_screen": "survey/_screen86",
+            "_row_num": 63,
+            "_branch_label_enclosing_screen": "survey/_screen63",
             "promptIdx": 28
           }
         ],
@@ -3070,7 +3115,7 @@
           },
           {
             "clause": "if",
-            "condition": "(data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"5\" ) && data(\"OBS_IDADE\") == null",
+            "condition": "(data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"5\"  || data(\"ESTADO\") == \"99\") && data(\"OBS_IDADE\") == null",
             "_row_num": 32,
             "__rowNum__": 31,
             "_token_type": "goto_label",
@@ -3080,8 +3125,8 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else85",
-            "_row_num": 85,
+            "_branch_label": "_else62",
+            "_row_num": 62,
             "operationIdx": 3
           },
           {
@@ -3105,105 +3150,68 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 41,
-              "__rowNum__": 40,
+              "_row_num": 43,
+              "__rowNum__": 42,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\nactivePromptIndicies.push(19);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\nactivePromptIndicies.push(19);\nactivePromptIndicies.push(20);\nactivePromptIndicies.push(21);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 5
           },
           {
-            "clause": "if",
-            "condition": "data(\"newNumber\") == \"1\"",
-            "_row_num": 42,
-            "__rowNum__": 41,
-            "_token_type": "goto_label",
-            "_branch_label": "_then42",
+            "clause": "begin screen",
+            "_row_num": 44,
+            "__rowNum__": 43,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 49,
+              "__rowNum__": 48,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(22);\nif (data(\"MASC\") == \"2\") {\nactivePromptIndicies.push(23);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 6
           },
           {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_else47",
-            "_row_num": 47,
+            "clause": "begin screen",
+            "_row_num": 50,
+            "__rowNum__": 49,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 61,
+              "__rowNum__": 60,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(24);\nif (data(\"INTENCAO\") == \"1\") {\nactivePromptIndicies.push(25);\n}\nif (data(\"INTENCAO\") == \"2\" || data(\"INTENCAO\") == \"3\") {\nactivePromptIndicies.push(26);\n}\nif (data(\"id_RECEB_QUEM\") != null) {\nactivePromptIndicies.push(27);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 7
           },
           {
-            "clause": "begin screen",
-            "_row_num": 43,
-            "__rowNum__": 42,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 46,
-              "__rowNum__": 45,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(20);\nactivePromptIndicies.push(21);\n\nreturn activePromptIndicies;\n}\n",
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif62",
+            "_row_num": 62,
             "operationIdx": 8
-          },
-          {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_endif47",
-            "_row_num": 47,
-            "operationIdx": 9
-          },
-          {
-            "clause": "begin screen",
-            "_row_num": 48,
-            "__rowNum__": 47,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 64,
-              "__rowNum__": 63,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(22);\nif (data(\"ESTADO\") != \"1\" && data(\"RANGROUP\") == \"1\") {\nassign('MASC', 2);\n}\nif (data(\"MASC\") == \"2\") {\nactivePromptIndicies.push(23);\n}\nif (data(\"ACCEPT\") == \"2\") {\nassign('MASC', 3);\nassign('INTENCAO', 2);\n}\nelse {\nif (data(\"RANGROUP\") == \"2\") {\nassign('MASC', 8);\n}\n}\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 10
-          },
-          {
-            "clause": "begin screen",
-            "_row_num": 65,
-            "__rowNum__": 64,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 84,
-              "__rowNum__": 83,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(24);\nif (data(\"INTENCAO\") == \"1\") {\nactivePromptIndicies.push(25);\n}\nif (data(\"INTENCAO\") == \"2\" || data(\"INTENCAO\") == \"3\") {\nactivePromptIndicies.push(26);\n}\nif (data(\"ACCEPT\") != \"2\") {\nif (data(\"RANDGROUP\") == \"2\") {\nassign('INTENCAO', 8);\n}\nif (data(\"ESTADO\") != \"1\" || data(\"RANDGROUP\") == \"1\") {\nassign('INTENCAO', 8);\n}\n}\nif (data(\"id_RECEB_QUEM\") != null) {\nactivePromptIndicies.push(27);\n}\n\nreturn activePromptIndicies;\n}\n",
-            "operationIdx": 11
-          },
-          {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_endif85",
-            "_row_num": 85,
-            "operationIdx": 12
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 86,
-            "operationIdx": 13
+            "_row_num": 63,
+            "operationIdx": 9
           },
           {
-            "_row_num": 86,
+            "_row_num": 63,
             "_token_type": "begin_screen",
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(28);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 14
+            "operationIdx": 10
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 86,
-            "operationIdx": 15
+            "_row_num": 63,
+            "operationIdx": 11
           }
         ],
         "branch_label_map": {
@@ -3212,16 +3220,12 @@
           "_then32": 4,
           "_screen33": 4,
           "_screen36": 5,
-          "_then42": 8,
-          "_screen43": 8,
-          "_else47": 10,
-          "_endif47": 10,
-          "_screen48": 10,
-          "_screen65": 11,
-          "_else85": 13,
-          "_endif85": 13,
-          "_contents": 14,
-          "_screen86": 14
+          "_screen44": 6,
+          "_screen50": 7,
+          "_else62": 9,
+          "_endif62": 9,
+          "_contents": 10,
+          "_screen63": 10
         }
       },
       "initial": {
@@ -3407,7 +3411,7 @@
     },
     "dataTableModel": {
       "ID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 2,
@@ -3695,7 +3699,7 @@
       },
       "TELE1_VERI": {
         "type": "string",
-        "valuesList": "Phone",
+        "valuesList": "YesNo",
         "_defn": [
           {
             "_row_num": 38,
@@ -3714,7 +3718,7 @@
       },
       "TELE2_VERI": {
         "type": "string",
-        "valuesList": "Phone",
+        "valuesList": "YesNo",
         "_defn": [
           {
             "_row_num": 39,
@@ -3731,15 +3735,34 @@
         "elementSet": "data",
         "elementPath": "TELE2_VERI"
       },
-      "NOVONUM1": {
+      "TELEOU_VERI": {
         "type": "string",
+        "valuesList": "Phone",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 40,
             "section_name": "survey"
           },
           {
             "_row_num": 22,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "TELEOU_VERI",
+        "elementName": "TELEOU_VERI",
+        "elementSet": "data",
+        "elementPath": "TELEOU_VERI"
+      },
+      "NOVONUM1": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 41,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -3753,11 +3776,11 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 42,
             "section_name": "survey"
           },
           {
-            "_row_num": 23,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -3772,11 +3795,11 @@
         "valuesList": "Mask",
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 45,
             "section_name": "survey"
           },
           {
-            "_row_num": 25,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -3792,11 +3815,11 @@
         "valuesList": "person_name",
         "_defn": [
           {
-            "_row_num": 82,
+            "_row_num": 59,
             "section_name": "survey"
           },
           {
-            "_row_num": 26,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -3811,11 +3834,11 @@
         "valuesList": "Intension",
         "_defn": [
           {
-            "_row_num": 66,
+            "_row_num": 51,
             "section_name": "survey"
           },
           {
-            "_row_num": 27,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -3830,11 +3853,11 @@
         "valuesList": "MaskWhen",
         "_defn": [
           {
-            "_row_num": 68,
+            "_row_num": 53,
             "section_name": "survey"
           },
           {
-            "_row_num": 28,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -3849,11 +3872,11 @@
         "valuesList": "NoMask",
         "_defn": [
           {
-            "_row_num": 71,
+            "_row_num": 56,
             "section_name": "survey"
           },
           {
-            "_row_num": 29,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -3867,7 +3890,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 31,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -3882,26 +3905,7 @@
         "valuesList": "persons",
         "_defn": [
           {
-            "_row_num": 54,
-            "section_name": "survey"
-          },
-          {
-            "_row_num": 32,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": true,
-        "elementKey": "id_RECEB_QUEM",
-        "elementName": "id_RECEB_QUEM",
-        "elementSet": "data",
-        "elementPath": "id_RECEB_QUEM"
-      },
-      "newNumber": {
-        "type": "integer",
-        "valuesList": "YesNo",
-        "_defn": [
-          {
-            "_row_num": 40,
+            "_row_num": 47,
             "section_name": "survey"
           },
           {
@@ -3910,10 +3914,10 @@
           }
         ],
         "isSessionVariable": true,
-        "elementKey": "newNumber",
-        "elementName": "newNumber",
+        "elementKey": "id_RECEB_QUEM",
+        "elementName": "id_RECEB_QUEM",
         "elementSet": "data",
-        "elementPath": "newNumber"
+        "elementPath": "id_RECEB_QUEM"
       },
       "BAIRRO": {
         "type": "integer",
@@ -4021,7 +4025,7 @@
         "elementPath": "OBS_IDADE"
       },
       "POID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 41,
@@ -4035,7 +4039,7 @@
         "elementPath": "POID"
       },
       "IDOID": {
-        "type": "integer",
+        "type": "string",
         "_defn": [
           {
             "_row_num": 42,
@@ -4167,56 +4171,63 @@
         "_aspect": "ACCEPT",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":10},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":11},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":12}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":11},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":12},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":13},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":14}]"
       },
       {
         "_partition": "Column",
         "_aspect": "ESTADO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":2},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved\",\"default\":\"Mudou\"}}},\"_row_num\":3},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":4},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":5},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":6},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Not found\",\"default\":\"Não encontrado\"}}},\"_row_num\":7},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Double\",\"default\":\"Duplo\"}}},\"_row_num\":8}]"
+        "_value": "[{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":2},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved\",\"default\":\"Mudou\"}}},\"_row_num\":3},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":4},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":5},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":6},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Not found\",\"default\":\"Não encontrado\"}}},\"_row_num\":7},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Double\",\"default\":\"Duplo\"}}},\"_row_num\":8},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"99\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":9}]"
       },
       {
         "_partition": "Column",
         "_aspect": "INTENCAO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Intension\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":28},{\"choice_list_name\":\"Intension\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":29},{\"choice_list_name\":\"Intension\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Do not know yet\",\"default\":\"Ainda não sabe\"}}},\"_row_num\":30},{\"choice_list_name\":\"Intension\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":31}]"
+        "_value": "[{\"choice_list_name\":\"Intension\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":31},{\"choice_list_name\":\"Intension\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":32},{\"choice_list_name\":\"Intension\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Do not know yet\",\"default\":\"Ainda não sabe\"}}},\"_row_num\":33},{\"choice_list_name\":\"Intension\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":34},{\"choice_list_name\":\"Intension\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":35}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MASC",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Mask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":23},{\"choice_list_name\":\"Mask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent, left with other household member\",\"default\":\"Ausente, foi deixada com outro/a\"}}},\"_row_num\":24},{\"choice_list_name\":\"Mask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":25},{\"choice_list_name\":\"Mask\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":26}]"
+        "_value": "[{\"choice_list_name\":\"Mask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":25},{\"choice_list_name\":\"Mask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent, left with other household member\",\"default\":\"Ausente, foi deixada com outro/a\"}}},\"_row_num\":26},{\"choice_list_name\":\"Mask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":27},{\"choice_list_name\":\"Mask\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":28},{\"choice_list_name\":\"Mask\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":29}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MOTIVO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"NoMask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Note able to wear a mask\",\"default\":\"Não consegue usar máscara\"}}},\"_row_num\":36},{\"choice_list_name\":\"NoMask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Prefer surgery mask or other mask\",\"default\":\"Prefere usar a máscara cirurgica ou outra\"}}},\"_row_num\":37},{\"choice_list_name\":\"NoMask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Can't explain why\",\"default\":\"Não sabe explicar\"}}},\"_row_num\":38},{\"choice_list_name\":\"NoMask\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Other reason\",\"default\":\"Outro\"}}},\"_row_num\":39}]"
+        "_value": "[{\"choice_list_name\":\"NoMask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Note able to wear a mask\",\"default\":\"Não consegue usar máscara\"}}},\"_row_num\":41},{\"choice_list_name\":\"NoMask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Prefer surgery mask or other mask\",\"default\":\"Prefere usar a máscara cirurgica ou outra\"}}},\"_row_num\":42},{\"choice_list_name\":\"NoMask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Can't explain why\",\"default\":\"Não sabe explicar\"}}},\"_row_num\":43},{\"choice_list_name\":\"NoMask\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Other reason\",\"default\":\"Outro\"}}},\"_row_num\":44},{\"choice_list_name\":\"NoMask\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":45}]"
       },
       {
         "_partition": "Column",
         "_aspect": "QUANDO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"MaskWhen\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"When leaving the house\",\"default\":\"Quando sai\"}}},\"_row_num\":33},{\"choice_list_name\":\"MaskWhen\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Often\",\"default\":\"Sempre\"}}},\"_row_num\":34}]"
+        "_value": "[{\"choice_list_name\":\"MaskWhen\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"When leaving the house\",\"default\":\"Quando sai\"}}},\"_row_num\":37},{\"choice_list_name\":\"MaskWhen\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Often\",\"default\":\"Sempre\"}}},\"_row_num\":38},{\"choice_list_name\":\"MaskWhen\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":39}]"
       },
       {
         "_partition": "Column",
         "_aspect": "TELE1_VERI",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Phone\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":14},{\"choice_list_name\":\"Phone\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":15},{\"choice_list_name\":\"Phone\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":16},{\"choice_list_name\":\"Phone\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Other person in the household\",\"default\":\"Commune\"}}},\"_row_num\":17},{\"choice_list_name\":\"Phone\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Do not have a phone number\",\"default\":\"Não tem um número de telefone\"}}},\"_row_num\":18}]"
+        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNo\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "TELE2_VERI",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Phone\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":14},{\"choice_list_name\":\"Phone\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":15},{\"choice_list_name\":\"Phone\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":16},{\"choice_list_name\":\"Phone\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Other person in the household\",\"default\":\"Commune\"}}},\"_row_num\":17},{\"choice_list_name\":\"Phone\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Do not have a phone number\",\"default\":\"Não tem um número de telefone\"}}},\"_row_num\":18}]"
+        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":21},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":22},{\"choice_list_name\":\"YesNo\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":23}]"
+      },
+      {
+        "_partition": "Column",
+        "_aspect": "TELEOU_VERI",
+        "_key": "displayChoicesList",
+        "_type": "object",
+        "_value": "[{\"choice_list_name\":\"Phone\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Other person in the household\",\"default\":\"Commune\"}}},\"_row_num\":16},{\"choice_list_name\":\"Phone\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"New Number\",\"default\":\"Nobu número\"}}},\"_row_num\":17},{\"choice_list_name\":\"Phone\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":18},{\"choice_list_name\":\"Phone\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Do not have a phone number\",\"default\":\"Não tem um número de telefone\"}}},\"_row_num\":19}]"
       },
       {
         "_partition": "FormType",

@@ -43,29 +43,76 @@ function getMasterList(data) {
 
 function getList() {
     // SQL to get participants
-    var sql = "SELECT _savepoint_type " + 
-        " FROM MASKFU "; 
+    var varNamesIncl = "I.BAIRRO, I.HOUSEGRP, I.TABZ, ";
+    var varNamesHH = "H.DATEX, ";
+    var varNamesFU = "F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.LASTINTERVIEW, F.POSSIVEL, F.TESTRESUL";
+    var sql = "SELECT " + varNamesIncl + varNamesHH + varNamesFU + 
+        " FROM MASKINCL AS I" + 
+        " LEFT JOIN MASKFU AS F ON I.POID = F.POID" + 
+        " INNER JOIN MASKHOUSEHOLD AS H ON I.HHOID = H.HHOID" +
+        " WHERE I.BAIRRO = " + bairro + " AND I.TABZ = " + tabz + " AND I.OBS_IDADE IS NULL AND (I.ACCEPT != 2 OR I.ACCEPT IS NULL) AND I.ESTADO IS NOT NULL" +
+        " GROUP BY I.POID HAVING MAX(F.FU) OR F.FU IS NULL" +
+        " ORDER BY I.FAM";
     participants = [];
     console.log("Querying database for participants...");
     console.log(sql);
     var successFn = function( result ) {
         console.log("Found " + result.getCount() + " participants");
         for (var row = 0; row < result.getCount(); row++) {
-            var savepoint = result.getData(row,"_savepoint_type");
-
+            var savepoint = result.getData(row,"_savepoint_type")
+            
             var BAIRRO = result.getData(row,"BAIRRO");
-            var CALLBACK = result.getData(row,"CALLBACK");
+            var HOUSEGRP = result.getData(row,"HOUSEGRP");
+            var TABZ = result.getData(row,"TABZ");
+
+            var DATEX = result.getData(row,"DATEX");
+
             var COVID = result.getData(row,"COVID");
-            var DATINC = result.getData(row,"DATINC");
             var DATSEG = result.getData(row,"DATSEG");
             var ESTADO = result.getData(row,"ESTADO");
             var FU = result.getData(row,"FU");
             var LASTINTERVIEW = result.getData(row,"LASTINTERVIEW");
-            var POID = result.getData(row,"POID");
-            var TABZ = result.getData(row,"TABZ");
-            var TESTERESUL = result.getData(row,"TESTERESUL");
-
-            var p = { type: 'person', savepoint, BAIRRO, CALLBACK, COVID, DATINC, DATSEG, ESTADO, FU, LASTINTERVIEW, POID, TABZ, TESTERESUL};
+            var POSSIVEL = result.getData(row,"POSSIVEL");
+            var TESTRESUL = result.getData(row,"TESTRESUL");
+            
+            // generate follow-up date (42 days after last interview with succes follow up)
+            if (FU != null & (COVID == null | POSSIVEL == "2" | TESTRESUL == "3")) {
+                var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
+                var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
+                var segY = DATSEG.slice(DATSEG.search("Y")+2);
+                var FUDate = new Date(segY, segM-1, segD);
+                // set last succes follow up to last interview
+                var intD = Number(LASTINTERVIEW.slice(2, LASTINTERVIEW.search("M")-1));
+                var intM = LASTINTERVIEW.slice(LASTINTERVIEW.search("M")+2, LASTINTERVIEW.search("Y")-1);
+                var intY = LASTINTERVIEW.slice(LASTINTERVIEW.search("Y")+2);
+                var LastFU = new Date(intY, intM-1, intD);
+            } else if (DATEX == null) {
+                var FUDate = new Date(2099, 7-1, 15);
+                var LastFU = new Date(2099, 7-1, 15);
+            } else if (FU == null) {
+                var datexD = Number(DATEX.slice(2, DATEX.search("M")-1));
+                var datexM = DATEX.slice(DATEX.search("M")+2, DATEX.search("Y")-1);
+                var datexY = DATEX.slice(DATEX.search("Y")+2);
+                var FUDate = new Date(datexY, datexM-1, datexD + 42);
+                var LastFU = new Date(datexY, datexM-1, datexD);
+            } else {
+                var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
+                var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
+                var segY = DATSEG.slice(DATSEG.search("Y")+2);
+                var FUDate = new Date(segY, segM-1, segD + 42);
+                var LastFU = new Date(segY, segM-1, segD);
+            }
+            // Set 4 month date for ending FU
+            if (DATEX == null) {
+                var FUEnd = new Date(2099, 7-1, 15 + 122);
+            } else {
+                var datexD = Number(DATEX.slice(2, DATEX.search("M")-1));
+                var datexM = DATEX.slice(DATEX.search("M")+2, DATEX.search("Y")-1);
+                var datexY = DATEX.slice(DATEX.search("Y")+2);
+                var FUEnd = new Date(datexY, datexM-1, datexD + 122);
+            }
+            
+            var p = {type: 'participant', savepoint, FUDate, FUEnd, LastFU, BAIRRO, HOUSEGRP, TABZ, DATEX, COVID, DATSEG, ESTADO, FU, LASTINTERVIEW, POSSIVEL, TESTRESUL};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -119,23 +166,15 @@ function initButtons() {
 }
 
 
-function getCount(houseGroup) { 
-    // only for test
-    return "(X/X)"
-}
-
-
-/* disabled while testing
-function getCount(tabz) {
+function getCount(houseGroup) {
     var today = new Date(date);
     var todayAdate = "D:" + today.getDate() + ",M:" + (Number(today.getMonth()) + 1) + ",Y:" + today.getFullYear();
 
-    var total = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & (person.FUDate <= today & ((person.ESTADO != "2" & person.ESTADO != "3") | person.CALLBACK == "1" | person.TESTERESUL == "3") | person.DATSEG == todayAdate)).length;
-    var checked = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.DATSEG == todayAdate & person.savepoint == "COMPLETE").length;
+    var total = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.HOUSEGRP == houseGroup & (person.FUDate <= today & person.LastFU < person.FUEnd & ((person.ESTADO != "2" & person.ESTADO != "3") | person.POSSIVEL == "2" | person.TESTERESUL == "3") | person.DATSEG == todayAdate)).length;
+    var checked = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.HOUSEGRP == houseGroup & person.DATSEG == todayAdate & person.savepoint == "COMPLETE").length;
     var count = "(" + checked + "/" + total + ")";
     return count;
 }
-*/
 
 function titleCase(str) {
     if (!str) return str;

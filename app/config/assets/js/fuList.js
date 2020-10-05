@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var participants, date, bairro, tabz, zone, houseGroup, camo, fam, famName, assistant;
+var participants, date, bairro, tabz, zone, houseGroup, camo, fam, famName, assistant, random;
 function display() {
     console.log("TABZ list loading");
     date = util.getQueryParameter('date');
@@ -15,11 +15,24 @@ function display() {
     fam = util.getQueryParameter('fam');
     famName = util.getQueryParameter('famName');
     assistant = util.getQueryParameter('assistant');
+    random = util.getQueryParameter('random');
     
     var head = $('#main');
-    head.prepend("<h1>" + tabz + " - " + houseGroup + " - " + camo + " </br> <h3> " + famName);
+    head.prepend("<h1>" + tabz + " - " + houseGroup + " - " + camo + " - " + fam + " </br> <h2> "+ getGroup(random) + " </br> <h3> "+ famName );
     // populate list
     loadPersons();
+}
+
+function getGroup(random) {
+    var group;
+    if (random == 1) {
+        group = "Grupo de intervenção";
+    } else if (random == 2) {
+        group = "Grupo de controle";
+    } else {
+        group = "Faltando informação de grupo"
+    }
+    return group;
 }
 
 function loadPersons() {
@@ -31,7 +44,7 @@ function loadPersons() {
         " FROM MASKINCL AS I" + 
         " LEFT JOIN MASKFU AS F ON I.POID = F.POID" + 
         " INNER JOIN MASKHOUSEHOLD AS H ON I.HHOID = H.HHOID" +
-        " WHERE I.BAIRRO = " + bairro + " AND I.TABZ = " + tabz + " AND I.HOUSEGRP = '" + houseGroup + "' AND I.CAMO = " + camo + " AND I.FAM = " + fam + " AND I.OBS_IDADE IS NULL AND (ACCEPT != 2 OR ACCEPT IS NULL AND I.ESTADO IS NOT NULL) " +
+        " WHERE I.BAIRRO = " + bairro + " AND I.TABZ = " + tabz + " AND I.HOUSEGRP = '" + houseGroup + "' AND I.CAMO = " + camo + " AND I.FAM = " + fam + " AND I.OBS_IDADE IS NULL AND (I.ACCEPT != 2 OR I.ACCEPT IS NULL) AND I.ESTADO IS NOT NULL" +
         " GROUP BY I.POID HAVING MAX(F.FU) OR F.FU IS NULL" +
         " ORDER BY I.FAM";
     participants = [];
@@ -97,8 +110,13 @@ function loadPersons() {
                 var FUDate = new Date(segY, segM-1, segD + 42);
                 var LastFU = new Date(segY, segM-1, segD);
             }
+            // Set 4 month date for ending FU
+            var datexD = Number(DATEX.slice(2, DATEX.search("M")-1));
+            var datexM = DATEX.slice(DATEX.search("M")+2, DATEX.search("Y")-1);
+            var datexY = DATEX.slice(DATEX.search("Y")+2);
+            var FUEnd = new Date(datexY, datexM-1, datexD + 122);
 
-            var p = {type: 'participant', rowId, savepoint, FUDate, LastFU, BAIRRO, CAMO, DOB, FAM, FNO, HHOID, HOUSEGRP, ID, IDOID, NOME, NOVONUM1, NOVONUM2, POID, SEX, TABZ, TELE1, TELE2, DATEX, COVID, DATSEG, ESTADO, FU, GETRESULTS, LASTINTERVIEW, POSSIVEL, TESTRESUL};
+            var p = {type: 'participant', rowId, savepoint, FUDate, FUEnd, LastFU, BAIRRO, CAMO, DOB, FAM, FNO, HHOID, HOUSEGRP, ID, IDOID, NOME, NOVONUM1, NOVONUM2, POID, SEX, TABZ, TELE1, TELE2, DATEX, COVID, DATSEG, ESTADO, FU, GETRESULTS, LASTINTERVIEW, POSSIVEL, TESTRESUL};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -125,13 +143,7 @@ function populateView() {
     // list
     $.each(participants, function() {
         var that = this;  
-        
-        // Set 4 month date for ending FU
-        var datexD = Number(this.DATEX.slice(2, this.DATEX.search("M")-1));
-        var datexM = this.DATEX.slice(this.DATEX.search("M")+2, this.DATEX.search("Y")-1);
-        var datexY = this.DATEX.slice(this.DATEX.search("Y")+2);
-        var FUend = new Date(datexY, datexM-1, datexD + 122);
-        console.log("End of FU:", FUend);
+
         // Check if called today
         var called = '';
         if (this.DATSEG == todayAdate & this.savepoint == "COMPLETE") {
@@ -149,7 +161,7 @@ function populateView() {
         
         // list
         if (this.FUDate <= today & 
-            this.LastFU < FUend & 
+            this.LastFU < this.FUEnd & 
             ((this.ESTADO != "2" & this.ESTADO != "3") | this.POSSIVEL == "2" | this.TESTERESUL == "3") | this.DATSEG == todayAdate) {
             ul.append($("<li />").append($("<button />").attr('id',this.POID).attr('class', called + ' btn ' + this.type + getResults).append(displayText)));
         }

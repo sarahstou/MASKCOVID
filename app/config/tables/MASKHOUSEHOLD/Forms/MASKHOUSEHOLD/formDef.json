@@ -124,18 +124,12 @@
         "_row_num": 7
       },
       {
-        "type": "assign",
-        "name": "DATEX",
-        "calculation": "adate.today()",
+        "clause": "end screen",
         "_row_num": 8
       },
       {
-        "clause": "end screen",
-        "_row_num": 9
-      },
-      {
         "clause": "begin screen",
-        "_row_num": 10
+        "_row_num": 9
       },
       {
         "type": "adate",
@@ -148,7 +142,7 @@
             }
           }
         },
-        "_row_num": 11
+        "_row_num": 10
       },
       {
         "type": "select_one_with_other",
@@ -162,15 +156,15 @@
             }
           }
         },
-        "_row_num": 12
+        "_row_num": 11
       },
       {
         "clause": "end screen",
-        "_row_num": 13
+        "_row_num": 12
       },
       {
         "clause": "begin screen",
-        "_row_num": 14
+        "_row_num": 13
       },
       {
         "type": "select_one",
@@ -184,20 +178,20 @@
             }
           }
         },
-        "_row_num": 15
+        "_row_num": 14
       },
       {
         "clause": "end screen",
-        "_row_num": 16
+        "_row_num": 15
       },
       {
         "clause": "if",
         "condition": "data(\"VISITA\") != \"2\"",
-        "_row_num": 17
+        "_row_num": 16
       },
       {
         "clause": "begin screen",
-        "_row_num": 18
+        "_row_num": 17
       },
       {
         "type": "select_one",
@@ -211,7 +205,7 @@
             }
           }
         },
-        "_row_num": 19
+        "_row_num": 18
       },
       {
         "type": "select_one",
@@ -225,7 +219,7 @@
             }
           }
         },
-        "_row_num": 20
+        "_row_num": 19
       },
       {
         "type": "select_one",
@@ -239,7 +233,7 @@
             }
           }
         },
-        "_row_num": 21
+        "_row_num": 20
       },
       {
         "type": "select_one",
@@ -253,15 +247,15 @@
             }
           }
         },
-        "_row_num": 22
+        "_row_num": 21
       },
       {
         "clause": "end screen",
-        "_row_num": 23
+        "_row_num": 22
       },
       {
         "clause": "begin screen",
-        "_row_num": 24
+        "_row_num": 23
       },
       {
         "type": "select_one",
@@ -275,15 +269,15 @@
             }
           }
         },
-        "_row_num": 25
+        "_row_num": 24
       },
       {
         "clause": "end screen",
-        "_row_num": 26
+        "_row_num": 25
       },
       {
         "clause": "begin screen",
-        "_row_num": 27
+        "_row_num": 26
       },
       {
         "type": "linked_table",
@@ -298,15 +292,15 @@
           "hide_delete_button": true,
           "hide_add_instance": true
         },
-        "_row_num": 28
+        "_row_num": 27
       },
       {
         "clause": "end screen",
-        "_row_num": 29
+        "_row_num": 28
       },
       {
         "clause": "end if",
-        "_row_num": 30
+        "_row_num": 29
       }
     ],
     "choices": [
@@ -506,6 +500,19 @@
         "_row_num": 17
       },
       {
+        "choice_list_name": "Roof",
+        "data_value": "9",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Missing information",
+              "default": "Falta informação"
+            }
+          }
+        },
+        "_row_num": 18
+      },
+      {
         "choice_list_name": "Veranda",
         "data_value": "1",
         "display": {
@@ -516,7 +523,7 @@
             }
           }
         },
-        "_row_num": 19
+        "_row_num": 20
       },
       {
         "choice_list_name": "Veranda",
@@ -529,7 +536,7 @@
             }
           }
         },
-        "_row_num": 20
+        "_row_num": 21
       },
       {
         "choice_list_name": "Veranda",
@@ -542,7 +549,20 @@
             }
           }
         },
-        "_row_num": 21
+        "_row_num": 22
+      },
+      {
+        "choice_list_name": "Veranda",
+        "data_value": "9",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Missing information",
+              "default": "Falta informação"
+            }
+          }
+        },
+        "_row_num": 23
       },
       {
         "choice_list_name": "YesNo",
@@ -555,7 +575,7 @@
             }
           }
         },
-        "_row_num": 23
+        "_row_num": 25
       },
       {
         "choice_list_name": "YesNo",
@@ -568,7 +588,20 @@
             }
           }
         },
-        "_row_num": 24
+        "_row_num": 26
+      },
+      {
+        "choice_list_name": "YesNo",
+        "data_value": "9",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Missing information",
+              "default": "Falta informação"
+            }
+          }
+        },
+        "_row_num": 27
       },
       {
         "choice_list_name": "Water",
@@ -581,7 +614,7 @@
             }
           }
         },
-        "_row_num": 26
+        "_row_num": 29
       },
       {
         "choice_list_name": "Water",
@@ -594,7 +627,7 @@
             }
           }
         },
-        "_row_num": 27
+        "_row_num": 30
       },
       {
         "choice_list_name": "Water",
@@ -607,7 +640,7 @@
             }
           }
         },
-        "_row_num": 28
+        "_row_num": 31
       },
       {
         "choice_list_name": "Water",
@@ -620,7 +653,20 @@
             }
           }
         },
-        "_row_num": 29
+        "_row_num": 32
+      },
+      {
+        "choice_list_name": "Water",
+        "data_value": "9",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Missing information",
+              "default": "Falta informação"
+            }
+          }
+        },
+        "_row_num": 33
       }
     ],
     "queries": [
@@ -1059,6 +1105,19 @@
             }
           },
           "_row_num": 17
+        },
+        {
+          "choice_list_name": "Roof",
+          "data_value": "9",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Missing information",
+                "default": "Falta informação"
+              }
+            }
+          },
+          "_row_num": 18
         }
       ],
       "Veranda": [
@@ -1073,7 +1132,7 @@
               }
             }
           },
-          "_row_num": 19
+          "_row_num": 20
         },
         {
           "choice_list_name": "Veranda",
@@ -1086,7 +1145,7 @@
               }
             }
           },
-          "_row_num": 20
+          "_row_num": 21
         },
         {
           "choice_list_name": "Veranda",
@@ -1099,7 +1158,20 @@
               }
             }
           },
-          "_row_num": 21
+          "_row_num": 22
+        },
+        {
+          "choice_list_name": "Veranda",
+          "data_value": "9",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Missing information",
+                "default": "Falta informação"
+              }
+            }
+          },
+          "_row_num": 23
         }
       ],
       "YesNo": [
@@ -1114,7 +1186,7 @@
               }
             }
           },
-          "_row_num": 23
+          "_row_num": 25
         },
         {
           "choice_list_name": "YesNo",
@@ -1127,7 +1199,20 @@
               }
             }
           },
-          "_row_num": 24
+          "_row_num": 26
+        },
+        {
+          "choice_list_name": "YesNo",
+          "data_value": "9",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Missing information",
+                "default": "Falta informação"
+              }
+            }
+          },
+          "_row_num": 27
         }
       ],
       "Water": [
@@ -1142,7 +1227,7 @@
               }
             }
           },
-          "_row_num": 26
+          "_row_num": 29
         },
         {
           "choice_list_name": "Water",
@@ -1155,7 +1240,7 @@
               }
             }
           },
-          "_row_num": 27
+          "_row_num": 30
         },
         {
           "choice_list_name": "Water",
@@ -1168,7 +1253,7 @@
               }
             }
           },
-          "_row_num": 28
+          "_row_num": 31
         },
         {
           "choice_list_name": "Water",
@@ -1181,7 +1266,20 @@
               }
             }
           },
-          "_row_num": 29
+          "_row_num": 32
+        },
+        {
+          "choice_list_name": "Water",
+          "data_value": "9",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Missing information",
+                "default": "Falta informação"
+              }
+            }
+          },
+          "_row_num": 33
         }
       ]
     },
@@ -1279,7 +1377,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 10,
             "section_name": "survey"
           },
           {
@@ -1295,7 +1393,7 @@
         "valuesList": "Assistant",
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 11,
             "section_name": "survey"
           },
           {
@@ -1311,7 +1409,7 @@
         "valuesList": "YesNo",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 14,
             "section_name": "survey"
           },
           {
@@ -1327,7 +1425,7 @@
         "valuesList": "Roof",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 18,
             "section_name": "survey"
           },
           {
@@ -1343,7 +1441,7 @@
         "valuesList": "Veranda",
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 19,
             "section_name": "survey"
           },
           {
@@ -1359,7 +1457,7 @@
         "valuesList": "YesNo",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 20,
             "section_name": "survey"
           },
           {
@@ -1375,7 +1473,7 @@
         "valuesList": "Water",
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 21,
             "section_name": "survey"
           },
           {
@@ -1391,7 +1489,7 @@
         "valuesList": "YesNo",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 24,
             "section_name": "survey"
           },
           {
@@ -1521,11 +1619,11 @@
                 }
               }
             },
-            "_row_num": 11,
-            "__rowNum__": 10,
+            "_row_num": 10,
+            "__rowNum__": 9,
             "_token_type": "prompt",
             "_type": "adate",
-            "_branch_label_enclosing_screen": "survey/_screen10",
+            "_branch_label_enclosing_screen": "survey/_screen9",
             "promptIdx": 5
           },
           {
@@ -1540,11 +1638,11 @@
                 }
               }
             },
-            "_row_num": 12,
-            "__rowNum__": 11,
+            "_row_num": 11,
+            "__rowNum__": 10,
             "_token_type": "prompt",
             "_type": "select_one_with_other",
-            "_branch_label_enclosing_screen": "survey/_screen10",
+            "_branch_label_enclosing_screen": "survey/_screen9",
             "promptIdx": 6
           },
           {
@@ -1559,11 +1657,11 @@
                 }
               }
             },
-            "_row_num": 15,
-            "__rowNum__": 14,
+            "_row_num": 14,
+            "__rowNum__": 13,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen14",
+            "_branch_label_enclosing_screen": "survey/_screen13",
             "promptIdx": 7
           },
           {
@@ -1578,11 +1676,11 @@
                 }
               }
             },
-            "_row_num": 19,
-            "__rowNum__": 18,
+            "_row_num": 18,
+            "__rowNum__": 17,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen18",
+            "_branch_label_enclosing_screen": "survey/_screen17",
             "promptIdx": 8
           },
           {
@@ -1597,11 +1695,11 @@
                 }
               }
             },
-            "_row_num": 20,
-            "__rowNum__": 19,
+            "_row_num": 19,
+            "__rowNum__": 18,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen18",
+            "_branch_label_enclosing_screen": "survey/_screen17",
             "promptIdx": 9
           },
           {
@@ -1616,11 +1714,11 @@
                 }
               }
             },
-            "_row_num": 21,
-            "__rowNum__": 20,
+            "_row_num": 20,
+            "__rowNum__": 19,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen18",
+            "_branch_label_enclosing_screen": "survey/_screen17",
             "promptIdx": 10
           },
           {
@@ -1635,11 +1733,11 @@
                 }
               }
             },
-            "_row_num": 22,
-            "__rowNum__": 21,
+            "_row_num": 21,
+            "__rowNum__": 20,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen18",
+            "_branch_label_enclosing_screen": "survey/_screen17",
             "promptIdx": 11
           },
           {
@@ -1654,11 +1752,11 @@
                 }
               }
             },
-            "_row_num": 25,
-            "__rowNum__": 24,
+            "_row_num": 24,
+            "__rowNum__": 23,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen24",
+            "_branch_label_enclosing_screen": "survey/_screen23",
             "promptIdx": 12
           },
           {
@@ -1674,19 +1772,19 @@
               "hide_delete_button": true,
               "hide_add_instance": true
             },
-            "_row_num": 28,
-            "__rowNum__": 27,
+            "_row_num": 27,
+            "__rowNum__": 26,
             "_token_type": "prompt",
             "_type": "linked_table",
-            "_branch_label_enclosing_screen": "survey/_screen27",
+            "_branch_label_enclosing_screen": "survey/_screen26",
             "promptIdx": 13
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 31,
-            "_branch_label_enclosing_screen": "survey/_screen31",
+            "_row_num": 30,
+            "_branch_label_enclosing_screen": "survey/_screen30",
             "promptIdx": 14
           }
         ],
@@ -1701,22 +1799,22 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 9,
-              "__rowNum__": 8,
+              "_row_num": 8,
+              "__rowNum__": 7,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nassign('DATEX', adate.today());\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 0
           },
           {
             "clause": "begin screen",
-            "_row_num": 10,
-            "__rowNum__": 9,
+            "_row_num": 9,
+            "__rowNum__": 8,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 13,
-              "__rowNum__": 12,
+              "_row_num": 12,
+              "__rowNum__": 11,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\n\nreturn activePromptIndicies;\n}\n",
@@ -1724,13 +1822,13 @@
           },
           {
             "clause": "begin screen",
-            "_row_num": 14,
-            "__rowNum__": 13,
+            "_row_num": 13,
+            "__rowNum__": 12,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 16,
-              "__rowNum__": 15,
+              "_row_num": 15,
+              "__rowNum__": 14,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(7);\n\nreturn activePromptIndicies;\n}\n",
@@ -1739,28 +1837,28 @@
           {
             "clause": "if",
             "condition": "data(\"VISITA\") != \"2\"",
-            "_row_num": 17,
-            "__rowNum__": 16,
+            "_row_num": 16,
+            "__rowNum__": 15,
             "_token_type": "goto_label",
-            "_branch_label": "_then17",
+            "_branch_label": "_then16",
             "operationIdx": 3
           },
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_else30",
-            "_row_num": 30,
+            "_branch_label": "_else29",
+            "_row_num": 29,
             "operationIdx": 4
           },
           {
             "clause": "begin screen",
-            "_row_num": 18,
-            "__rowNum__": 17,
+            "_row_num": 17,
+            "__rowNum__": 16,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 23,
-              "__rowNum__": 22,
+              "_row_num": 22,
+              "__rowNum__": 21,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\n\nreturn activePromptIndicies;\n}\n",
@@ -1768,13 +1866,13 @@
           },
           {
             "clause": "begin screen",
-            "_row_num": 24,
-            "__rowNum__": 23,
+            "_row_num": 23,
+            "__rowNum__": 22,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 26,
-              "__rowNum__": 25,
+              "_row_num": 25,
+              "__rowNum__": 24,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(12);\n\nreturn activePromptIndicies;\n}\n",
@@ -1782,13 +1880,13 @@
           },
           {
             "clause": "begin screen",
-            "_row_num": 27,
-            "__rowNum__": 26,
+            "_row_num": 26,
+            "__rowNum__": 25,
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 29,
-              "__rowNum__": 28,
+              "_row_num": 28,
+              "__rowNum__": 27,
               "_token_type": "end_screen"
             },
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(13);\n\nreturn activePromptIndicies;\n}\n",
@@ -1797,18 +1895,18 @@
           {
             "clause": "end if",
             "_token_type": "goto_label",
-            "_branch_label": "_endif30",
-            "_row_num": 30,
+            "_branch_label": "_endif29",
+            "_row_num": 29,
             "operationIdx": 8
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 31,
+            "_row_num": 30,
             "operationIdx": 9
           },
           {
-            "_row_num": 31,
+            "_row_num": 30,
             "_token_type": "begin_screen",
             "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(14);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
@@ -1819,22 +1917,22 @@
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 31,
+            "_row_num": 30,
             "operationIdx": 11
           }
         ],
         "branch_label_map": {
           "_screen2": 0,
-          "_screen10": 1,
-          "_screen14": 2,
-          "_then17": 5,
-          "_screen18": 5,
-          "_screen24": 6,
-          "_screen27": 7,
-          "_else30": 9,
-          "_endif30": 9,
+          "_screen9": 1,
+          "_screen13": 2,
+          "_then16": 5,
+          "_screen17": 5,
+          "_screen23": 6,
+          "_screen26": 7,
+          "_else29": 9,
+          "_endif29": 9,
           "_contents": 10,
-          "_screen31": 10
+          "_screen30": 10
         }
       },
       "initial": {
@@ -2113,7 +2211,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 10,
             "section_name": "survey"
           },
           {
@@ -2132,7 +2230,7 @@
         "valuesList": "Assistant",
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 11,
             "section_name": "survey"
           },
           {
@@ -2151,7 +2249,7 @@
         "valuesList": "YesNo",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 14,
             "section_name": "survey"
           },
           {
@@ -2170,7 +2268,7 @@
         "valuesList": "Roof",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 18,
             "section_name": "survey"
           },
           {
@@ -2189,7 +2287,7 @@
         "valuesList": "Veranda",
         "_defn": [
           {
-            "_row_num": 20,
+            "_row_num": 19,
             "section_name": "survey"
           },
           {
@@ -2208,7 +2306,7 @@
         "valuesList": "YesNo",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 20,
             "section_name": "survey"
           },
           {
@@ -2227,7 +2325,7 @@
         "valuesList": "Water",
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 21,
             "section_name": "survey"
           },
           {
@@ -2246,7 +2344,7 @@
         "valuesList": "YesNo",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 24,
             "section_name": "survey"
           },
           {
@@ -2394,21 +2492,21 @@
         "_aspect": "COBERTURA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Roof\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Straw\",\"default\":\"Palha\"}}},\"_row_num\":13},{\"choice_list_name\":\"Roof\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Zinc\",\"default\":\"Zinco\"}}},\"_row_num\":14},{\"choice_list_name\":\"Roof\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Tiles\",\"default\":\"Telha\"}}},\"_row_num\":15},{\"choice_list_name\":\"Roof\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Cement\",\"default\":\"Fibra cimento\"}}},\"_row_num\":16},{\"choice_list_name\":\"Roof\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":17}]"
+        "_value": "[{\"choice_list_name\":\"Roof\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Straw\",\"default\":\"Palha\"}}},\"_row_num\":13},{\"choice_list_name\":\"Roof\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Zinc\",\"default\":\"Zinco\"}}},\"_row_num\":14},{\"choice_list_name\":\"Roof\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Tiles\",\"default\":\"Telha\"}}},\"_row_num\":15},{\"choice_list_name\":\"Roof\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Cement\",\"default\":\"Fibra cimento\"}}},\"_row_num\":16},{\"choice_list_name\":\"Roof\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":17},{\"choice_list_name\":\"Roof\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":18}]"
       },
       {
         "_partition": "Column",
         "_aspect": "FONTE",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Water\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Tab inside\",\"default\":\"Torneira dentro casa\"}}},\"_row_num\":26},{\"choice_list_name\":\"Water\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Tab outside\",\"default\":\"Torneira fora\"}}},\"_row_num\":27},{\"choice_list_name\":\"Water\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Small well\",\"default\":\"Fonte (poco)\"}}},\"_row_num\":28},{\"choice_list_name\":\"Water\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Public well\",\"default\":\"Fontenario publico\"}}},\"_row_num\":29}]"
+        "_value": "[{\"choice_list_name\":\"Water\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Tab inside\",\"default\":\"Torneira dentro casa\"}}},\"_row_num\":29},{\"choice_list_name\":\"Water\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Tab outside\",\"default\":\"Torneira fora\"}}},\"_row_num\":30},{\"choice_list_name\":\"Water\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Small well\",\"default\":\"Fonte (poco)\"}}},\"_row_num\":31},{\"choice_list_name\":\"Water\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Public well\",\"default\":\"Fontenario publico\"}}},\"_row_num\":32},{\"choice_list_name\":\"Water\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":33}]"
       },
       {
         "_partition": "Column",
         "_aspect": "INFO_COVID",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":23},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":24}]"
+        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":25},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":26},{\"choice_list_name\":\"YesNo\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":27}]"
       },
       {
         "_partition": "Column",
@@ -2422,21 +2520,21 @@
         "_aspect": "TECTO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":23},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":24}]"
+        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":25},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":26},{\"choice_list_name\":\"YesNo\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":27}]"
       },
       {
         "_partition": "Column",
         "_aspect": "VARANDA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Veranda\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Mosaic\",\"default\":\"Mosaico\"}}},\"_row_num\":19},{\"choice_list_name\":\"Veranda\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Cement\",\"default\":\"Cimento\"}}},\"_row_num\":20},{\"choice_list_name\":\"Veranda\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Stamped soil\",\"default\":\"Tera batida\"}}},\"_row_num\":21}]"
+        "_value": "[{\"choice_list_name\":\"Veranda\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Mosaic\",\"default\":\"Mosaico\"}}},\"_row_num\":20},{\"choice_list_name\":\"Veranda\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Cement\",\"default\":\"Cimento\"}}},\"_row_num\":21},{\"choice_list_name\":\"Veranda\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Stamped soil\",\"default\":\"Tera batida\"}}},\"_row_num\":22},{\"choice_list_name\":\"Veranda\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "VISITA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":23},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":24}]"
+        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":25},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":26},{\"choice_list_name\":\"YesNo\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":27}]"
       },
       {
         "_partition": "FormType",
