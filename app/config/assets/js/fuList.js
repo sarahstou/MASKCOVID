@@ -37,7 +37,7 @@ function getGroup(random) {
 
 function loadPersons() {
     // SQL to get persons
-    var varNamesIncl = "I.ACCEPT, I.BAIRRO, I.CAMO, I.DOB, I.FAM, I.FNO, I.HHOID, I.HOUSEGRP, I.ID, I.IDOID, I.NOME, I.NOVONUM1, I.NOVONUM2, I.OBS_IDADE , I.POID, I.SEX, I.TABZ, I.TELE1, I.TELE2, ";
+    var varNamesIncl = "I.ACCEPT, I.BAIRRO, I.CAMO, I.DOB, I.ESTADO as ESTADOINC, I.FAM, I.FNO, I.HHOID, I.HOUSEGRP, I.ID, I.IDOID, I.NOME, I.NOVONUM1, I.NOVONUM2, I.OBS_IDADE , I.POID, I.SEX, I.TABZ, I.TELE1, I.TELE2, ";
     var varNamesHH = "H.DATEX, ";
     var varNamesFU = "F._id, F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.GETRESULTS, F.LASTINTERVIEW, F.POSSIVEL, F.TESTRESUL";
     var sql = "SELECT " + varNamesIncl + varNamesHH + varNamesFU + 
@@ -59,6 +59,7 @@ function loadPersons() {
             var BAIRRO = result.getData(row,"BAIRRO");
             var CAMO = result.getData(row,"CAMO");
             var DOB = result.getData(row,"DOB");
+            var ESTADOINC = result.getData(row,"ESTADOINC");
             var FAM = result.getData(row,"FAM");
             var FNO = result.getData(row,"FNO");
             var HHOID = result.getData(row,"HHOID");
@@ -85,7 +86,11 @@ function loadPersons() {
             var POSSIVEL = result.getData(row,"POSSIVEL");
             var TESTRESUL = result.getData(row,"TESTRESUL");
             
-            
+            // ESTADO varialbe check
+            if (ESTADO == null) {
+                ESTADO = ESTADOINC
+            };
+
             // generate follow-up date (42 days after last interview with succes follow up)
             if (FU != null & (COVID == null | POSSIVEL == "2" | TESTRESUL == "3")) {
                 var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));

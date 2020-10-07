@@ -44,7 +44,7 @@ function getMasterList(data) {
 
 function getList() {
     // SQL to get participants
-    var varNamesIncl = "I.BAIRRO, I.CAMO, I.HOUSEGRP, I.TABZ, ";
+    var varNamesIncl = "I.BAIRRO, I.CAMO, I.ESTADO as ESTADOINC, I.HOUSEGRP, I.TABZ, ";
     var varNamesHH = "H.DATEX, ";
     var varNamesFU = "F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.LASTINTERVIEW, F.POSSIVEL, F.TESTRESUL";
     var sql = "SELECT " + varNamesIncl + varNamesHH + varNamesFU + 
@@ -64,6 +64,7 @@ function getList() {
             
             var BAIRRO = result.getData(row,"BAIRRO");
             var CAMO = result.getData(row,"CAMO");
+            var ESTADOINC = result.getData(row,"ESTADOINC");
             var HOUSEGRP = result.getData(row,"HOUSEGRP");
             var TABZ = result.getData(row,"TABZ");
 
@@ -77,6 +78,11 @@ function getList() {
             var POSSIVEL = result.getData(row,"POSSIVEL");
             var TESTRESUL = result.getData(row,"TESTRESUL");
             
+            // ESTADO varialbe check
+            if (ESTADO == null) {
+                ESTADO = ESTADOINC
+            };
+
             // generate follow-up date (42 days after last interview with succes follow up)
             if (FU != null & (COVID == null | POSSIVEL == "2" | TESTRESUL == "3")) {
                 var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
