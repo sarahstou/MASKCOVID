@@ -76,12 +76,13 @@ function loadPersons() {
             
             var DOB = result.getData(row,"DOB");
             var ESTADO = result.getData(row,"ESTADO");
+            var FNO = result.getData(row,"FNO");
             var HHOID = result.getData(row,"HHOID");
             var MASC = result.getData(row,"MASC");
             var NOME = titleCase(result.getData(row,"NOME"));
             var SEX = result.getData(row,"SEX");
 
-            var p = {type: 'participant', savepoint, DOB, ESTADO, HHOID, MASC, NOME, SEX};
+            var p = {type: 'participant', savepoint, DOB, ESTADO, FNO, HHOID, MASC, NOME, SEX};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -167,7 +168,8 @@ function setDisplayText(person) {
 
     var displayText = "Nome: " + person.NOME + "<br />" + 
         "Sexo: " + sex + "<br />" +
-        "Nacimento: " + dob
+        "Nacimento: " + dob + "<br />" +
+        "FNO: " + person.FNO;
     return displayText
 }
 
