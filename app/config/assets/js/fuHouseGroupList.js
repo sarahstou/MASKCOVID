@@ -45,7 +45,7 @@ function getList() {
     // SQL to get participants
     var varNamesIncl = "I.BAIRRO, I.ESTADO as ESTADOINC, I.HOUSEGRP, I.TABZ, ";
     var varNamesHH = "H.DATEX, ";
-    var varNamesFU = "F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.LASTINTERVIEW, F.POSSIVEL, F.TESTRESUL";
+    var varNamesFU = "F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.LASTINTERVIEW, F.POSSIVEL, F.RAZAO, F.TESTRESUL";
     var sql = "SELECT " + varNamesIncl + varNamesHH + varNamesFU + 
         " FROM MASKINCL AS I" + 
         " LEFT JOIN MASKFU AS F ON I.POID = F.POID" + 
@@ -74,6 +74,7 @@ function getList() {
             var FU = result.getData(row,"FU");
             var LASTINTERVIEW = result.getData(row,"LASTINTERVIEW");
             var POSSIVEL = result.getData(row,"POSSIVEL");
+            var RAZAO = result.getData(row,"RAZAO");
             var TESTRESUL = result.getData(row,"TESTRESUL");
             
             // ESTADO varialbe check
@@ -82,7 +83,7 @@ function getList() {
             };
             
             // generate follow-up date (42 days after last interview with succes follow up)
-            if (FU != null & (COVID == null | POSSIVEL == "2" | TESTRESUL == "3")) {
+            if (FU != null & (COVID == null | TESTRESUL == "3")) {
                 var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
                 var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
                 var segY = DATSEG.slice(DATSEG.search("Y")+2);
@@ -118,7 +119,7 @@ function getList() {
                 var FUEnd = new Date(datexY, datexM-1, datexD + 122);
             }
             
-            var p = {type: 'participant', savepoint, FUDate, FUEnd, LastFU, BAIRRO, HOUSEGRP, TABZ, DATEX, COVID, DATSEG, ESTADO, FU, LASTINTERVIEW, POSSIVEL, TESTRESUL};
+            var p = {type: 'participant', savepoint, FUDate, FUEnd, LastFU, BAIRRO, HOUSEGRP, TABZ, DATEX, COVID, DATSEG, ESTADO, FU, LASTINTERVIEW, POSSIVEL, RAZAO, TESTRESUL};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -176,7 +177,7 @@ function getCount(houseGroup) {
     var today = new Date(date);
     var todayAdate = "D:" + today.getDate() + ",M:" + (Number(today.getMonth()) + 1) + ",Y:" + today.getFullYear();
 
-    var total = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.HOUSEGRP == houseGroup & (person.FUDate <= today & person.LastFU < person.FUEnd & ((person.ESTADO != "2" & person.ESTADO != "3") | person.POSSIVEL == "2" | person.TESTERESUL == "3") | person.DATSEG == todayAdate)).length;
+    var total = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.HOUSEGRP == houseGroup & (person.FUDate <= today & person.LastFU < person.FUEnd & ((person.ESTADO != "2" & person.ESTADO != "3" & person.POSSIVEL != "2" & person.RAZAO != "4" & person.RAZAO != "7") | person.TESTERESUL == "3"))).length;
     var checked = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.HOUSEGRP == houseGroup & person.DATSEG == todayAdate & person.savepoint == "COMPLETE").length;
     var count = "(" + checked + "/" + total + ")";
     return count;

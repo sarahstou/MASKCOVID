@@ -61,7 +61,7 @@ function loadHouseHold() {
 
 function loadPersons() {
     // SQL to get persons
-    var varNames = "_savepoint_type, DOB, ESTADO, FNO, HHOID, MASC, NOME, SEX";
+    var varNames = "_savepoint_type, DOB, ESTADO, FNO, HHOID, ID, MASC, NOME, SEX";
     var sql = "SELECT " + varNames +
         " FROM MASKINCL" + 
         " WHERE HHOID = " + hhoid + 
@@ -78,11 +78,12 @@ function loadPersons() {
             var ESTADO = result.getData(row,"ESTADO");
             var FNO = result.getData(row,"FNO");
             var HHOID = result.getData(row,"HHOID");
+            var ID = result.getData(row,"ID");
             var MASC = result.getData(row,"MASC");
             var NOME = titleCase(result.getData(row,"NOME"));
             var SEX = result.getData(row,"SEX");
 
-            var p = {type: 'participant', savepoint, DOB, ESTADO, FNO, HHOID, MASC, NOME, SEX};
+            var p = {type: 'participant', savepoint, DOB, ESTADO, FNO, HHOID, ID, MASC, NOME, SEX};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -169,7 +170,8 @@ function setDisplayText(person) {
     var displayText = "Nome: " + person.NOME + "<br />" + 
         "Sexo: " + sex + "<br />" +
         "Nacimento: " + dob + "<br />" +
-        "FNO: " + person.FNO;
+        "FNO: " + person.FNO + "<br />" +
+        "ID: " + person.ID;
     return displayText
 }
 

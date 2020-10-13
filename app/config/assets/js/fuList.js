@@ -39,7 +39,7 @@ function loadPersons() {
     // SQL to get persons
     var varNamesIncl = "I.ACCEPT, I.BAIRRO, I.CAMO, I.DOB, I.ESTADO as ESTADOINC, I.FAM, I.FNO, I.HHOID, I.HOUSEGRP, I.ID, I.IDOID, I.NOME, I.NOVONUM1, I.NOVONUM2, I.OBS_IDADE , I.POID, I.SEX, I.TABZ, I.TELE1, I.TELE2, ";
     var varNamesHH = "H.DATEX, ";
-    var varNamesFU = "F._id, F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.GETRESULTS, F.LASTINTERVIEW, F.POSSIVEL, F.TESTRESUL";
+    var varNamesFU = "F._id, F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.GETRESULTS, F.LASTINTERVIEW, F.POSSIVEL, F.RAZAO, F.TESTRESUL";
     var sql = "SELECT " + varNamesIncl + varNamesHH + varNamesFU + 
         " FROM MASKINCL AS I" + 
         " LEFT JOIN MASKFU AS F ON I.POID = F.POID" + 
@@ -84,6 +84,7 @@ function loadPersons() {
             var GETRESULTS = result.getData(row,"GETRESULTS");
             var LASTINTERVIEW = result.getData(row,"LASTINTERVIEW");
             var POSSIVEL = result.getData(row,"POSSIVEL");
+            var RAZAO = result.getData(row,"RAZAO");
             var TESTRESUL = result.getData(row,"TESTRESUL");
             
             // ESTADO varialbe check
@@ -92,7 +93,7 @@ function loadPersons() {
             };
 
             // generate follow-up date (42 days after last interview with succes follow up)
-            if (FU != null & (COVID == null | POSSIVEL == "2" | TESTRESUL == "3")) {
+            if (FU != null & (COVID == null | TESTRESUL == "3")) {
                 var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
                 var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
                 var segY = DATSEG.slice(DATSEG.search("Y")+2);
@@ -121,7 +122,7 @@ function loadPersons() {
             var datexY = DATEX.slice(DATEX.search("Y")+2);
             var FUEnd = new Date(datexY, datexM-1, datexD + 122);
 
-            var p = {type: 'participant', rowId, savepoint, FUDate, FUEnd, LastFU, BAIRRO, CAMO, DOB, FAM, FNO, HHOID, HOUSEGRP, ID, IDOID, NOME, NOVONUM1, NOVONUM2, POID, SEX, TABZ, TELE1, TELE2, DATEX, COVID, DATSEG, ESTADO, FU, GETRESULTS, LASTINTERVIEW, POSSIVEL, TESTRESUL};
+            var p = {type: 'participant', rowId, savepoint, FUDate, FUEnd, LastFU, BAIRRO, CAMO, DOB, FAM, FNO, HHOID, HOUSEGRP, ID, IDOID, NOME, NOVONUM1, NOVONUM2, POID, SEX, TABZ, TELE1, TELE2, DATEX, COVID, DATSEG, ESTADO, FU, GETRESULTS, LASTINTERVIEW, POSSIVEL, RAZAO, TESTRESUL};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -167,7 +168,9 @@ function populateView() {
         // list
         if (this.FUDate <= today & 
             this.LastFU < this.FUEnd & 
-            ((this.ESTADO != "2" & this.ESTADO != "3") | this.POSSIVEL == "2" | this.TESTERESUL == "3") | this.DATSEG == todayAdate) {
+            ((this.ESTADO != "2" & this.ESTADO != "3" &
+            this.POSSIVEL != "2" & this.RAZAO != "4" & this.RAZAO != "7") | 
+            this.TESTERESUL == "3") | this.DATSEG == todayAdate) {
             ul.append($("<li />").append($("<button />").attr('id',this.POID).attr('class', called + ' btn ' + this.type + getResults).append(displayText)));
         }
         
