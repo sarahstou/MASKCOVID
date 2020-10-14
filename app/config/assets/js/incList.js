@@ -26,7 +26,7 @@ function loadHouseHold() {
     var varNames = "_id, _savepoint_type, BAIRRO, CAMO, FAM, HOUSEGRP, TABZ, VISITA";
     var sql = "SELECT " + varNames +
         " FROM MASKHOUSEHOLD" + 
-        " WHERE BAIRRO = " + bairro + " AND TABZ = " + tabz + " AND HOUSEGRP = '" + houseGroup + "' AND CAMO = " + camo + " AND FAM = " + fam
+        " WHERE HHOID = " + hhoid;
         household = [];
     console.log("Querying database for household...");
     console.log(sql);
@@ -61,7 +61,7 @@ function loadHouseHold() {
 
 function loadPersons() {
     // SQL to get persons
-    var varNames = "_savepoint_type, DOB, ESTADO, FNO, HHOID, ID, MASC, NOME, SEX";
+    var varNames = "_savepoint_type, BED, DOB, ESTADO, FNO, HHOID, ID, MASC, NOME, OBS_IDADE, ROOM, SEX";
     var sql = "SELECT " + varNames +
         " FROM MASKINCL" + 
         " WHERE HHOID = " + hhoid + 
@@ -74,6 +74,7 @@ function loadPersons() {
         for (var row = 0; row < result.getCount(); row++) {
             var savepoint = result.getData(row,"_savepoint_type");
             
+            var BED = result.getData(row,"BED");
             var DOB = result.getData(row,"DOB");
             var ESTADO = result.getData(row,"ESTADO");
             var FNO = result.getData(row,"FNO");
@@ -81,9 +82,11 @@ function loadPersons() {
             var ID = result.getData(row,"ID");
             var MASC = result.getData(row,"MASC");
             var NOME = titleCase(result.getData(row,"NOME"));
+            var OBS_IDADE = result.getData(row,"OBS_IDADE");
+            var ROOM = result.getData(row,"ROOM");
             var SEX = result.getData(row,"SEX");
 
-            var p = {type: 'participant', savepoint, DOB, ESTADO, FNO, HHOID, ID, MASC, NOME, SEX};
+            var p = {type: 'participant', savepoint, BED, DOB, ESTADO, FNO, HHOID, ID, MASC, NOME, OBS_IDADE, ROOM, SEX};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -104,7 +107,7 @@ function populateView() {
     // check if all visited
     const visitedPeople = [];
     for (const item of participants) {
-        if (item.savepoint == "COMPLETE" & item.ESTADO != null) {
+        if (item.savepoint == "COMPLETE" & (item.ESTADO != null | item.OBS_IDADE != null)) {
             visitedPeople.push({
                 savepoint: item.savepoint,
                 ESTADO: item.ESTADO
@@ -139,7 +142,7 @@ function populateView() {
         var that = this;  
         // Check if called today
         var visited = '';
-        if (this.savepoint == "COMPLETE" & this.ESTADO != null | household[0]["VISITA"] == 2) {
+        if (this.savepoint == "COMPLETE" & (this.ESTADO != null | household[0]["VISITA"] == 2 | this.OBS_IDADE != null)) {
             visited = "visited";
         };
 
@@ -171,7 +174,8 @@ function setDisplayText(person) {
         "Sexo: " + sex + "<br />" +
         "Nacimento: " + dob + "<br />" +
         "FNO: " + person.FNO + "<br />" +
-        "ID: " + person.ID;
+        "ID: " + person.ID + "<br />" +
+        "Quarto: " + person.ROOM + " Camo: " + person.BED;
     return displayText
 }
 

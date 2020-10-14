@@ -44,7 +44,7 @@ function getMasterList(data) {
 
 function getList() {
     // SQL to get participants
-    var varNamesIncl = "I.BAIRRO, I.CAMO, I.ESTADO as ESTADOINC, I.HOUSEGRP, I.TABZ, ";
+    var varNamesIncl = "I.BAIRRO, I.CAMO, I.ESTADO as ESTADOINC, I.FAM, I.HOUSEGRP, I.TABZ, ";
     var varNamesHH = "H.DATEX, ";
     var varNamesFU = "F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.LASTINTERVIEW, F.POSSIVEL, F.RAZAO, F.TESTRESUL";
     var sql = "SELECT " + varNamesIncl + varNamesHH + varNamesFU + 
@@ -65,6 +65,7 @@ function getList() {
             var BAIRRO = result.getData(row,"BAIRRO");
             var CAMO = result.getData(row,"CAMO");
             var ESTADOINC = result.getData(row,"ESTADOINC");
+            var FAM = result.getData(row,"FAM");
             var HOUSEGRP = result.getData(row,"HOUSEGRP");
             var TABZ = result.getData(row,"TABZ");
 
@@ -121,7 +122,7 @@ function getList() {
                 var FUEnd = new Date(datexY, datexM-1, datexD + 122);
             }
             
-            var p = {type: 'participant', savepoint, FUDate, FUEnd, LastFU, BAIRRO, CAMO, HOUSEGRP, TABZ, DATEX, COVID, DATSEG, ESTADO, FU, LASTINTERVIEW, POSSIVEL, RAZAO, TESTRESUL};
+            var p = {type: 'participant', savepoint, FUDate, FUEnd, LastFU, BAIRRO, CAMO, FAM, HOUSEGRP, TABZ, DATEX, COVID, DATSEG, ESTADO, FU, LASTINTERVIEW, POSSIVEL, RAZAO, TESTRESUL};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -180,9 +181,11 @@ function getCount(camo) {
     var today = new Date(date);
     var todayAdate = "D:" + today.getDate() + ",M:" + (Number(today.getMonth()) + 1) + ",Y:" + today.getFullYear();
 
-    var total = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.HOUSEGRP == houseGroup & person.CAMO == camo & (person.FUDate <= today & person.LastFU < person.FUEnd & ((person.ESTADO != "2" & person.ESTADO != "3" & person.POSSIVEL != "2" & person.RAZAO != "4" & person.RAZAO != "7") | person.TESTERESUL == "3"))).length;
+    var totalList = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.HOUSEGRP == houseGroup & person.CAMO == camo & (person.FUDate <= today & person.LastFU < person.FUEnd & ((person.ESTADO != "2" & person.ESTADO != "3" & person.POSSIVEL != "2" & person.RAZAO != "4" & person.RAZAO != "7") | person.TESTERESUL == "3")));
+    var total = totalList.length;
     var checked = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.HOUSEGRP == houseGroup & person.CAMO == camo & person.DATSEG == todayAdate & person.savepoint == "COMPLETE").length;
     var count = "(" + checked + "/" + total + ")";
+    console.log(camo,totalList)
     return count;
 }
 

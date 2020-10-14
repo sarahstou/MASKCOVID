@@ -147,15 +147,6 @@ function initButtons() {
     // Zone buttons
     var ul = $('#li');
 
-    // For fam = 0
-    ul.append($("<li />").append($("<button />").attr('id',"0").attr('class','btn' + bairro).append("0: Família zero").append(" " + getCount(0))));
-    console.log("initB",masterFamList);
-    var btn0 = ul.find('#' + "0");
-        btn0.on("click", function() {
-            var queryParams = util.setQuerystringParams(date, bairro, tabz, zone, houseGroup, camo, "0", "Família zero", null, assistant, random);
-            odkTables.launchHTML(null, 'config/assets/fuList.html' + queryParams);
-        })     
-
     const listFromMaster = [];
     const map = new Map();
     for (const item of masterFamList) {
@@ -193,9 +184,11 @@ function getCount(fam) {
     var today = new Date(date);
     var todayAdate = "D:" + today.getDate() + ",M:" + (Number(today.getMonth()) + 1) + ",Y:" + today.getFullYear();
 
-    var total = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.HOUSEGRP == houseGroup & person.CAMO == camo & person.FAM == fam & (person.FUDate <= today & person.LastFU < person.FUEnd & ((person.ESTADO != "2" & person.ESTADO != "3" & person.POSSIVEL != "2" & person.RAZAO != "4" & person.RAZAO != "7") | person.TESTERESUL == "3"))).length;
+    var totalList = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.HOUSEGRP == houseGroup & person.CAMO == camo & person.FAM == fam & (person.FUDate <= today & person.LastFU < person.FUEnd & ((person.ESTADO != "2" & person.ESTADO != "3" & person.POSSIVEL != "2" & person.RAZAO != "4" & person.RAZAO != "7") | person.TESTERESUL == "3")))
+    var total = totalList.length;
     var checked = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.HOUSEGRP == houseGroup & person.CAMO == camo & person.FAM == fam & person.DATSEG == todayAdate & person.savepoint == "COMPLETE").length;
     var count = "(" + checked + "/" + total + ")";
+    console.log(fam, totalList);
     return count;
 }
 

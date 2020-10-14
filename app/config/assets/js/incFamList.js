@@ -83,7 +83,7 @@ function getHouseholds() {
 
 function getPersons() {
     // SQL to get participants
-    var varNames = "_savepoint_type, CAMO, ESTADO, HHOID, HOUSEGRP, TABZ"
+    var varNames = "_savepoint_type, CAMO, ESTADO, HHOID, HOUSEGRP, OBS_IDADE, TABZ"
     var sql = "SELECT " + varNames +  
         " FROM MASKINCL " + 
         " WHERE TABZ = " + tabz + " AND HOUSEGRP = '" + houseGroup + "' AND CAMO = " + camo; 
@@ -99,9 +99,10 @@ function getPersons() {
             var ESTADO = result.getData(row,"ESTADO");
             var HHOID = result.getData(row,"HHOID");
             var HOUSEGRP = result.getData(row,"HOUSEGRP");
+            var OBS_IDADE = result.getData(row,"OBS_IDADE");
             var TABZ = result.getData(row,"TABZ");
 
-            var p = { type: 'person', savepoint, CAMO, ESTADO, HHOID, HOUSEGRP, TABZ};
+            var p = { type: 'person', savepoint, CAMO, ESTADO, HHOID, HOUSEGRP, OBS_IDADE, TABZ};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -159,7 +160,7 @@ function initButtons() {
         // Visited people
         const visitedPeople = [];
         for (const item of participants) {
-        if (item.HHOID == HHOID & item.savepoint == "COMPLETE" & item.ESTADO != null) {
+        if (item.HHOID == HHOID & item.savepoint == "COMPLETE" & (item.ESTADO != null | item.OBS_IDADE != null)) {
             visitedPeople.push({
                 savepoint: item.savepoint,
                 ESTADO: item.ESTADO
@@ -184,10 +185,10 @@ function initButtons() {
             famName = family["famName"]
         }
         // list
-        ul.append($("<li />").append($("<button />").attr('id',this.FAM).attr('class', visited + ' btn' + this.BAIRRO).append(this.FAM + ": " + famName)));
+        ul.append($("<li />").append($("<button />").attr('id',this.HHOID).attr('class', visited + ' btn' + this.BAIRRO).append(this.FAM + ": " + famName)));
         
         // Buttons
-        var btn = ul.find('#' + this.FAM);
+        var btn = ul.find('#' + this.HHOID);
         btn.on("click", function() {
             var queryParams = util.setQuerystringParams(null, bairro, tabz, zone, houseGroup, camo, FAM, famName, HHOID);
             odkTables.launchHTML(null, 'config/assets/incList.html' + queryParams);

@@ -289,8 +289,7 @@
               "default": "Lista de pessoas"
             }
           },
-          "hide_delete_button": true,
-          "hide_add_instance": true
+          "hide_delete_button": true
         },
         "_row_num": 27
       },
@@ -677,7 +676,7 @@
         "linked_table_id": "MASKINCL",
         "selection": "HHOID = ?",
         "selectionArgs": "[data('HHOID')]",
-        "newRowInitialElementKeyToValueMap": "{}",
+        "newRowInitialElementKeyToValueMap": "{BAIRRO: data(\"BAIRRO\"), TABZ: data(\"TABZ\"), CAMO: data(\"CAMO\"), FAM: data(\"FAM\"), HOUSEGRP: data(\"HOUSEGRP\"), HHOID: data(\"HHOID\"), RANGROUP: data(\"RANGROUP\")}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       }
@@ -782,6 +781,16 @@
         "type": "string",
         "elementType": "string",
         "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 2
+      }
+    ],
+    "table_specific_translations": [
+      {
+        "string_token": "linked_table_new_instance_label",
+        "text": {
+          "english": "New person",
+          "default": "Nova pessoa"
+        },
         "_row_num": 2
       }
     ]
@@ -1284,7 +1293,16 @@
       ]
     },
     "table_specific_definitions": {
-      "_tokens": {}
+      "_tokens": {
+        "linked_table_new_instance_label": {
+          "string_token": "linked_table_new_instance_label",
+          "text": {
+            "english": "New person",
+            "default": "Nova pessoa"
+          },
+          "_row_num": 2
+        }
+      }
     },
     "queries": {
       "persons": {
@@ -1294,7 +1312,7 @@
         "linked_table_id": "MASKINCL",
         "selection": "HHOID = ?",
         "selectionArgs": "[data('HHOID')]",
-        "newRowInitialElementKeyToValueMap": "{}",
+        "newRowInitialElementKeyToValueMap": "{BAIRRO: data(\"BAIRRO\"), TABZ: data(\"TABZ\"), CAMO: data(\"CAMO\"), FAM: data(\"FAM\"), HOUSEGRP: data(\"HOUSEGRP\"), HHOID: data(\"HHOID\"), RANGROUP: data(\"RANGROUP\")}",
         "openRowInitialElementKeyToValueMap": "{}",
         "_row_num": 2
       }
@@ -1769,8 +1787,7 @@
                   "default": "Lista de pessoas"
                 }
               },
-              "hide_delete_button": true,
-              "hide_add_instance": true
+              "hide_delete_button": true
             },
             "_row_num": 27,
             "__rowNum__": 26,
