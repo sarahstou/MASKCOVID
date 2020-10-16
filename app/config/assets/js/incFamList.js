@@ -169,7 +169,7 @@ function initButtons() {
         };
         // Check if visited     
         var visited = '';
-        if (notVisitedPeople.length == visitedPeople.length | this.VISITA == 2) {
+        if ((notVisitedPeople.length == visitedPeople.length | this.VISITA == 2) & this.savepoint == "COMPLETE") {
             visited = "visited";
         };
         // get family name

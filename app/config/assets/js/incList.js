@@ -122,7 +122,7 @@ function populateView() {
         
         // Check if visited today      
         var visited = '';
-        if (visitedPeople.length == participants.length | this.VISITA == 2) {
+        if ((visitedPeople.length == participants.length | this.VISITA == 2) & this.savepoint == "COMPLETE") {
             visited = "visited";
         };
 
