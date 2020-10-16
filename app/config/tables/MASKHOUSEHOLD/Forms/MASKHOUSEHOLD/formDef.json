@@ -140,6 +140,9 @@
               "english": "Date of visit",
               "default": "Data de visita"
             }
+          },
+          "adate": {
+            "helperText": false
           }
         },
         "_row_num": 10
@@ -1635,6 +1638,9 @@
                   "english": "Date of visit",
                   "default": "Data de visita"
                 }
+              },
+              "adate": {
+                "helperText": false
               }
             },
             "_row_num": 10,

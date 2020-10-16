@@ -3136,6 +3136,19 @@
         "_row_num": 104
       },
       {
+        "choice_list_name": "TypeMask2",
+        "data_value": "6",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Other",
+              "default": "Outro"
+            }
+          }
+        },
+        "_row_num": 105
+      },
+      {
         "choice_list_name": "WhenMask",
         "data_value": "1",
         "display": {
@@ -3146,7 +3159,7 @@
             }
           }
         },
-        "_row_num": 106
+        "_row_num": 107
       },
       {
         "choice_list_name": "WhenMask",
@@ -3159,7 +3172,7 @@
             }
           }
         },
-        "_row_num": 107
+        "_row_num": 108
       },
       {
         "choice_list_name": "WhenMask",
@@ -3172,7 +3185,7 @@
             }
           }
         },
-        "_row_num": 108
+        "_row_num": 109
       },
       {
         "choice_list_name": "WhenMask",
@@ -3185,7 +3198,7 @@
             }
           }
         },
-        "_row_num": 109
+        "_row_num": 110
       }
     ],
     "prompt_types": [
@@ -4975,6 +4988,19 @@
             }
           },
           "_row_num": 104
+        },
+        {
+          "choice_list_name": "TypeMask2",
+          "data_value": "6",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Other",
+                "default": "Outro"
+              }
+            }
+          },
+          "_row_num": 105
         }
       ],
       "WhenMask": [
@@ -4989,7 +5015,7 @@
               }
             }
           },
-          "_row_num": 106
+          "_row_num": 107
         },
         {
           "choice_list_name": "WhenMask",
@@ -5002,7 +5028,7 @@
               }
             }
           },
-          "_row_num": 107
+          "_row_num": 108
         },
         {
           "choice_list_name": "WhenMask",
@@ -5015,7 +5041,7 @@
               }
             }
           },
-          "_row_num": 108
+          "_row_num": 109
         },
         {
           "choice_list_name": "WhenMask",
@@ -5028,7 +5054,7 @@
               }
             }
           },
-          "_row_num": 109
+          "_row_num": 110
         }
       ]
     },
@@ -10708,14 +10734,14 @@
         "_aspect": "MASCOU",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Surgery\",\"default\":\"Cirúrgia\"}}},\"_row_num\":101},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Cloth\",\"default\":\"Pano\"}}},\"_row_num\":102},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":103},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Surgery / Cloth\",\"default\":\"Cirúrgia / Pano\"}}},\"_row_num\":104}]"
+        "_value": "[{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Surgery\",\"default\":\"Cirúrgia\"}}},\"_row_num\":101},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Cloth\",\"default\":\"Pano\"}}},\"_row_num\":102},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":103},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Surgery / Cloth\",\"default\":\"Cirúrgia / Pano\"}}},\"_row_num\":104},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":105}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MASCQUAN",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"WhenMask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"When I go out\",\"default\":\"Quando sai\"}}},\"_row_num\":106},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Always\",\"default\":\"Sempre\"}}},\"_row_num\":107},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Occasionally\",\"default\":\"Nem sempre\"}}},\"_row_num\":108},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":109}]"
+        "_value": "[{\"choice_list_name\":\"WhenMask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"When I go out\",\"default\":\"Quando sai\"}}},\"_row_num\":107},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Always\",\"default\":\"Sempre\"}}},\"_row_num\":108},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Occasionally\",\"default\":\"Nem sempre\"}}},\"_row_num\":109},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":110}]"
       },
       {
         "_partition": "Column",
