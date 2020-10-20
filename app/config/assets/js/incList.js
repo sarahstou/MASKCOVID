@@ -16,7 +16,7 @@ function display() {
     hhoid = util.getQueryParameter('hhoid');
     
     var head = $('#main');
-    head.prepend("<h1>" + tabz + " - " + houseGroup + " - " + camo + " </br> <h3> " + famName);
+    head.prepend("<h1>" + tabz + " - " + houseGroup + " - " + camo + " - " + fam + " </br> <h3> " + famName);
     // populate list
     loadHouseHold();
 }

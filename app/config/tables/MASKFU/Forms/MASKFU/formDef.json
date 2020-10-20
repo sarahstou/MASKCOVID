@@ -3551,13 +3551,13 @@
       {
         "name": "hospdatans",
         "type": "select_multiple",
-        "isSessionVariable": false,
+        "isSessionVariable": true,
         "_row_num": 65
       },
       {
         "name": "HOSPDIA",
         "type": "integer",
-        "isSessionVariable": true,
+        "isSessionVariable": false,
         "_row_num": 66
       },
       {
@@ -5967,7 +5967,7 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
+        "isSessionVariable": true,
         "elementKey": "hospdatans"
       },
       "HOSPDIA": {
@@ -5982,7 +5982,7 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": true,
+        "isSessionVariable": false,
         "elementKey": "HOSPDIA"
       },
       "HOSPONDE": {
@@ -10059,6 +10059,7 @@
           "elementName": "items",
           "elementSet": "data",
           "elementPath": "hospdatans.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "valuesList": "dontknowdate",
@@ -10072,7 +10073,7 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": false,
+        "isSessionVariable": true,
         "elementKey": "hospdatans",
         "elementName": "hospdatans",
         "elementSet": "data",
@@ -10093,7 +10094,7 @@
             "section_name": "model"
           }
         ],
-        "isSessionVariable": true,
+        "isSessionVariable": false,
         "elementKey": "HOSPDIA",
         "elementName": "HOSPDIA",
         "elementSet": "data",
@@ -10445,6 +10446,7 @@
         "elementName": "items",
         "elementSet": "data",
         "elementPath": "hospdatans.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
       "_id": {
@@ -10812,13 +10814,6 @@
         "_key": "displayChoicesList",
         "_type": "object",
         "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":37},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":38},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":39}]"
-      },
-      {
-        "_partition": "Column",
-        "_aspect": "hospdatans",
-        "_key": "displayChoicesList",
-        "_type": "object",
-        "_value": "[{\"choice_list_name\":\"dontknowdate\",\"data_value\":\"D:NS,M:NS,Y:NS\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know the date\",\"default\":\"Não sabe a data\"}}},\"_row_num\":41}]"
       },
       {
         "_partition": "FormType",

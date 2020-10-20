@@ -817,8 +817,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Not found",
-              "default": "Não encontrado"
+              "english": "Unknown",
+              "default": "Desconhecido"
             }
           }
         },
@@ -1763,8 +1763,8 @@
           "display": {
             "title": {
               "text": {
-                "english": "Not found",
-                "default": "Não encontrado"
+                "english": "Unknown",
+                "default": "Desconhecido"
               }
             }
           },
@@ -4719,7 +4719,7 @@
         "_aspect": "ESTADO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":2},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved\",\"default\":\"Mudou\"}}},\"_row_num\":3},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":4},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":5},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":6},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Not found\",\"default\":\"Não encontrado\"}}},\"_row_num\":7},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Double\",\"default\":\"Duplo\"}}},\"_row_num\":8},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"99\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":9}]"
+        "_value": "[{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":2},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved\",\"default\":\"Mudou\"}}},\"_row_num\":3},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":4},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":5},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":6},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Unknown\",\"default\":\"Desconhecido\"}}},\"_row_num\":7},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Double\",\"default\":\"Duplo\"}}},\"_row_num\":8},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"99\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":9}]"
       },
       {
         "_partition": "Column",
