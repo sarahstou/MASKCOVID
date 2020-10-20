@@ -146,6 +146,15 @@ function getList() {
 function initButtons() {
     // Zone buttons
     var ul = $('#li');
+    // Button for 'other'
+    ul.append($("<li />").append($("<button />").attr('id',"OU").attr('class','btn' + bairro).append("Outro famílias").append(" " + getCount(0))));
+    // Buttons
+    var btn = ul.find('#' + "OU");
+    btn.on("click", function() {
+        var queryParams = util.setQuerystringParams(date, bairro, tabz, zone, houseGroup, camo, "0", "Outro famílias", null, assistant, random);
+        odkTables.launchHTML(null, 'config/assets/fuList.html' + queryParams);
+    })        
+
 
     const listFromMaster = [];
     const map = new Map();
@@ -168,8 +177,8 @@ function initButtons() {
 
     $.each(listFromMaster, function() {
         var that = this;
-            // list
-            ul.append($("<li />").append($("<button />").attr('id',this.fam).attr('class','btn' + this.bairro).append(this.fam + ": " + this.famName).append(" " + getCount(this.fam))));
+        // list
+        ul.append($("<li />").append($("<button />").attr('id',this.fam).attr('class','btn' + this.bairro).append(this.fam + ": " + this.famName).append(" " + getCount(this.fam))));
         
         // Buttons
         var btn = ul.find('#' + this.fam);
