@@ -145,6 +145,7 @@
             "helperText": false
           }
         },
+        "constraint": "not(adate.hasUncertainty(data(\"DATEX\"))) && data(\"DATEX\") != null && adate.ageInYears(data(\"DATEX\")) != -9999 && adate.ageInYears(data(\"DATEX\")) < 2019",
         "_row_num": 10
       },
       {
@@ -1643,6 +1644,7 @@
                 "helperText": false
               }
             },
+            "constraint": "not(adate.hasUncertainty(data(\"DATEX\"))) && data(\"DATEX\") != null && adate.ageInYears(data(\"DATEX\")) != -9999 && adate.ageInYears(data(\"DATEX\")) < 2019",
             "_row_num": 10,
             "__rowNum__": 9,
             "_token_type": "prompt",
@@ -1812,7 +1814,9 @@
           }
         ],
         "validation_tag_map": {
-          "finalize": []
+          "finalize": [
+            5
+          ]
         },
         "operations": [
           {
