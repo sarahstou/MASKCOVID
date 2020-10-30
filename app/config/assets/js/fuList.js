@@ -168,7 +168,7 @@ function populateView() {
         // list
         if (this.FUDate <= today & 
             this.LastFU < this.FUEnd & 
-            ((this.ESTADO != "2" & this.ESTADO != "3" &
+            ((this.ESTADO != "2" & this.ESTADO != "3" & this.ESTADO != "8" &
             this.POSSIVEL != "2" & this.RAZAO != "4" & this.RAZAO != "7") | 
             this.TESTERESUL == "3") | this.DATSEG == todayAdate) {
             ul.append($("<li />").append($("<button />").attr('id',this.POID).attr('class', called + ' btn ' + this.type + getResults).append(displayText)));
