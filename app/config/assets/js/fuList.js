@@ -37,16 +37,14 @@ function getGroup(random) {
 
 function loadPersons() {
     // SQL to get persons
-    var varNamesIncl = "I.ACCEPT, I.BAIRRO, I.CAMO, I.DOB, I.ESTADO as ESTADOINC, I.FAM, I.FNO, I.HHOID, I.HOUSEGRP, I.ID, I.IDOID, I.NOME, I.NOVONUM1, I.NOVONUM2, I.OBS_IDADE , I.POID, I.SEX, I.TABZ, I.TELE1, I.TELE2, ";
-    var varNamesHH = "H.DATEX, ";
+    var varNamesMaskTablet = "I.BAIRRO, I.CAMO, I.DATEX, I.DOB, I.ESTADO as ESTADOINC, I.FAM, I.FNO, I.HHOID, I.HOUSEGRP, I.ID, I.IDOID, I.NOME, I.NOVONUM1, I.NOVONUM2, I.POID, I.SEX, I.TABZ, I.TELE1, I.TELE2, ";
     var varNamesFU = "F._id, F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.GETRESULTS, F.LASTINTERVIEW, F.POSSIVEL, F.RAZAO, F.TESTRESUL";
-    var sql = "SELECT " + varNamesIncl + varNamesHH + varNamesFU + 
-        " FROM MASKINCL AS I" + 
+    var sql = "SELECT " + varNamesMaskTablet + varNamesFU + 
+        " FROM MASKTABLET AS I" + 
         " LEFT JOIN MASKFU AS F ON I.POID = F.POID" + 
-        " INNER JOIN MASKHOUSEHOLD AS H ON I.HHOID = H.HHOID" +
-        " WHERE I.BAIRRO = " + bairro + " AND I.TABZ = " + tabz + " AND I.HOUSEGRP = '" + houseGroup + "' AND I.CAMO = " + camo + " AND I.FAM = " + fam + " AND I.OBS_IDADE IS NULL AND (I.ACCEPT != 2 OR I.ACCEPT IS NULL) AND I.ESTADO IS NOT NULL" +
+        " WHERE I.TABZ = " + tabz + " AND I.CAMO = " + camo + " AND I.FAM = " + fam +
         " GROUP BY I.POID HAVING MAX(F.FU) OR F.FU IS NULL" +
-        " ORDER BY I.FAM";
+        " ORDER BY I.FNO";
     participants = [];
     console.log("Querying database for participants...");
     console.log(sql);
@@ -57,7 +55,8 @@ function loadPersons() {
             var savepoint = result.getData(row,"_savepoint_type")
             
             var BAIRRO = result.getData(row,"BAIRRO");
-            var CAMO = result.getData(row,"CAMO");
+            var CAMO = result.getData(row,"CAMO");            
+            var DATEX = result.getData(row,"DATEX");
             var DOB = result.getData(row,"DOB");
             var ESTADOINC = result.getData(row,"ESTADOINC");
             var FAM = result.getData(row,"FAM");
@@ -74,8 +73,6 @@ function loadPersons() {
             var TABZ = result.getData(row,"TABZ");
             var TELE1 = result.getData(row,"TELE1");
             var TELE2 = result.getData(row,"TELE2");
-
-            var DATEX = result.getData(row,"DATEX");
 
             var COVID = result.getData(row,"COVID");
             var DATSEG = result.getData(row,"DATSEG");

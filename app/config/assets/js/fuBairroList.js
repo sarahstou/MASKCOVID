@@ -37,16 +37,13 @@ function getAssistants(data) {
 
 function getList() {
     // SQL to get persons
-    var varNamesIncl = "I.BAIRRO, I.ESTADO as ESTADOINC, ";
-    var varNamesHH = "H.DATEX, ";
+    var varNamesMaskTablet = "I.BAIRRO, I.DATEX, I.ESTADO as ESTADOINC, ";
     var varNamesFU = "F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.LASTINTERVIEW, F.POSSIVEL, F.RAZAO, F.TESTRESUL";
-    var sql = "SELECT " + varNamesIncl + varNamesHH + varNamesFU + 
-        " FROM MASKINCL AS I" + 
-        " LEFT JOIN MASKFU AS F ON I.POID = F.POID" + 
-        " INNER JOIN MASKHOUSEHOLD AS H ON I.HHOID = H.HHOID" +
-        " WHERE I.OBS_IDADE IS NULL AND (I.ACCEPT != 2 OR I.ACCEPT IS NULL) AND I.ESTADO IS NOT NULL" +
+    var sql = "SELECT " + varNamesMaskTablet + varNamesFU + 
+        " FROM MASKTABLET AS I" + 
+        " LEFT JOIN MASKFU AS F ON I.POID = F.POID" +
         " GROUP BY I.POID HAVING MAX(F.FU) OR F.FU IS NULL" +
-        " ORDER BY I.FAM";
+        " ORDER BY I.FNO";
     participants = [];
     console.log("Querying database for participants...");
     console.log(sql);
@@ -56,9 +53,8 @@ function getList() {
             var savepoint = result.getData(row,"_savepoint_type")
             
             var BAIRRO = result.getData(row,"BAIRRO");
-            var ESTADOINC = result.getData(row,"ESTADOINC");
-
             var DATEX = result.getData(row,"DATEX");
+            var ESTADOINC = result.getData(row,"ESTADOINC");
 
             var COVID = result.getData(row,"COVID");
             var DATSEG = result.getData(row,"DATSEG");

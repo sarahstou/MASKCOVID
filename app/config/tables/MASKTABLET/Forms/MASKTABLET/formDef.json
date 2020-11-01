@@ -145,238 +145,232 @@
         "_row_num": 10
       },
       {
-        "name": "VISITA",
-        "type": "select_one",
-        "isSessionVariable": false,
-        "_row_num": 11
-      },
-      {
         "name": "COBERTURA",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 13
+        "_row_num": 12
       },
       {
         "name": "VARANDA",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 14
+        "_row_num": 13
       },
       {
         "name": "TECTO",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 15
+        "_row_num": 14
       },
       {
         "name": "FONTE",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 16
+        "_row_num": 15
       },
       {
         "name": "INFO_COVID",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 17
+        "_row_num": 16
       },
       {
         "name": "HHOID",
         "type": "integer",
         "isSessionVariable": false,
         "comment": "Other variables",
-        "_row_num": 19
+        "_row_num": 18
       },
       {
         "name": "ID",
         "type": "text",
         "isSessionVariable": false,
         "comment": "id",
-        "_row_num": 21
+        "_row_num": 20
       },
       {
         "name": "OBS_IDADE",
         "type": "text",
         "isSessionVariable": false,
         "comment": "obs age",
-        "_row_num": 22
+        "_row_num": 21
       },
       {
         "name": "POID",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 23
+        "_row_num": 22
       },
       {
         "name": "IDOID",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 24
+        "_row_num": 23
       },
       {
         "name": "FNO",
         "type": "integer",
         "isSessionVariable": false,
         "comment": "fno id",
-        "_row_num": 25
+        "_row_num": 24
       },
       {
         "name": "NOME",
         "type": "text",
         "isSessionVariable": false,
         "comment": "name",
-        "_row_num": 26
+        "_row_num": 25
       },
       {
         "name": "NOMEMAE",
         "type": "text",
         "isSessionVariable": false,
         "comment": "mother",
-        "_row_num": 27
+        "_row_num": 26
       },
       {
         "name": "DOB",
         "type": "adate",
         "isSessionVariable": false,
         "comment": "dob",
-        "_row_num": 28
+        "_row_num": 27
       },
       {
         "name": "SEX",
         "type": "integer",
         "isSessionVariable": false,
         "comment": "sex",
-        "_row_num": 29
+        "_row_num": 28
       },
       {
         "name": "REGDIA",
         "type": "adate",
         "isSessionVariable": false,
         "comment": "regida",
-        "_row_num": 30
+        "_row_num": 29
       },
       {
         "name": "XDIA",
         "type": "adate",
         "isSessionVariable": false,
         "comment": "xdia",
-        "_row_num": 31
+        "_row_num": 30
       },
       {
         "name": "ROOM",
         "type": "text",
         "isSessionVariable": false,
         "comment": "room",
-        "_row_num": 32
+        "_row_num": 31
       },
       {
         "name": "BED",
         "type": "text",
         "isSessionVariable": false,
         "comment": "bed",
-        "_row_num": 33
+        "_row_num": 32
       },
       {
         "name": "TELE1",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 34
+        "_row_num": 33
       },
       {
         "name": "TELE2",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 35
+        "_row_num": 34
       },
       {
         "name": "ESTADO",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 37
+        "_row_num": 36
       },
       {
         "name": "DATASAI",
         "type": "adate",
         "isSessionVariable": false,
-        "_row_num": 38
+        "_row_num": 37
       },
       {
         "name": "DUPLO",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 39
+        "_row_num": 38
       },
       {
         "name": "ONDE",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 40
+        "_row_num": 39
       },
       {
         "name": "ACCEPT",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 41
+        "_row_num": 40
       },
       {
         "name": "TELE1_VERI",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 42
+        "_row_num": 41
       },
       {
         "name": "TELE2_VERI",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 43
+        "_row_num": 42
       },
       {
         "name": "TELEOU_VERI",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 44
+        "_row_num": 43
       },
       {
         "name": "NOVONUM1",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 45
+        "_row_num": 44
       },
       {
         "name": "NOVONUM2",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 46
+        "_row_num": 45
       },
       {
         "name": "MASC",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 48
+        "_row_num": 47
       },
       {
         "name": "RECEB_QUEM",
         "type": "text",
         "isSessionVariable": false,
-        "_row_num": 49
+        "_row_num": 48
       },
       {
         "name": "INTENCAO",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 50
+        "_row_num": 49
       },
       {
         "name": "QUANDO",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 51
+        "_row_num": 50
       },
       {
         "name": "MOTIVO",
         "type": "select_one",
         "isSessionVariable": false,
-        "_row_num": 52
+        "_row_num": 51
       }
     ]
   },
@@ -607,22 +601,11 @@
         "isSessionVariable": false,
         "elementKey": "PREENCHIDO"
       },
-      "VISITA": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 11,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "VISITA"
-      },
       "COBERTURA": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
@@ -633,7 +616,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -644,7 +627,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
@@ -655,7 +638,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -666,7 +649,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -677,7 +660,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -689,7 +672,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -701,7 +684,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -713,7 +696,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -724,7 +707,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -735,7 +718,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -747,7 +730,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 26,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -759,7 +742,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -776,7 +759,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -787,7 +770,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -804,7 +787,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -820,7 +803,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 31,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -831,7 +814,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -843,7 +826,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -855,7 +838,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -866,7 +849,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -877,7 +860,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -893,7 +876,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -904,7 +887,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -915,7 +898,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
@@ -926,7 +909,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -937,7 +920,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -948,7 +931,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
@@ -959,7 +942,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 43,
             "section_name": "model"
           }
         ],
@@ -970,7 +953,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 44,
             "section_name": "model"
           }
         ],
@@ -981,7 +964,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 45,
             "section_name": "model"
           }
         ],
@@ -992,7 +975,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 47,
             "section_name": "model"
           }
         ],
@@ -1003,7 +986,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 48,
             "section_name": "model"
           }
         ],
@@ -1014,7 +997,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 50,
+            "_row_num": 49,
             "section_name": "model"
           }
         ],
@@ -1025,7 +1008,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 51,
+            "_row_num": 50,
             "section_name": "model"
           }
         ],
@@ -1036,7 +1019,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 52,
+            "_row_num": 51,
             "section_name": "model"
           }
         ],
@@ -1426,25 +1409,11 @@
         "elementSet": "data",
         "elementPath": "PREENCHIDO"
       },
-      "VISITA": {
-        "type": "string",
-        "_defn": [
-          {
-            "_row_num": 11,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "VISITA",
-        "elementName": "VISITA",
-        "elementSet": "data",
-        "elementPath": "VISITA"
-      },
       "COBERTURA": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 12,
             "section_name": "model"
           }
         ],
@@ -1458,7 +1427,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 13,
             "section_name": "model"
           }
         ],
@@ -1472,7 +1441,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 14,
             "section_name": "model"
           }
         ],
@@ -1486,7 +1455,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 16,
+            "_row_num": 15,
             "section_name": "model"
           }
         ],
@@ -1500,7 +1469,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 16,
             "section_name": "model"
           }
         ],
@@ -1514,7 +1483,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -1529,7 +1498,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 20,
             "section_name": "model"
           }
         ],
@@ -1544,7 +1513,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 21,
             "section_name": "model"
           }
         ],
@@ -1559,7 +1528,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -1573,7 +1542,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 23,
             "section_name": "model"
           }
         ],
@@ -1587,7 +1556,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 25,
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
@@ -1602,7 +1571,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 26,
+            "_row_num": 25,
             "section_name": "model"
           }
         ],
@@ -1617,7 +1586,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 27,
+            "_row_num": 26,
             "section_name": "model"
           }
         ],
@@ -1637,7 +1606,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 28,
+            "_row_num": 27,
             "section_name": "model"
           }
         ],
@@ -1651,7 +1620,7 @@
         "type": "integer",
         "_defn": [
           {
-            "_row_num": 29,
+            "_row_num": 28,
             "section_name": "model"
           }
         ],
@@ -1671,7 +1640,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 30,
+            "_row_num": 29,
             "section_name": "model"
           }
         ],
@@ -1690,7 +1659,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 31,
+            "_row_num": 30,
             "section_name": "model"
           }
         ],
@@ -1704,7 +1673,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 32,
+            "_row_num": 31,
             "section_name": "model"
           }
         ],
@@ -1719,7 +1688,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 33,
+            "_row_num": 32,
             "section_name": "model"
           }
         ],
@@ -1734,7 +1703,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 34,
+            "_row_num": 33,
             "section_name": "model"
           }
         ],
@@ -1748,7 +1717,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 35,
+            "_row_num": 34,
             "section_name": "model"
           }
         ],
@@ -1762,7 +1731,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 37,
+            "_row_num": 36,
             "section_name": "model"
           }
         ],
@@ -1781,7 +1750,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 38,
+            "_row_num": 37,
             "section_name": "model"
           }
         ],
@@ -1795,7 +1764,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 39,
+            "_row_num": 38,
             "section_name": "model"
           }
         ],
@@ -1809,7 +1778,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 40,
+            "_row_num": 39,
             "section_name": "model"
           }
         ],
@@ -1823,7 +1792,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 41,
+            "_row_num": 40,
             "section_name": "model"
           }
         ],
@@ -1837,7 +1806,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 42,
+            "_row_num": 41,
             "section_name": "model"
           }
         ],
@@ -1851,7 +1820,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 43,
+            "_row_num": 42,
             "section_name": "model"
           }
         ],
@@ -1865,7 +1834,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 44,
+            "_row_num": 43,
             "section_name": "model"
           }
         ],
@@ -1879,7 +1848,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 45,
+            "_row_num": 44,
             "section_name": "model"
           }
         ],
@@ -1893,7 +1862,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 46,
+            "_row_num": 45,
             "section_name": "model"
           }
         ],
@@ -1907,7 +1876,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 48,
+            "_row_num": 47,
             "section_name": "model"
           }
         ],
@@ -1921,7 +1890,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 49,
+            "_row_num": 48,
             "section_name": "model"
           }
         ],
@@ -1935,7 +1904,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 50,
+            "_row_num": 49,
             "section_name": "model"
           }
         ],
@@ -1949,7 +1918,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 51,
+            "_row_num": 50,
             "section_name": "model"
           }
         ],
@@ -1963,7 +1932,7 @@
         "type": "string",
         "_defn": [
           {
-            "_row_num": 52,
+            "_row_num": 51,
             "section_name": "model"
           }
         ],
