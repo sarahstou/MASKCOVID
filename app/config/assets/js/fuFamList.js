@@ -45,10 +45,10 @@ function getMasterList(data) {
 
 function getList() {
     // SQL to get participants
-    var varNamesMaskTablet = "I.BAIRRO, I.CAMO, I.DATEX, I.ESTADO as ESTADOINC, I.FAM, I.HOUSEGRP, I.RANGOUP, I.TABZ, ";
+    var varNamesMaskTablet = "I.BAIRRO, I.CAMO, I.DATEX, I.ESTADO as ESTADOINC, I.FAM, I.HOUSEGRP, I.RANGROUP, I.TABZ, ";
     var varNamesFU = "F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.LASTINTERVIEW, F.POSSIVEL, F.RAZAO, F.TESTRESUL";
     var sql = "SELECT " + varNamesMaskTablet + varNamesFU + 
-        " FROM MASKINCL AS I" + 
+        " FROM MASKTABLET AS I" + 
         " LEFT JOIN MASKFU AS F ON I.POID = F.POID" + 
         " WHERE I.TABZ = " + tabz + " AND I.CAMO = " + camo +
         " GROUP BY I.POID HAVING MAX(F.FU) OR F.FU IS NULL" +
