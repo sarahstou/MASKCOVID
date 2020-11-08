@@ -88,9 +88,9 @@ function loadPersons() {
             if (ESTADO == null) {
                 ESTADO = ESTADOINC
             };
-
-            // generate follow-up date (42 days after last interview with succes follow up)
-            if (FU != null & (COVID == null | TESTRESUL == "3")) {
+            
+            // generate follow-up date (42 days after last interview with succes follow up or after 3 tries)
+            if (FU != null & (COVID == null & FU - Math.floor(FU) < 0.02 | TESTRESUL == "3")) {
                 var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
                 var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
                 var segY = DATSEG.slice(DATSEG.search("Y")+2);
@@ -106,7 +106,13 @@ function loadPersons() {
                 var datexY = DATEX.slice(DATEX.search("Y")+2);
                 var FUDate = new Date(datexY, datexM-1, datexD + 42);
                 var LastFU = new Date(datexY, datexM-1, datexD);
-            }   else {
+            } else if (FU - Math.floor(FU) > 0.02) { // if tried call 3 times: set FU date to +42 days
+                var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
+                var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
+                var segY = DATSEG.slice(DATSEG.search("Y")+2);
+                var FUDate = new Date(segY, segM-1, segD + 42);
+                var LastFU = new Date(segY, segM-1, segD);
+            } else {
                 var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
                 var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
                 var segY = DATSEG.slice(DATSEG.search("Y")+2);
@@ -166,7 +172,7 @@ function populateView() {
         if (this.FUDate <= today & 
             this.LastFU < this.FUEnd & 
             ((this.ESTADO != "2" & this.ESTADO != "3" & this.ESTADO != "8" &
-            this.POSSIVEL != "2" & this.RAZAO != "4" & this.RAZAO != "7") | 
+            this.RAZAO != "4" & this.RAZAO != "7") | 
             this.TESTERESUL == "3") | this.DATSEG == todayAdate) {
             ul.append($("<li />").append($("<button />").attr('id',this.POID).attr('class', called + ' btn ' + this.type + getResults).append(displayText)));
         }
@@ -304,7 +310,7 @@ function getFU(person) {
     var FU;
     if (person.FU == null) {
         FU = 1;
-    } else if (person.COVID != null & person.TESTRESUL != "3")  {
+    } else if ((person.COVID != null & person.TESTRESUL != "3") | person.FU - Math.floor(person.FU) > 0.02)  {
         FU = Math.floor(person.FU) + 1;
     } else {
         FU = person.FU + 0.01;
@@ -316,7 +322,7 @@ function getLastInterview(person) {
     var lastInterview;
     if (person.FU == null) {
         lastInterview = person.DATEX;
-    } else if (person.COVID != null & person.TESTRESUL != "3")  {
+    } else if ((person.COVID != null & person.TESTRESUL != "3") | person.FU - Math.floor(person.FU) > 0.02)  {
         lastInterview = person.DATSEG;
     } else {
         lastInterview = person.LASTINTERVIEW;
