@@ -71,7 +71,7 @@ function getList() {
             };
             
             // generate follow-up date (42 days after last interview with succes follow up)
-            if (FU != null & (COVID == null | TESTRESUL == "3")) {
+            if (FU != null & (COVID == null & FU - Math.floor(FU) < 0.02 | TESTRESUL == "3")) {
                 var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
                 var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
                 var segY = DATSEG.slice(DATSEG.search("Y")+2);
@@ -90,6 +90,12 @@ function getList() {
                 var datexY = DATEX.slice(DATEX.search("Y")+2);
                 var FUDate = new Date(datexY, datexM-1, datexD + 42);
                 var LastFU = new Date(datexY, datexM-1, datexD);
+            } else if (FU - Math.floor(FU) > 0.02) { // if tried call 3 times: set FU date to +42 days
+                var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
+                var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
+                var segY = DATSEG.slice(DATSEG.search("Y")+2);
+                var FUDate = new Date(segY, segM-1, segD + 42);
+                var LastFU = new Date(segY, segM-1, segD);
             } else {
                 var segD = Number(DATSEG.slice(2, DATSEG.search("M")-1));
                 var segM = DATSEG.slice(DATSEG.search("M")+2, DATSEG.search("Y")-1);
@@ -257,7 +263,7 @@ function getCount(bairro) {
     var today = new Date(selYea.val(), selMon.val()-1, selDay.val());
     var todayAdate = "D:" + today.getDate() + ",M:" + (Number(today.getMonth()) + 1) + ",Y:" + today.getFullYear();
 
-    var total = participants.filter(person => person.BAIRRO == bairro & ((person.FUDate <= today & person.LastFU < person.FUEnd & ((person.ESTADO != "2" & person.ESTADO != "3" & person.ESTADO != "8" & person.POSSIVEL != "2" & person.RAZAO != "4" & person.RAZAO != "7") | person.TESTERESUL == "3")| person.DATSEG == todayAdate))).length;
+    var total = participants.filter(person => person.BAIRRO == bairro & ((person.FUDate <= today & person.LastFU < person.FUEnd & ((person.ESTADO != "2" & person.ESTADO != "3" & person.ESTADO != "8" & person.RAZAO != "4" & person.RAZAO != "7") | person.TESTERESUL == "3")| person.DATSEG == todayAdate))).length;
     var checked = participants.filter(person => person.BAIRRO == bairro & person.DATSEG == todayAdate & person.savepoint == "COMPLETE").length;
     var count = "(" + checked + "/" + total + ")";
     return count;
