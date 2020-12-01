@@ -37,7 +37,7 @@ function getGroup(random) {
 
 function loadPersons() {
     // SQL to get persons
-    var varNamesMaskTablet = "I.BAIRRO, I.CAMO, I.DATEX, I.DOB, I.ESTADO as ESTADOINC, I.FAM, I.FNO, I.HHOID, I.HOUSEGRP, I.ID, I.IDOID, I.NOME, I.NOVONUM1, I.NOVONUM2, I.POID, I.SEX, I.TABZ, I.TELE1, I.TELE2, ";
+    var varNamesMaskTablet = "I.BAIRRO, I.CAMO, I.DATEX, I.DOB, I.ESTADO as ESTADOINC, I.FAM, I.FNO, I.HHOID, I.HOUSEGRP, I.ID, I.IDOID, I.NOME, I.NOVONUM1, I.NOVONUM2, I.POID, I.RANGROUP, I.SEX, I.TABZ, I.TELE1, I.TELE2, ";
     var varNamesFU = "F._id, F._savepoint_type, F.COVID, F.DATSEG, F.ESTADO, F.FU, F.GETRESULTS, F.LASTINTERVIEW, F.POSSIVEL, F.RAZAO, F.TESTRESUL";
     var sql = "SELECT " + varNamesMaskTablet + varNamesFU + 
         " FROM MASKTABLET AS I" + 
@@ -69,6 +69,7 @@ function loadPersons() {
             var NOVONUM1 = result.getData(row,"NOVONUM1");
             var NOVONUM2 = result.getData(row,"NOVONUM2");
             var POID = result.getData(row,"POID");
+            var RANGROUP = result.getData(row,"RANGROUP");
             var SEX = result.getData(row,"SEX");
             var TABZ = result.getData(row,"TABZ");
             var TELE1 = result.getData(row,"TELE1");
@@ -125,7 +126,7 @@ function loadPersons() {
             var datexY = DATEX.slice(DATEX.search("Y")+2);
             var FUEnd = new Date(datexY, datexM-1, datexD + 122);
 
-            var p = {type: 'participant', rowId, savepoint, FUDate, FUEnd, LastFU, BAIRRO, CAMO, DOB, FAM, FNO, HHOID, HOUSEGRP, ID, IDOID, NOME, NOVONUM1, NOVONUM2, POID, SEX, TABZ, TELE1, TELE2, DATEX, COVID, DATSEG, ESTADO, FU, GETRESULTS, LASTINTERVIEW, POSSIVEL, RAZAO, TESTRESUL};
+            var p = {type: 'participant', rowId, savepoint, FUDate, FUEnd, LastFU, BAIRRO, CAMO, DOB, FAM, FNO, HHOID, HOUSEGRP, ID, IDOID, NOME, NOVONUM1, NOVONUM2, POID, RANGROUP, SEX, TABZ, TELE1, TELE2, DATEX, COVID, DATSEG, ESTADO, FU, GETRESULTS, LASTINTERVIEW, POSSIVEL, RAZAO, TESTRESUL};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -292,6 +293,7 @@ function getDefaults(person) {
     defaults['NOVONUM1'] = person.NOVONUM1;
     defaults['NOVONUM2'] = person.NOVONUM2;
     defaults['POID'] = person.POID;
+    defaults['RANGROUP'] = person.RANGROUP;
     defaults['SEX'] = person.SEX;
     defaults['TABZ'] = person.TABZ;
     defaults['TELE1'] = person.TELE1;
