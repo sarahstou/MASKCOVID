@@ -17,12 +17,9 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","A",5,14,"AQUILINO NANQUE",6842713
 1,11,"Zona 1","A",5,15,"Moises Nanque",6842849
 1,11,"Zona 1","A",6,4,"MARIA CO",-6489
-1,11,"Zona 1","A",64,0,"Família zero",2253249
 1,11,"Zona 1","A",64,8,"JOAO CA",-7150
 1,11,"Zona 1","A",64,9,"Fernando Ca",-7151
 1,11,"Zona 1","A",64,11,"Mandjiki Co",6843637
-1,11,"Zona 1","A",72,0,"Família zero",4166781
-1,11,"Zona 1","A",72,19,"Braima Djalo",2820963
 1,11,"Zona 1","A",72,20,"Mamadu Alfa Djalo",4332785
 1,11,"Zona 1","A",72,25,"Alassana Balde",5711102
 1,11,"Zona 1","A",72,26,"Iaba Manecas A. Djata",6843667
@@ -36,9 +33,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","A",73,10,"David Ca",6844997
 1,11,"Zona 1","A",85,1,"ANTONIO PIRES NANQUE",-7356
 1,11,"Zona 1","A",85,5,"Alimo",6844311
-1,11,"Zona 1","A",98,5,"CARLOS ALBERTO A. CA",-7457
+1,11,"Zona 1","A",85,6,"Assau Nhanque",6882216
 1,11,"Zona 1","A",98,6,"Beto Adequim Ie",5427362
-1,11,"Zona 1","A",99,0,"Família zero",2821060
 1,11,"Zona 1","A",99,4,"EUGENIA AUGUSTO ALVES",-7461
 1,11,"Zona 1","A",99,15,"Simao Necas Da Silva",305135
 1,11,"Zona 1","A",99,18,"Ndjam Dju",5123907
@@ -49,21 +45,18 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","A",138,5,"Jorge",6845458
 1,11,"Zona 1","A",139,1,"Teresa Ca (Nhama)",-7808
 1,11,"Zona 1","A",139,7,"Suaila Gomes (Mami)",5437736
-1,11,"Zona 1","A",149,0,"Família zero",6846055
 1,11,"Zona 1","A",149,9,"Falta informação",6846055
 1,11,"Zona 1","A",149,10,"Talibe Djalo",624358
 1,11,"Zona 1","A",149,11,"Amadu Balde",6078141
-1,11,"Zona 1","A",149,13,"Mamadu Bailo Djalo",6078458
+1,11,"Zona 1","A",149,13,"Mamadu Bailo Djalo",6846055
 1,11,"Zona 1","A",149,15,"Amadu Djalo",6846055
-1,11,"Zona 1","A",150,0,"Família zero",6846539
+1,11,"Zona 1","A",150,0,"Família zero",6158567
 1,11,"Zona 1","A",150,1,"CARLOTA SIGA",-7955
 1,11,"Zona 1","A",150,9,"MARIO MUSTAS",-7963
-1,11,"Zona 1","A",150,15,"Mundjuru Djalo",51963
 1,11,"Zona 1","A",150,16,"Cristiano Monteiro (Tchando)",624744
 1,11,"Zona 1","A",150,17,"Coto Barri",6082821
 1,11,"Zona 1","A",150,18,"MAMA SAIDO DJALO",6846539
 1,11,"Zona 1","A",150,19,"Mario Da Costa",6846637
-1,11,"Zona 1","A",223,0,"Família zero",3119100
 1,11,"Zona 1","A",223,8,"Rosa Sa",5121197
 1,11,"Zona 1","A",223,9,"Fernando Te",6847407
 1,11,"Zona 1","A",223,10,"AIDA TE",6847517
@@ -82,18 +75,14 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","B",13,0,"Família zero",5322888
 1,11,"Zona 1","B",13,21,"FILIPE AUGUSTO",-6610
 1,11,"Zona 1","B",14,1,"MARIA J.GOMES (MAMA-YOI)",-6617
-1,11,"Zona 1","B",18,0,"Família zero",3063511
 1,11,"Zona 1","B",18,1,"INTADJA CA",-6634
 1,11,"Zona 1","B",19,1,"ANTONIA CA",-6644
-1,11,"Zona 1","B",115,0,"Família zero",2518368
 1,11,"Zona 1","B",115,1,"LUISA CA",-7608
 1,11,"Zona 1","B",115,4,"Mamadu Aliu Ba",5432116
-1,11,"Zona 1","B",147,0,"Família zero",2887753
-1,11,"Zona 1","B",147,1,"Falta informação",-7908
+1,11,"Zona 1","B",147,0,"Família zero",5767698
 1,11,"Zona 1","B",147,5,"Olivia Joao M. Monteiro",-7912
 1,11,"Zona 1","B",147,9,"LUIZINHO JOAO SA",-7916
 1,11,"Zona 1","B",147,15,"MAMADU BAILO BA",-7922
-1,11,"Zona 1","B",147,18,"Mananjina Ba",5431190
 1,11,"Zona 1","B",147,20,"Titina Ie",6850344
 1,11,"Zona 1","B",147,21,"Nino Co",6851212
 1,11,"Zona 1","B",147,22,"Lela Co",6851525
@@ -101,7 +90,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","B",163,2,"IMPOSSI IE",-8040
 1,11,"Zona 1","B",183,2,"FATIMA FERNANDES",-8135
 1,11,"Zona 1","B",183,9,"MARIAMA SANE",4137047
-1,11,"Zona 1","B",184,0,"Família zero",2189541
 1,11,"Zona 1","B",184,5,"Bedante Na Tona",302993
 1,11,"Zona 1","B",184,6,"Mamadu Aliu Ba",5437280
 1,11,"Zona 1","B",184,7,"Alassana Sow",5437458
@@ -112,7 +100,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","B",196,5,"Alficene Djalo",6057305
 1,11,"Zona 1","B",196,6,"Kaka Conate",6849874
 1,11,"Zona 1","B",196,7,"Bubacar Cisse",6849930
-1,11,"Zona 1","B",200,0,"Família zero",6850626
 1,11,"Zona 1","B",200,1,"IANO CA",-8215
 1,11,"Zona 1","B",200,8,"Aissato Bangura",6850626
 1,11,"Zona 1","B",200,9,"Mamudo Djalo",6850866
@@ -140,31 +127,23 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","B",281,6,"Suleimane Ba",6083955
 1,11,"Zona 1","B",281,7,"Ussumane Ba",6853830
 1,11,"Zona 1","B",281,8,"Adulai Sow",6854095
-1,11,"Zona 1","C",7,0,"Família zero",-234608
-1,11,"Zona 1","C",7,12,"DOMINGOS IE",532852
-1,11,"Zona 1","C",8,0,"Família zero",2475545
 1,11,"Zona 1","C",8,23,"Ussumane Sow",5446151
 1,11,"Zona 1","C",8,24,"Lamara Djalo",6855278
 1,11,"Zona 1","C",8,25,"Adulai Djalo",6855481
 1,11,"Zona 1","C",9,1,"JOSE CAR.FERNANDES(BETIM)",-6525
-1,11,"Zona 1","C",10,0,"Família zero",49968
 1,11,"Zona 1","C",10,18,"IVANILDO DA COSTA",-6549
 1,11,"Zona 1","C",10,19,"N`TIMBE SANHA(QUINTA)",-6550
-1,11,"Zona 1","C",10,20,"JOSE UNQUE",-6551
 1,11,"Zona 1","C",15,1,"FATU CA",-6618
 1,11,"Zona 1","C",15,2,"SAMUEL SA",-6619
 1,11,"Zona 1","C",15,27,"Morto Ie",6857305
 1,11,"Zona 1","C",16,1,"ROSA NANQUE",-6626
 1,11,"Zona 1","C",16,7,"Martinho Co",775503
-1,11,"Zona 1","C",16,9,"FOME SA",2882294
 1,11,"Zona 1","C",16,10,"Elizio Da Costa",6084911
 1,11,"Zona 1","C",16,11,"Djauni Co",6857858
-1,11,"Zona 1","C",59,0,"Família zero",6858777
 1,11,"Zona 1","C",59,1,"BUOTA NALAKTE",-7092
 1,11,"Zona 1","C",59,15,"OMBAO TE",-7106
 1,11,"Zona 1","C",59,17,"Carolina Sa",6858428
 1,11,"Zona 1","C",59,18,"Emilio Augusto Rapaz",6858777
-1,11,"Zona 1","C",100,0,"Família zero",2475520
 1,11,"Zona 1","C",100,21,"ANTONIO NANQUE",-7491
 1,11,"Zona 1","C",100,28,"ZINHA DOS SANTOS(CA)",-7498
 1,11,"Zona 1","C",100,39,"DOMINGOS IE",5432790
@@ -172,10 +151,9 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","C",114,5,"CONSTANTINO GOMES DE PINA",5430192
 1,11,"Zona 1","C",137,3,"LEONARDA A.P.SA",-7797
 1,11,"Zona 1","C",137,5,"PAULINO OCANTE CA",-7799
-1,11,"Zona 1","C",137,11,"Duqui Antonio Da Costa",774425
 1,11,"Zona 1","C",137,12,"MARCELINO GOMES",6860229
 1,11,"Zona 1","C",137,13,"Maria Isabel Alfredo Sa",6860249
-1,11,"Zona 1","C",143,0,"Família zero",6405377
+1,11,"Zona 1","C",143,0,"Família zero",6334402
 1,11,"Zona 1","C",143,8,"ADRIANO IE (BAI)",-7857
 1,11,"Zona 1","C",143,11,"ALICE OLIVEIRA",-7860
 1,11,"Zona 1","C",143,13,"ANA IE",-7862
@@ -190,7 +168,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","C",148,25,"Carlos Ca",6867225
 1,11,"Zona 1","C",148,26,"Ludimila Joaozinho Dju",6867475
 1,11,"Zona 1","C",148,27,"DIANA MARIZA GOMES",6867710
-1,11,"Zona 1","C",188,0,"Família zero",5111078
 1,11,"Zona 1","C",188,2,"ISABEL CA(OMBILE)",-8165
 1,11,"Zona 1","C",188,9,"ISAIAS CA",-8172
 1,11,"Zona 1","C",188,15,"JOSE SA",-8178
@@ -209,7 +186,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","C",224,2,"Serif Ndom",6854560
 1,11,"Zona 1","C",230,1,"Valentina F. Medina - Queta",-8312
 1,11,"Zona 1","C",245,0,"Família zero",6855009
-1,11,"Zona 1","C",245,1,"IBRAIMA DJALO",-8346
+1,11,"Zona 1","C",245,1,"IBRAIMA DJALO",6855009
 1,11,"Zona 1","C",245,8,"Ibraima Sow",4569758
 1,11,"Zona 1","C",245,9,"IBRAIMA DJALO",6855009
 1,11,"Zona 1","C",280,1,"MUSTAFA DJALO",5462150
@@ -230,8 +207,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","D",32,6,"RUI NORBERTO A. BELOPAM",-6777
 1,11,"Zona 1","D",32,8,"DOMINGOS IALA (FROSON)",-6779
 1,11,"Zona 1","D",32,9,"Tiago Ncanha",792063
-1,11,"Zona 1","D",32,10,"Mamasaliu Ba",5442087
-1,11,"Zona 1","D",60,0,"Família zero",1461012
 1,11,"Zona 1","D",60,1,"EDUARDO LOPES",-7108
 1,11,"Zona 1","D",60,3,"EMILIA DJU",-7110
 1,11,"Zona 1","D",60,5,"Suzete Cassama",4748887
@@ -239,7 +214,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","D",60,7,"Albertina Co",6855209
 1,11,"Zona 1","D",60,8,"Home Co",6855444
 1,11,"Zona 1","D",60,9,"Ivo Sa",6855623
-1,11,"Zona 1","D",67,0,"Família zero",5557035
 1,11,"Zona 1","D",67,1,"EUCLIDIO H.MATOS(N`BOBI)",-7165
 1,11,"Zona 1","D",67,21,"Mamadu Ba",5437973
 1,11,"Zona 1","D",67,22,"Algassimo Balde",6084713
@@ -247,7 +221,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","D",67,24,"BRAIMA TURE",6856411
 1,11,"Zona 1","D",77,7,"ZINHO NANQUE",811852
 1,11,"Zona 1","D",77,8,"Armando Te",6857186
-1,11,"Zona 1","D",78,0,"Família zero",1190467
 1,11,"Zona 1","D",78,1,"Serineu Sousa Cordeiro(Neu)",-7279
 1,11,"Zona 1","D",78,18,"Aida Ca",842958
 1,11,"Zona 1","D",78,19,"IANO CA",6857063
@@ -263,7 +236,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","D",155,1,"Jorge Danilson Gomes Da Silva",-7997
 1,11,"Zona 1","D",155,2,"NIVALDINA S.DA GAMA",-7998
 1,11,"Zona 1","D",172,1,"TIAGO N'GANHA (MUSSA)",-8078
-1,11,"Zona 1","D",172,4,"MARIATO DJALO",3611143
 1,11,"Zona 1","D",172,7,"Vladimir Da Silva (Negado)",6858653
 1,11,"Zona 1","D",172,8,"Julio Bataria",6858679
 1,11,"Zona 1","D",216,1,"MATILDE DA SILVA",-8255
@@ -279,14 +251,12 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","D",244,5,"CESAR GOMES",5446272
 1,11,"Zona 1","D",244,6,"ERIVALDO CA",6858935
 1,11,"Zona 1","D",262,0,"Família zero",5999077
-1,11,"Zona 1","D",262,1,"NATERCIA PRETO",2354613
 1,11,"Zona 1","D",262,2,"Herculano Ie",5445061
 1,11,"Zona 1","D",262,3,"EUGENIA DA COSTA",6859235
 1,11,"Zona 1","D",262,4,"ZAQUEL CA",6859293
 1,11,"Zona 1","E",21,16,"FATINHA INDI (FATU)",-6671
 1,11,"Zona 1","E",21,31,"GINESIO LUIS MENDES",-6686
 1,11,"Zona 1","E",21,32,"MARIO Q. IE",-6687
-1,11,"Zona 1","E",21,33,"Babagalde Balde",2522697
 1,11,"Zona 1","E",21,35,"Ludivino Te",6084821
 1,11,"Zona 1","E",21,36,"Paulo Ca",6859583
 1,11,"Zona 1","E",21,37,"Hermelo Ca",6859619
@@ -296,19 +266,15 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","E",22,3,"DAVID GOMES",-6690
 1,11,"Zona 1","E",23,4,"QUINTA RODRIGES",-6706
 1,11,"Zona 1","E",23,12,"Eduardo Gomes",6861437
-1,11,"Zona 1","E",25,0,"Família zero",3717406
 1,11,"Zona 1","E",25,14,"ALEXANDRE M. RODRIGUES",-6731
 1,11,"Zona 1","E",25,22,"AMADO SANA BA",-6739
-1,11,"Zona 1","E",25,25,"Sousa Te",894068
 1,11,"Zona 1","E",25,26,"Ocante J.D.Ca",5447911
-1,11,"Zona 1","E",25,27,"Falta informação",5448917
 1,11,"Zona 1","E",25,29,"Papa Indeque",6860328
 1,11,"Zona 1","E",25,30,"Alassanato Djalo",6860460
 1,11,"Zona 1","E",25,31,"Marcia Doroteia Da Silva",6860573
 1,11,"Zona 1","E",30,9,"USSUMANE BANGURA",-6759
 1,11,"Zona 1","E",31,82,"Daniel Cardoso",6862665
 1,11,"Zona 1","E",31,83,"Benjamim",6862749
-1,11,"Zona 1","E",57,0,"Família zero",2366497
 1,11,"Zona 1","E",57,1,"MARIAMA BALDE-NENE BOBO",-7058
 1,11,"Zona 1","E",57,15,"Aissato Ture",-7072
 1,11,"Zona 1","E",57,18,"CADIDJATO EMBALO",-7075
@@ -320,15 +286,13 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","E",97,6,"Mamadu Djau Ba",6862721
 1,11,"Zona 1","E",97,7,"Bubacar Djalo",6862773
 1,11,"Zona 1","E",122,1,"JACINTO GOMES (J)",-7675
-1,11,"Zona 1","E",146,0,"Família zero",5518877
+1,11,"Zona 1","E",146,0,"Família zero",6031430
 1,11,"Zona 1","E",146,1,"QUENE CA",-7900
-1,11,"Zona 1","E",146,9,"Agostinho Martins",934040
 1,11,"Zona 1","E",146,10,"Franck Te",6863655
 1,11,"Zona 1","E",156,7,"ARMANDO SILVA",-8006
 1,11,"Zona 1","E",156,8,"ADRIANO BANGURA",4118901
 1,11,"Zona 1","E",156,9,"Armando Gomes",6863944
 1,11,"Zona 1","E",156,10,"Rubiato Cande",6864102
-1,11,"Zona 1","E",164,0,"Família zero",2508164
 1,11,"Zona 1","E",164,1,"IBU SAMBU",-8048
 1,11,"Zona 1","E",164,5,"Marcelino Joao Lima",6864538
 1,11,"Zona 1","E",164,6,"Julieta Candida Dju",6864731
@@ -366,18 +330,15 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","E",260,12,"JERONIMO DUARTE",6869701
 1,11,"Zona 1","E",260,13,"Nino Correia Ca",6869749
 1,11,"Zona 1","E",271,1,"Iaia Djalo",4452342
-1,11,"Zona 1","E",271,2,"Mamadu Adama Djalo",4135998
 1,11,"Zona 1","E",271,3,"Amadu Seico Djalo",6864941
 1,11,"Zona 1","F",40,11,"ANGELINA GOMES",-6909
 1,11,"Zona 1","F",40,23,"Rosa  Sabino Caia",6865461
 1,11,"Zona 1","F",42,1,"AMARAL BITIFE",-6918
 1,11,"Zona 1","F",42,17,"ABDURAMANE DJALO",6865852
-1,11,"Zona 1","F",45,0,"Família zero",2116564
 1,11,"Zona 1","F",45,1,"DOMINGAS DOS SANTOS",-6937
 1,11,"Zona 1","F",45,9,"CLAUTINO L. SANTOS",-6944
 1,11,"Zona 1","F",46,4,"Joseph F Mussa ( Josefino )",-6956
 1,11,"Zona 1","F",46,23,"Silla Elage",6865274
-1,11,"Zona 1","F",126,0,"Família zero",6867633
 1,11,"Zona 1","F",126,1,"NETO JOSE TE",-7709
 1,11,"Zona 1","F",126,5,"MARIA CA",-7713
 1,11,"Zona 1","F",126,8,"DAVID DJU",-7716
@@ -388,7 +349,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","F",126,19,"Mariama Djalo",5464553
 1,11,"Zona 1","F",126,20,"Mamadu Lamarana Djalo",6867512
 1,11,"Zona 1","F",126,21,"Mamadu Sello Djalo",6867633
-1,11,"Zona 1","F",141,0,"Família zero",586022
 1,11,"Zona 1","F",141,12,"IGOR FERNANDO GOMES",11878
 1,11,"Zona 1","F",141,13,"Seco Ndong",6866065
 1,11,"Zona 1","F",151,2,"NENE AFONSO",-7970
@@ -407,7 +367,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","F",176,1,"CELESTE DJU (AMPIA)",-8093
 1,11,"Zona 1","F",176,15,"ALIU DJALO",-8107
 1,11,"Zona 1","F",176,17,"Bubacar Barri",1215881
-1,11,"Zona 1","F",176,18,"Mamadu Ba",174606
 1,11,"Zona 1","F",176,19,"Aladji Mamudu",5463254
 1,11,"Zona 1","F",176,20,"Mamadu Aliu Djalo",6087638
 1,11,"Zona 1","F",178,1,"BACAR INDJAI",-8110
@@ -416,14 +375,12 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","F",201,5,"Mamadu Djalo",270212
 1,11,"Zona 1","F",201,7,"Mamadu Lamarana Djalo",6085210
 1,11,"Zona 1","F",201,8,"HERDULINO  GOMES",6869368
-1,11,"Zona 1","F",202,0,"Família zero",960360
 1,11,"Zona 1","F",202,1,"SALIFO QUEITA",-8224
 1,11,"Zona 1","F",202,2,"ALIU QUEITA",-8225
 1,11,"Zona 1","F",246,0,"Família zero",4610170
 1,11,"Zona 1","F",246,1,"AUGUSTO GOMES",-8351
 1,11,"Zona 1","F",246,2,"JORGE GOMES",-8352
 1,11,"Zona 1","F",252,4,"DIVALDO LOPES",-8369
-1,11,"Zona 1","F",261,0,"Família zero",4466315
 1,11,"Zona 1","F",261,2,"Mamadu Djalo",5464592
 1,11,"Zona 1","F",261,4,"Suleimane Ba",5465147
 1,11,"Zona 1","F",261,5,"Mamadu Falido Barri",6085073
@@ -441,71 +398,70 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","F",275,5,"Oustace",6870644
 1,11,"Zona 1","F",275,6,"Ibraima Camara",6870658
 1,11,"Zona 1","G",36,1,"BITCHELIA CRIMA",-6827
-1,11,"Zona 1","G",36,20,"FRANCISCA LOPES-TCHICA",-6838
 1,11,"Zona 1","G",36,22,"Henrique E. Juliao",5471048
-1,11,"Zona 1","G",36,23,"Falta informação",6874776
-1,11,"Zona 1","G",36,24,"Falta informação",6874857
+1,11,"Zona 1","G",36,23,"ARMINDA BAMPOQUE",6874776
+1,11,"Zona 1","G",36,24,"Wingabia Sumba Braia",6874857
 1,11,"Zona 1","G",37,0,"Família zero",1015003
-1,11,"Zona 1","G",37,2,"HELENA SA (NENE)",-6840
+1,11,"Zona 1","G",37,2,"PAULA D. DA SILVA",-6840
 1,11,"Zona 1","G",37,20,"HAMA DJALO",-6858
+1,11,"Zona 1","G",37,21,"PAULA D. DA SILVA",-6859
+1,11,"Zona 1","G",37,22,"Ndjaca",6881106
 1,11,"Zona 1","G",58,2,"AUGUSTO GOMES DA SILVA",-7077
-1,11,"Zona 1","G",58,8,"Falta informação",-7082
-1,11,"Zona 1","G",58,17,"ROSA CA - HIPOS",-7091
+1,11,"Zona 1","G",58,8,"Falta informação",6871366
+1,11,"Zona 1","G",58,17,"MAMI LOPES PEREIRA",-7091
 1,11,"Zona 1","G",58,19,"Maria Ca",5471323
-1,11,"Zona 1","G",58,20,"Falta informação",6871366
-1,11,"Zona 1","G",58,21,"Falta informação",6871495
-1,11,"Zona 1","G",58,22,"Falta informação",6871510
-1,11,"Zona 1","G",80,0,"Família zero",3085585
+1,11,"Zona 1","G",58,20,"Laurenco Soares Da Gama",6871366
+1,11,"Zona 1","G",58,21,"Mpundu Ernetro Gomes",6871495
+1,11,"Zona 1","G",58,22,"Aguinelo A.G.Da Silva",6871510
 1,11,"Zona 1","G",80,10,"RAUL VICENTE CA",-7308
-1,11,"Zona 1","G",80,13,"DJALO IE",-7311
-1,11,"Zona 1","G",80,14,"ERIVALDO CA",-7312
+1,11,"Zona 1","G",80,15,"Augusta Ca",6882951
+1,11,"Zona 1","G",80,16,"Paulino Ca",6883045
+1,11,"Zona 1","G",80,17,"Victor",6883085
 1,11,"Zona 1","G",81,0,"Família zero",6875244
-1,11,"Zona 1","G",81,1,"TERESA DA FONSECA",-7313
+1,11,"Zona 1","G",81,1,"ELISEU DA SILVA (N`DAM)",-7313
 1,11,"Zona 1","G",81,17,"Ibraima Djop",5468840
-1,11,"Zona 1","G",81,18,"Falta informação",6875244
-1,11,"Zona 1","G",81,19,"Falta informação",6875312
-1,11,"Zona 1","G",81,20,"Falta informação",6875384
+1,11,"Zona 1","G",81,18,"Adimo Djanhe",6875244
+1,11,"Zona 1","G",81,19,"Julio Ca",6875312
+1,11,"Zona 1","G",81,20,"Sumaila Ndong",6875384
 1,11,"Zona 1","G",90,1,"Falta informação",-7394
 1,11,"Zona 1","G",90,3,"ANTONIO A.R. MIRANDA",-7396
 1,11,"Zona 1","G",101,1,"FERNANDO SOARES PEREIRA",-7504
 1,11,"Zona 1","G",101,2,"ERMELINDA CO (PONORA)",-7505
 1,11,"Zona 1","G",101,5,"MATEUS MENSU",-7508
 1,11,"Zona 1","G",101,6,"ANDRESA SA",-7509
-1,11,"Zona 1","G",101,8,"Falta informação",6878012
+1,11,"Zona 1","G",101,8,"ROMANA OCANTE AGIBANE",6878012
 1,11,"Zona 1","G",102,1,"DIONISIO M'BALI N'GANHA",-7510
 1,11,"Zona 1","G",102,2,"Paulina C. Beifa",5490974
-1,11,"Zona 1","G",108,0,"Família zero",6878732
-1,11,"Zona 1","G",108,1,"IDRISSA CASSAMA",-7551
+1,11,"Zona 1","G",108,0,"Família zero",6879703
+1,11,"Zona 1","G",108,1,"IDRISSA CASSAMA",6879703
 1,11,"Zona 1","G",108,11,"Abdramane Barri",2366773
-1,11,"Zona 1","G",108,13,"Assumane Yacara",4320210
-1,11,"Zona 1","G",108,14,"Falta informação",6878659
-1,11,"Zona 1","G",108,15,"Falta informação",6878732
-1,11,"Zona 1","G",108,16,"Falta informação",6879703
+1,11,"Zona 1","G",108,13,"Assumane Cisse",4320210
+1,11,"Zona 1","G",108,14,"Amadu Dila Djalo",6878659
+1,11,"Zona 1","G",108,15,"Adulai Barri",6878732
+1,11,"Zona 1","G",108,16,"IDRISSA CASSAMA",6879703
 1,11,"Zona 1","G",109,10,"ARMANDA ALBINO GOMES",-7568
 1,11,"Zona 1","G",109,15,"LIDIA MENDES",-7573
-1,11,"Zona 1","G",111,0,"Família zero",3760647
 1,11,"Zona 1","G",111,2,"JOAO MANUEL CORREIA",-7575
 1,11,"Zona 1","G",112,19,"Dio Ca",861935
 1,11,"Zona 1","G",112,20,"AGOSTINHO BRITO TE",861949
-1,11,"Zona 1","G",112,21,"Falta informação",6876238
-1,11,"Zona 1","G",112,22,"Falta informação",6876327
-1,11,"Zona 1","G",112,23,"Falta informação",6876433
+1,11,"Zona 1","G",112,21,"Ocante Da Silva Te",6876238
+1,11,"Zona 1","G",112,22,"Augusta Ca- ( Mami )",6876327
+1,11,"Zona 1","G",112,23,"Alfredo A. Banca",6876433
 1,11,"Zona 1","G",113,13,"HENRIQUE DA SILVA",-7603
 1,11,"Zona 1","G",113,14,"TERESA SA",-7604
 1,11,"Zona 1","G",113,15,"Zeca Ca",6079664
 1,11,"Zona 1","G",119,0,"Família zero",6872471
-1,11,"Zona 1","G",119,1,"INES DA SILVA",-7619
+1,11,"Zona 1","G",119,1,"AUGUSTINHO ROBERTO GOMES",-7619
 1,11,"Zona 1","G",119,31,"Carlitos",862204
 1,11,"Zona 1","G",119,32,"Abu",862240
 1,11,"Zona 1","G",119,35,"Constantino Suma",2028844
 1,11,"Zona 1","G",119,37,"Belmiro Gomes",6079621
-1,11,"Zona 1","G",119,38,"Falta informação",6872471
+1,11,"Zona 1","G",119,38,"Ussumane Cisse",6872471
 1,11,"Zona 1","G",124,1,"ERASMO C.F. MONTEIRO",-7702
 1,11,"Zona 1","G",124,4,"Samba Djalo",871367
 1,11,"Zona 1","G",127,4,"IDALIA CESAR FULA",-7727
 1,11,"Zona 1","G",127,6,"SEGUNDA I. MBUNDA",-7729
 1,11,"Zona 1","G",127,9,"AMELIA CA",-7732
-1,11,"Zona 1","G",127,11,"Tito",873571
 1,11,"Zona 1","G",127,12,"Mam Gor",873877
 1,11,"Zona 1","G",127,13,"DOMINGAS DJU",874050
 1,11,"Zona 1","G",127,15,"TITO VIEIRA",5470960
@@ -515,318 +471,331 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,11,"Zona 1","G",185,9,"NUA NDON",-8152
 1,11,"Zona 1","G",185,10,"BUBA SAL",-8153
 1,11,"Zona 1","G",185,11,"Maninho Co",1213900
-1,11,"Zona 1","G",185,12,"Falta informação",6873147
+1,11,"Zona 1","G",185,12,"Odete Co",6873147
 1,11,"Zona 1","G",256,3,"Marciano Barbosa",4735984
 1,11,"Zona 1","G",256,4,"DEOLINDA PATRAO",6869506
-1,11,"Zona 1","H",34,0,"Família zero",6871418
-1,11,"Zona 1","H",34,33,"AMADU SARA BA",-6813
 1,11,"Zona 1","H",34,37,"SENE INTCHASSO",-6817
-1,11,"Zona 1","H",34,38,"BUBACAR BARRY",2718177
-1,11,"Zona 1","H",34,39,"Falta informação",6871262
-1,11,"Zona 1","H",34,40,"Falta informação",6871418
-1,11,"Zona 1","H",35,0,"Família zero",175801
-1,11,"Zona 1","H",35,5,"CADI SANHA",-8088
-1,11,"Zona 1","H",35,6,"MALAM MANE",-6823
+1,11,"Zona 1","H",34,39,"Tcherno Barri",6871262
+1,11,"Zona 1","H",34,40,"Mustafa Ba",6871418
+1,11,"Zona 1","H",35,6,"ANGELINA NABALIM",-6823
 1,11,"Zona 1","H",35,9,"ARUNA NANQUI",-6826
-1,11,"Zona 1","H",35,10,"Isuf Sambu",5473737
 1,11,"Zona 1","H",35,11,"Mamadu Balde (Baba Galde)",5474326
-1,11,"Zona 1","H",35,12,"Falta informação",6871296
-1,11,"Zona 1","H",35,13,"Falta informação",6871356
-1,11,"Zona 1","H",39,0,"Família zero",6022577
+1,11,"Zona 1","H",35,12,"LASSANA SANI",6871296
+1,11,"Zona 1","H",35,13,"BRAIMA SANE",6871356
 1,11,"Zona 1","H",39,2,"ARMANDO LOPES",-6877
-1,11,"Zona 1","H",39,23,"Falta informação",-6898
+1,11,"Zona 1","H",39,23,"Gilberto A. Vaz Pereira",-6898
 1,11,"Zona 1","H",39,24,"AMINATA DJEDJO(AMI)",271087
 1,11,"Zona 1","H",39,25,"Yancuba  Fall",5474730
-1,11,"Zona 1","H",39,27,"Falta informação",6871677
-1,11,"Zona 1","H",39,28,"Falta informação",6871884
-1,11,"Zona 1","H",39,29,"Falta informação",6871970
-1,11,"Zona 1","H",39,30,"Falta informação",6872010
-1,11,"Zona 1","H",48,0,"Família zero",2222740
+1,11,"Zona 1","H",39,27,"Mama Saido Djalo",6871677
+1,11,"Zona 1","H",39,28,"Rita",6871884
+1,11,"Zona 1","H",39,29,"Nita",6871970
+1,11,"Zona 1","H",39,30,"Emanuel",6872010
 1,11,"Zona 1","H",48,1,"VICTORINO CA",-6962
-1,11,"Zona 1","H",48,14,"EMILIA CO",-6975
-1,11,"Zona 1","H",48,16,"GERALDA GOMES",-6977
 1,11,"Zona 1","H",48,20,"UMARO DJALO",-6981
+1,11,"Zona 1","H",48,21,"Rabeca Djata",6899216
+1,11,"Zona 1","H",48,22,"CANDIDA CORREIA",6899261
+1,11,"Zona 1","H",48,23,"Mamadu Mane",6899309
 1,11,"Zona 1","H",54,0,"Família zero",6872447
 1,11,"Zona 1","H",54,2,"MAMADU INDJAI",-7034
-1,11,"Zona 1","H",54,20,"Falta informação",6872447
+1,11,"Zona 1","H",54,20,"Ansa De Kindum",6872447
 1,11,"Zona 1","H",62,0,"Família zero",4379864
-1,11,"Zona 1","H",62,1,"BRAIMA SANHA",-7111
+1,11,"Zona 1","H",62,1,"ANSUMANE SANHA",-7111
 1,11,"Zona 1","H",62,15,"BRAIMA DABO",-7125
-1,11,"Zona 1","H",62,22,"Falta informação",6873246
-1,11,"Zona 1","H",62,23,"Falta informação",6873383
-1,11,"Zona 1","H",62,24,"Falta informação",6873397
+1,11,"Zona 1","H",62,22,"M'bemba Sanha",6873246
+1,11,"Zona 1","H",62,23,"Idi",6873383
+1,11,"Zona 1","H",62,24,"Coli Indjai",6873397
 1,11,"Zona 1","H",63,9,"Joao Da Silva Ca",-7139
 1,11,"Zona 1","H",63,13,"ABULAI DJOP",5478894
 1,11,"Zona 1","H",63,14,"Jorge Mendes",5479107
 1,11,"Zona 1","H",63,15,"Saliu Cande",5483127
-1,11,"Zona 1","H",63,17,"Falta informação",6873435
+1,11,"Zona 1","H",63,17,"NELMO INDAKILO CA",6873435
 1,11,"Zona 1","H",66,1,"LELO TE",-7153
-1,11,"Zona 1","H",66,13,"Falta informação",6873989
-1,11,"Zona 1","H",66,14,"Falta informação",6874025
+1,11,"Zona 1","H",66,13,"Fernando D. Alves",6873989
+1,11,"Zona 1","H",66,14,"Djibe Sall",6874025
 1,11,"Zona 1","H",68,12,"Fernando Jorge Cabral",5475186
 1,11,"Zona 1","H",70,16,"HORTENCIA GOMES",-7209
-1,11,"Zona 1","H",70,20,"DOMINGAS CO",-7213
 1,11,"Zona 1","H",74,3,"RITA MARIA MARTINS",-7244
 1,11,"Zona 1","H",75,13,"CALISTO F.F.NETO",10818
-1,11,"Zona 1","H",75,14,"Edson Normam Moura Correia",839949
+1,11,"Zona 1","H",75,14,"Edilson Normam Moura Correia",839949
 1,11,"Zona 1","H",75,15,"Vanusa Lara Moreira Rebeiro",881926
-1,11,"Zona 1","H",75,16,"Falta informação",6875325
+1,11,"Zona 1","H",75,16,"VASCO NHAGA (TCHI)",6875325
 1,11,"Zona 1","H",76,0,"Família zero",6198528
 1,11,"Zona 1","H",76,10,"RUI CORREIA",-7272
 1,11,"Zona 1","H",76,12,"DIOGO FERNANDES PEREIRA",-7274
-1,11,"Zona 1","H",105,0,"Família zero",5373040
-1,11,"Zona 1","H",105,12,"IBRAIMA FAI",5475732
 1,11,"Zona 1","H",105,13,"JOSE AUGUSTO G. DA SILVA",5475932
 1,11,"Zona 1","H",105,14,"ANABELA N. CORREIA",5475984
-1,11,"Zona 1","H",105,15,"Falta informação",6876716
-1,11,"Zona 1","H",123,0,"Família zero",4135493
+1,11,"Zona 1","H",105,15,"Seck Faie",6876716
+1,11,"Zona 1","H",123,0,"Família zero",6324769
 1,11,"Zona 1","H",123,19,"JOAOZINHO DA SILVA",-7701
 1,11,"Zona 1","H",123,22,"Nbaba Lopes Tcham",5481387
-1,11,"Zona 1","H",123,23,"Falta informação",6877930
+1,11,"Zona 1","H",123,23,"FELISMINA F. HOFFER",6877930
 1,11,"Zona 1","H",174,1,"CADI SANHA",-8088
 1,11,"Zona 1","H",174,2,"SANUCI SAMBU",-8089
-1,11,"Zona 1","H",174,4,"FATINHA CASSAMA",5472590
+1,11,"Zona 1","H",174,4,"LASSANA SANI",5472590
 1,11,"Zona 1","H",204,1,"SABADOZINHO DA SILVA",-8231
 1,11,"Zona 1","H",207,2,"ARMANDO LOPES",-8236
 1,11,"Zona 1","H",207,5,"MARIA NANQUE",4785182
-1,11,"Zona 1","H",207,6,"Adul Barri",4787196
 1,11,"Zona 1","H",207,7,"Ismaila Camara",4787537
 1,11,"Zona 1","H",207,8,"SALIFO CAMARA",4787612
 1,11,"Zona 1","H",249,1,"NENE CA",-8361
 1,11,"Zona 1","H",264,7,"Tone Te",5480546
-1,11,"Zona 1","H",264,8,"Falta informação",6880114
-1,11,"Zona 1","H",264,9,"Falta informação",6880163
+1,11,"Zona 1","H",264,8,"Aristides Pereira",6880114
+1,11,"Zona 1","H",264,9,"SENE TE",6880163
 1,11,"Zona 1","H",268,1,"Mamadu Aliu Djalo",5476684
 1,11,"Zona 1","H",268,2,"Mamadu Djalo",5477533
 1,11,"Zona 1","H",268,3,"Adulai Ba",5477893
 1,11,"Zona 1","H",268,4,"Ussumane Show",5478730
-1,11,"Zona 1","I",82,1,"FAUSTINO NHANQUE",-7329
-1,11,"Zona 1","I",83,0,"Família zero",6097607
-1,11,"Zona 1","I",83,20,"JOSE SANCA",-7348
+1,11,"Zona 1","I",82,1,"ALBAT SAMBU",-7329
+1,11,"Zona 1","I",82,2,"ANTONIO MORES SAMBU",6881172
+1,11,"Zona 1","I",82,3,"ALBAT SAMBU",6881263
 1,11,"Zona 1","I",83,26,"WILSON COSTA(BUKU)",4114685
 1,11,"Zona 1","I",83,27,"Asis Djalo",4115013
 1,11,"Zona 1","I",83,28,"Mamadu Adi Djalo",5484661
-1,11,"Zona 1","I",83,29,"Aduramane Djalo",5485081
-1,11,"Zona 1","I",84,0,"Família zero",5814534
+1,11,"Zona 1","I",83,29,"Aduramane Djlau",5485081
+1,11,"Zona 1","I",83,30,"Issufi Djalo",6881508
+1,11,"Zona 1","I",83,31,"Augusto Caraque",6881695
 1,11,"Zona 1","I",84,1,"MORA GOMES",-7354
+1,11,"Zona 1","I",84,3,"Adelaide Forbs Monteiro",6881971
 1,11,"Zona 1","I",86,15,"ANTONIO SAMBU",-7367
 1,11,"Zona 1","I",86,21,"MAMADU DJAM DJALO",-7372
 1,11,"Zona 1","I",87,1,"HENRIQUETA FERNANDES",-7373
 1,11,"Zona 1","I",87,3,"MARIO FERNANDES",-7375
-1,11,"Zona 1","I",87,7,"JUVIANO BARBOSA",-7379
 1,11,"Zona 1","I",91,1,"BINTO DJASSI",-7399
-1,11,"Zona 1","I",91,2,"DAUDA MANE",-7400
 1,11,"Zona 1","I",93,8,"NENE DA SILVA",-7408
-1,11,"Zona 1","I",93,9,"Demantina Te",855969
-1,11,"Zona 1","I",103,5,"N'SUNDA CO",-7515
-1,11,"Zona 1","I",103,6,"Falta informação",-7516
-1,11,"Zona 1","I",103,16,"MALIQUE DJALO",-7526
+1,11,"Zona 1","I",93,9,"Ana Paula Da Silva",855969
+1,11,"Zona 1","I",103,5,"N'SUNDA CO",6882625
+1,11,"Zona 1","I",103,6,"CARLOS J.BADINCA",-7516
 1,11,"Zona 1","I",103,20,"Mamadu Lamarana Djalo",5482059
+1,11,"Zona 1","I",103,21,"ORLANDO CO",6882625
 1,11,"Zona 1","I",104,2,"JOSE LOPES",-7531
 1,11,"Zona 1","I",104,4,"Antonio Jorge Gomes Da Silva",5484612
 1,11,"Zona 1","I",107,3,"Adelino Francisco Sanca",860593
-1,11,"Zona 1","I",120,0,"Família zero",5963528
 1,11,"Zona 1","I",120,6,"MUNUNO DIAS",-7653
 1,11,"Zona 1","I",120,30,"UMARO TCHAM",-7667
-1,11,"Zona 1","I",120,31,"ISABEL MENDES",-7668
 1,11,"Zona 1","I",120,33,"Madi Sar",5489003
-1,11,"Zona 1","I",131,2,"Lumumba Sana",816082
-1,11,"Zona 1","I",133,0,"Família zero",2950849
+1,11,"Zona 1","I",131,3,"Abdel Suleimane M. Fernandes",6882350
 1,11,"Zona 1","I",133,1,"ALBINO SA",-7777
-1,11,"Zona 1","I",133,7,"ALGASSIMO DJALO",-7783
 1,11,"Zona 1","I",133,8,"CELESTINO INDI",-7784
 1,11,"Zona 1","I",133,9,"Mas Co",-7785
-1,11,"Zona 1","I",153,1,"ARQUETA S.CO",-7982
-1,11,"Zona 1","I",154,0,"Família zero",5997637
+1,11,"Zona 1","I",133,11,"LAURENA FREDERICO OFFER",6885166
+1,11,"Zona 1","I",153,1,"CAUSO A.CO",-7982
+1,11,"Zona 1","I",154,0,"Família zero",6884446
 1,11,"Zona 1","I",154,1,"ADAMA AUA DJALO",-7986
-1,11,"Zona 1","I",154,6,"AISSATO DJALO",-7991
-1,11,"Zona 1","I",154,11,"MAMADU URI DJALO",-7996
-1,11,"Zona 1","I",154,12,"Mamadu Seldo Djalo",5483854
-1,11,"Zona 1","I",179,1,"FULA CA",-8112
+1,11,"Zona 1","I",154,12,"Mamadu Seldo Barri",5483854
+1,11,"Zona 1","I",154,13,"Braima Djalo",6884446
+1,11,"Zona 1","I",154,14,"ALFICENE DJALO",6885013
+1,11,"Zona 1","I",154,15,"Ussumane Djalo",6885282
+1,11,"Zona 1","I",154,16,"Mama Saido Ba",6885362
+1,11,"Zona 1","I",154,17,"AMADU TIDJANE DJALO",6885434
+1,11,"Zona 1","I",179,1,"Fula Co",-8112
 1,11,"Zona 1","I",179,2,"DOMINGOS CO",-8113
-1,11,"Zona 1","I",179,5,"ISABEL CA-ANINA",-8116
-1,11,"Zona 1","I",179,6,"ROMANA CO",-8117
-1,11,"Zona 1","I",190,0,"Família zero",6025642
-1,11,"Zona 1","I",190,6,"BADJUDESSA J. CABRAL",-8193
-1,11,"Zona 1","I",190,8,"CARLOS J. BADINCA",-8195
-1,11,"Zona 1","I",191,0,"Família zero",6311559
+1,11,"Zona 1","I",179,5,"ISABEL CA-ANINA",6886067
+1,11,"Zona 1","I",179,8,"Cuca Co",6886067
+1,11,"Zona 1","I",179,9,"Domingos De Carvalho",6886124
+1,11,"Zona 1","I",190,0,"Família zero",6884252
+1,11,"Zona 1","I",190,9,"ABDULAI DJALO",6884252
+1,11,"Zona 1","I",190,10,"Mamadu Adama Djalo",6884304
 1,11,"Zona 1","I",191,1,"LOURENCO M. INDI",-8196
 1,11,"Zona 1","I",192,1,"JULIO MANGO",-8197
-1,11,"Zona 1","I",198,1,"MARTINA LOPES (NECAS)",-8211
+1,11,"Zona 1","I",192,3,"Aua Djalo",6886435
+1,11,"Zona 1","I",192,4,"Norberto Djidono",6886557
+1,11,"Zona 1","I",198,1,"FELISMINA LOPES",-8211
 1,11,"Zona 1","I",212,0,"Família zero",4235226
-1,11,"Zona 1","I",212,1,"Adulai Djalo",5482664
+1,11,"Zona 1","I",279,1,"WILSON TE",6886499
 1,11,"Zona 1","J",56,0,"Família zero",6785858
 1,11,"Zona 1","J",56,1,"ANGELINA DE SENE(NENE)",-7050
-1,11,"Zona 1","J",56,9,"Adulai Ba",51757
+1,11,"Zona 1","J",56,10,"Mamadu Barri",6897005
+1,11,"Zona 1","J",56,11,"Mamasali Ba",6897125
 1,11,"Zona 1","J",89,0,"Família zero",5494274
 1,11,"Zona 1","J",89,1,"FANTA DARAME",-7392
-1,11,"Zona 1","J",106,0,"Família zero",6195992
-1,11,"Zona 1","J",106,1,"SUMAILA DARAME",-7541
+1,11,"Zona 1","J",89,3,"Braima Djalo",6901020
+1,11,"Zona 1","J",106,0,"Família zero",6469933
+1,11,"Zona 1","J",106,1,"IANCUBA DARAME",-7541
 1,11,"Zona 1","J",106,6,"FATIMA SAIDO DJUF",-7546
 1,11,"Zona 1","J",106,7,"Falta informação",3650443
-1,11,"Zona 1","J",121,0,"Família zero",1461425
 1,11,"Zona 1","J",121,1,"ADILSON DA SILVA (N'TU)",-7670
-1,11,"Zona 1","J",121,5,"MIGUEL DATE",-7674
 1,11,"Zona 1","J",130,0,"Família zero",4292924
 1,11,"Zona 1","J",130,1,"USSEINE TCHOR",-7756
 1,11,"Zona 1","J",130,5,"Amadi Sene",10738
-1,11,"Zona 1","J",130,6,"Mamadu Ba Mane",2017016
 1,11,"Zona 1","J",132,0,"Família zero",4277324
 1,11,"Zona 1","J",132,5,"Izidorio Da Silva",-7765
 1,11,"Zona 1","J",132,12,"FRANCOAR SIMAO",-7772
 1,11,"Zona 1","J",132,16,"SABADO DA SILVA",-7776
-1,11,"Zona 1","J",134,0,"Família zero",3073098
+1,11,"Zona 1","J",132,17,"Augusto Soares",6891169
+1,11,"Zona 1","J",132,18,"Silvina Victor Pereira",6891386
+1,11,"Zona 1","J",134,0,"Família zero",6893206
 1,11,"Zona 1","J",134,1,"ARMANDO TE",-7786
 1,11,"Zona 1","J",134,6,"BAILO BA",-7791
-1,11,"Zona 1","J",166,0,"Família zero",5573642
+1,11,"Zona 1","J",134,8,"HELENA CO",6893206
 1,11,"Zona 1","J",166,3,"DAM MARIA CUCA",-8053
 1,11,"Zona 1","J",166,19,"Ibraima Camara",4021421
-1,11,"Zona 1","J",166,20,"TITINA CORREIA",5487176
+1,11,"Zona 1","J",166,21,"Amadu Djalo",6902045
+1,11,"Zona 1","J",166,22,"Julio Fernandes",6902265
+1,11,"Zona 1","J",166,23,"Olma Djankis",6902471
 1,11,"Zona 1","J",171,1,"REIMUNDO MONTEIRO",-8074
-1,11,"Zona 1","J",171,5,"Coin Djalo",1211599
 1,11,"Zona 1","J",205,1,"ALADJE JOAO VAZ MANDJAM",-8232
 1,11,"Zona 1","J",213,1,"ROSA CA",-8251
-1,11,"Zona 1","J",214,0,"Família zero",2515783
+1,11,"Zona 1","J",213,2,"Ocante Ie",6887550
 1,11,"Zona 1","J",214,3,"Odete Pereira",921881
-1,11,"Zona 1","J",215,0,"Família zero",6322029
-1,11,"Zona 1","J",215,2,"Suleimane Bangura",922090
+1,11,"Zona 1","J",215,0,"Família zero",6887929
+1,11,"Zona 1","J",215,3,"Ana Sambe Na Nfad",6887929
 1,11,"Zona 1","J",222,1,"DOMINGAS JOSE OCUNEME",-8290
-1,11,"Zona 1","J",228,0,"Família zero",883602
+1,11,"Zona 1","J",228,0,"Família zero",5194463
 1,11,"Zona 1","J",228,1,"JULIAO CA(CHOFERO)",-8309
 1,11,"Zona 1","J",228,2,"FATU CA",5488238
-1,11,"Zona 1","J",241,3,"Binto Djana",932792
+1,11,"Zona 1","J",228,3,"Martinho Ca",6890568
 1,11,"Zona 1","J",241,4,"Vladimir Da Silva",5489711
-1,11,"Zona 1","J",242,0,"Família zero",6383269
-1,11,"Zona 1","J",242,6,"USENE DJALO",-8340
-1,11,"Zona 1","J",242,7,"MAMADU MUTARO BA",-8341
-1,11,"Zona 1","J",273,1,"Saico Djalo",4452453
-1,11,"Zona 1","J",273,2,"Senadje Djalo",4452501
+1,11,"Zona 1","J",241,5,"Filomeno T. Barbosa",6884181
+1,11,"Zona 1","J",254,1,"Sandro M. Morreira",6901151
 1,11,"Zona 1","L",52,0,"Família zero",1121648
-1,11,"Zona 1","L",52,1,"ABULAI SEIDE",-6982
+1,11,"Zona 1","L",52,1,"SULEIMANE SEIDE",-6982
 1,11,"Zona 1","L",52,9,"MAMADU CISSE",-6990
-1,11,"Zona 1","L",52,15,"MALADO DJAN DJALO",-6996
 1,11,"Zona 1","L",52,16,"IBRAIMA CONTE",-6997
 1,11,"Zona 1","L",52,19,"MUSSA BA",-7000
-1,11,"Zona 1","L",52,20,"SULEIMANE SEIDE",-7001
 1,11,"Zona 1","L",52,21,"SALIFO DJON",-7002
-1,11,"Zona 1","L",94,0,"Família zero",5567532
+1,11,"Zona 1","L",94,0,"Família zero",6359018
 1,11,"Zona 1","L",94,2,"VICTOR PEREIRA DA SILVA",-7410
 1,11,"Zona 1","L",94,22,"MAMADJALAM DJALO",-7430
-1,11,"Zona 1","L",94,28,"OMOR SAAR",-7436
-1,11,"Zona 1","L",94,32,"MAMADU SAIDO DJALO",-7440
-1,11,"Zona 1","L",94,34,"Tcherno Sadjo Djalo",858135
-1,11,"Zona 1","L",95,0,"Família zero",3882468
+1,11,"Zona 1","L",94,35,"DAVID DA SILVA",6887116
+1,11,"Zona 1","L",94,36,"Mamadu Nhan",6887185
+1,11,"Zona 1","L",94,37,"Mamadu Iaia Ba",6887224
+1,11,"Zona 1","L",94,38,"Mamadu Mutaro Ba",6887248
+1,11,"Zona 1","L",94,39,"Mamadu Lamarana Ba",6359018
+1,11,"Zona 1","L",94,40,"Alassana Ba",6887335
+1,11,"Zona 1","L",94,41,"Elhadji Pate Djop",6887417
+1,11,"Zona 1","L",94,42,"Adi Djalo",6887431
+1,11,"Zona 1","L",95,0,"Família zero",6887817
 1,11,"Zona 1","L",95,2,"FERNANDO GONCALVES",-7443
-1,11,"Zona 1","L",117,0,"Família zero",3719840
+1,11,"Zona 1","L",95,5,"Fatu Cassama",6887817
+1,11,"Zona 1","L",95,6,"Secuna Silla",6888127
 1,11,"Zona 1","L",117,1,"ANDRE LOPES V. NANQUE",-7614
-1,11,"Zona 1","L",125,0,"Família zero",1454928
 1,11,"Zona 1","L",125,2,"SATAN CISSE",-7705
-1,11,"Zona 1","L",125,5,"MAMADU SALIU DJALO",-7708
-1,11,"Zona 1","L",142,0,"Família zero",6191795
+1,11,"Zona 1","L",125,6,"Amadu Tidjane Djalo",6890765
 1,11,"Zona 1","L",142,1,"SAMBA INJAI BALDE",-7833
 1,11,"Zona 1","L",142,17,"MAMADU DJALO",-7849
+1,11,"Zona 1","L",142,18,"Modo Saho",6890693
+1,11,"Zona 1","L",142,19,"Mamadu Uri Barri",6890752
 1,11,"Zona 1","L",145,1,"CAMA SIREM DABO",-7879
-1,11,"Zona 1","L",152,0,"Família zero",4928136
-1,11,"Zona 1","L",152,1,"ALBERTO DJATA",-7972
-1,11,"Zona 1","L",167,0,"Família zero",551190
+1,11,"Zona 1","L",145,24,"Mamasamba Djop",6893585
+1,11,"Zona 1","L",152,0,"Família zero",6889937
+1,11,"Zona 1","L",152,1,"MICHEL DJEDJO",-7972
+1,11,"Zona 1","L",152,12,"VIRGINIA DJATA",6889731
+1,11,"Zona 1","L",152,13,"Corque Ndong",6889786
+1,11,"Zona 1","L",152,14,"Ivo Ndong",6889937
 1,11,"Zona 1","L",167,1,"CANTE DABO",-8059
 1,11,"Zona 1","L",167,2,"ADAMA CISSE",-8060
 1,11,"Zona 1","L",167,4,"FAFA-INDI FANDE",-8062
-1,11,"Zona 1","L",168,0,"Família zero",2001011
 1,11,"Zona 1","L",168,2,"MARIAMA BALDE",-8064
 1,11,"Zona 1","L",168,3,"ANSSU MANDJAM",-8065
 1,11,"Zona 1","L",169,0,"Família zero",280830
 1,11,"Zona 1","L",169,2,"MAURICIO D. ALVES",-8068
-1,11,"Zona 1","L",170,0,"Família zero",4390037
+1,11,"Zona 1","L",170,0,"Família zero",6786119
 1,11,"Zona 1","L",170,1,"IDRISSA SISSE",-8069
 1,11,"Zona 1","L",170,2,"N`QUEBA DANFA",-8070
-1,11,"Zona 1","L",170,3,"AUA INDJAI",-8071
-1,11,"Zona 1","L",170,5,"BUBACAR CISSE",-8073
-1,11,"Zona 1","L",170,6,"Mamadu Lamarana Djalo",10779
 1,11,"Zona 1","L",170,7,"Bacar Cisse",52797
-1,11,"Zona 1","L",181,3,"ALSAINO DJALO",-8127
-1,11,"Zona 1","L",181,6,"SERIFO DJALO",-8130
+1,11,"Zona 1","L",170,8,"Mamade Cisse",6891580
+1,11,"Zona 1","L",170,9,"Mamadjam Djalo",6891776
+1,11,"Zona 1","L",170,10,"Ussumane Djigande",6892013
 1,11,"Zona 1","L",181,7,"Ussumane Barri",6083233
+1,11,"Zona 1","L",181,8,"Mamadu Djau Saal",6892220
 1,11,"Zona 1","L",197,3,"ISABEL VAZ DA SILVA",-8209
-1,11,"Zona 1","L",208,0,"Família zero",5416108
-1,11,"Zona 1","L",208,2,"VALENTINA NANQUE",-8240
-1,11,"Zona 1","L",208,3,"Maria Augusta Papseco Fernandes",1245271
-1,11,"Zona 1","L",209,0,"Família zero",292258
-1,11,"Zona 1","L",209,7,"Falta informação",-8247
-1,11,"Zona 1","L",236,0,"Família zero",5303775
-1,11,"Zona 1","L",236,4,"INES CASSAMA",-8320
-1,11,"Zona 1","L",236,6,"Boulabasse Koure",931260
-1,11,"Zona 1","L",237,0,"Família zero",6283230
-1,11,"Zona 1","L",237,5,"MAMADU BAILO BA",-8326
-1,11,"Zona 1","L",237,6,"TCHERNO DABO",-8327
-1,11,"Zona 1","L",237,7,"AMADU BENTE DJALO",-8328
-1,11,"Zona 1","L",237,8,"Mussa Silla",937391
-1,11,"Zona 1","L",247,0,"Família zero",2862146
+1,11,"Zona 1","L",208,4,"Bubacar N'dong",6889048
+1,11,"Zona 1","L",208,5,"Saco Sar",6889338
+1,11,"Zona 1","L",208,6,"Sirem N'guen",6889411
+1,11,"Zona 1","L",209,7,"DAVID DA SILVA",-8247
+1,11,"Zona 1","L",209,10,"Bubacar Djalo",6889984
+1,11,"Zona 1","L",236,7,"Sanaba Seide",6892534
+1,11,"Zona 1","L",237,9,"Mamudu Balde",6892960
+1,11,"Zona 1","L",237,10,"Mamudu Trauare",6893042
+1,11,"Zona 1","L",237,11,"Moro Danfa",6893133
 1,11,"Zona 1","L",247,1,"LASSANA CANTAWO",-8353
-1,11,"Zona 1","L",247,3,"QUEBA SANHA",-8355
 1,11,"Zona 1","L",247,4,"Aladje",916503
-1,11,"Zona 1","L",247,5,"Batona Ncone",916652
-1,11,"Zona 1","L",247,6,"Ensa Danfa",916826
-1,11,"Zona 1","L",253,0,"Família zero",3956255
-1,11,"Zona 1","L",253,2,"Falta informação",-8371
+1,11,"Zona 1","L",247,5,"Mariama Ncone",916652
+1,11,"Zona 1","L",247,8,"BACAR DANFA",6891239
+1,11,"Zona 1","L",247,9,"Malique",6891295
 1,11,"Zona 1","L",253,5,"AUA SANO",-8374
 1,11,"Zona 1","L",253,7,"Aminata Ndong",936835
-1,11,"Zona 1","L",253,8,"Abula Sow",937138
-1,11,"Zona 1","L",253,9,"Mohamed Silla",937216
-1,11,"Zona 1","L",263,0,"Família zero",2583466
+1,11,"Zona 1","L",253,8,"Abulai Sow",937138
+1,11,"Zona 1","L",253,10,"Tansir Senghor",6892799
+1,11,"Zona 1","L",253,11,"Bela Djalo",6892897
+1,11,"Zona 1","L",253,12,"Abulai Djalo",6892935
+1,11,"Zona 1","L",253,13,"Mamadu Barri",6893018
+1,11,"Zona 1","L",253,14,"Djibril Sow",6893070
+1,11,"Zona 1","L",253,15,"Abas",6893110
+1,11,"Zona 1","L",263,0,"Família zero",6893298
+1,11,"Zona 1","L",263,1,"Issuf Ndong",6893298
+1,11,"Zona 1","L",263,2,"Abdu Ndong",6893337
+1,11,"Zona 1","L",269,1,"ALBERTO DJATA",6888350
+1,11,"Zona 1","L",269,2,"Ussumane So",6888609
 1,11,"Zona 1","L",277,1,"Talibe Embalo",4460800
-1,11,"Zona 1","M",53,0,"Família zero",6487437
-1,11,"Zona 1","M",53,28,"ISSUFO TURE",-7030
-1,11,"Zona 1","M",118,0,"Família zero",3914887
-1,11,"Zona 1","M",118,2,"N'DAFA ASSIE CA",-7618
-1,11,"Zona 1","M",129,0,"Família zero",3000421
+1,11,"Zona 1","L",277,2,"Ussumane Baio",6893266
+1,11,"Zona 1","L",277,3,"Bubacar",6893284
+1,11,"Zona 1","M",53,0,"Família zero",6894018
+1,11,"Zona 1","M",53,28,"USSUMANE TURE",-7030
+1,11,"Zona 1","M",53,34,"MUSSA SAAR",6893863
+1,11,"Zona 1","M",53,35,"Mamadu Tcham",6894018
+1,11,"Zona 1","M",53,36,"Mama Saliu Ba",6894064
+1,11,"Zona 1","M",53,37,"Mamadu Nhan",6894164
+1,11,"Zona 1","M",53,38,"Aladje Caram Djame",6894387
+1,11,"Zona 1","M",118,0,"Família zero",6894077
+1,11,"Zona 1","M",118,3,"MISAEL LOPES NANQUE",6894077
 1,11,"Zona 1","M",129,1,"Yaya Cisse",-7743
-1,11,"Zona 1","M",129,5,"Falta informação",-7747
 1,11,"Zona 1","M",129,12,"USSUMANE CAMARA",-7754
 1,11,"Zona 1","M",129,14,"Caetano Duarte",3310861
-1,11,"Zona 1","M",144,0,"Família zero",5817153
+1,11,"Zona 1","M",129,15,"Diemam Camara",6900156
+1,11,"Zona 1","M",129,16,"Mamadu Corca Ba",6900278
+1,11,"Zona 1","M",129,17,"MAMADU ALIU DJALO",6900500
+1,11,"Zona 1","M",129,18,"Mustafa Djalo",6900817
+1,11,"Zona 1","M",129,19,"Tcherno Mamudo Balde",6900943
+1,11,"Zona 1","M",144,0,"Família zero",4340819
 1,11,"Zona 1","M",144,9,"AISSATU FATY",-7876
-1,11,"Zona 1","M",173,0,"Família zero",6309955
-1,11,"Zona 1","M",173,1,"JUELMA DA SILVA",580145
 1,11,"Zona 1","M",173,2,"QUEBA TURE",-8084
-1,11,"Zona 1","M",173,4,"MAMADI TURE",-8086
-1,11,"Zona 1","M",180,0,"Família zero",3085214
+1,11,"Zona 1","M",173,6,"FRANCISCO RODRIGUES",6898349
 1,11,"Zona 1","M",180,4,"JULIO A. CORREIA",-8122
-1,11,"Zona 1","M",180,6,"Falta informação",-8124
+1,11,"Zona 1","M",180,7,"CARINA JOAO CORREIA",6893888
+1,11,"Zona 1","M",180,8,"Mamadu Alfa Balde",6893962
 1,11,"Zona 1","M",186,4,"SERIFO BRAIMA SEIDE",-8157
-1,11,"Zona 1","M",186,9,"ARESTOLES SOARES DA GAMA",-8162
-1,11,"Zona 1","M",189,0,"Família zero",2951045
+1,11,"Zona 1","M",186,10,"Salifo",6896565
+1,11,"Zona 1","M",186,11,"Domingas Gomes Correia",6896589
+1,11,"Zona 1","M",186,12,"Alfa Calido Djalo",6896767
 1,11,"Zona 1","M",189,1,"FUTA SANE",-8183
-1,11,"Zona 1","M",189,6,"Tcherno Djalo",560479
-1,11,"Zona 1","M",203,0,"Família zero",3283237
-1,11,"Zona 1","M",203,3,"Falta informação",-8228
-1,11,"Zona 1","M",203,5,"HALIA CAMARA",-8230
-1,11,"Zona 1","M",217,0,"Família zero",6099951
+1,11,"Zona 1","M",203,3,"AMADU DABO",-8228
+1,11,"Zona 1","M",203,6,"Sansique Camara",6894202
+1,11,"Zona 1","M",217,0,"Família zero",6894647
 1,11,"Zona 1","M",217,8,"Abdul Tcham",-8263
-1,11,"Zona 1","M",217,11,"MAMADU DJALO",-8266
-1,11,"Zona 1","M",217,14,"IAIA BAIO",-8269
-1,11,"Zona 1","M",217,18,"SATU BALDE",-8273
-1,11,"Zona 1","M",217,19,"ALFA UMARO BA",-8274
-1,11,"Zona 1","M",217,20,"Mamasaliu Djalo",52989
-1,11,"Zona 1","M",217,21,"Ibraima Djalo",269650
-1,11,"Zona 1","M",217,22,"Aliu Djalo",2171750
-1,11,"Zona 1","M",221,0,"Família zero",1693982
+1,11,"Zona 1","M",217,14,"Aladje Baio",-8269
+1,11,"Zona 1","M",217,23,"Iaia Baio",6894647
+1,11,"Zona 1","M",217,24,"Abdul Salama Djalo",6895154
+1,11,"Zona 1","M",217,25,"Ussumane Ly",6895561
+1,11,"Zona 1","M",217,26,"Bubacar Camara",6895741
+1,11,"Zona 1","M",217,27,"Ibraima Sori Ba",6895960
+1,11,"Zona 1","M",217,28,"Ama Sadjo Sall",6896176
 1,11,"Zona 1","M",221,2,"ADAMA FATI",-8282
 1,11,"Zona 1","M",221,10,"Mamadu Aliu Djamanca",927261
-1,11,"Zona 1","M",225,0,"Família zero",3914872
-1,11,"Zona 1","M",225,3,"MAMADU BALDE",-8304
-1,11,"Zona 1","M",225,4,"DJEDJE DA SILVA",-8305
-1,11,"Zona 1","M",226,0,"Família zero",3905244
+1,11,"Zona 1","M",221,11,"Mario Maudo Da Cunha",6898612
+1,11,"Zona 1","M",225,0,"Família zero",6895209
+1,11,"Zona 1","M",225,5,"Aissato Balde",6895209
+1,11,"Zona 1","M",225,6,"Anita Joao Correia",6895378
+1,11,"Zona 1","M",226,0,"Família zero",6898962
+1,11,"Zona 1","M",226,1,"Alexandre Djedjo",6898962
+1,11,"Zona 1","M",226,2,"Cristono Djonu",6898995
 1,11,"Zona 1","M",227,2,"MUNHA CASSAMA",-8307
-1,11,"Zona 1","M",233,0,"Família zero",2205885
-1,11,"Zona 1","M",233,3,"Mussa Ndong",84407
+1,11,"Zona 1","M",233,0,"Família zero",4849910
 1,11,"Zona 1","M",233,4,"Mamadu Lamine Baio",930168
-1,11,"Zona 1","M",234,0,"Família zero",4141426
+1,11,"Zona 1","M",233,5,"Alassana Silla",6895050
+1,11,"Zona 1","M",233,6,"Tcherno Indjai",6895489
+1,11,"Zona 1","M",233,7,"Tcherno Barri",6895648
+1,11,"Zona 1","M",233,8,"Aguibo Ba",6895864
+1,11,"Zona 1","M",234,0,"Família zero",6899337
 1,11,"Zona 1","M",234,3,"MAMADI TURE",4690162
 1,11,"Zona 1","M",234,4,"QUEBA TURE",4691061
-1,11,"Zona 1","M",251,0,"Família zero",6352947
-1,11,"Zona 1","M",251,2,"Falta informação",-8364
-1,11,"Zona 1","M",251,4,"Lamine Ture",270039
+1,11,"Zona 1","M",234,5,"Fode Ture",6899337
+1,11,"Zona 1","M",234,6,"Suleimane Tambadu",6899360
+1,11,"Zona 1","M",234,7,"Abdu Djame",6899384
+1,11,"Zona 1","M",251,0,"Família zero",6897465
+1,11,"Zona 1","M",251,5,"TCHERNO ASSIMIU BARRI",6897219
+1,11,"Zona 1","M",251,6,"Tcherno Garangue Ba",6897299
+1,11,"Zona 1","M",251,7,"Idrissa Djalo",6897465
 1,11,"Zona 1","NULL",55,0,"Família zero",5812440
 1,12,"Zona 2","A",1,2,"FANTA BUARO",-8382
 1,12,"Zona 2","A",1,8,"Tcherno Adul Seide",6822556
@@ -883,13 +852,13 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","A",252,14,"Celestina Gomes Mugi",6817387
 1,12,"Zona 2","A",254,0,"Família zero",5780553
 1,12,"Zona 2","A",254,1,"FERNANDO CORREIA",-10978
-1,12,"Zona 2","A",254,4,"Mamadu Saliu Ba",6036576
+1,12,"Zona 2","A",254,4,"Mamadu Saliu Ba",6819594
 1,12,"Zona 2","A",254,5,"Hidrissa Ba",6819699
 1,12,"Zona 2","A",254,6,"Alfa Umaro Barry",6819845
 1,12,"Zona 2","A",254,7,"AGOSTINHO CORREIA TE",6820117
 1,12,"Zona 2","B",8,0,"Família zero",5657917
 1,12,"Zona 2","B",8,7,"NATALIA CO DA GAMA IE",-8436
-1,12,"Zona 2","B",9,1,"CRISTINA NAQUE",-8441
+1,12,"Zona 2","B",9,1,"Cristina Nanque",-8441
 1,12,"Zona 2","B",9,5,"JOAO IE",-8445
 1,12,"Zona 2","B",11,8,"Gergelia Tiago Te (Ela)",6785435
 1,12,"Zona 2","B",11,9,"Vitoria Nanque",6806717
@@ -938,6 +907,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","C",25,18,"AMOI CA",-8640
 1,12,"Zona 2","C",25,28,"Aladje Barry",6779498
 1,12,"Zona 2","C",25,29,"Benildo A.Correia",6800766
+1,12,"Zona 2","C",26,0,"Família zero",6891309
 1,12,"Zona 2","C",26,2,"HENRIQUETA BARBOSA",-8646
 1,12,"Zona 2","C",26,41,"Margarida Correia Ca",6780039
 1,12,"Zona 2","C",26,42,"AUGUSTA AMISSON",6780140
@@ -958,6 +928,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","C",31,1,"MARIA AUGUSTA DA COSTA",-8730
 1,12,"Zona 2","C",31,4,"JOSEFA SA",-8733
 1,12,"Zona 2","C",31,9,"Sabado Zina Sa",-8738
+1,12,"Zona 2","C",37,0,"Família zero",6894540
 1,12,"Zona 2","C",37,22,"AMADU DJALO",6782171
 1,12,"Zona 2","C",37,24,"JUNIOR DA SILVA",6782411
 1,12,"Zona 2","C",38,2,"CARLOTA DOS REIS",6782610
@@ -1010,7 +981,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","D",34,21,"NEIA SA",1127719
 1,12,"Zona 2","D",36,1,"Julinho Bras Da Silva",-8794
 1,12,"Zona 2","D",36,9,"Lassana Mane",6805110
-1,12,"Zona 2","D",42,0,"Família zero",3743456
 1,12,"Zona 2","D",42,6,"CELESTINO CORO NANQUE",-8904
 1,12,"Zona 2","D",42,19,"Amadu Barri",1135300
 1,12,"Zona 2","D",42,20,"SABADO DJU",5540072
@@ -1031,7 +1001,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","D",48,64,"Jailson Dju",6809885
 1,12,"Zona 2","D",87,22,"JOANINHA PERREIRA",-9745
 1,12,"Zona 2","D",87,25,"AGOSTINHO MONTEIRO",5531097
-1,12,"Zona 2","D",88,0,"Família zero",6582036
 1,12,"Zona 2","D",88,2,"BRAIMA BUARO",-9749
 1,12,"Zona 2","D",89,3,"ISABEL DIAS",-9768
 1,12,"Zona 2","D",89,18,"Domingos Dias ( Papa )",1261197
@@ -1074,7 +1043,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","D",291,6,"RITA CO",6819717
 1,12,"Zona 2","D",291,7,"Carlos Ca",6819951
 1,12,"Zona 2","D",299,1,"MIGUEL DATE",6820096
-1,12,"Zona 2","E",44,0,"Família zero",5056930
 1,12,"Zona 2","E",44,15,"TONY CA",-8933
 1,12,"Zona 2","E",44,30,"Januario Lopes",1066893
 1,12,"Zona 2","E",44,31,"Almadeus Gomes",6832515
@@ -1085,26 +1053,23 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","E",45,25,"Mario Sa",1136499
 1,12,"Zona 2","E",45,27,"Uri",6831200
 1,12,"Zona 2","E",45,28,"Julio Correia",6836372
-1,12,"Zona 2","E",66,0,"Família zero",2416184
 1,12,"Zona 2","E",66,1,"JOANINHA NANQUE",-9371
 1,12,"Zona 2","E",66,5,"Ma Ca",5540014
 1,12,"Zona 2","E",90,1,"MARIA AUGUSTA GOMES",-9783
 1,12,"Zona 2","E",90,2,"MARIA NANQUE (MARI)",-9784
-1,12,"Zona 2","E",102,1,"AUGUSTO CO",-9937
+1,12,"Zona 2","E",102,1,"AUGUSTO CO",6833353
 1,12,"Zona 2","E",102,13,"Didi Gomes",6833222
-1,12,"Zona 2","E",112,0,"Família zero",6834240
+1,12,"Zona 2","E",112,0,"Família zero",6352863
 1,12,"Zona 2","E",112,1,"LUIS DA SILVA",-10048
 1,12,"Zona 2","E",112,10,"Cesar Albino Nhangue",1316942
 1,12,"Zona 2","E",112,13,"Juliao Joao Pexice",1317302
 1,12,"Zona 2","E",112,14,"Baciro Djalo",5539293
 1,12,"Zona 2","E",112,15,"Sa Dju",6834240
 1,12,"Zona 2","E",113,1,"JORGE ANTONIO NHAGA",-10057
-1,12,"Zona 2","E",116,0,"Família zero",6837159
 1,12,"Zona 2","E",116,7,"SABADO NANQUE",-10096
 1,12,"Zona 2","E",116,16,"Mamadu Fall",1322677
 1,12,"Zona 2","E",116,20,"JOSE AMURA SA",5538565
 1,12,"Zona 2","E",116,21,"Mario Mendes",6837159
-1,12,"Zona 2","E",120,0,"Família zero",3375477
 1,12,"Zona 2","E",120,3,"MARIA JOAQUINA",-10137
 1,12,"Zona 2","E",120,16,"BIBIANA CORREIA",-10150
 1,12,"Zona 2","E",120,18,"DJIBRIL DJALO",-10152
@@ -1116,7 +1081,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","E",121,17,"Juelson Silva",5537200
 1,12,"Zona 2","E",121,18,"Ocante Ca",5537675
 1,12,"Zona 2","E",121,19,"Dikeze Ca",5538040
-1,12,"Zona 2","E",147,0,"Família zero",4310337
 1,12,"Zona 2","E",147,7,"RUI MARIO DA SILVA",-10337
 1,12,"Zona 2","E",147,12,"MARIO MANFAM",-10341
 1,12,"Zona 2","E",147,20,"AUGUSTO LOPES",-10349
@@ -1127,7 +1091,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","E",162,1,"SABADO CA",-10452
 1,12,"Zona 2","E",203,1,"DINIS DA SILVA (AFINAL)",-10736
 1,12,"Zona 2","E",203,8,"QUINTINO TE",-10743
-1,12,"Zona 2","E",249,0,"Família zero",4588736
+1,12,"Zona 2","E",249,0,"Família zero",6907666
 1,12,"Zona 2","E",249,1,"MICHEL QUADE (MAIKEL)",-10950
 1,12,"Zona 2","E",250,5,"Inacio Dju ( Ocante )",-10957
 1,12,"Zona 2","E",250,7,"INDIRA CA",286130
@@ -1140,7 +1104,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","E",262,1,"DOMINGAS MENDONCA",-11013
 1,12,"Zona 2","E",262,2,"ARMANDO J.C.SANCA",-11014
 1,12,"Zona 2","E",262,4,"Mario Biague (Djono)",-11016
-1,12,"Zona 2","E",278,0,"Família zero",3965063
 1,12,"Zona 2","E",278,1,"Ivanildo Silva Santos",-11090
 1,12,"Zona 2","E",278,2,"LUISA S. S. COSTA",1482294
 1,12,"Zona 2","E",278,3,"Adalgisa Da Costa",5535372
@@ -1151,14 +1114,13 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","E",286,4,"Orlando Badinca",1484391
 1,12,"Zona 2","E",286,5,"Anabela Perreira",1484480
 1,12,"Zona 2","E",286,8,"LURDES CA",5537344
-1,12,"Zona 2","E",301,0,"Família zero",5195377
 1,12,"Zona 2","E",302,1,"BRAIMA BALDE",5144454
 1,12,"Zona 2","E",307,0,"Família zero",6837791
 1,12,"Zona 2","E",307,1,"Laurindo Ie",5534168
 1,12,"Zona 2","E",307,2,"Mamadu Saido Barri",5534279
 1,12,"Zona 2","E",307,3,"Sadjo Barri",6837791
 1,12,"Zona 2","E",307,5,"Mario",6838078
-1,12,"Zona 2","F",46,0,"Família zero",6826814
+1,12,"Zona 2","F",46,0,"Família zero",5661281
 1,12,"Zona 2","F",46,1,"CONCEICAO DA SILVA",-8966
 1,12,"Zona 2","F",46,22,"JOSE PIRES CA",-8987
 1,12,"Zona 2","F",46,34,"MARTINHO CA",-8999
@@ -1166,6 +1128,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","F",46,39,"Adjaro Ie",6826814
 1,12,"Zona 2","F",46,40,"Paulino Da Silva",6826887
 1,12,"Zona 2","F",46,41,"Vlademir J. A. Rodrigues",6827166
+1,12,"Zona 2","F",46,42,"AUGUSTO LOPES",6889237
+1,12,"Zona 2","F",49,0,"Família zero",6884586
 1,12,"Zona 2","F",49,1,"MARIA EUGENIA DA SILVA",-9071
 1,12,"Zona 2","F",49,13,"MARIA PAULA VIEIRA",-9083
 1,12,"Zona 2","F",49,17,"LINO MENDES INDI",-9086
@@ -1179,7 +1143,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","F",51,17,"INACIO DA SILVA GOMES",-9124
 1,12,"Zona 2","F",51,33,"Paulo Da Silva",4290355
 1,12,"Zona 2","F",51,34,"Manadjan Ba",6827094
-1,12,"Zona 2","F",52,0,"Família zero",4702915
+1,12,"Zona 2","F",52,0,"Família zero",6881143
 1,12,"Zona 2","F",52,1,"ROFINO LEMBRA PAGO",-9128
 1,12,"Zona 2","F",52,30,"FILINTO PINTO",-9157
 1,12,"Zona 2","F",52,47,"JERONIMO BIAGUE-UMARO",5551208
@@ -1192,7 +1156,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","F",52,55,"Mamadu Taibo Djalo",6830969
 1,12,"Zona 2","F",52,56,"Luis Mendes",6831075
 1,12,"Zona 2","F",67,0,"Família zero",6828162
-1,12,"Zona 2","F",67,3,"VICTOR PEREIRA",6828071
+1,12,"Zona 2","F",67,3,"VICTOR PEREIRA",-9376
 1,12,"Zona 2","F",67,5,"Falta informação",-9378
 1,12,"Zona 2","F",67,15,"Zeca Sa",-9388
 1,12,"Zona 2","F",67,21,"Ibraima Djalo",5543338
@@ -1213,17 +1177,17 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","F",153,1,"NEUSA CA",-10383
 1,12,"Zona 2","F",153,10,"ISAIAS A. DA COSTA",1380068
 1,12,"Zona 2","F",153,11,"Pedro Tavares Silva",1380093
-1,12,"Zona 2","F",204,0,"Família zero",5971454
+1,12,"Zona 2","F",204,0,"Família zero",6784046
 1,12,"Zona 2","F",204,3,"AMADO DJULDE SILA",-10747
 1,12,"Zona 2","F",204,6,"TCHERNO BA",-10750
 1,12,"Zona 2","F",204,9,"TASSILIMA DJALO",-10753
 1,12,"Zona 2","F",204,14,"Amadu Bailo Barri",1438971
-1,12,"Zona 2","F",204,16,"Suleimane Barri",1439535
+1,12,"Zona 2","F",205,0,"Família zero",6220696
 1,12,"Zona 2","F",205,1,"CALIDO DJAU",-10757
 1,12,"Zona 2","F",205,4,"MARIATO DJALO",-10760
 1,12,"Zona 2","F",205,9,"Falta informação",-10765
 1,12,"Zona 2","F",205,16,"Mamadu Sadjo Ba",5547496
-1,12,"Zona 2","F",218,0,"Família zero",1697280
+1,12,"Zona 2","F",218,0,"Família zero",6831944
 1,12,"Zona 2","F",218,2,"IMBAM INFANDA NYOKNA",-10812
 1,12,"Zona 2","F",218,3,"SANA CAMARA",-10813
 1,12,"Zona 2","F",218,4,"MUSSA DJAU",-10814
@@ -1236,12 +1200,12 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","F",247,14,"Nene Sa",6833150
 1,12,"Zona 2","F",248,2,"LINDA DOMINGOS TE",-10947
 1,12,"Zona 2","F",248,5,"QUINTINO BARBOSA",6832591
-1,12,"Zona 2","F",253,0,"Família zero",6833261
+1,12,"Zona 2","F",253,0,"Família zero",6340901
 1,12,"Zona 2","F",253,1,"TEIXEIRA FERNANDES",-10974
 1,12,"Zona 2","F",253,6,"LUCAS MANE",6833261
 1,12,"Zona 2","F",271,2,"CALIDO DJAU",-11059
 1,12,"Zona 2","F",280,1,"ALADJE FAI",1681432
-1,12,"Zona 2","F",282,0,"Família zero",6833501
+1,12,"Zona 2","F",282,0,"Família zero",6638145
 1,12,"Zona 2","F",282,9,"Seco Camara",1483847
 1,12,"Zona 2","F",282,10,"Mondelano Da Costa",5540707
 1,12,"Zona 2","F",282,11,"NUNO FERNANDES",5540746
@@ -1265,9 +1229,10 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","G",84,10,"MIGUEL A. VIEIRA",6817079
 1,12,"Zona 2","G",85,19,"INES DA FONSECA(ANHES)",-9696
 1,12,"Zona 2","G",85,20,"SERAFINA A NTEMBA",56907
-1,12,"Zona 2","G",86,2,"JOAZINHO DJU",-9698
+1,12,"Zona 2","G",86,2,"Joaozinho Dju",-9698
 1,12,"Zona 2","G",86,30,"Mamasaliu Balde",6820072
 1,12,"Zona 2","G",86,31,"Henriqueta Pedro Gomes",6820235
+1,12,"Zona 2","G",97,0,"Família zero",6885857
 1,12,"Zona 2","G",97,20,"Idrissa Bajudade",-9874
 1,12,"Zona 2","G",97,32,"Armando Dju",6818547
 1,12,"Zona 2","G",97,33,"Amadu Walter Dju",6818886
@@ -1307,7 +1272,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","G",275,5,"VICTORINO CO",-11077
 1,12,"Zona 2","G",275,12,"AMONDJE IE (ANTONIO)",-11082
 1,12,"Zona 2","G",275,15,"Amadu Djalo",5557312
-1,12,"Zona 2","H",54,0,"Família zero",2710216
+1,12,"Zona 2","H",54,0,"Família zero",6067522
 1,12,"Zona 2","H",54,3,"JOAO QUADE",-9189
 1,12,"Zona 2","H",54,19,"Fidel Ca",5556457
 1,12,"Zona 2","H",54,22,"Abdulai Balde",6834891
@@ -1315,7 +1280,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","H",69,15,"BACAR JOAQUIM",-9417
 1,12,"Zona 2","H",69,16,"CESARIO GOMES BAIO",-9418
 1,12,"Zona 2","H",69,18,"Catarina Djata",6835566
-1,12,"Zona 2","H",70,0,"Família zero",4200524
+1,12,"Zona 2","H",70,0,"Família zero",6835414
 1,12,"Zona 2","H",70,4,"JOAO BOLAMA",-9422
 1,12,"Zona 2","H",70,11,"CARVALHO NANSINGUE",5553380
 1,12,"Zona 2","H",70,12,"Rui Na Ndiba",6835414
@@ -1353,6 +1318,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","H",82,1,"QUIMBA NA BEDETA",-9627
 1,12,"Zona 2","H",82,2,"AGOSTINHO NAN'GHOMDE",-9628
 1,12,"Zona 2","H",82,3,"SAN-NAN",-9629
+1,12,"Zona 2","H",83,0,"Família zero",6911815
 1,12,"Zona 2","H",83,2,"MANHA  NA NHA - NANGBA",-9643
 1,12,"Zona 2","H",83,16,"CADI IALA",-9657
 1,12,"Zona 2","H",83,22,"NATIVIDADE P. IANCUM",-9663
@@ -1370,14 +1336,12 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","H",190,1,"Insanham Na Dunda",-10644
 1,12,"Zona 2","H",194,2,"JOAQUIM BARBOSA",-10684
 1,12,"Zona 2","H",194,6,"AQUILINO DJATA",-10688
-1,12,"Zona 2","H",239,0,"Família zero",998863
 1,12,"Zona 2","H",239,2,"EVANOVID GOMES",-10901
 1,12,"Zona 2","H",239,5,"TENEN DUCURE",-10904
-1,12,"Zona 2","H",264,0,"Família zero",4003262
 1,12,"Zona 2","H",264,3,"ALBERTO CO",-11024
 1,12,"Zona 2","H",264,4,"NETO CA",-11025
 1,12,"Zona 2","H",264,5,"HELENA CO",-11026
-1,12,"Zona 2","H",264,7,"Falta informação",6880012
+1,12,"Zona 2","H",264,7,"Matilde Sa",6880012
 1,12,"Zona 2","H",276,0,"Família zero",6787265
 1,12,"Zona 2","H",276,7,"Erikson Indi",5548613
 1,12,"Zona 2","H",276,8,"Pele Lopes",6841354
@@ -1393,14 +1357,13 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","I",99,33,"Tcherno Braima Ba",6850571
 1,12,"Zona 2","I",100,0,"Família zero",5665902
 1,12,"Zona 2","I",100,1,"SEGUNDA JOSE",-9918
-1,12,"Zona 2","I",100,5,"Iaya Seide",3652149
 1,12,"Zona 2","I",100,7,"Wilson Mendes",5559053
 1,12,"Zona 2","I",100,8,"Idrissa Djalo",5559083
 1,12,"Zona 2","I",100,9,"Fernando Junior",6852426
-1,12,"Zona 2","I",101,0,"Família zero",6851351
+1,12,"Zona 2","I",101,0,"Família zero",5857007
 1,12,"Zona 2","I",101,12,"CAPITAO INDJAI",-9933
 1,12,"Zona 2","I",101,16,"Joaozinho Ca",6851351
-1,12,"Zona 2","I",107,0,"Família zero",3964065
+1,12,"Zona 2","I",107,0,"Família zero",6132381
 1,12,"Zona 2","I",107,2,"Leixe Joaquim Agibane",-10024
 1,12,"Zona 2","I",107,9,"Laurenco Mendes",1314653
 1,12,"Zona 2","I",107,12,"Mamadu",6848359
@@ -1415,18 +1378,15 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","I",142,11,"Zelia Da Costa",6840574
 1,12,"Zona 2","I",142,12,"Veronica Marisa Gomes",6840636
 1,12,"Zona 2","I",142,13,"Tania Naaga",6840784
-1,12,"Zona 2","I",145,0,"Família zero",1080673
 1,12,"Zona 2","I",145,2,"VIRGINIA BIAGUE",-10322
 1,12,"Zona 2","I",154,9,"FERNADO DA SILVA (OCANTE)",1375460
-1,12,"Zona 2","I",171,0,"Família zero",285995
 1,12,"Zona 2","I",171,1,"JOANINHA DJU",-10487
 1,12,"Zona 2","I",171,20,"CELESTE INDI",-10504
 1,12,"Zona 2","I",172,3,"DOMINGOS OCANTE AGIBANE",-10515
-1,12,"Zona 2","I",173,1,"OMOR SENHOR",6842803
+1,12,"Zona 2","I",173,1,"OMOR SENHOR",-10524
 1,12,"Zona 2","I",173,4,"MAMADU TCHAM",-10526
-1,12,"Zona 2","I",173,6,"ARAFAM SENHOR",-10528
+1,12,"Zona 2","I",173,6,"Arafam Senghor",-10528
 1,12,"Zona 2","I",183,1,"DUARTE BARBOSA",-10597
-1,12,"Zona 2","I",227,0,"Família zero",1975312
 1,12,"Zona 2","I",227,4,"QUINTA CO",-10856
 1,12,"Zona 2","I",227,7,"GINA CA(NDJINA)",4558092
 1,12,"Zona 2","I",227,9,"Suleimane Mara",5556538
@@ -1440,7 +1400,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","I",261,5,"ZITO CA (POS)",-11009
 1,12,"Zona 2","I",261,7,"MARTINHO  CO",-11011
 1,12,"Zona 2","I",261,9,"Fosto Lopes",307385
-1,12,"Zona 2","I",267,1,"SEBASTIAO ARROZEIRA",-11037
+1,12,"Zona 2","I",267,1,"SEBASTIAO ARROZEIRA",6847090
 1,12,"Zona 2","I",267,9,"Alberto Gomes Cadomoto",3477475
 1,12,"Zona 2","I",267,10,"ADULAI BALDE",4548544
 1,12,"Zona 2","I",267,11,"DAUDA IATARA",5555816
@@ -1465,7 +1425,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","J",59,19,"GESSICA TE",-9319
 1,12,"Zona 2","J",59,25,"VLADMIR SA",1172616
 1,12,"Zona 2","J",59,27,"Pedro Luis Da Silva",6802161
-1,12,"Zona 2","J",61,1,"Quintino Lopes Correia",-9341
+1,12,"Zona 2","J",61,1,"Quintino Lopes Correia",6803130
 1,12,"Zona 2","J",61,4,"GERALDA DA SILVA (CO)",-9344
 1,12,"Zona 2","J",61,5,"Aregema P.N.Ocante ( Murida )",-9345
 1,12,"Zona 2","J",61,6,"DOMINGOS DA SILVA",-9346
@@ -1476,14 +1436,14 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","J",77,29,"Augusto Ie",1208143
 1,12,"Zona 2","J",77,30,"SUSSA MON CA",6805736
 1,12,"Zona 2","J",77,31,"EDILIA DJU",6806121
-1,12,"Zona 2","J",95,0,"Família zero",6806746
+1,12,"Zona 2","J",95,0,"Família zero",6168166
 1,12,"Zona 2","J",95,1,"ELTINA BARBEIRO",-9814
 1,12,"Zona 2","J",95,10,"Zeca Ca",-9823
 1,12,"Zona 2","J",95,15,"Nito Co",6806746
 1,12,"Zona 2","J",95,16,"Abubacar Sambu",6807824
 1,12,"Zona 2","J",95,17,"Marjalaini Andreia Sa",6807924
 1,12,"Zona 2","J",95,18,"NERU ANTONIO DA SILVA",6809770
-1,12,"Zona 2","J",96,0,"Família zero",6807857
+1,12,"Zona 2","J",96,0,"Família zero",6807710
 1,12,"Zona 2","J",96,1,"AMELIA DA COSTA",-9828
 1,12,"Zona 2","J",96,2,"EPIFANIA LEAL (FANI)",-9829
 1,12,"Zona 2","J",96,36,"MAMADU SIAM",5561437
@@ -1599,7 +1559,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","M",225,5,"Sickis Gomes",6793114
 1,12,"Zona 2","M",244,4,"Francisco Fernandes  Ntunque",5561907
 1,12,"Zona 2","M",244,5,"Fatumata N'dom",5562081
-1,12,"Zona 2","M",245,1,"NENE DJU",-10931
+1,12,"Zona 2","M",245,1,"Nene Sa",-10931
 1,12,"Zona 2","M",245,6,"Dionizio Do Santos Bonso",5562166
 1,12,"Zona 2","M",263,6,"Miguelinho Pansau Naquele",5561800
 1,12,"Zona 2","M",263,7,"Daniel Dam  Nanfad",6794214
@@ -1644,7 +1604,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","N",168,7,"Frederico Cabral",5568077
 1,12,"Zona 2","N",168,8,"Ricardo Semedo",6804608
 1,12,"Zona 2","N",208,2,"FERNANDA DJU (NANDA)",-10774
-1,12,"Zona 2","N",209,0,"Família zero",5849652
+1,12,"Zona 2","N",209,0,"Família zero",6805257
 1,12,"Zona 2","N",209,8,"CANDIDO MONTEIRO",-10782
 1,12,"Zona 2","N",209,10,"Helena Da Costa Na Gletcha",-10784
 1,12,"Zona 2","N",209,14,"Amilcar Costa",1432854
@@ -1654,7 +1614,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,12,"Zona 2","N",222,9,"Quintino Da Silva",6807631
 1,12,"Zona 2","N",222,10,"Antonio Manuel Cabral",6807683
 1,12,"Zona 2","N",222,11,"Bebe",6807768
-1,12,"Zona 2","N",223,0,"Família zero",6806349
+1,12,"Zona 2","N",223,0,"Família zero",6806248
 1,12,"Zona 2","N",223,4,"NFAMARA DEMBA",-10838
 1,12,"Zona 2","N",223,7,"AMADU TCHERNO DJALO",-10841
 1,12,"Zona 2","N",223,14,"Adulai Djaquite",6806248
@@ -1710,7 +1670,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","A",121,29,"JORGE LOPES CO",5357720
 1,13,"Zona 3","A",121,30,"Suleimane Ba",6764920
 1,13,"Zona 3","A",121,31,"Mustafa Djalo",6765111
-1,13,"Zona 3","A",123,0,"Família zero",5505847
+1,13,"Zona 3","A",123,0,"Família zero",6408668
 1,13,"Zona 3","A",123,8,"Hoseias J. J. Odanaka Jr.",6755061
 1,13,"Zona 3","A",123,10,"Mohamed Queita",6755170
 1,13,"Zona 3","A",127,0,"Família zero",6598418
@@ -1749,15 +1709,15 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","A",189,0,"Família zero",6759800
 1,13,"Zona 3","A",189,2,"JUSTINO GOMES TE",6759800
 1,13,"Zona 3","A",189,3,"Carminda Jose Fernandes",6760092
-1,13,"Zona 3","B",1,0,"Família zero",5883393
+1,13,"Zona 3","B",1,0,"Família zero",6402858
 1,13,"Zona 3","B",1,13,"BALTAZARINA B.A.JORGE",-11144
-1,13,"Zona 3","B",2,0,"Família zero",6354658
+1,13,"Zona 3","B",2,0,"Família zero",6833990
 1,13,"Zona 3","B",2,2,"QUINTA DJALO",-11147
 1,13,"Zona 3","B",2,17,"Sadjo Cissoco",5362159
 1,13,"Zona 3","B",2,18,"Arnaldo Ca",5362459
 1,13,"Zona 3","B",2,19,"Tchutcha Da Costa",6757476
 1,13,"Zona 3","B",2,20,"Domingos Ca",6757646
-1,13,"Zona 3","B",3,1,"FERNANDO JORGE C. DE MELO",6765636
+1,13,"Zona 3","B",3,1,"FERNANDO JORGE C. DE MELO",6765883
 1,13,"Zona 3","B",3,11,"Aissato Culibali",-11172
 1,13,"Zona 3","B",3,18,"FERNANDA CORREIA DE MELO",6765636
 1,13,"Zona 3","B",3,19,"FERNANDO CORREIA DE MELO",6765883
@@ -1774,7 +1734,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","B",8,1,"BOA CA  (BUBA)",-11212
 1,13,"Zona 3","B",8,3,"PAULO  CA I",-11214
 1,13,"Zona 3","B",8,24,"Aladje Djalo",6761873
-1,13,"Zona 3","B",78,6,"LIVERLINO L.SILVA(TABIS)",6764521
+1,13,"Zona 3","B",78,6,"LIVERLINO L.SILVA(TABIS)",-12092
 1,13,"Zona 3","B",78,12,"Jose Boaventura Tavares",1735299
 1,13,"Zona 3","B",78,13,"LIVERLINO L.SILVA(TABIS)",6764521
 1,13,"Zona 3","B",78,14,"Agnelo Da Costa",6764745
@@ -1956,7 +1916,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","E",22,28,"Nelson Ca",6775276
 1,13,"Zona 3","E",22,29,"Abduramane Ba",6775493
 1,13,"Zona 3","E",22,30,"APILI CO",6778877
-1,13,"Zona 3","E",22,31,"Falta informação",6877138
+1,13,"Zona 3","E",22,31,"LINDA IE",6877138
 1,13,"Zona 3","E",23,14,"Alvarenga Te",-11449
 1,13,"Zona 3","E",23,17,"DOMINGAS DA SILVA",1548469
 1,13,"Zona 3","E",23,20,"Eunice Da Conseicao Silva Costa",6774971
@@ -1982,6 +1942,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","E",29,11,"Nestor Saviour",4322046
 1,13,"Zona 3","E",29,12,"Rui Da Silva",6769197
 1,13,"Zona 3","E",29,13,"QUINTINO SANHA",6770180
+1,13,"Zona 3","E",29,14,"Nhicuba Artur Cumba",6881052
 1,13,"Zona 3","E",30,11,"FERNANDO CARDOSO",-11571
 1,13,"Zona 3","E",30,16,"Celia Ie",-11576
 1,13,"Zona 3","E",30,21,"Davide Ie",1557896
@@ -1991,7 +1952,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","E",67,4,"NICKSON FERNANDES",-11971
 1,13,"Zona 3","E",67,6,"SABADO CA",6770857
 1,13,"Zona 3","E",67,7,"Suleimane Balde",6770886
-1,13,"Zona 3","E",109,0,"Família zero",5935530
 1,13,"Zona 3","E",109,10,"DAMIANA SA",-12404
 1,13,"Zona 3","E",109,16,"Carlos A. Fernandes",1753766
 1,13,"Zona 3","E",109,17,"JOSE SAMPA",1754068
@@ -2098,7 +2058,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","G",65,11,"CANDIDO CA",-11956
 1,13,"Zona 3","G",65,17,"Manhani Vital Vieira",1724802
 1,13,"Zona 3","G",74,1,"MORTO DOS SANTOS",-12042
-1,13,"Zona 3","G",85,3,"AUGUSTO MANJANE",-12150
+1,13,"Zona 3","G",85,3,"Augusto Mandami",-12150
 1,13,"Zona 3","G",85,8,"Marciano Unate Ie",6798074
 1,13,"Zona 3","G",86,2,"JOIA CA",-12156
 1,13,"Zona 3","G",86,7,"RIGOVERSON CANDETE",5376933
@@ -2111,7 +2071,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","G",89,12,"Mario Ca",5376966
 1,13,"Zona 3","G",98,3,"JULIO CA",-12295
 1,13,"Zona 3","G",98,15,"Ubone Indi",6798528
-1,13,"Zona 3","G",101,0,"Família zero",6111292
+1,13,"Zona 3","G",101,0,"Família zero",6456714
 1,13,"Zona 3","G",101,3,"BENFICA (LUNTAM)",-12329
 1,13,"Zona 3","G",108,2,"EDUARDO LOPES (INDOI)",-12386
 1,13,"Zona 3","G",108,8,"MARIA AUGUSTA SILVA",-12392
@@ -2120,7 +2080,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","G",110,11,"FELISBERTO DA SILVA",-12419
 1,13,"Zona 3","G",110,12,"Mamadu Mutaro Djalo",5376820
 1,13,"Zona 3","G",110,13,"Mariama Djalo",5376884
-1,13,"Zona 3","G",122,0,"Família zero",6840626
+1,13,"Zona 3","G",122,0,"Família zero",6351058
 1,13,"Zona 3","G",122,3,"LINDA CO",-12532
 1,13,"Zona 3","G",122,14,"Atibo",6793387
 1,13,"Zona 3","G",122,15,"Vitor",6793494
@@ -2129,7 +2089,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","G",152,7,"SEGUNDA L.CRATO",6791441
 1,13,"Zona 3","G",162,11,"AMELIA GOMES CORREIA",-12792
 1,13,"Zona 3","G",162,14,"LINDA IE",6792825
-1,13,"Zona 3","G",162,15,"Falta informação",6876949
+1,13,"Zona 3","G",162,15,"Jose Antonio Ca",6876949
 1,13,"Zona 3","G",176,1,"NUNA CA",-12829
 1,13,"Zona 3","G",176,3,"Ibraima Djalo",6792069
 1,13,"Zona 3","G",186,4,"ADELAIDA DJU",1815420
@@ -2142,7 +2102,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","H",44,32,"Anita Gomes",-11678
 1,13,"Zona 3","H",44,34,"MARIA ROSA SA",589188
 1,13,"Zona 3","H",44,35,"ISABEL DA SILVA",4112841
-1,13,"Zona 3","H",45,15,"Equiliciana Mamae Da Costa",-11693
+1,13,"Zona 3","H",45,15,"LUDIMILA DA SILVA",-11693
 1,13,"Zona 3","H",45,17,"CADIDJATO BALDE",-11695
 1,13,"Zona 3","H",45,18,"Armando Gomes Ca",5383042
 1,13,"Zona 3","H",45,19,"Eliseu A. Indi",6770151
@@ -2206,7 +2166,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,13,"Zona 3","I",48,15,"CESAR BAMPOQUE(PAPA)",-11750
 1,13,"Zona 3","I",50,1,"SILVEIRO DA COSTA PEREIRA",-11784
 1,13,"Zona 3","I",50,8,"VENANCIO PERREIRA",6774208
-1,13,"Zona 3","I",51,0,"Família zero",6789494
 1,13,"Zona 3","I",51,1,"QUINTA DA SILVA",-11791
 1,13,"Zona 3","I",51,2,"MARUCAS NASSALU",-11792
 1,13,"Zona 3","I",51,3,"CARLOS GOMES",-11793
@@ -2279,7 +2238,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,14,"Zona 4","A",18,4,"INTEM BADJUDA SA",-13079
 1,14,"Zona 4","A",18,6,"AUGUSTO IE",-13081
 1,14,"Zona 4","A",18,15,"Alfredo Ca",6742928
-1,14,"Zona 4","A",20,0,"Família zero",6487119
+1,14,"Zona 4","A",20,0,"Família zero",6745494
 1,14,"Zona 4","A",20,8,"ROSA CA",-13103
 1,14,"Zona 4","A",20,16,"FELISBERTO DA SILVA",-13111
 1,14,"Zona 4","A",20,22,"Ibraima Djogo",5197133
@@ -2311,7 +2270,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,14,"Zona 4","A",32,28,"Aliu Djalo",6751563
 1,14,"Zona 4","A",32,29,"Mohamed Ba",6751657
 1,14,"Zona 4","A",34,4,"Leonardo Monteiro Nancassa",6752517
-1,14,"Zona 4","A",34,5,"LINDA NAINCA",6752684
+1,14,"Zona 4","A",34,5,"Linda Naenca",6752684
 1,14,"Zona 4","A",58,0,"Família zero",6110294
 1,14,"Zona 4","A",58,12,"Ivo Nangol ( Mandabi )",6753492
 1,14,"Zona 4","A",58,13,"Sadjo",6753558
@@ -2348,7 +2307,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,14,"Zona 4","B",44,8,"Ameni Indi",6743004
 1,14,"Zona 4","B",45,5,"AGOSTINHO MONTEIRO",-13439
 1,14,"Zona 4","B",45,6,"DADA BIAGUE",-13440
-1,14,"Zona 4","B",50,0,"Família zero",-2823746
+1,14,"Zona 4","B",50,0,"Família zero",6755096
 1,14,"Zona 4","B",50,1,"WILLIAM FERNANDES BONSON",-13483
 1,14,"Zona 4","B",50,2,"GINA DJU(ANURO)",-13484
 1,14,"Zona 4","B",50,4,"Fernando Co",6754508
@@ -2356,7 +2315,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,14,"Zona 4","B",50,6,"Loida Ca",6755096
 1,14,"Zona 4","B",52,3,"AUGUSTO V.FERNANDES",6743869
 1,14,"Zona 4","B",52,4,"Daniel Djaura",6744467
-1,14,"Zona 4","B",54,0,"Família zero",6745576
 1,14,"Zona 4","B",54,1,"PI NANQUE",-13535
 1,14,"Zona 4","B",54,2,"PI NANQUE",-13536
 1,14,"Zona 4","B",54,4,"ARMANDO CO (ARIFU)",-13538
@@ -2366,7 +2324,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,14,"Zona 4","B",56,10,"Idrissa Ba",6753778
 1,14,"Zona 4","B",56,11,"Inussa Djalo",6753801
 1,14,"Zona 4","B",62,0,"Família zero",5639473
-1,14,"Zona 4","B",62,7,"EMANUEL DA SILVA",-13659
+1,14,"Zona 4","B",62,7,"EMANUEL DA SILVA",6750281
 1,14,"Zona 4","B",62,14,"Nelsom E. Da Silva",6750281
 1,14,"Zona 4","B",62,15,"Yeliha Yattara",6750490
 1,14,"Zona 4","B",62,16,"Marinho Co",6750581
@@ -2473,7 +2431,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,14,"Zona 4","C",83,5,"FRANCISCA JOAO VIEIRA",4774383
 1,14,"Zona 4","C",83,6,"MAMADU URI DJALO",6745829
 1,14,"Zona 4","C",84,0,"Família zero",6752411
-1,14,"Zona 4","C",84,2,"DOMINGOS NANQUE",-13880
+1,14,"Zona 4","C",84,2,"DOMINGOS NANQUE",6747679
 1,14,"Zona 4","C",84,3,"FREDERICO CORREIA(PRETO)",-13881
 1,14,"Zona 4","C",84,4,"Samuel Lopes",6747679
 1,14,"Zona 4","C",84,5,"IVETE NANQUE",6752411
@@ -2559,17 +2517,15 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","A",1,29,"Amissom Correia",5127132
 1,15,"Zona 5","A",1,31,"Zinaida Ca",6714074
 1,15,"Zona 5","A",1,32,"Sisto Martinho Mendes",6714171
-1,15,"Zona 5","A",1,33,"JOSE PEDRO CO",6131654
+1,15,"Zona 5","A",1,33,"JOSE PEDRO CO",6714458
 1,15,"Zona 5","A",1,34,"Tania Ca",6714586
 1,15,"Zona 5","A",2,3,"CESAR BARBOSA CA",-13927
 1,15,"Zona 5","A",2,12,"CELESTINO CA",-13936
 1,15,"Zona 5","A",2,15,"Romindo Ca",-13939
-1,15,"Zona 5","A",2,20,"Elisa Sa",1827423
 1,15,"Zona 5","A",2,22,"VICTORIA CA",2991853
 1,15,"Zona 5","A",2,24,"ALDEMIRO CA  II",6720199
 1,15,"Zona 5","A",3,10,"AMILCAR A. DJU",5621630
 1,15,"Zona 5","A",3,11,"ANA BELA CO",6715137
-1,15,"Zona 5","A",4,0,"Família zero",247864
 1,15,"Zona 5","A",4,15,"JOSE AUGUSTO DJU",-13967
 1,15,"Zona 5","A",4,18,"ROSA CA",-13970
 1,15,"Zona 5","A",4,29,"MARIO CA",-13981
@@ -2581,7 +2537,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","A",5,14,"CLARA GOMES",-14000
 1,15,"Zona 5","A",5,23,"FOGNA  PIQUE",6716456
 1,15,"Zona 5","A",5,24,"Aua Nhaga",6716536
-1,15,"Zona 5","A",6,0,"Família zero",6717556
+1,15,"Zona 5","A",6,0,"Família zero",6822884
 1,15,"Zona 5","A",6,33,"ANA TERESA GOMES",-14038
 1,15,"Zona 5","A",6,36,"ARMANDO TE",-14041
 1,15,"Zona 5","A",6,39,"Bibita Te",1829550
@@ -2598,7 +2554,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","A",8,2,"Antonio Sanassi Ture",-14052
 1,15,"Zona 5","A",8,11,"Bubacar Djamanca",5127688
 1,15,"Zona 5","A",8,13,"Seco Djamanca",6717629
-1,15,"Zona 5","A",45,0,"Família zero",4756719
 1,15,"Zona 5","A",45,1,"MARIA AUGUSTA MENDONCA",-14592
 1,15,"Zona 5","A",45,12,"Mamadu Djuma Barri",6718643
 1,15,"Zona 5","A",45,13,"Edigar Gomes",6718804
@@ -2612,14 +2567,11 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","A",48,1,"HORACIA PINTO",-14618
 1,15,"Zona 5","A",48,15,"CARLOS GOMES CA",-14631
 1,15,"Zona 5","A",48,16,"AGOSTINHO ABDU CA",-14632
-1,15,"Zona 5","A",107,0,"Família zero",-1689983
 1,15,"Zona 5","A",107,1,"WILSON QUIANTE(NHAU)",-15493
 1,15,"Zona 5","A",107,31,"JULIO QUADE",5148125
-1,15,"Zona 5","A",116,0,"Família zero",2127633
 1,15,"Zona 5","A",116,11,"JOSE M. GOMES CO",-15647
 1,15,"Zona 5","A",116,13,"YOFNA TCHAMI",-15649
 1,15,"Zona 5","A",116,23,"Veronica Sa",5687366
-1,15,"Zona 5","A",122,0,"Família zero",5217290
 1,15,"Zona 5","A",122,1,"JOSE HENRIQUE GOMES/IKI",-15721
 1,15,"Zona 5","A",122,14,"MARIA AUGUSTA S.CASSAMA",5147949
 1,15,"Zona 5","A",159,1,"Maisa  Joaozinho Dju",-15990
@@ -2630,8 +2582,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","A",174,1,"AMILCAR A. DJU",-16060
 1,15,"Zona 5","A",192,10,"Aladje Fallu Barri",6721163
 1,15,"Zona 5","A",192,11,"Tidjane Ba",6721339
-1,15,"Zona 5","A",193,0,"Família zero",2129211
-1,15,"Zona 5","A",193,13,"LIBANIA GOMES",780920
 1,15,"Zona 5","A",193,14,"Samba Balde",70086
 1,15,"Zona 5","A",193,15,"CAROLINA INDI",6721811
 1,15,"Zona 5","A",193,16,"Domingos A. Mendonca",6721891
@@ -2640,7 +2590,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","B",9,18,"GUERRA MEDINA",5624469
 1,15,"Zona 5","B",9,19,"VENANCIO L.NANQUE",6732237
 1,15,"Zona 5","B",10,15,"VANITO NANQUE",-14085
-1,15,"Zona 5","B",11,13,"CIPRIANO SA",-14098
 1,15,"Zona 5","B",11,15,"MARIA IE",-14100
 1,15,"Zona 5","B",11,19,"CARLOS NANQUE",6732141
 1,15,"Zona 5","B",12,15,"DOMINGOS SA",-14117
@@ -2657,7 +2606,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","B",24,20,"ANGELICA ADAO LOPES",-14327
 1,15,"Zona 5","B",24,27,"Pauleta V.J.B.Indi",5636995
 1,15,"Zona 5","B",24,28,"Sumaila Lopes Vaz",5637241
-1,15,"Zona 5","B",25,0,"Família zero",1817049
 1,15,"Zona 5","B",25,18,"Eugenia Indi",-14350
 1,15,"Zona 5","B",25,20,"PAULINO CORREIA IE/MANTO",-14352
 1,15,"Zona 5","B",25,24,"Vanilson Ca",1865300
@@ -2690,14 +2638,12 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","B",206,1,"EUGENIO GOMES",-16181
 1,15,"Zona 5","B",206,8,"Mamadu Sano Djalo",6735648
 1,15,"Zona 5","B",206,9,"Ciro Sa",6735689
-1,15,"Zona 5","B",207,0,"Família zero",890848
+1,15,"Zona 5","B",207,0,"Família zero",3555655
 1,15,"Zona 5","B",207,1,"MAMADU C. DJALO",-16187
 1,15,"Zona 5","B",207,3,"Mamadu Uri Djalo",6735911
 1,15,"Zona 5","B",207,4,"Mamadu I. Djalo",6736203
 1,15,"Zona 5","C",75,1,"ANTONIO DA SILVA",-14991
-1,15,"Zona 5","C",75,8,"ANTONIO DA SILVA",2517385
 1,15,"Zona 5","C",75,10,"Pinto Chico Nancassa",5698053
-1,15,"Zona 5","C",76,0,"Família zero",1786682
 1,15,"Zona 5","C",76,10,"PAULINO CO",-15006
 1,15,"Zona 5","C",76,12,"MAMADU SADJO DJALO",-15008
 1,15,"Zona 5","C",76,13,"MAMADU BOY DJALO",-15009
@@ -2721,7 +2667,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","C",81,1,"Falta informação",-15073
 1,15,"Zona 5","C",81,18,"ANTONIO P.CA",-15090
 1,15,"Zona 5","C",81,21,"Falta informação",6729310
-1,15,"Zona 5","C",81,22,"Joao Antonio Ie",-15093
 1,15,"Zona 5","C",81,25,"ARMANDO CA",-15096
 1,15,"Zona 5","C",81,28,"Ocante Ca",5692795
 1,15,"Zona 5","C",81,29,"Iano Dju",6729119
@@ -2730,16 +2675,14 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","C",81,32,"Tchongo Nhaga",6729248
 1,15,"Zona 5","C",81,33,"CELESTE DA VEIGA",6729310
 1,15,"Zona 5","C",81,34,"Buco Indi",6729388
-1,15,"Zona 5","C",82,0,"Família zero",2741940
 1,15,"Zona 5","C",82,1,"SANTOS ANDRADE FERNANDES",-15099
 1,15,"Zona 5","C",82,14,"Vladimir Da Costa",6723691
 1,15,"Zona 5","C",83,1,"ANASTACIO A. FERNANDES",-15112
-1,15,"Zona 5","C",86,0,"Família zero",3765003
+1,15,"Zona 5","C",86,0,"Família zero",6736724
 1,15,"Zona 5","C",86,1,"JOANINHA DJU (BABA)",-15142
 1,15,"Zona 5","C",86,9,"Victoria Nanque",6736724
 1,15,"Zona 5","C",86,10,"JOANINHA DJU (BABA)",6736967
 1,15,"Zona 5","C",86,11,"Du Gano",6737008
-1,15,"Zona 5","C",87,0,"Família zero",3862876
 1,15,"Zona 5","C",87,3,"Samora Machel Co",-15152
 1,15,"Zona 5","C",87,8,"Laurindo Co",2447737
 1,15,"Zona 5","C",87,10,"Alexandre Co",2447798
@@ -2785,7 +2728,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","C",201,3,"Adulai Balde",5670302
 1,15,"Zona 5","C",201,4,"Ibraima Barri",6736131
 1,15,"Zona 5","C",208,1,"TALENIO DA SILVA",6771243
-1,15,"Zona 5","C",211,0,"Família zero",6733843
+1,15,"Zona 5","C",211,0,"Família zero",6865686
 1,15,"Zona 5","C",211,1,"AMADU DJALO",4819790
 1,15,"Zona 5","C",211,2,"Mamadu Cana Djalo",4906766
 1,15,"Zona 5","C",211,3,"Mamadu Aliu Djalo",4906790
@@ -2793,17 +2736,15 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","C",211,5,"Abdulai Djalo",6733421
 1,15,"Zona 5","C",211,6,"Braima Barry",6733843
 1,15,"Zona 5","C",211,7,"Siradjo Ba",6734068
-1,15,"Zona 5","D",42,0,"Família zero",3090016
 1,15,"Zona 5","D",42,1,"ESTELA FERNANDO CA",-14547
 1,15,"Zona 5","D",42,2,"JULIO CA (BADOGUE)",-14548
-1,15,"Zona 5","D",42,12,"NELSON CO",3245493
 1,15,"Zona 5","D",42,15,"ISNABA NHAGA",6733342
 1,15,"Zona 5","D",42,16,"Ipolitto",6733445
 1,15,"Zona 5","D",42,17,"Marcelino",6733567
 1,15,"Zona 5","D",43,0,"Família zero",6736774
 1,15,"Zona 5","D",43,13,"Manjaco Agostinho",4067178
 1,15,"Zona 5","D",44,0,"Família zero",6823477
-1,15,"Zona 5","D",44,2,"RAFAEL LOPES SA",6740056
+1,15,"Zona 5","D",44,2,"RAFAEL LOPES SA",-14564
 1,15,"Zona 5","D",44,13,"ROSA FERNANDES",-14574
 1,15,"Zona 5","D",44,33,"Talhata Barry",5687208
 1,15,"Zona 5","D",44,34,"RUI LOPES/TCHUDA",6734435
@@ -2814,7 +2755,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","D",49,33,"MAMUDO DJALO",-14667
 1,15,"Zona 5","D",49,34,"UMARO DJALO",-14668
 1,15,"Zona 5","D",49,36,"Nilton Gomes",5629933
-1,15,"Zona 5","D",49,37,"Aissato Barri",5630463
+1,15,"Zona 5","D",49,37,"Aissato Barri",5131027
 1,15,"Zona 5","D",53,3,"MARIO CALABUS NTCHAMA",-14711
 1,15,"Zona 5","D",53,17,"SECO BALDE",-14725
 1,15,"Zona 5","D",53,24,"DOMINGAS DA SILVA",-14732
@@ -2845,13 +2786,11 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","D",126,16,"Mamadu Tafcir Djalo",2516047
 1,15,"Zona 5","D",126,18,"Augusta Dju",6741490
 1,15,"Zona 5","D",133,2,"SENE MALAM CASSAMA",-15809
-1,15,"Zona 5","D",133,6,"BRAIMA DJALO",-15812
 1,15,"Zona 5","D",133,9,"VLADEMIR DENILSON CASSAMA",-15815
 1,15,"Zona 5","D",134,5,"MILOI P. DA SILVA/LOCA",-15822
 1,15,"Zona 5","D",134,6,"TITO SANCA",-15823
 1,15,"Zona 5","D",134,7,"TCHERNO M. DJALO",-15824
 1,15,"Zona 5","D",134,8,"PAULETA INDI",6737174
-1,15,"Zona 5","D",157,0,"Família zero",2832586
 1,15,"Zona 5","D",157,2,"Felix Joao Gomes",-15969
 1,15,"Zona 5","D",157,13,"GADRI SANE",-15980
 1,15,"Zona 5","D",157,15,"Duarte Paulo Mandin",5692335
@@ -2860,7 +2799,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","D",158,7,"INES DA COSTA",-15988
 1,15,"Zona 5","D",158,8,"ADRIANO A. CA",-15989
 1,15,"Zona 5","D",175,1,"DOMINGAS CA (ANHATE)",-16061
-1,15,"Zona 5","D",180,0,"Família zero",2832496
 1,15,"Zona 5","D",180,1,"DEMBA BALDE",-16093
 1,15,"Zona 5","D",180,7,"IERO BALDE",-16099
 1,15,"Zona 5","D",180,9,"ALIU BALDE",-16101
@@ -2871,14 +2809,12 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","D",196,6,"Angelina Paulo Sa",1968538
 1,15,"Zona 5","D",196,7,"ALFREDO GOMES CA",5686174
 1,15,"Zona 5","D",196,8,"Euclides Alfredo Gomes",6740235
-1,15,"Zona 5","E",14,0,"Família zero",2885711
 1,15,"Zona 5","E",14,1,"ALBERTINA TE",-14135
 1,15,"Zona 5","E",14,19,"NTCHALA CA",-14153
 1,15,"Zona 5","E",14,20,"AGOSTINHO CO(GUERRA)",-14154
 1,15,"Zona 5","E",14,22,"Joao Sa",-14156
 1,15,"Zona 5","E",14,23,"BACAR JOAQUIM",-14157
 1,15,"Zona 5","E",14,24,"JOAO TE",-14158
-1,15,"Zona 5","E",15,0,"Família zero",2998733
 1,15,"Zona 5","E",15,10,"SETE CA",-14169
 1,15,"Zona 5","E",15,16,"AUGUSTO DINIS SA",-14175
 1,15,"Zona 5","E",15,18,"NITA CO",-14177
@@ -2906,7 +2842,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","E",124,0,"Família zero",6825488
 1,15,"Zona 5","E",124,12,"Eulalia Sa",6724410
 1,15,"Zona 5","E",124,13,"Elisa Sa",6724464
-1,15,"Zona 5","E",135,0,"Família zero",304130
+1,15,"Zona 5","E",135,0,"Família zero",3250371
 1,15,"Zona 5","E",135,1,"FATIMA SANCA",-15825
 1,15,"Zona 5","E",135,15,"CARLITOS  CA",-15839
 1,15,"Zona 5","E",135,21,"ELIESAR R.FERNANDES/TITIO",6724870
@@ -2917,12 +2853,10 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","E",140,7,"Estevao Barbosa Bali",6725514
 1,15,"Zona 5","E",149,10,"HENRIQUETA LOPES",-15909
 1,15,"Zona 5","E",149,12,"LUCINDA DJU",-15911
-1,15,"Zona 5","E",149,14,"Antonia Ca",1455762
 1,15,"Zona 5","E",149,18,"Admilda C.Co",6725754
 1,15,"Zona 5","E",149,19,"Osvaldo",6725793
 1,15,"Zona 5","E",156,3,"SATU DANSO",-15965
-1,15,"Zona 5","E",164,0,"Família zero",4627409
-1,15,"Zona 5","E",164,8,"EMILIA DA SILVA",-16015
+1,15,"Zona 5","E",164,8,"EMILIA DA SILVA",6726263
 1,15,"Zona 5","E",164,10,"VIRGINIA J.M. MONTEIRO",-16017
 1,15,"Zona 5","E",164,13,"Nadiana Armando Lopes",6726112
 1,15,"Zona 5","E",164,14,"RODY VIEIRA I. GOMES",6726137
@@ -2954,7 +2888,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","F",72,1,"QUINTA IE",-14949
 1,15,"Zona 5","F",72,16,"SUZANA CO",-14964
 1,15,"Zona 5","F",90,1,"Silveria Paulino Ie",-15183
-1,15,"Zona 5","F",90,3,"PIMPILI INDI",-15185
+1,15,"Zona 5","F",90,3,"NITA CO",-15185
 1,15,"Zona 5","F",90,7,"QUINTA NANQUE",-15189
 1,15,"Zona 5","F",90,19,"Jeronimo Tavares Ca",-15201
 1,15,"Zona 5","F",90,20,"VICTOR IE",-15202
@@ -2973,7 +2907,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","F",129,16,"Inussa Camara",6733506
 1,15,"Zona 5","F",129,17,"Wie Seide",6733691
 1,15,"Zona 5","F",141,0,"Família zero",6729447
-1,15,"Zona 5","F",141,1,"ALFREDO PEREIRA",1556541
 1,15,"Zona 5","F",141,6,"Ibraima Indjai",6729447
 1,15,"Zona 5","F",141,7,"Adelino Raimundo Cabral Vieira",6729722
 1,15,"Zona 5","F",142,9,"Carmen Ca",5687588
@@ -2982,7 +2915,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","F",151,16,"Tcherno Djalo",6730858
 1,15,"Zona 5","F",152,1,"JOSE NELSON GOMES",-15937
 1,15,"Zona 5","F",152,5,"Jose Henrique Indi ( Honda )",5692036
-1,15,"Zona 5","F",181,4,"NATERCIA PRETO",-16105
 1,15,"Zona 5","F",181,5,"Ivanildo Armando Pana",1966367
 1,15,"Zona 5","F",181,6,"Nelson",1966390
 1,15,"Zona 5","F",181,7,"Julio Te",6733902
@@ -3010,7 +2942,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","G",96,1,"SABADO INDI",-15294
 1,15,"Zona 5","G",96,10,"FERNANDO GOMES INDI",-15303
 1,15,"Zona 5","G",97,5,"JULIO CO",-15312
-1,15,"Zona 5","G",97,20,"MAMADU CADJALI DJALO",2656511
 1,15,"Zona 5","G",97,21,"Adramane Djalo",5681335
 1,15,"Zona 5","G",97,22,"ALADJE BARRY",5682170
 1,15,"Zona 5","G",98,8,"ANTONIO DOMINGOS NANQUE",-15331
@@ -3022,7 +2953,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","G",102,34,"MOHAMED DJALO",-15408
 1,15,"Zona 5","G",102,36,"IBRAIMA DJALO",-15410
 1,15,"Zona 5","G",102,37,"IDRISSA DJALO",-15411
-1,15,"Zona 5","G",102,41,"Aladje Djalo",5682716
 1,15,"Zona 5","G",102,42,"Alassana Barri",6712082
 1,15,"Zona 5","G",102,43,"Alfa Amadu Barri",6712112
 1,15,"Zona 5","G",102,44,"Mohamed Fofana",6712170
@@ -3044,7 +2974,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","G",150,18,"NENE CO",1953328
 1,15,"Zona 5","G",172,2,"NENE CO",-16057
 1,15,"Zona 5","G",177,2,"MARIA NANQUE",-16068
-1,15,"Zona 5","G",184,0,"Família zero",4543272
 1,15,"Zona 5","G",184,1,"IMPOTE CO",-16111
 1,15,"Zona 5","G",185,2,"BACAR EMBALO",-16113
 1,15,"Zona 5","G",199,2,"Sussa-Mon Ca ( Celeste )",-16171
@@ -3059,11 +2988,9 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","H",30,7,"COROSSO CORREIA (IO)",-14389
 1,15,"Zona 5","H",30,10,"ISSA DJALO",-14392
 1,15,"Zona 5","H",30,12,"CALIFA DABO",-14394
-1,15,"Zona 5","H",31,0,"Família zero",5847992
 1,15,"Zona 5","H",31,6,"CECILIA VIEIRA",-14400
 1,15,"Zona 5","H",31,16,"Cesalta Sa",-14410
 1,15,"Zona 5","H",31,19,"NEUSA SA",-14413
-1,15,"Zona 5","H",31,20,"Falta informação",-14414
 1,15,"Zona 5","H",31,24,"ARMANDO SA (NDU)",-14418
 1,15,"Zona 5","H",32,1,"LIBORIO NANQUE",-14422
 1,15,"Zona 5","H",32,3,"Saido Djara",6702802
@@ -3077,7 +3004,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","H",34,23,"Didi",6704522
 1,15,"Zona 5","H",36,1,"Mario Ca",-14447
 1,15,"Zona 5","H",37,1,"MARIA NANQUE",-14457
-1,15,"Zona 5","H",37,9,"Saido Barbosa Balde",6041439
+1,15,"Zona 5","H",37,9,"Saido Barbosa Balde",6705677
 1,15,"Zona 5","H",37,10,"Silvina Simao Albino",6705929
 1,15,"Zona 5","H",37,11,"Evandro Albate Ie",6706025
 1,15,"Zona 5","H",38,0,"Família zero",6851448
@@ -3087,9 +3014,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","H",38,7,"FERNANDO A. NANQUE",-14471
 1,15,"Zona 5","H",38,8,"TURCIO H.CO(BEBE)",-14472
 1,15,"Zona 5","H",38,9,"NIKE GOMES INDI",-14473
-1,15,"Zona 5","H",39,0,"Família zero",6852686
+1,15,"Zona 5","H",39,0,"Família zero",6788515
 1,15,"Zona 5","H",39,3,"SABADO GOMES",-14476
-1,15,"Zona 5","H",39,48,"Falta informação",-1237558
 1,15,"Zona 5","H",39,56,"Falta informação",-14529
 1,15,"Zona 5","H",39,58,"Maio Albino",6707751
 1,15,"Zona 5","H",39,59,"Abdul Karim Djalo",6707792
@@ -3097,7 +3023,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","H",39,61,"Iaque Djimbia",6708401
 1,15,"Zona 5","H",39,62,"Mamadu Ba",6708496
 1,15,"Zona 5","H",40,2,"ANTONIO F. DA SILVA",6710301
-1,15,"Zona 5","H",40,3,"FATIMA DA COSTA",6710301
+1,15,"Zona 5","H",40,3,"FATIMA DA COSTA",-14533
 1,15,"Zona 5","H",40,5,"SEGUNDA DA SILVA",-14535
 1,15,"Zona 5","H",40,9,"ANTONIO F. DA SILVA",6710301
 1,15,"Zona 5","H",41,2,"JOSE PEDRO DA SILVA",-14540
@@ -3111,7 +3037,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","H",137,8,"LUIS CANUNCU",5688203
 1,15,"Zona 5","H",155,1,"DELFINA IE",-15960
 1,15,"Zona 5","H",155,5,"Marcelo Rocha B.Vicente",6714111
-1,15,"Zona 5","H",166,0,"Família zero",3783344
 1,15,"Zona 5","H",166,1,"FERNANDA D. DA SILVA",-16032
 1,15,"Zona 5","H",166,9,"Magnunson Co",6714852
 1,15,"Zona 5","H",170,2,"AGOSTINHO CA",-16054
@@ -3119,7 +3044,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","H",176,1,"ADELINO A. SOARES",-16065
 1,15,"Zona 5","H",179,3,"MARIA TE",-16079
 1,15,"Zona 5","H",179,4,"NANDA IE",-16080
-1,15,"Zona 5","H",179,8,"AFOI IE",-16084
 1,15,"Zona 5","H",179,14,"Santiro Indi",-16090
 1,15,"Zona 5","H",179,18,"MARIA INES DA SILVA",1939453
 1,15,"Zona 5","H",179,19,"Vergilio S.Silva Fereira",6715900
@@ -3128,7 +3052,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","H",183,5,"Edimar Agostinho  Indi",6718895
 1,15,"Zona 5","H",209,3,"Izaquel Ie",1970305
 1,15,"Zona 5","H",209,4,"Gaudencio Te",6719141
-1,15,"Zona 5","I",51,0,"Família zero",4401297
 1,15,"Zona 5","I",51,1,"AUGUSTA NANQUE",-14670
 1,15,"Zona 5","I",51,11,"DOMINGOS GOMES TE",-14680
 1,15,"Zona 5","I",51,15,"Celdo Djalo",5659443
@@ -3136,12 +3059,10 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","I",52,26,"BRAIMA FATI",-14707
 1,15,"Zona 5","I",52,27,"NOEMIA MENDES",-14708
 1,15,"Zona 5","I",52,28,"DULCE DA SILVA",5645074
-1,15,"Zona 5","I",54,0,"Família zero",483163
 1,15,"Zona 5","I",54,1,"VICTORINO CA",-14734
 1,15,"Zona 5","I",54,21,"SADJO MANE",-14754
 1,15,"Zona 5","I",54,22,"JOSEF D. BUASSI",-14755
 1,15,"Zona 5","I",54,25,"Lurdes Jaime Sa",5691679
-1,15,"Zona 5","I",54,26,"Inussa Djalo",4708969
 1,15,"Zona 5","I",54,28,"CANDIDA CO",6723072
 1,15,"Zona 5","I",54,29,"CELESTINO CO",6723188
 1,15,"Zona 5","I",54,30,"JOAO HELDER CO",6723577
@@ -3150,10 +3071,9 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","I",54,33,"Inacio Ca",6723810
 1,15,"Zona 5","I",54,34,"Vitorino Ombarco Ie",6723986
 1,15,"Zona 5","I",56,15,"MARCELINO GOMES",-14779
-1,15,"Zona 5","I",57,0,"Família zero",2522762
+1,15,"Zona 5","I",57,0,"Família zero",6852119
 1,15,"Zona 5","I",57,1,"LEONILDO A. LOPES",-14781
 1,15,"Zona 5","I",57,7,"HELENA CA/ABIRO",-14786
-1,15,"Zona 5","I",57,19,"Falta informação",-14791
 1,15,"Zona 5","I",57,20,"Nelson Crima Ca",5665605
 1,15,"Zona 5","I",57,21,"Sereno Duarte Da Costa",6724705
 1,15,"Zona 5","I",57,22,"Alfa Umaro Djalo",6724802
@@ -3162,11 +3082,11 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","I",58,20,"NADIA CA",-14810
 1,15,"Zona 5","I",58,22,"FERNANDO LOPES",-14812
 1,15,"Zona 5","I",58,24,"JULIA CO",-14814
+1,15,"Zona 5","I",58,26,"MARIA AUGUSTO LOPES",6886755
 1,15,"Zona 5","I",59,1,"AUGUSTO PEDRO GOMES",-14815
 1,15,"Zona 5","I",59,37,"Simeom Emetuo",6725839
 1,15,"Zona 5","I",59,38,"Egbu E.Val",6725862
 1,15,"Zona 5","I",59,39,"Mussa",6725927
-1,15,"Zona 5","I",60,0,"Família zero",1817141
 1,15,"Zona 5","I",60,2,"Maria Marcos",-14849
 1,15,"Zona 5","I",60,12,"MAMADU DJULDE BALDE",-14859
 1,15,"Zona 5","I",110,8,"AGOSTINHO CAETANO (ILDO)",-15537
@@ -3184,13 +3104,11 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","I",153,19,"NUNO IE",5228600
 1,15,"Zona 5","I",153,20,"Silvia Da Silva",5228682
 1,15,"Zona 5","I",153,21,"Zanda Te",6729688
-1,15,"Zona 5","I",154,0,"Família zero",5528196
 1,15,"Zona 5","I",154,4,"CADI SA",-15957
-1,15,"Zona 5","I",167,0,"Família zero",2593289
 1,15,"Zona 5","I",167,1,"MURIDA PEREIRA",-16039
 1,15,"Zona 5","I",167,2,"NELA CA",-16040
 1,15,"Zona 5","I",167,3,"JUSTINO CO",-16041
-1,15,"Zona 5","I",168,4,"Pedro Antonio Mendes",-16045
+1,15,"Zona 5","I",168,4,"Pedro Antonio Mendes",6731700
 1,15,"Zona 5","I",168,11,"ANCELMO MENDES",1959417
 1,15,"Zona 5","I",168,12,"MARISA CORREIA",6731700
 1,15,"Zona 5","I",168,13,"Benjamim Correia",6731759
@@ -3210,19 +3128,16 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,15,"Zona 5","J",64,0,"Família zero",6132416
 1,15,"Zona 5","J",64,3,"INACIO GOMES",6576203
 1,15,"Zona 5","J",64,4,"PEDRO GOMES",6576277
-1,15,"Zona 5","J",114,0,"Família zero",1025308
 1,15,"Zona 5","J",114,15,"MAMADU DJALO",-15623
 1,15,"Zona 5","J",114,17,"Mamudu Djalo",6697100
-1,15,"Zona 5","J",127,0,"Família zero",1551510
 1,15,"Zona 5","J",127,1,"JORGE NACUI",-15772
 1,15,"Zona 5","J",127,9,"Hady Embalo",-15779
 1,15,"Zona 5","J",127,10,"Hady Embalo",5697065
 1,15,"Zona 5","J",143,1,"DENILSON CO",-15875
 1,15,"Zona 5","J",143,2,"Pedro Gomes Nanque",-15876
-1,15,"Zona 5","J",143,8,"Rubem Sa",5237468
+1,15,"Zona 5","J",143,8,"Rubem Sa",5697846
 1,15,"Zona 5","J",162,2,"SANHA DJU",5695938
 1,15,"Zona 5","J",162,3,"Josefa Conte",6699355
-1,15,"Zona 5","J",186,0,"Família zero",2429690
 1,15,"Zona 5","J",186,5,"Agostinho Nanque ( Ndamesse )",-16124
 1,15,"Zona 5","J",186,12,"Dauda Sow",5695370
 1,15,"Zona 5","J",186,13,"NOIA CA",6700293
@@ -3247,7 +3162,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,16,"Zona 6","A",65,1,"NATALIA MARIA JOSE SILVA",-16852
 1,16,"Zona 6","A",66,2,"FLORINDA CO",-16856
 1,16,"Zona 6","A",67,1,"DUARTE SOARES DA SILVA",-16875
-1,16,"Zona 6","A",68,6,"AMILCAR P. MARTINS(NITO",6558164
+1,16,"Zona 6","A",68,6,"AMILCAR P. MARTINS(NITO",-16881
 1,16,"Zona 6","A",68,12,"Andre Gomes",5493267
 1,16,"Zona 6","A",68,14,"Fernando Henrique Gomes",6558164
 1,16,"Zona 6","A",68,15,"Maio Augusto Iago",6558268
@@ -3256,6 +3171,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,16,"Zona 6","A",70,3,"ALEXIA GOMES DE PINA(LELE",-16899
 1,16,"Zona 6","A",71,1,"DAM SANHA CABRAL",-16902
 1,16,"Zona 6","A",71,13,"Aleixe Balucan",6559471
+1,16,"Zona 6","A",71,14,"Barbosa Sa",6899511
 1,16,"Zona 6","A",72,12,"MARY GOMES DA SILVA TE",-16923
 1,16,"Zona 6","A",72,14,"LITOS SANCA",15903
 1,16,"Zona 6","A",73,13,"ANTONIO LOPES",-16937
@@ -3284,6 +3200,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,16,"Zona 6","B",47,21,"Laudencio Ernestro Cumbi",5495045
 1,16,"Zona 6","B",47,22,"Helena Indi",6559504
 1,16,"Zona 6","B",47,23,"Ntilia Vieira Ca",6559934
+1,16,"Zona 6","B",47,24,"Yurna Mbade",6897962
 1,16,"Zona 6","B",48,2,"MAMADU CANDE",-16634
 1,16,"Zona 6","B",48,18,"CONSTANTINA CA",-16650
 1,16,"Zona 6","B",48,19,"JOAOZINHO CORREIA",15880
@@ -3293,6 +3210,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,16,"Zona 6","B",52,0,"Família zero",5588633
 1,16,"Zona 6","B",52,2,"ZINHA V.NANCASSA",-16666
 1,16,"Zona 6","B",52,7,"JOHNSON AMOAH",-16671
+1,16,"Zona 6","B",52,8,"Stif Saturde Hetumodor",6898170
+1,16,"Zona 6","B",52,9,"Jano Ca",6898309
 1,16,"Zona 6","B",53,2,"Fernando Te",-16673
 1,16,"Zona 6","B",53,10,"MARCELO COSTA",-16681
 1,16,"Zona 6","B",53,19,"Quadi",6560170
@@ -3300,6 +3219,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,16,"Zona 6","B",56,9,"SURAIA J.L.DA FONSECA",-16731
 1,16,"Zona 6","B",64,16,"MAURICIO DA GOIA",-16850
 1,16,"Zona 6","B",82,1,"MARIA JOSE M.SILVA LIMA",-17003
+1,16,"Zona 6","B",82,5,"ANA JOSE CO",-17006
 1,16,"Zona 6","B",82,8,"Djibril Co",6561052
 1,16,"Zona 6","B",89,10,"ANTONIO O.DA SILVA",5496065
 1,16,"Zona 6","B",90,1,"MARIA CONCEICAO DA GOIA",-17054
@@ -3307,21 +3227,24 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,16,"Zona 6","B",101,6,"LEOPOLDO G. DA GOIA",-17094
 1,16,"Zona 6","B",101,9,"Mario Banca",175286
 1,16,"Zona 6","B",108,2,"CATEM GOMES C.SA",-17130
+1,16,"Zona 6","B",108,3,"Abdulai Djalo",-17131
 1,16,"Zona 6","B",110,1,"FAUSTINO DA SILVA",-17139
+1,16,"Zona 6","B",110,2,"Cassido Martinho Coia",6901606
 1,16,"Zona 6","B",119,0,"Família zero",6015260
 1,16,"Zona 6","B",119,3,"Faustino Cassama",2007116
 1,16,"Zona 6","B",119,5,"Eldon M. F.De Pina",5493782
 1,16,"Zona 6","B",119,6,"Floriano Barros Da Costa",6564093
-1,16,"Zona 6","B",121,2,"Varito Da Silva",5494239
+1,16,"Zona 6","B",121,2,"Vanito Da Silva",5494239
 1,16,"Zona 6","C",9,6,"Andre Barros (Tchorona)",-16202
 1,16,"Zona 6","C",9,7,"DA ALLI",-16203
 1,16,"Zona 6","C",9,8,"MARIA DOMINGAS CO",-16204
 1,16,"Zona 6","C",9,10,"Mohamed Luis Arlete",3461850
-1,16,"Zona 6","C",10,3,"JOAQUIM P. DA COSTA",-16207
+1,16,"Zona 6","C",10,3,"Oziana Fernando Mendes",-16207
 1,16,"Zona 6","C",10,9,"BARROS TE",-16213
 1,16,"Zona 6","C",10,10,"Tito Gomes Amburgo",-16214
 1,16,"Zona 6","C",10,15,"Quinito Da Silva (Tem)",-16219
 1,16,"Zona 6","C",10,19,"Eusebio",1971147
+1,16,"Zona 6","C",10,20,"FAUSTINA SA",6895104
 1,16,"Zona 6","C",11,1,"ROSA CO",-16222
 1,16,"Zona 6","C",12,1,"ODILIA GOMES CA",-16228
 1,16,"Zona 6","C",13,1,"Binto Correia",-16233
@@ -3329,12 +3252,16 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,16,"Zona 6","C",14,3,"Alfredo Jr Gomes",-16243
 1,16,"Zona 6","C",14,9,"Margarida Alfredo Gomes",6561753
 1,16,"Zona 6","C",16,19,"Mamadu Djassi",5495999
-1,16,"Zona 6","C",17,2,"Osvaldo Correia De Sa",-16282
+1,16,"Zona 6","C",16,20,"ODILIA GOMES CA",6896513
+1,16,"Zona 6","C",16,21,"NAITE MENDES",6896635
+1,16,"Zona 6","C",16,22,"Demba Djop",6897149
+1,16,"Zona 6","C",16,23,"SERGIO IE",6897254
+1,16,"Zona 6","C",17,2,"SULAINE CORREIA",-16282
 1,16,"Zona 6","C",17,10,"CLEMENTINA CORREIA",-16290
 1,16,"Zona 6","C",17,11,"Osvaldo Correia De Sa",2504995
 1,16,"Zona 6","C",19,0,"Família zero",6567544
 1,16,"Zona 6","C",19,7,"Aquilina Gomes",-16304
-1,16,"Zona 6","C",19,17,"MARIA AUGUSTA CO",-16314
+1,16,"Zona 6","C",19,17,"JENANE SILVA CUNHA",-16314
 1,16,"Zona 6","C",19,19,"Segunda Da Silva",1972367
 1,16,"Zona 6","C",19,20,"ALI CANDE",6567544
 1,16,"Zona 6","C",20,6,"Palmira M.R.Ferreira",-16321
@@ -3370,7 +3297,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,16,"Zona 6","D",45,2,"JOSE DA SILVA",-16599
 1,16,"Zona 6","D",54,16,"HERMINIGILDO B.SEIDE",-16703
 1,16,"Zona 6","D",54,27,"Ussumane Djalo",5497075
-1,16,"Zona 6","D",55,0,"Família zero",6812736
+1,16,"Zona 6","D",55,0,"Família zero",6814299
 1,16,"Zona 6","D",55,1,"FILOMENA GOMES(NINOTE)",-16712
 1,16,"Zona 6","D",55,4,"CARLITOS LOPES CO",-16715
 1,16,"Zona 6","D",55,13,"ALBERTO SOARES DA GAMA",4705945
@@ -3384,7 +3311,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,16,"Zona 6","D",61,35,"Safai Camara",3101642
 1,16,"Zona 6","D",61,37,"GRACIANA DA COSTA",3101955
 1,16,"Zona 6","D",61,38,"Satenen Camara",5502248
-1,16,"Zona 6","D",61,39,"Falta informação",5502664
+1,16,"Zona 6","D",61,39,"Abdulai Djalo",5502664
 1,16,"Zona 6","D",62,12,"ALICE DJU",-16803
 1,16,"Zona 6","D",63,2,"FRANCELINO SILVA (BAIFAS)",-16805
 1,16,"Zona 6","D",63,8,"Falta informação",6571337
@@ -3400,11 +3327,13 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,16,"Zona 6","D",88,7,"NAMIRAM J.RAMALHO",6573477
 1,16,"Zona 6","D",100,1,"JOAQUIM CORREIA",-17087
 1,16,"Zona 6","D",103,3,"VICTOR DA SILVA CA",-17101
-1,16,"Zona 6","D",103,8,"Herculano Dju",6574367
-1,16,"Zona 6","D",107,7,"SAMBA SEIDE",-17127
-1,16,"Zona 6","D",107,9,"Albate Varela Dias",2002443
+1,16,"Zona 6","D",103,4,"Herculano Dju",-17102
+1,16,"Zona 6","D",103,5,"Paulo Co",-17103
+1,16,"Zona 6","D",107,1,"SALIMATU CANDE",-17121
+1,16,"Zona 6","D",107,2,"Albate Varela Dias",-17122
 1,16,"Zona 6","D",107,10,"Mamudu Djalo",2003889
 1,16,"Zona 6","D",107,12,"Iassi Dafe",4676828
+1,16,"Zona 6","D",111,1,"Nora Torres",6901727
 1,16,"Zona 6","D",113,3,"Maria Linda Sa",6574844
 1,16,"Zona 6","D",113,4,"Andre Piter Gomes",6574903
 1,16,"Zona 6","E",23,1,"BERNARDINO G.VILELA",-16337
@@ -3472,6 +3401,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","A",74,29,"JULIO C. SANHA",-18254
 1,17,"Zona 7","A",74,34,"Falta informação",5947249
 1,17,"Zona 7","A",74,35,"Marciano Ca",6597881
+1,17,"Zona 7","A",84,0,"Família zero",6901591
 1,17,"Zona 7","A",84,1,"ANA MARIA TE",-18385
 1,17,"Zona 7","A",84,24,"ZINHA GOMES DA MATA",-18408
 1,17,"Zona 7","A",84,25,"ABUBACAR BA",-18409
@@ -3479,6 +3409,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","A",84,29,"Nine Co",5948474
 1,17,"Zona 7","A",84,30,"Jaima Mario Correia",6603901
 1,17,"Zona 7","A",84,31,"Quintino Co",6604014
+1,17,"Zona 7","A",84,32,"Fiscano Joao Ca",6903893
+1,17,"Zona 7","A",84,33,"Joao Dju",6904057
 1,17,"Zona 7","A",85,15,"Mamadu Bailo Djalo",-18426
 1,17,"Zona 7","A",85,18,"ABDULAI DJALO",-18429
 1,17,"Zona 7","A",85,20,"MAMADU ALFA BARRI",-18431
@@ -3498,12 +3430,15 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","A",88,17,"FLAVIANO CA",2101762
 1,17,"Zona 7","A",88,18,"Domingas Co",6602852
 1,17,"Zona 7","A",88,19,"Marcalino Ca",6603004
+1,17,"Zona 7","A",88,20,"Sabino Sa",6904408
 1,17,"Zona 7","A",90,4,"ANTONIO ALE CA",-18483
 1,17,"Zona 7","A",90,11,"SABINA CA",-18490
 1,17,"Zona 7","A",90,27,"AMADU DJALO",-18506
 1,17,"Zona 7","A",90,28,"Mamadu Borry Baray",5953948
+1,17,"Zona 7","A",90,29,"Mamadu Borry Baray",5959900
 1,17,"Zona 7","A",91,25,"DUARTE TE",-18531
 1,17,"Zona 7","A",91,26,"FONSECA TCHUDA(SANA)",-18532
+1,17,"Zona 7","A",91,27,"Cesaltina Tente Amorinho",-18533
 1,17,"Zona 7","A",94,1,"JULIA DA SILVA",-18549
 1,17,"Zona 7","A",94,7,"NELSON P.GOMES",-18555
 1,17,"Zona 7","A",94,11,"Abduramane Barri",5950373
@@ -3533,7 +3468,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","B",61,5,"EDILIA DJU",-18079
 1,17,"Zona 7","B",61,11,"JORGE L. DA COSTA",5958494
 1,17,"Zona 7","B",62,0,"Família zero",6596090
-1,17,"Zona 7","B",62,4,"SABADO CUNHA QUADE",-18088
+1,17,"Zona 7","B",62,4,"AVELINA MANDICA",-18088
 1,17,"Zona 7","B",62,17,"ANIZA M.P. DA COSTA",-18101
 1,17,"Zona 7","B",62,20,"Ismaila Djalo",5963355
 1,17,"Zona 7","B",62,21,"MAMADU INUSSA DJALO",6596090
@@ -3588,8 +3523,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","B",337,5,"Beto G. Biague",2254192
 1,17,"Zona 7","B",337,7,"DIAMANTINO NUNES",6604286
 1,17,"Zona 7","B",337,8,"Tute Armando Quade",6604651
-1,17,"Zona 7","C",43,4,"95",-17785
-1,17,"Zona 7","C",43,8,"HELDER A. GOMES CO",-17789
+1,17,"Zona 7","C",43,4,"DESEJADO CORREIA FORBES",-17785
+1,17,"Zona 7","C",43,8,"GIDELCIA H.C.CA",-17789
 1,17,"Zona 7","C",43,9,"MARIA MONTEIRO",-17790
 1,17,"Zona 7","C",43,10,"DELFINA GOMES CO",6594560
 1,17,"Zona 7","C",44,2,"AIDA SAR",-17792
@@ -3598,6 +3533,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","C",45,33,"Nicha O. Nacne",6598256
 1,17,"Zona 7","C",45,34,"Erikson Ca",6598366
 1,17,"Zona 7","C",45,35,"JULIO M.INSUMBO",6600204
+1,17,"Zona 7","C",45,36,"Aissato Culibali",6929537
 1,17,"Zona 7","C",50,1,"JULIO M.INSUMBO",-17899
 1,17,"Zona 7","C",50,8,"JOSE MONTEIRO",-17906
 1,17,"Zona 7","C",50,11,"Alfa Amadu Djalo",2070000
@@ -3643,6 +3579,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","C",138,19,"FATINHA CA",-19118
 1,17,"Zona 7","C",138,25,"Antonieta Soares Da Gama",5900865
 1,17,"Zona 7","C",138,26,"ARMANDINHO G. CO",6606299
+1,17,"Zona 7","C",138,27,"Dada Te",6909655
 1,17,"Zona 7","C",186,12,"Flavio D. S. Nhaga",6605019
 1,17,"Zona 7","C",186,13,"Jose Pinho",6605104
 1,17,"Zona 7","C",249,2,"BENVINDA KABI",-19866
@@ -3656,7 +3593,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","D",33,31,"Augusta Sanca",6612240
 1,17,"Zona 7","D",41,4,"FERNANDO CAMALA",-17745
 1,17,"Zona 7","D",41,19,"Agostinho Oriane Fernande",-17760
-1,17,"Zona 7","D",42,1,"NENE SA",-17764
+1,17,"Zona 7","D",42,1,"NENE SA",6623027
 1,17,"Zona 7","D",42,9,"Falta informação",-17772
 1,17,"Zona 7","D",42,20,"Jose Na Pana",5934120
 1,17,"Zona 7","D",42,21,"Amadeu Dju",6622802
@@ -3670,6 +3607,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","D",105,19,"Celeste Ca",6615731
 1,17,"Zona 7","D",105,20,"Celeste Sa",6615889
 1,17,"Zona 7","D",105,21,"Valdo Dju",6615988
+1,17,"Zona 7","D",105,22,"Alfaia Gomes",6906818
 1,17,"Zona 7","D",106,0,"Família zero",5047635
 1,17,"Zona 7","D",106,5,"MARIO NAUCAN",-18751
 1,17,"Zona 7","D",106,8,"Antonio Ca",2106354
@@ -3678,12 +3616,14 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","D",112,22,"Aguinelo Nandigna Wale",6613923
 1,17,"Zona 7","D",112,23,"Mario Fernandes",6613958
 1,17,"Zona 7","D",112,24,"Duque Jorge Ca",6614001
-1,17,"Zona 7","D",116,1,"ALADJE J.BATI",-18868
+1,17,"Zona 7","D",112,25,"Iano Acunobock",6907780
+1,17,"Zona 7","D",112,26,"Dionisia Sene Gomes",6907809
+1,17,"Zona 7","D",116,1,"Erickson Djombate",-18868
 1,17,"Zona 7","D",116,7,"JOAO IE",5965218
 1,17,"Zona 7","D",116,8,"Ismael C. Dumbia",5965839
 1,17,"Zona 7","D",116,9,"MARTA ANTONIO LOPES CO TE",5966010
 1,17,"Zona 7","D",116,10,"Deurico Alvarenga Natchemo",6612966
-1,17,"Zona 7","D",116,11,"Felismina Atre Ca",6613034
+1,17,"Zona 7","D",116,11,"ILENIO M. G. CA",6613034
 1,17,"Zona 7","D",116,12,"Felismino Ca",6613264
 1,17,"Zona 7","D",117,0,"Família zero",6350892
 1,17,"Zona 7","D",117,3,"Avenito Tchuda Embambe",2137179
@@ -3704,7 +3644,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","D",140,16,"Silvano Dju",6619202
 1,17,"Zona 7","D",140,17,"Judite M. Ca",6619347
 1,17,"Zona 7","D",140,18,"DEUSA A. SAMPAIO",6619542
-1,17,"Zona 7","D",170,0,"Família zero",6621475
+1,17,"Zona 7","D",170,0,"Família zero",1929185
 1,17,"Zona 7","D",170,1,"MIRA SANHA",-19382
 1,17,"Zona 7","D",170,4,"Amadu Uri Djalo",6621268
 1,17,"Zona 7","D",181,2,"IVANILSON LUIS CA",-19458
@@ -3717,8 +3657,9 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","D",251,1,"TONECAS VIEIRA",-19878
 1,17,"Zona 7","D",252,2,"EMILIANA GOMES",-19881
 1,17,"Zona 7","D",252,8,"CELESTINO VICTOR GOMES",2205802
-1,17,"Zona 7","D",340,1,"TINO VIEIRA",-20195
+1,17,"Zona 7","D",340,1,"RAIZA JULAIQUE VIEIRA",-20195
 1,17,"Zona 7","D",340,6,"Erculano J.De Carvalho",5951091
+1,17,"Zona 7","D",340,7,"Domingos Co",6918594
 1,17,"Zona 7","D",381,3,"CONSTANTINO IE",-20284
 1,17,"Zona 7","D",381,5,"Falta informação",5709309
 1,17,"Zona 7","D",381,6,"Marta Da Silva",5709415
@@ -3744,9 +3685,11 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","E",32,22,"Joia Cambaio",6571481
 1,17,"Zona 7","E",32,23,"Imbraima Sadjo Traore",6571560
 1,17,"Zona 7","E",32,24,"Sadjo Mane",6571789
+1,17,"Zona 7","E",34,0,"Família zero",6905888
 1,17,"Zona 7","E",34,18,"ARMANDO ADŽO CAMALA",-17590
 1,17,"Zona 7","E",34,30,"Victoria Djata",6572312
 1,17,"Zona 7","E",34,31,"Fidans Nhasse",6572399
+1,17,"Zona 7","E",34,32,"DEUTIZER GOMES DA SILVA",6927582
 1,17,"Zona 7","E",35,3,"Linda Bassam",-17603
 1,17,"Zona 7","E",35,16,"SOARES SADJUMA",-17615
 1,17,"Zona 7","E",35,17,"NELSON DJU",-17616
@@ -3767,10 +3710,9 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","E",40,17,"AMELIA NAPOCO",-17729
 1,17,"Zona 7","E",40,21,"HELENA DA SILVA",-17733
 1,17,"Zona 7","E",40,29,"BUBACAR DJALO",-17741
-1,17,"Zona 7","E",46,2,"MARIA ISABEL GOMES",-17834
+1,17,"Zona 7","E",46,2,"ALCIONE SA",-17834
 1,17,"Zona 7","E",46,24,"BONAI JOSE DA SILVA",-17856
-1,17,"Zona 7","E",47,9,"Luzanda F.Sa Da Costa",-17866
-1,17,"Zona 7","E",47,12,"NUNO F.M. CORREIA",-17869
+1,17,"Zona 7","E",47,12,"ALCIONE SA",-17869
 1,17,"Zona 7","E",47,18,"Aliu Seide",6574311
 1,17,"Zona 7","E",48,13,"ODAIR E.M. MADEIRA",-17885
 1,17,"Zona 7","E",48,21,"Luis Jose Sampa",6577696
@@ -3797,26 +3739,31 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","E",97,23,"Sousa Te",2104265
 1,17,"Zona 7","E",97,25,"Ze Carlos",6580317
 1,17,"Zona 7","E",97,26,"Saozinha Ca",6580384
+1,17,"Zona 7","E",97,27,"Lamine Da Silva",6905911
 1,17,"Zona 7","E",107,0,"Família zero",6580893
 1,17,"Zona 7","E",107,1,"HELENA ALBINO NAGANA",-18754
 1,17,"Zona 7","E",107,12,"SAMBA SIDIBE",-18765
 1,17,"Zona 7","E",107,14,"Bomene",6580893
 1,17,"Zona 7","E",107,15,"Aladje",6581812
+1,17,"Zona 7","E",107,16,"Nelson Ca",6907121
 1,17,"Zona 7","E",157,1,"MARTA CO",-19298
 1,17,"Zona 7","E",157,5,"Virginia Ca",5658840
 1,17,"Zona 7","E",157,6,"Maria Domingas Da Silva",6580879
 1,17,"Zona 7","E",185,9,"LEANDRO CA",2145378
 1,17,"Zona 7","E",185,11,"Ermelinda Bill Vieira",5709074
 1,17,"Zona 7","E",185,12,"Carlota Ca",6581684
+1,17,"Zona 7","E",185,13,"AUGUSTA TE",6881084
 1,17,"Zona 7","E",342,0,"Família zero",4365606
 1,17,"Zona 7","E",342,3,"LAMINE MANE",-20203
 1,17,"Zona 7","E",342,5,"ODETE BIAGUE",-20205
 1,17,"Zona 7","E",342,6,"Duarte Iaugusto Iaia",2257205
+1,17,"Zona 7","E",342,7,"Paulo Nanque",5956603
 1,17,"Zona 7","F",8,8,"Bebe F.M.Ca",-17240
 1,17,"Zona 7","F",8,16,"IVONE SA",-17247
 1,17,"Zona 7","F",8,25,"Ibraima Imbemba Djalo",60659
+1,17,"Zona 7","F",8,26,"DALTON DA SILVA",6926516
 1,17,"Zona 7","F",9,1,"CLUTE CA",-17256
-1,17,"Zona 7","F",10,0,"Família zero",5775839
+1,17,"Zona 7","F",10,0,"Família zero",6926781
 1,17,"Zona 7","F",10,1,"Augusto J. Biague",-17264
 1,17,"Zona 7","F",10,23,"BUBAR SOW",-17286
 1,17,"Zona 7","F",10,24,"MARCELO GOMES DA COSTA",-17287
@@ -3877,12 +3824,13 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","F",136,10,"Teresinha Te",6571593
 1,17,"Zona 7","F",136,11,"QUINTA IE",6571893
 1,17,"Zona 7","F",279,5,"SADJO BIAI",-19973
+1,17,"Zona 7","F",279,6,"Fatumata Camara",6917027
 1,17,"Zona 7","F",295,4,"Samanu De Oliveira",5709206
 1,17,"Zona 7","F",299,0,"Família zero",5604707
 1,17,"Zona 7","F",299,1,"ALFREDO SANCA",-20046
 1,17,"Zona 7","F",299,5,"Jovanio M. Lopes Ca",4117454
 1,17,"Zona 7","F",369,1,"BARBOSA GOMES SIMAO",-20266
-1,17,"Zona 7","F",394,0,"Família zero",6396170
+1,17,"Zona 7","F",394,0,"Família zero",5409341
 1,17,"Zona 7","F",394,1,"Flavio Asse Ie",-20291
 1,17,"Zona 7","F",394,2,"JOAO BIEM",-20292
 1,17,"Zona 7","F",394,3,"ODILIA DA SILVA",2277145
@@ -3895,23 +3843,25 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","G",21,10,"Mamadu Mussa Djalo",6577251
 1,17,"Zona 7","G",21,11,"Carlos Agostinho Zeca",6577598
 1,17,"Zona 7","G",22,2,"JOSE CAMBANCO",-17414
-1,17,"Zona 7","G",23,0,"Família zero",6862709
 1,17,"Zona 7","G",23,23,"ARMANDO JORGE QUADE",-17447
 1,17,"Zona 7","G",23,24,"CARLITOS JORGE QUADE",6579123
 1,17,"Zona 7","G",23,34,"ODAIR E.M. MADEIRA",6578997
 1,17,"Zona 7","G",23,35,"CARLITOS JORGE QUADE",6579123
 1,17,"Zona 7","G",23,36,"Maio Jorge Quade",6579165
+1,17,"Zona 7","G",23,37,"Clesio J F Gomes",6926893
 1,17,"Zona 7","G",24,1,"VICTORIA DOS SANTOS",-17455
 1,17,"Zona 7","G",24,3,"JANUARIO IE",-17457
 1,17,"Zona 7","G",25,2,"AMINATA BALDE",-17459
 1,17,"Zona 7","G",26,1,"QUINTA DA SILVA",-17463
-1,17,"Zona 7","G",27,1,"EMILIA INDEQUE",-17473
+1,17,"Zona 7","G",27,1,"EMILIA INDEQUE",6684284
 1,17,"Zona 7","G",27,4,"FRANCISCA BADINCA",-17476
 1,17,"Zona 7","G",27,7,"DIONISIA A. QUADE",-17479
 1,17,"Zona 7","G",27,10,"Mimi Nautam Biague",6585453
+1,17,"Zona 7","G",27,11,"GILBERTO BADINCA",6684284
 1,17,"Zona 7","G",28,14,"ANTONIO MANCANHA",-17494
 1,17,"Zona 7","G",28,19,"Alfredo Arlete",5702027
 1,17,"Zona 7","G",28,20,"Quintino Oliveira",6585714
+1,17,"Zona 7","G",28,21,"AMADU BAILO BA",6927301
 1,17,"Zona 7","G",131,1,"TERESA BARAI",-19039
 1,17,"Zona 7","G",131,13,"AMADU BAILO BA",-19050
 1,17,"Zona 7","G",131,15,"ABDUL DJALO",-19052
@@ -3922,10 +3872,17 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","G",144,6,"DENANO NANQUE",-19165
 1,17,"Zona 7","G",144,16,"Felismino Ie Nanque",-19175
 1,17,"Zona 7","G",144,20,"PITER LOPES NAGAR",6589089
+1,17,"Zona 7","G",144,21,"Antonio Jose Da Costa",6909990
 1,17,"Zona 7","G",145,1,"MARCELINO GOMES",-19178
 1,17,"Zona 7","G",145,11,"LURDES LEMBRA PAGO",-19188
+1,17,"Zona 7","G",145,12,"Isabel Alves Indi",6910460
 1,17,"Zona 7","G",153,2,"Idelfrides Fernando Manhala",-19272
 1,17,"Zona 7","G",153,6,"Gabriel Ie",6591835
+1,17,"Zona 7","G",154,0,"Família zero",6883611
+1,17,"Zona 7","G",154,1,"Luis Quissunde",-19276
+1,17,"Zona 7","G",154,2,"Juvencio Joma Gomes Co",-19277
+1,17,"Zona 7","G",154,10,"PITER LOPES NAGA",6912183
+1,17,"Zona 7","G",154,11,"TIDJANE SANHA",6912183
 1,17,"Zona 7","G",174,1,"Astu  Badji Sambu",-19398
 1,17,"Zona 7","G",174,6,"RELVAS CAMALA",-19403
 1,17,"Zona 7","G",174,11,"TINO DIAS",-19408
@@ -3933,6 +3890,9 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","G",372,1,"ALBERTO NANQUE (N`BUBO)",-20270
 1,17,"Zona 7","G",372,2,"TITA CANTE",4916296
 1,17,"Zona 7","G",372,3,"Tchamo Tcham",6592448
+1,17,"Zona 7","G",372,4,"Enderson Duarte Quade",6918696
+1,17,"Zona 7","G",377,1,"DENANO NANQUE",-20278
+1,17,"Zona 7","G",377,2,"DENANO NANQUE",-20279
 1,17,"Zona 7","G",379,1,"CRISTINA FERNANDES",6592578
 1,17,"Zona 7","H",29,1,"HELENA SADJO (MANJACO)",-17499
 1,17,"Zona 7","H",119,0,"Família zero",6791787
@@ -3944,12 +3904,14 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","H",119,15,"Augusto Ca",6589055
 1,17,"Zona 7","H",119,16,"BADJUDA CO",6589253
 1,17,"Zona 7","H",119,17,"DANIEL DA SILVA",6589411
+1,17,"Zona 7","H",119,18,"JOAO M.IMBAY IE",6908790
+1,17,"Zona 7","H",119,19,"AVELINA MANDICA",6908980
 1,17,"Zona 7","H",125,0,"Família zero",6791416
 1,17,"Zona 7","H",125,24,"ALFA UMARO BALDE",-18966
 1,17,"Zona 7","H",125,27,"Zaida Indy",6591624
 1,17,"Zona 7","H",125,28,"Mamadu",6591730
 1,17,"Zona 7","H",125,29,"Ussumane Djabula",6591764
-1,17,"Zona 7","H",126,0,"Família zero",5879978
+1,17,"Zona 7","H",126,0,"Família zero",4949406
 1,17,"Zona 7","H",126,4,"ESTEVAO CA",-18970
 1,17,"Zona 7","H",127,1,"QUINTA BIAGUE",-18986
 1,17,"Zona 7","H",127,10,"Sadja Mane",4916098
@@ -3957,7 +3919,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","H",128,17,"Amelia Te",6592492
 1,17,"Zona 7","H",128,18,"Nickson Gomes",6593032
 1,17,"Zona 7","H",146,1,"DOMINGAS DJU",-19189
-1,17,"Zona 7","H",146,5,"Augusta Da Silva Ca",-19193
 1,17,"Zona 7","H",146,17,"Ussumane Ba",2119524
 1,17,"Zona 7","H",150,2,"MARINHO CA",-19231
 1,17,"Zona 7","H",150,18,"Julio Co",-19247
@@ -3969,19 +3930,21 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","H",152,1,"ROSA DA SILVA",-19257
 1,17,"Zona 7","H",152,7,"Armando Ie (Sala)",-19263
 1,17,"Zona 7","H",152,15,"Danilsom Perreira Leal",6586749
-1,17,"Zona 7","H",169,0,"Família zero",4636716
+1,17,"Zona 7","H",169,0,"Família zero",6729267
 1,17,"Zona 7","H",169,3,"MANUEL MAI TCHONGO",-19373
 1,17,"Zona 7","H",169,13,"Abulai Djalo",2130085
 1,17,"Zona 7","H",169,14,"Mama Saido Djalo",6594167
 1,17,"Zona 7","H",169,15,"MAMADU DJALO",6729267
 1,17,"Zona 7","H",173,4,"TONY CA",-19396
-1,17,"Zona 7","H",173,6,"HOTTO CARLOS GOMES",2132114
+1,17,"Zona 7","H",173,6,"HOTTO CARLOS G.JUNIOR",2132114
+1,17,"Zona 7","H",173,7,"DOMINGOS QUADE",6912753
 1,17,"Zona 7","H",175,0,"Família zero",5505033
 1,17,"Zona 7","H",175,3,"AGOSTINHO DE OLIVEIRA",-19412
 1,17,"Zona 7","H",175,14,"Samira Paulo Sanca",-19423
 1,17,"Zona 7","H",175,16,"AMADU A. BARRI",-19425
 1,17,"Zona 7","H",175,19,"MAMADU G. DJALO",5709900
 1,17,"Zona 7","H",175,20,"Vladimir V. Viriato",6596025
+1,17,"Zona 7","H",183,0,"Família zero",6894473
 1,17,"Zona 7","H",183,1,"Felismina Campos",-19477
 1,17,"Zona 7","H",183,12,"Falta informação",-19488
 1,17,"Zona 7","H",183,14,"Juvencio Ca",6591058
@@ -3989,12 +3952,14 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","H",246,1,"NELSON SA",-19856
 1,17,"Zona 7","H",246,3,"Carlos Da Silva",2204571
 1,17,"Zona 7","H",246,4,"Celestina Da Silva",5710065
+1,17,"Zona 7","H",246,5,"Augusta Da Silva Ca",6916447
 1,17,"Zona 7","H",253,1,"JEAN DA SILVA",-19887
 1,17,"Zona 7","H",253,3,"JULIETA GOMES (POCHE)",-19889
-1,17,"Zona 7","H",256,1,"ANTONIO CA",-19898
+1,17,"Zona 7","H",256,1,"MIMOSA CA",-19898
 1,17,"Zona 7","H",256,2,"JULIO AFONSO CA",-19899
-1,17,"Zona 7","H",285,0,"Família zero",6164007
+1,17,"Zona 7","H",285,0,"Família zero",6917533
 1,17,"Zona 7","H",285,4,"DUARTE OCUNENE",6623592
+1,17,"Zona 7","H",285,5,"Narina Gomes",6917533
 1,17,"Zona 7","H",365,1,"TALITA CA",-20251
 1,17,"Zona 7","H",368,0,"Família zero",6792054
 1,17,"Zona 7","H",368,3,"Jose Dias",-20259
@@ -4012,7 +3977,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","I",149,14,"Jose Carlos Mendonca",6601766
 1,17,"Zona 7","I",149,15,"Micherino Da Costa",6602161
 1,17,"Zona 7","I",151,1,"JOAO F. DA SILVA",-19248
-1,17,"Zona 7","I",151,6,"DOMINGAS DA SILVA",-19253
+1,17,"Zona 7","I",151,6,"DOMINGAS DA SILVA",6607729
 1,17,"Zona 7","I",151,8,"FILOMENA SA",-19255
 1,17,"Zona 7","I",151,10,"Djamila  Joaozinho Da Silva",5398091
 1,17,"Zona 7","I",172,1,"INU L.A.DA SILVA",-19389
@@ -4021,21 +3986,23 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","I",182,2,"BRAIMA DJALO",-19465
 1,17,"Zona 7","I",182,3,"Alimo Balde",-19466
 1,17,"Zona 7","I",182,11,"RICARDINA A. CO",-19474
+1,17,"Zona 7","I",182,12,"Adulai Djalo",-19475
 1,17,"Zona 7","I",184,1,"NOEMI DA SILVA",-19490
 1,17,"Zona 7","I",184,9,"JUCA CA",5396709
 1,17,"Zona 7","I",231,0,"Família zero",6608476
 1,17,"Zona 7","I",231,3,"PAULO CA",-19791
 1,17,"Zona 7","I",231,4,"Jorge Pereira",-19792
-1,17,"Zona 7","I",231,6,"ERSILIO",-19794
 1,17,"Zona 7","I",231,8,"MUSSA DJALO",4275495
 1,17,"Zona 7","I",231,10,"Mussa Djalo",5380955
 1,17,"Zona 7","I",231,11,"Adulai Djalo",6608476
 1,17,"Zona 7","I",232,5,"Oguerra Co",2191972
+1,17,"Zona 7","I",232,6,"Antonio Sa",6923172
 1,17,"Zona 7","I",237,9,"JOSE CARLOS FERNANDES",6609458
 1,17,"Zona 7","I",237,10,"Victorino Ca",6609762
 1,17,"Zona 7","I",254,4,"BERNARDO CAMBANCO",-19893
 1,17,"Zona 7","I",255,1,"CAMPOS CA",-19894
 1,17,"Zona 7","I",255,5,"Romao Fode",6610604
+1,17,"Zona 7","I",255,6,"NELIDA IE",6924592
 1,17,"Zona 7","I",257,4,"CELESTE AUGUSTO UTEIO",72820
 1,17,"Zona 7","I",257,5,"Nelson Tenente",6611102
 1,17,"Zona 7","I",308,1,"MARIAMA INDI",-20074
@@ -4050,9 +4017,11 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","I",361,2,"QUINTA NENTI",-20242
 1,17,"Zona 7","I",361,4,"Paulino Mendes",2268479
 1,17,"Zona 7","I",371,1,"CABRAL IE",-20269
+1,17,"Zona 7","I",374,3,"Nposs Alen Ca",6924437
 1,17,"Zona 7","I",374,4,"Marcelo Ca",6614926
 1,17,"Zona 7","I",374,5,"Risze Nanque",6615177
 1,17,"Zona 7","I",374,6,"Rita",6615438
+1,17,"Zona 7","I",374,7,"Nposs Alen Ca",6924437
 1,17,"Zona 7","I",375,2,"MARIA AMELIA C.PEREIRA",6617999
 1,17,"Zona 7","I",375,3,"Zita Da Silva",6618141
 1,17,"Zona 7","I",388,1,"AUGUSTO LOPES",-20288
@@ -4060,11 +4029,11 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","I",412,2,"BEATRIZ TE",5381212
 1,17,"Zona 7","I",412,3,"Eugenia Sa",6616404
 1,17,"Zona 7","I",412,4,"Ondone Ca",6723030
+1,17,"Zona 7","I",418,0,"Família zero",6906512
 1,17,"Zona 7","I",418,1,"Rundiho G.Correia",5295799
 1,17,"Zona 7","I",418,3,"VICTORIA IE",5301689
 1,17,"Zona 7","I",422,1,"ACAI CA",5380859
 1,17,"Zona 7","I",449,1,"Latavio Ca",6618257
-1,17,"Zona 7","I",449,2,"Nposs Alen Ca",6618365
 1,17,"Zona 7","I",450,1,"AGOSTINHO NANQUE",6754691
 1,17,"Zona 7","J",307,4,"Francelino Ca",-20073
 1,17,"Zona 7","J",313,3,"AGOSTINHO CO",-20085
@@ -4075,6 +4044,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","J",317,1,"BENEDITA IE",-20103
 1,17,"Zona 7","J",317,2,"TCHUMA GOMES CA",-20104
 1,17,"Zona 7","J",317,9,"Elton Mario Malomar",6609048
+1,17,"Zona 7","J",317,10,"Domingas Indi",6921452
 1,17,"Zona 7","J",318,1,"SILVINA MENDELA",-20109
 1,17,"Zona 7","J",318,3,"Willian Mingo",5395102
 1,17,"Zona 7","J",318,4,"Empe Mingo",6602713
@@ -4106,16 +4076,19 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","J",364,1,"FERNANDO DA SILVA",-20249
 1,17,"Zona 7","J",387,1,"PUNTCHA INDI",-20287
 1,17,"Zona 7","J",387,3,"ISABEL IE",6610828
+1,17,"Zona 7","J",387,4,"Guimares Te",6921903
 1,17,"Zona 7","J",389,1,"BERTA FONSECA",-20289
 1,17,"Zona 7","J",389,2,"Mamadu Marna",2276048
+1,17,"Zona 7","J",390,0,"Família zero",6886945
 1,17,"Zona 7","J",390,2,"JOANINHA IE",5403724
 1,17,"Zona 7","J",390,3,"Roberto G.Correia",6827473
 1,17,"Zona 7","J",391,1,"IVETE INDI",-20290
 1,17,"Zona 7","J",391,4,"Bilobica D. Impaque",5403303
 1,17,"Zona 7","J",391,5,"Nelson Cruz Indi",6614701
 1,17,"Zona 7","J",397,2,"Anabela Ie",2205995
-1,17,"Zona 7","J",397,4,"Domingos Ca",5533414
+1,17,"Zona 7","J",397,4,"PRETA INDI",5533414
 1,17,"Zona 7","J",397,5,"Jaime Ca",5533449
+1,17,"Zona 7","J",397,6,"HONORIO TE",6921926
 1,17,"Zona 7","J",410,1,"Januario Ombao Gomes",6600848
 1,17,"Zona 7","J",411,1,"Romeu  Ie",5395378
 1,17,"Zona 7","J",411,3,"Edmilson Da Silva",6619510
@@ -4148,7 +4121,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","K",305,1,"FERNANDO M.T. DA MALIAS",-20062
 1,17,"Zona 7","K",305,3,"FAUSTINO AGOLO INDI",-20064
 1,17,"Zona 7","K",305,6,"CONSTANTINO INCANHA",168723
-1,17,"Zona 7","K",306,1,"CARLOTA LOPES",-20067
+1,17,"Zona 7","K",306,1,"PRINCE AFONSO CO",-20067
 1,17,"Zona 7","K",306,4,"FILENCIA G. MENDONCA",2230815
 1,17,"Zona 7","K",319,4,"Pe Francois Maomy",6609901
 1,17,"Zona 7","K",320,0,"Família zero",6149655
@@ -4160,6 +4133,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","K",331,3,"DOMINGOS FERNANDES",-20156
 1,17,"Zona 7","K",331,6,"Yanik M.Sa",5612396
 1,17,"Zona 7","K",331,7,"Angelina Mustasse",6612395
+1,17,"Zona 7","K",359,1,"Roque Joao Euroco",-20234
 1,17,"Zona 7","K",359,2,"NHARA BARBOSA",-20235
 1,17,"Zona 7","K",359,5,"BABO TCHAM",5692558
 1,17,"Zona 7","K",367,1,"DOMINGOS CONSTANTINO INDI",-20256
@@ -4196,10 +4170,14 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","L",115,10,"IAMCUBA MANE",-18865
 1,17,"Zona 7","L",115,15,"Mamadjan Djalo",6614076
 1,17,"Zona 7","L",115,16,"Alficene Djalo",6614130
+1,17,"Zona 7","L",115,17,"Heliana Ocante Sa",6907921
 1,17,"Zona 7","L",120,3,"MANUEL DA SILVA",-18897
 1,17,"Zona 7","L",120,7,"Antonio Soares",-18901
 1,17,"Zona 7","L",120,12,"Cesario Indi",5544234
 1,17,"Zona 7","L",120,13,"Joao Quenedi Costa",5544273
+1,17,"Zona 7","L",120,14,"Iaia Ture",6909005
+1,17,"Zona 7","L",120,15,"Felismina A.Da Silva",6909110
+1,17,"Zona 7","L",120,16,"Honorio A. Ca",6909204
 1,17,"Zona 7","L",130,1,"CRISTIANO MENDES",-19021
 1,17,"Zona 7","L",130,19,"Silverio B. Coplama",2110821
 1,17,"Zona 7","L",130,20,"Braima L. Barraca",6609217
@@ -4216,7 +4194,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","L",277,1,"AGUIAR DJU",-19963
 1,17,"Zona 7","L",278,3,"Suzete Bomba",-19967
 1,17,"Zona 7","L",278,5,"ROFINO CA",5900065
-1,17,"Zona 7","L",284,1,"ROSALINA NANQUE",-19996
+1,17,"Zona 7","L",278,6,"Jailson Sergio Bomba",6916916
 1,17,"Zona 7","L",284,2,"HONORIO GOMES",-19997
 1,17,"Zona 7","L",284,6,"Djuco F. Gomes",6610736
 1,17,"Zona 7","L",294,1,"ANTONIO CABRAL",-20030
@@ -4253,6 +4231,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","M",309,1,"MARCOS CA",-20075
 1,17,"Zona 7","M",309,4,"POSSAM CA",-20078
 1,17,"Zona 7","M",309,5,"Rosa Agostinho Ca",2233726
+1,17,"Zona 7","M",310,0,"Família zero",6887599
 1,17,"Zona 7","M",310,1,"LUIS CORREIA",5953522
 1,17,"Zona 7","M",310,2,"Paula Co",5953585
 1,17,"Zona 7","M",310,3,"SABADO J. GOMES",6572949
@@ -4261,6 +4240,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","M",332,59,"MARCALINO R. CORREIA",6264724
 1,17,"Zona 7","M",332,60,"CLAUDIA D.MARTINS",6574963
 1,17,"Zona 7","M",332,61,"SONIA CA",6575301
+1,17,"Zona 7","M",332,62,"Claudi B.C. Dju",6926013
 1,17,"Zona 7","M",334,1,"GASTAO CA",-20168
 1,17,"Zona 7","M",345,2,"CELESTE CA",-20214
 1,17,"Zona 7","M",345,4,"SANA",5951058
@@ -4278,6 +4258,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","M",362,7,"ARMANDO P. OKINANTO",6587479
 1,17,"Zona 7","M",382,1,"LUIS TE",-20285
 1,17,"Zona 7","M",382,2,"Papa Dias",5721097
+1,17,"Zona 7","M",401,0,"Família zero",6888047
 1,17,"Zona 7","M",401,1,"TEREZINHA IE",2075056
 1,17,"Zona 7","M",401,2,"Sade Dju",5715396
 1,17,"Zona 7","M",401,3,"GERMINA L. P. CA",6579042
@@ -4288,13 +4269,14 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","M",439,2,"FINA IE",5735278
 1,17,"Zona 7","M",439,3,"CONSTANTINO V.IE",5736372
 1,17,"Zona 7","M",440,1,"NENE WASSA",4806203
-1,17,"Zona 7","M",447,1,"Domingos Te",6585665
+1,17,"Zona 7","M",447,1,"Mamboi Ca",6585665
 1,17,"Zona 7","N",2,1,"GERALDA BARBOSA/PONU DJON",-17175
 1,17,"Zona 7","N",2,12,"AUGUSTO RODRIGUES",-17186
 1,17,"Zona 7","N",2,15,"NETA DA SILVA",2009353
 1,17,"Zona 7","N",2,16,"Florentino M.G.Silva",6569537
 1,17,"Zona 7","N",3,1,"VITAL P.CANDOQUE",-17189
 1,17,"Zona 7","N",3,11,"FELICIANO MALU(NDUBA)",-17199
+1,17,"Zona 7","N",3,12,"Lucinda Barai",6926333
 1,17,"Zona 7","N",4,8,"Walter Correia",4990650
 1,17,"Zona 7","N",4,9,"Agostinho Armando Gomes",6570752
 1,17,"Zona 7","N",4,10,"Lania Pedro Da Costa",6570905
@@ -4302,8 +4284,10 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","N",92,0,"Família zero",4420688
 1,17,"Zona 7","N",92,1,"LINDA DA SILVA",-18534
 1,17,"Zona 7","N",92,11,"Epifanio Ca",6571826
+1,17,"Zona 7","N",99,0,"Família zero",6906370
 1,17,"Zona 7","N",99,1,"ROSA DA SILVA",-18641
 1,17,"Zona 7","N",99,16,"ROSA DA SILVA",5376371
+1,17,"Zona 7","N",99,17,"Alassan Djuf",6906370
 1,17,"Zona 7","N",100,3,"BERNARDO SEIDE",-18656
 1,17,"Zona 7","N",100,14,"ABEL BARBOSA",-18667
 1,17,"Zona 7","N",100,15,"MAT SEIDE",-18668
@@ -4314,10 +4298,12 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","N",100,20,"Amadu Aliu Djalo",2105059
 1,17,"Zona 7","N",100,22,"Amadu Djalo",6580917
 1,17,"Zona 7","N",103,18,"SEGUNDA GOMES",-18714
-1,17,"Zona 7","N",103,25,"Aladje Djalo",6579023
+1,17,"Zona 7","N",103,25,"Aladje Djalo",6285405
+1,17,"Zona 7","N",103,26,"Junior Alves",6906794
 1,17,"Zona 7","N",104,8,"CABANJA LOPES (BEBE)",-18727
 1,17,"Zona 7","N",104,19,"LUIS IE",5320047
 1,17,"Zona 7","N",104,20,"Sabesteao Duarte Gomes",6582455
+1,17,"Zona 7","N",129,5,"Hilario D.Gmes",-19011
 1,17,"Zona 7","N",129,10,"HELENA DA SILVA CAMARA",-19016
 1,17,"Zona 7","N",129,18,"Abudo Rui Gomes",5343805
 1,17,"Zona 7","N",133,11,"PAULO AUGUSTO SILVA",-19061
@@ -4327,6 +4313,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","N",143,1,"JOAO MENDES",-19149
 1,17,"Zona 7","N",143,13,"Fatima Correia",6580483
 1,17,"Zona 7","N",143,14,"Januario Paulo Cabral",6580678
+1,17,"Zona 7","N",143,15,"Mamadu Saliu Balde",6909907
 1,17,"Zona 7","N",187,0,"Família zero",6416971
 1,17,"Zona 7","N",187,1,"UMO DJALO",-19515
 1,17,"Zona 7","N",187,2,"CADI DJALO",-19516
@@ -4344,7 +4331,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","N",300,4,"Fidel Agostinho  Ca",5611212
 1,17,"Zona 7","N",347,1,"FILOMENA MENDONCA",2261536
 1,17,"Zona 7","N",347,2,"Augusto Gomes Correia",2262162
-1,17,"Zona 7","N",358,1,"Belmira Gomes Cuino",-20233
+1,17,"Zona 7","N",358,1,"MARIA ESPERANCA SOARES",-20233
 1,17,"Zona 7","N",366,1,"JULIO INDI",-20252
 1,17,"Zona 7","N",366,5,"Abubacar Queita",2269761
 1,17,"Zona 7","N",366,7,"Mario Correia",6577514
@@ -4360,7 +4347,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","N",403,0,"Família zero",6584031
 1,17,"Zona 7","N",403,1,"Tonito Ie",5710642
 1,17,"Zona 7","N",403,2,"Vanilton Ie",6584031
-1,17,"Zona 7","N",415,1,"ANTONIO FERNANDO CORREIA",2280632
+1,17,"Zona 7","N",415,1,"MARIA AFONSO CA",2280632
 1,17,"Zona 7","N",415,2,"AUGUSTO CO",5957147
 1,17,"Zona 7","O",121,2,"MARIA CA GOMES",-18907
 1,17,"Zona 7","O",121,6,"Mali Cande",6570479
@@ -4384,6 +4371,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","O",160,16,"MARY BUNDAO",-19331
 1,17,"Zona 7","O",160,18,"Mumine Ture",2124516
 1,17,"Zona 7","O",160,20,"Zanda Ca",2136468
+1,17,"Zona 7","O",160,21,"Janice Campotche Adjupicho",6912307
 1,17,"Zona 7","O",162,1,"AUGUSTO DJU",-19333
 1,17,"Zona 7","O",171,1,"ALFREDO CO (ADEPO)",-19385
 1,17,"Zona 7","O",171,4,"ADRIANO GOMES",-19388
@@ -4398,6 +4386,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","O",190,1,"FERNANDO DA SILVA INDI",-19534
 1,17,"Zona 7","O",190,4,"Angelino C. Te",-19537
 1,17,"Zona 7","O",190,8,"Gaspar Da Silva",6577761
+1,17,"Zona 7","O",297,2,"Judimila Lopes Ca",-20039
 1,17,"Zona 7","O",297,3,"EMILIANA DJATA",-20040
 1,17,"Zona 7","O",297,5,"Felismina Gomes Correia",6574353
 1,17,"Zona 7","O",322,1,"CASIMIRO CA",-20122
@@ -4433,6 +4422,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","P",148,2,"ARMANDO RODRIGUES",-19217
 1,17,"Zona 7","P",148,5,"JOEL ALO FERNANDES",6584325
 1,17,"Zona 7","P",163,1,"AUGUSTO NANQUE",-19334
+1,17,"Zona 7","P",163,3,"Deby E.Mancabu",-19336
 1,17,"Zona 7","P",163,6,"ANTONIO NANQUE",-19339
 1,17,"Zona 7","P",163,8,"Romana Jose Correia",6585014
 1,17,"Zona 7","P",164,12,"ALMEIDA DA SILVA KIBUMBA",2126018
@@ -4481,10 +4471,10 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","Q",178,2,"FERNANDINHO ALMIRANTE",-19433
 1,17,"Zona 7","Q",178,16,"TINO VIEIRA",6587992
 1,17,"Zona 7","Q",191,4,"Fernando Co",-19543
-1,17,"Zona 7","Q",191,8,"DULCE CA",6588702
 1,17,"Zona 7","Q",191,9,"Papis Ca",6588930
 1,17,"Zona 7","Q",191,10,"Mario Costa Cabral",6589125
 1,17,"Zona 7","Q",191,11,"Marciano A. Indi",6589351
+1,17,"Zona 7","Q",191,12,"Atchi Mendes",6913810
 1,17,"Zona 7","Q",192,2,"JOSE JOAO",-19547
 1,17,"Zona 7","Q",193,4,"NECAS DJU",-19552
 1,17,"Zona 7","Q",193,12,"Guilherme Joao Dos Santos",839904
@@ -4500,6 +4490,9 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","Q",224,15,"Saico Umaro Djalo",6599288
 1,17,"Zona 7","Q",224,16,"Aliu",6599369
 1,17,"Zona 7","Q",224,17,"Judute Paulo Ca",6600294
+1,17,"Zona 7","Q",224,18,"LUDIMILA DA SILVA",6915151
+1,17,"Zona 7","Q",224,19,"Amadu Sadjo Djalo",6915494
+1,17,"Zona 7","Q",224,20,"DULCE CA",6915808
 1,17,"Zona 7","Q",235,3,"BRITO CO",-19807
 1,17,"Zona 7","Q",235,5,"Amilton Silvano Sa",6596080
 1,17,"Zona 7","Q",266,1,"ERNESTO DA SILVA",-19924
@@ -4517,6 +4510,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","Q",273,3,"CHICO CO (FRANCISCO)",-19945
 1,17,"Zona 7","Q",273,5,"Agostinho Sa",5718096
 1,17,"Zona 7","Q",301,1,"TERESA DE OLIVEIRA",-20052
+1,17,"Zona 7","Q",325,1,"MAGUIDA P. CABRAL",-20129
 1,17,"Zona 7","Q",325,2,"MAGUIDA P. CABRAL",-20130
 1,17,"Zona 7","Q",325,9,"Manerto Barbosa",6594257
 1,17,"Zona 7","Q",325,10,"Jaime Soares",6594429
@@ -4556,9 +4550,11 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,17,"Zona 7","R",226,73,"Safurlai Djalo",6609410
 1,17,"Zona 7","R",226,74,"Samba Camara",6609575
 1,17,"Zona 7","R",226,75,"Jargerson N. F. Balde",6609923
+1,17,"Zona 7","R",226,76,"Sebastiao T.Na Ncuta",6921000
 1,17,"Zona 7","R",227,0,"Família zero",3015743
 1,17,"Zona 7","R",227,3,"CAROLINA TE",-19766
 1,17,"Zona 7","R",227,16,"Danilson Gomes Da Costa",6591219
+1,17,"Zona 7","R",227,17,"Nino Sa",6921575
 1,17,"Zona 7","R",234,5,"CAITSON BIAGUE",2195891
 1,17,"Zona 7","R",234,7,"Paulo Domingos Dias (Paulino)",6590693
 1,17,"Zona 7","R",259,1,"FLORENTINO M.PEREIRA",6588950
@@ -4662,7 +4658,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,18,"Zona 8","A",91,3,"SABADO CA",-21268
 1,18,"Zona 8","A",124,4,"Feliciano Alexandre Forbes",6648407
 1,18,"Zona 8","A",125,2,"BENEDITO LOPES DA FONSECA",-21602
-1,18,"Zona 8","A",134,0,"Família zero",6880183
+1,18,"Zona 8","A",134,0,"Família zero",6649736
 1,18,"Zona 8","A",134,15,"LIDIA CO",-21686
 1,18,"Zona 8","A",134,29,"Venancia P. Ie",6649431
 1,18,"Zona 8","A",134,30,"Jaime P. Silva",6649736
@@ -4699,7 +4695,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,18,"Zona 8","B",31,10,"ANASTACIO V. A. BONDY",-20625
 1,18,"Zona 8","B",32,1,"ROSA MARIA L. DA GAMA",-20626
 1,18,"Zona 8","B",34,9,"DIONISIA CASSAMA",-20657
-1,18,"Zona 8","B",34,11,"ALBERTO PEREIRA",-20659
+1,18,"Zona 8","B",34,11,"Alberto Tamba",-20659
 1,18,"Zona 8","B",101,3,"SECO DARAME",-21368
 1,18,"Zona 8","B",120,1,"ODETE NANQUE (SIDU)",-21566
 1,18,"Zona 8","B",120,6,"LIDEL NANQUE",-21571
@@ -4731,6 +4727,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,18,"Zona 8","C",103,12,"Aliu Djalo",5343941
 1,18,"Zona 8","C",103,14,"Esmaila Djalo",6661965
 1,18,"Zona 8","C",112,1,"Elton Mario Malomar",-21491
+1,18,"Zona 8","C",114,0,"Família zero",6880974
 1,18,"Zona 8","C",114,1,"TERESA MENDES",-21503
 1,18,"Zona 8","C",114,6,"GABRIEL MENDES",-21508
 1,18,"Zona 8","C",126,1,"CARLOS IE",-21605
@@ -4844,6 +4841,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,18,"Zona 8","D",161,17,"Arlindo Jose Gomes",5508355
 1,18,"Zona 8","D",161,18,"Gilberto Domingos Ca",6678745
 1,18,"Zona 8","D",161,19,"Luis Ie",6679487
+1,18,"Zona 8","D",162,0,"Família zero",6891219
 1,18,"Zona 8","D",162,3,"FELISMINO GOMES SA",-21926
 1,18,"Zona 8","D",162,7,"Julinho Bras Da Silva",4916564
 1,18,"Zona 8","D",177,1,"ANTONIO TE",-22009
@@ -5036,6 +5034,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,18,"Zona 8","H",52,21,"Antonio A Assucar",6676890
 1,18,"Zona 8","H",52,22,"Laurindo Jose De Sousa",6677019
 1,18,"Zona 8","H",52,23,"Dinis Bras Co",6677132
+1,18,"Zona 8","H",52,24,"Mamadu S.Djalo",6926604
 1,18,"Zona 8","H",53,5,"Falta informação",-20841
 1,18,"Zona 8","H",53,6,"MARIO ATITA MOGI",-20842
 1,18,"Zona 8","H",53,17,"JORGE A.SOUSA",5514033
@@ -5065,7 +5064,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,18,"Zona 8","H",86,18,"IMURANA DJALO",-21204
 1,18,"Zona 8","H",86,20,"Djibril Mendes",5512988
 1,18,"Zona 8","H",86,21,"Adulai Djau",5726842
-1,18,"Zona 8","H",86,22,"Buacar Djalo",5510479
+1,18,"Zona 8","H",86,22,"Buacar Djalo",5726957
 1,18,"Zona 8","H",86,23,"Alfa Umaro Djalo",6682284
 1,18,"Zona 8","H",86,24,"Celestina A. Cardoso",6682388
 1,18,"Zona 8","H",86,25,"Sana",6682421
@@ -5085,6 +5084,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,18,"Zona 8","H",99,0,"Família zero",6861212
 1,18,"Zona 8","H",99,6,"MARIA AUGUSTA CO",-21335
 1,18,"Zona 8","H",99,30,"Daniel Domingos Te",6683549
+1,18,"Zona 8","H",99,31,"ANITA TENENTE MBE",6926663
 1,18,"Zona 8","H",113,12,"Necas Sa",2312633
 1,18,"Zona 8","H",115,1,"AMINATA MANGA",-21509
 1,18,"Zona 8","H",115,3,"Zinho Pereira",5515347
@@ -5116,6 +5116,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,18,"Zona 8","H",149,18,"BRAIMA EMBALO",5522412
 1,18,"Zona 8","H",149,19,"Mamadu Djalo",6686631
 1,18,"Zona 8","H",149,20,"Adulai Djalo",6710877
+1,18,"Zona 8","H",149,21,"CADIJATU DJAU",6926855
 1,18,"Zona 8","H",183,1,"QUINTINO CAETANO",-22023
 1,18,"Zona 8","H",183,2,"DOMINGAS DA CUNHA",-22024
 1,18,"Zona 8","H",204,1,"OKER TAVARES",2336889
@@ -5163,8 +5164,9 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,18,"Zona 8","I",186,9,"Linda Ca",6692928
 1,18,"Zona 8","I",186,10,"Catia Nanque",6693047
 1,18,"Zona 8","I",187,1,"BONIFACIO VIEIRA",6693889
+1,18,"Zona 8","I",187,2,"TUTI SA",6926546
 1,18,"Zona 8","I",191,10,"Tcherno Djamanca",6696680
-1,18,"Zona 8","I",191,11,"Jose Ca",6597734
+1,18,"Zona 8","I",191,11,"Jose Ca",6697416
 1,18,"Zona 8","I",191,12,"Rosaria Co",6697806
 1,18,"Zona 8","I",197,0,"Família zero",3289592
 1,18,"Zona 8","I",197,2,"Laurenco Marciano Gomes",2333961
@@ -5203,6 +5205,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,18,"Zona 8","J",166,4,"HILARIA DA SILVA",-21960
 1,18,"Zona 8","J",166,6,"Morto Da Silva",6688230
 1,18,"Zona 8","J",169,1,"MARIA AUGUSTA VIEIRA",-21983
+1,18,"Zona 8","J",194,0,"Família zero",6886418
 1,18,"Zona 8","J",194,1,"Helena Ca ( Fina )",-22063
 1,18,"Zona 8","J",194,2,"Ivone C.De Apof",6688653
 1,18,"Zona 8","J",196,1,"ADELINO CA",-22064
@@ -5611,7 +5614,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,19,"Zona 9","I",80,1,"JORGE ANHES",-22845
 1,19,"Zona 9","I",80,6,"DIMITROVINA ANHES",-22848
 1,19,"Zona 9","I",80,7,"CELESTE CA",-22849
-1,19,"Zona 9","I",133,2,"CELESTE DJU",-23121
+1,19,"Zona 9","I",133,2,"Oziana Fernando Mendes",-23121
 1,19,"Zona 9","I",133,4,"Onoto S.B.P.Ussila",6655509
 1,19,"Zona 9","I",134,3,"TEREZINHA CO",-23124
 1,19,"Zona 9","I",134,6,"FILOMENA CA",2273459
@@ -5642,6 +5645,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 1,19,"Zona 9","I",193,9,"NADIA CA",6649684
 1,19,"Zona 9","I",194,6,"Nandjai Indi",6649998
 1,19,"Zona 9","I",194,7,"VALDIMIR GOMES",6650083
+1,19,"Zona 9","I",194,8,"BASILIO G. FERNANDES",6889559
 1,19,"Zona 9","I",199,1,"Terezinha Te",2301095
 1,19,"Zona 9","I",199,2,"CELESTE INDI",6812158
 1,19,"Zona 9","I",200,2,"LINDA IE",-23294
@@ -5730,7 +5734,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,21,"Zona 1","A",96,10,"HELENA CA",529021
 2,21,"Zona 1","A",99,2,"DOMINGAS SA",-24242
 2,21,"Zona 1","A",99,7,"SADJO SANE",627796
-2,21,"Zona 1","A",112,2,"JORGE GOMES",-24328
+2,21,"Zona 1","A",112,2,"JORGE GOMES",6532512
 2,21,"Zona 1","A",112,12,"Aristides Agostinho Vaz Vieira",4037843
 2,21,"Zona 1","A",112,13,"Tena Mendes",5009681
 2,21,"Zona 1","A",112,14,"Oscar Pereira",5009794
@@ -5750,7 +5754,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,21,"Zona 1","A",128,13,"Daniel Sa",6616345
 2,21,"Zona 1","A",129,2,"LEONTINO VAZ",-24426
 2,21,"Zona 1","A",130,3,"Naidira Gomes Sa",-24429
-2,21,"Zona 1","A",130,7,"Francisco Da Silva - Tchitchan",14016
+2,21,"Zona 1","A",130,7,"Falta informação",14016
 2,21,"Zona 1","A",130,10,"ALFA BA",641555
 2,21,"Zona 1","A",130,11,"DAUDA BARRI",641873
 2,21,"Zona 1","A",130,14,"Amadu Uri Balde",5011602
@@ -5791,7 +5795,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,21,"Zona 1","B",57,17,"Mama Sano Djalo",5521263
 2,21,"Zona 1","B",57,18,"Mohamed Djalo",6530089
 2,21,"Zona 1","B",57,19,"JOSE CARLOS TCHUDA",6770533
-2,21,"Zona 1","B",58,4,"Ze Carlos Pereira",-23868
 2,21,"Zona 1","B",58,8,"REIMUNDO PINTO",671734
 2,21,"Zona 1","B",58,10,"JULIANA DA SILVA",6530667
 2,21,"Zona 1","B",58,11,"Catia Marisa Jorge Silva",6770707
@@ -5855,7 +5858,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,21,"Zona 1","C",42,13,"DJUCO DJASSI",-23768
 2,21,"Zona 1","C",42,14,"Cesaltina Francisco Tuti (Baifaz)",699419
 2,21,"Zona 1","C",43,1,"Deocliciano Vaz Fernandes",-23769
-2,21,"Zona 1","C",43,2,"Nino M.Santos",-23770
 2,21,"Zona 1","C",44,1,"NENE SUMBA",-23773
 2,21,"Zona 1","C",45,1,"AGOSTINHO LOPES",-23784
 2,21,"Zona 1","C",45,8,"MAMUDU GUENEDI",-23791
@@ -5870,7 +5872,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,21,"Zona 1","C",94,19,"INES CASSAMA",6534904
 2,21,"Zona 1","C",94,20,"Mussa Ndong",6535036
 2,21,"Zona 1","C",94,21,"Jaime Banco Dju",6535071
-2,21,"Zona 1","C",111,1,"MORTO NDAFA",6540299
+2,21,"Zona 1","C",111,1,"MORTO NDAFA",-24322
 2,21,"Zona 1","C",111,7,"MORTO NDAFA",6540299
 2,21,"Zona 1","C",111,8,"Mussa",6540403
 2,21,"Zona 1","C",111,9,"Babacar",6540417
@@ -5885,7 +5887,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,21,"Zona 1","C",166,1,"MARIAZINHA FERREIRA",-24552
 2,21,"Zona 1","C",166,2,"Junior",6541672
 2,21,"Zona 1","C",166,3,"Dufna Rufna",6777729
-2,21,"Zona 1","D",16,1,"OLIMPIO CO",-23472
+2,21,"Zona 1","D",16,1,"OLIMPIO CO",6528899
 2,21,"Zona 1","D",16,18,"Daisi S. Cardoso",293346
 2,21,"Zona 1","D",16,21,"DUQUE WILSON GOMES",6528774
 2,21,"Zona 1","D",16,22,"NEUSA INACIO TE",6528899
@@ -5954,7 +5956,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,21,"Zona 1","E",5,1,"RAUL CA",-23359
 2,21,"Zona 1","E",6,6,"Artimisa A.C. Biai",730816
 2,21,"Zona 1","E",6,7,"ANICETE ALVES",4995289
-2,21,"Zona 1","E",14,0,"Família zero",6369357
+2,21,"Zona 1","E",14,0,"Família zero",6666952
 2,21,"Zona 1","E",14,1,"JULIA FERNANDES",-23435
 2,21,"Zona 1","E",14,27,"MAMADU SAIDO DJALO",-23461
 2,21,"Zona 1","E",14,28,"TCHERNO MUSSA DJALO",-23462
@@ -6037,7 +6039,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,21,"Zona 1","F",89,18,"Mamadu Aliu Djalo",6537900
 2,21,"Zona 1","F",89,19,"Tcherno Djalo",6537961
 2,21,"Zona 1","F",89,20,"Tcherno Sidi Djalo",6538016
-2,21,"Zona 1","F",92,0,"Família zero",6284503
+2,21,"Zona 1","F",92,0,"Família zero",6284843
 2,21,"Zona 1","F",92,4,"DADINHO CA",-24189
 2,21,"Zona 1","F",92,5,"Pereira Artur",-24190
 2,21,"Zona 1","F",101,1,"DEOLINDA FERNANDO GOMES",-24250
@@ -6102,8 +6104,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,21,"Zona 1","H",179,1,"Alberto Ca",5065180
 2,21,"Zona 1","H",179,2,"Rozinha Nanque (Apili)",5065300
 2,21,"Zona 1","H",183,1,"MAMADU DJALO",4784498
-2,21,"Zona 1","H",183,2,"Mamadu Djan Djalo",4785079
-2,21,"Zona 1","H",183,3,"Mamadjam Djalo",6538776
+2,21,"Zona 1","H",183,2,"Mamadjan Djalo",4785079
 2,21,"Zona 1","H",188,1,"Madiu Djalo",6551812
 2,21,"Zona 1","H",188,2,"Mamadu Iaia Djalo",6551946
 2,21,"Zona 1","I",69,2,"LENIN PEDRO DA COSTA",-23986
@@ -6187,6 +6188,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","A",39,18,"Amadu Uri Djalo",6542738
 2,22,"Zona 2","A",39,19,"Baba Henrique",6542811
 2,22,"Zona 2","A",40,1,"ARLETE DA COSTA",-24912
+2,22,"Zona 2","A",40,17,"DOMINGAS CO",932033
 2,22,"Zona 2","A",40,18,"MARIA GOMES DJU",932755
 2,22,"Zona 2","A",40,20,"Joaninha Vieira Da Silva",994617
 2,22,"Zona 2","A",40,24,"Angelina Co",5034250
@@ -6236,7 +6238,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","A",131,7,"Maikel Lopes",6794667
 2,22,"Zona 2","A",132,1,"MORREIRA INDI",-25600
 2,22,"Zona 2","A",143,1,"FINA INDI (ROFINA)",1704376
-2,22,"Zona 2","B",47,1,"Joao Carlos A.Ribeiro(Calo",-24992
+2,22,"Zona 2","B",47,1,"TARIZA PERREIRA MIRANDA",-24992
 2,22,"Zona 2","B",47,11,"Reinaldo Cardoso - Mondinho",-25002
 2,22,"Zona 2","B",47,12,"Cecilia Te",6545928
 2,22,"Zona 2","B",47,13,"Joao Carlos A.Ribeiro(Calo",6546101
@@ -6296,13 +6298,11 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","C",26,2,"Va Djalo",-24744
 2,22,"Zona 2","C",26,3,"Fode",-24745
 2,22,"Zona 2","C",26,4,"Ivo Fernandes",-24746
-2,22,"Zona 2","C",27,1,"TARIZA PERREIRA MIRANDA",-24750
 2,22,"Zona 2","C",27,4,"LEONARDA GOMES (N'DEPNA)",-24753
 2,22,"Zona 2","C",27,8,"HERIETA GOMES",-24757
 2,22,"Zona 2","C",27,14,"Mamadu Djalo Ba",6555791
 2,22,"Zona 2","C",27,15,"Ibraima Sori Sow",6556147
 2,22,"Zona 2","C",28,1,"ANA CARLOS CORREIA",-24763
-2,22,"Zona 2","C",28,10,"Mamboi Ca",2778812
 2,22,"Zona 2","C",28,11,"Benedito Co",6558219
 2,22,"Zona 2","C",29,4,"N'NA DJU",-24775
 2,22,"Zona 2","C",30,1,"ROSA CO (ONDINDIS)",-24778
@@ -6363,19 +6363,20 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","C",150,6,"Mamadu Aliu Djalo",6561398
 2,22,"Zona 2","C",150,7,"Aliu Djalo",6561710
 2,22,"Zona 2","C",150,8,"Mamadu Aliu Djalo",6561858
-2,22,"Zona 2","C",151,0,"Família zero",6857761
+2,22,"Zona 2","C",151,0,"Família zero",6857948
 2,22,"Zona 2","C",151,2,"Mamadu Alfa Djalo",6562387
 2,22,"Zona 2","C",151,3,"Abubacar Balde",6563295
 2,22,"Zona 2","C",151,4,"Mamadu Boi Djalo",6566480
+2,22,"Zona 2","C",155,0,"Família zero",6893565
 2,22,"Zona 2","C",155,1,"MAMADU SAIDO SY",6550858
 2,22,"Zona 2","C",155,2,"Ibraima Djalo",6553707
 2,22,"Zona 2","C",155,3,"Umaro Barri",6554142
 2,22,"Zona 2","D",4,1,"CARLOS ANTONIO DA SILVA",-24600
 2,22,"Zona 2","D",4,2,"ANTONIO MANUEL DA SILVA",-24601
-2,22,"Zona 2","D",4,4,"Maira C.Teixeira",-24603
 2,22,"Zona 2","D",7,1,"FLAVIO ALVES",-24612
 2,22,"Zona 2","D",7,2,"MARIO DOS SANTOS",-24613
 2,22,"Zona 2","D",7,3,"Ibraima Tcham",-24614
+2,22,"Zona 2","D",8,0,"Família zero",6892504
 2,22,"Zona 2","D",8,2,"MARIA IVONE SA",-24617
 2,22,"Zona 2","D",8,4,"AURELIANO SA",-24619
 2,22,"Zona 2","D",8,9,"Osvaldo Sa",6551306
@@ -6384,7 +6385,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","D",10,1,"METCHE TCHUDA",-24631
 2,22,"Zona 2","D",10,8,"Ivo Mario Lona",6548490
 2,22,"Zona 2","D",10,9,"Seco Fall",6548584
-2,22,"Zona 2","D",11,0,"Família zero",6334811
 2,22,"Zona 2","D",11,16,"Suleimane Mane",128391
 2,22,"Zona 2","D",11,17,"Augusto Ocante Co",1086278
 2,22,"Zona 2","D",11,18,"Diamantino Una Da Silva",1086826
@@ -6407,7 +6407,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","D",21,15,"SAOZINHA LOPES",-24718
 2,22,"Zona 2","D",21,16,"TIDJANE SANHA",5066706
 2,22,"Zona 2","D",22,0,"Família zero",6788108
-2,22,"Zona 2","D",22,2,"MAIO",-24720
 2,22,"Zona 2","D",22,10,"JOSE J.M.PINA (NEIO)",-24728
 2,22,"Zona 2","D",22,14,"Mamadu Djumo Ba",1095146
 2,22,"Zona 2","D",22,16,"Uri Djalo",5066843
@@ -6417,6 +6416,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","D",116,4,"Alexandre Caetano (Lexa)",-25517
 2,22,"Zona 2","D",116,13,"Bubacar Ba",6550705
 2,22,"Zona 2","D",116,14,"Mama Samba Ba",6792596
+2,22,"Zona 2","D",117,0,"Família zero",6892642
 2,22,"Zona 2","D",117,6,"MAMA SAMBA DJALO",-25528
 2,22,"Zona 2","D",117,12,"Amadu Ba",1003081
 2,22,"Zona 2","D",117,15,"Bubacar Djalo",6552048
@@ -6425,7 +6425,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","D",133,1,"SABADO DA COSTA",-25602
 2,22,"Zona 2","D",134,1,"FLAVIO ALVES",-25603
 2,22,"Zona 2","D",159,1,"Mamadu Djuma Ba",5066622
-2,22,"Zona 2","E",2,1,"DEOLINDA DA COSTA",-24572
+2,22,"Zona 2","D",160,0,"Família zero",6892519
+2,22,"Zona 2","E",2,1,"SUNILA E.DA COSTA",-24572
 2,22,"Zona 2","E",2,6,"DEUSA GOMES",-24577
 2,22,"Zona 2","E",3,13,"FULA FERNANDES",-24596
 2,22,"Zona 2","E",3,16,"Silvino F. Da Silva",-24599
@@ -6465,7 +6466,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","E",72,24,"Alfucene Djalo",6557812
 2,22,"Zona 2","E",72,25,"Mariama Djalo",6558668
 2,22,"Zona 2","E",72,26,"Alficene Djalo",6786226
-2,22,"Zona 2","E",73,3,"Anaximandra L.Gomes Cande(Niquela)",-25184
 2,22,"Zona 2","E",73,5,"ARISTIDES FERNANDES",-25186
 2,22,"Zona 2","E",73,9,"Ludumila A.R.Martins - Sanhop",-25190
 2,22,"Zona 2","E",73,11,"Ester Fernandes",-25192
@@ -6520,6 +6520,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","F",83,1,"JULIO CESAR N.CORREIA",-25272
 2,22,"Zona 2","F",84,8,"SEGUNDA MENDES",1182835
 2,22,"Zona 2","F",84,9,"Ibraima Ba",6553328
+2,22,"Zona 2","F",91,0,"Família zero",6894187
 2,22,"Zona 2","F",91,1,"BELAMAR JOAQUIM GOMES",-25335
 2,22,"Zona 2","F",91,2,"BENEDITA GOMES BARROS",-25336
 2,22,"Zona 2","F",91,16,"Mohamed Silla",6554321
@@ -6534,7 +6535,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","F",128,2,"Dionisio Barros Da Silva",6556074
 2,22,"Zona 2","F",129,1,"BETO DJU",-25592
 2,22,"Zona 2","F",129,2,"ODETE NANQUE",-25593
-2,22,"Zona 2","F",136,1,"AISSATO BALDE",1221133
 2,22,"Zona 2","F",142,1,"Falli Tcham",5069139
 2,22,"Zona 2","F",142,2,"Mamadu Tcham",6556549
 2,22,"Zona 2","F",142,3,"Ibraima Tcham",6556620
@@ -6567,9 +6567,10 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,22,"Zona 2","G",104,11,"Julia Maria Fernandes",6791127
 2,22,"Zona 2","G",107,3,"ISMAILA DJALO",-25448
 2,22,"Zona 2","G",107,9,"TCHERNO IBRAIMA DJALO",-25454
-2,22,"Zona 2","G",107,10,"Aladje Ismala Djalo",128730
+2,22,"Zona 2","G",107,10,"Falta informação",128730
 2,22,"Zona 2","G",107,11,"ADIATO BALDE",6556533
 2,22,"Zona 2","G",113,9,"ROSA MENDES",6554469
+2,22,"Zona 2","G",113,10,"Maria Cecilia N. Correia",6791328
 2,22,"Zona 2","G",114,2,"FERNANDO NANQUE",-25496
 2,22,"Zona 2","G",114,9,"Suleimane",6553821
 2,22,"Zona 2","G",114,10,"Tidjani Demba",6553885
@@ -6594,6 +6595,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,23,"Zona 3","A",13,27,"Abudu Udus Djalo",6803466
 2,23,"Zona 3","A",14,16,"Helder Da Costa",5071360
 2,23,"Zona 3","A",14,17,"Benjamin Correia",6452643
+2,23,"Zona 3","A",15,0,"Família zero",6893186
 2,23,"Zona 3","A",15,5,"ERNESTO LIMA",-25812
 2,23,"Zona 3","A",15,9,"MARCEANO A. SANHA",-25816
 2,23,"Zona 3","A",15,10,"FRANQUINHO  A.BRACIA",-25817
@@ -6661,7 +6663,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,23,"Zona 3","B",16,11,"Mamadu Uri Djalo",5075363
 2,23,"Zona 3","B",18,1,"GABRIELA M.DA COSTA",-25839
 2,23,"Zona 3","B",18,6,"Ibraima Sow",-25844
-2,23,"Zona 3","B",19,1,"MARIA EMBUNDE",-25855
+2,23,"Zona 3","B",19,1,"MARIA EMBUNDE",6478303
 2,23,"Zona 3","B",19,2,"Queba",3452309
 2,23,"Zona 3","B",19,3,"ELVIRA L.MARQUES",6478303
 2,23,"Zona 3","B",19,4,"Cesaltina Iala",6478507
@@ -6687,7 +6689,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,23,"Zona 3","B",35,12,"TENEM DJAMBA",6472568
 2,23,"Zona 3","B",35,13,"Nene Intunda",6472799
 2,23,"Zona 3","B",36,1,"FATUMATA MANE",-26043
-2,23,"Zona 3","B",36,3,"NATAN ALVES (SIMAO)",-26045
+2,23,"Zona 3","B",36,3,"DELFINA SEIDE",-26045
 2,23,"Zona 3","B",36,12,"JUSTINO DOS REIS",6456638
 2,23,"Zona 3","B",36,13,"Almame Balde",6805652
 2,23,"Zona 3","B",36,14,"Home Gomes",6805784
@@ -6705,6 +6707,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,23,"Zona 3","C",1,11,"JOSE AUGUSTO CORREIA SA",-25634
 2,23,"Zona 3","C",1,16,"ABU BADJANA",-25639
 2,23,"Zona 3","C",1,20,"Braima Barri",5063988
+2,23,"Zona 3","C",1,21,"Umaro Mane",6901071
 2,23,"Zona 3","C",2,6,"MAMA SALIU DJALO",-25648
 2,23,"Zona 3","C",2,14,"DIAMANTINA CO",-25656
 2,23,"Zona 3","C",2,29,"ADRAMANE SOW",108246
@@ -6724,7 +6727,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,23,"Zona 3","C",7,2,"ROSA VAZ",-25715
 2,23,"Zona 3","C",7,15,"Infali",6458391
 2,23,"Zona 3","C",7,16,"Micail Pereira",6458485
-2,23,"Zona 3","C",7,17,"Ermelinda Jose De Pina",6802444
 2,23,"Zona 3","C",8,0,"Família zero",6417505
 2,23,"Zona 3","C",8,17,"IBRAIMA SOW",-25741
 2,23,"Zona 3","C",8,21,"Mamadu Bailo Djalo",1266843
@@ -6748,6 +6750,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,23,"Zona 3","C",100,5,"ARMANDO IE",-26535
 2,23,"Zona 3","C",100,8,"MARIO SA",-26538
 2,23,"Zona 3","C",100,9,"ARMANDINHO IE",-26539
+2,23,"Zona 3","C",100,10,"Tino Dju",6890282
 2,23,"Zona 3","C",101,1,"Joao Da Silva Gomes",-26540
 2,23,"Zona 3","C",101,8,"Jorgina Guilherme Gomes",1513598
 2,23,"Zona 3","C",101,9,"Sandro Gomes Barbosa",1513816
@@ -6829,6 +6832,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,23,"Zona 3","D",125,4,"AVELINO P. GOMES",-26664
 2,23,"Zona 3","D",125,5,"Gregorio Da Silva",1567166
 2,23,"Zona 3","D",125,6,"Saliu Sadjo Ba",5045038
+2,23,"Zona 3","D",125,7,"Antonio Da Silva",6917151
 2,23,"Zona 3","D",126,0,"Família zero",4549060
 2,23,"Zona 3","D",140,0,"Família zero",5418728
 2,23,"Zona 3","D",140,1,"TOI MAXIMO VIEIRA",6464381
@@ -6895,7 +6899,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,23,"Zona 3","E",139,3,"Amadu Djalo",6480284
 2,23,"Zona 3","E",139,4,"Mamadu Saido Djalo",6480393
 2,23,"Zona 3","E",142,1,"MARIAMA DALANDA DJALO",6464630
-2,23,"Zona 3","F",69,0,"Família zero",6251271
+2,23,"Zona 3","F",69,0,"Família zero",6794570
 2,23,"Zona 3","F",69,1,"JORGE CABRAL",-26318
 2,23,"Zona 3","F",69,2,"Antonio Domingos Vieira",-26319
 2,23,"Zona 3","F",71,0,"Família zero",6785173
@@ -6908,7 +6912,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,23,"Zona 3","F",73,1,"NENE CO",-26339
 2,23,"Zona 3","F",73,4,"Djanis Micas Ie",6469078
 2,23,"Zona 3","F",74,1,"BAMERO TE",-26342
-2,23,"Zona 3","F",75,0,"Família zero",5418689
 2,23,"Zona 3","F",75,1,"MARIO GOMES",-26345
 2,23,"Zona 3","F",75,9,"Consecao Fernandes Nanque",6475717
 2,23,"Zona 3","F",75,11,"Ibraima Ba",6475752
@@ -7000,6 +7003,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,24,"Zona 4","A",32,7,"AMARILDO MONTEIRO",-27085
 2,24,"Zona 4","A",32,11,"DEOLINDA DA SILVA",-27089
 2,24,"Zona 4","A",33,2,"ALFA AMADU DJALO",-27097
+2,24,"Zona 4","A",33,17,"Falta informação",-27112
 2,24,"Zona 4","A",33,25,"QUINTINO GOMES CA",1693472
 2,24,"Zona 4","A",33,26,"Mamadu Iaia Barri",5145503
 2,24,"Zona 4","A",33,27,"Mamadu Alfa Djalo",5145567
@@ -7060,7 +7064,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,24,"Zona 4","B",46,22,"Sato Ducure",1710513
 2,24,"Zona 4","B",47,1,"MAI SAMBU",-27274
 2,24,"Zona 4","B",47,2,"BACAR SAMBU(BAMIM)",-27275
-2,24,"Zona 4","B",47,9,"IAMCUBA SAMBU",-27282
+2,24,"Zona 4","B",47,9,"Iancuba Sambu",-27282
 2,24,"Zona 4","B",47,11,"IANCUBA SAMBU",6486115
 2,24,"Zona 4","B",49,8,"MAMADO URI DJALO",-27302
 2,24,"Zona 4","B",49,10,"Saico Barri",6493307
@@ -7073,6 +7077,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,24,"Zona 4","B",83,23,"Alfa Djalo",6488955
 2,24,"Zona 4","B",83,24,"Alfa Umaro Djalo",6660933
 2,24,"Zona 4","B",83,25,"Bubacar Sow",6831866
+2,24,"Zona 4","B",113,0,"Família zero",6894460
 2,24,"Zona 4","B",113,1,"DULCENEIA F.DA SILVA",-27920
 2,24,"Zona 4","B",113,11,"MAMADU ALIU SOW",-27929
 2,24,"Zona 4","B",113,13,"Mamadu Djalo",1877580
@@ -7154,7 +7159,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,24,"Zona 4","C",129,5,"Ussumane Sow",5151335
 2,24,"Zona 4","C",129,6,"Alfa Umaro Djalo",6471626
 2,24,"Zona 4","C",129,7,"Mamadu Bobo Barri",6471709
-2,24,"Zona 4","C",129,8,"Suleimane Djalo",6471723
+2,24,"Zona 4","C",129,8,"Falta informação",6471723
 2,24,"Zona 4","C",129,9,"Bigna",6471844
 2,24,"Zona 4","D",13,11,"Mustafa Sara",1645505
 2,24,"Zona 4","D",13,13,"Bubacar  Djalo",1665969
@@ -7172,7 +7177,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,24,"Zona 4","D",55,1,"NINA CA",-27363
 2,24,"Zona 4","D",55,3,"MARTINHO CA",-27365
 2,24,"Zona 4","D",55,9,"Paulo Correia",6822190
-2,24,"Zona 4","D",57,0,"Família zero",6466615
+2,24,"Zona 4","D",57,0,"Família zero",5675782
 2,24,"Zona 4","D",57,18,"MARIA AUGUSTA MALU",-27398
 2,24,"Zona 4","D",57,36,"INAIDA CORREIA LANDIM",1752062
 2,24,"Zona 4","D",57,39,"TOME SOARES DA GAMA",6484739
@@ -7186,7 +7191,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,24,"Zona 4","D",63,8,"NADIR C.RIBEIRO",6486497
 2,24,"Zona 4","D",63,9,"JOSE AUGUSTO BARBOSA",6486733
 2,24,"Zona 4","D",88,1,"GIBRIL N'DONG",-27729
-2,24,"Zona 4","D",94,4,"FAUSTINO CO",-27778
+2,24,"Zona 4","D",94,4,"JENANE SILVA CUNHA",-27778
 2,24,"Zona 4","D",94,8,"BUBACAR NHAM",-27781
 2,24,"Zona 4","D",94,13,"AGUINELO S. TAVARES",-27785
 2,24,"Zona 4","D",94,14,"Nelson Co (Ndu)",2327899
@@ -7207,7 +7212,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,24,"Zona 4","D",130,3,"CLAUDIA MARTINS",1905676
 2,24,"Zona 4","D",133,0,"Família zero",6492070
 2,24,"Zona 4","D",133,3,"Abdulai Djalo",6491893
-2,24,"Zona 4","D",133,4,"Mamadu Maca Sow",6491997
+2,24,"Zona 4","D",133,4,"Mamadu Maca Sow",4633787
 2,24,"Zona 4","D",133,5,"Adulai Djalo",6492070
 2,24,"Zona 4","D",133,6,"TCHERNO BALDE",6492370
 2,24,"Zona 4","D",133,7,"Amido Djalo",6492535
@@ -7252,7 +7257,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,24,"Zona 4","E",73,3,"Albino Alexandre Gomes",-27544
 2,24,"Zona 4","E",73,4,"JANO DA SILVA",-27545
 2,24,"Zona 4","E",73,8,"Ivete Da Silva",1818101
-2,24,"Zona 4","E",73,9,"Elizio Alexandre Gomes",5187062
+2,24,"Zona 4","E",73,9,"Falta informação",5187062
 2,24,"Zona 4","E",73,10,"Ismaila Balde",6489809
 2,24,"Zona 4","E",73,11,"Sabino Gomes",6489895
 2,24,"Zona 4","E",73,12,"Lili Te",6825150
@@ -7326,6 +7331,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,24,"Zona 4","F",77,7,"GIBRIL SANO",-27600
 2,24,"Zona 4","F",78,1,"JUSTINO LOPES COSTA",-27605
 2,24,"Zona 4","F",78,7,"Luisa Lopes Da Costa",1825306
+2,24,"Zona 4","F",78,8,"ORLANDO CORREIA",6927699
 2,24,"Zona 4","F",87,0,"Família zero",6090117
 2,24,"Zona 4","F",87,1,"MAMADU DAMBELE",-27721
 2,24,"Zona 4","F",87,7,"USSUMANE DUMBIA",-27727
@@ -7376,6 +7382,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,25,"Zona 5","A",48,33,"CHEFE CORREIA",6499366
 2,25,"Zona 5","A",48,34,"MAMADU SIDE BA",6499432
 2,25,"Zona 5","A",48,35,"Viriato Dju",6499701
+2,25,"Zona 5","A",50,0,"Família zero",6881239
 2,25,"Zona 5","A",50,6,"MARTINHO JOSE NANQUE",-28481
 2,25,"Zona 5","A",50,8,"ELIZANGELA LOPES",-28483
 2,25,"Zona 5","A",50,25,"AIDA IE",-28500
@@ -7448,6 +7455,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,25,"Zona 5","A",70,26,"Kenedi Gomes",5196517
 2,25,"Zona 5","A",70,27,"AGOSTINHO BRAS GOMES",6505871
 2,25,"Zona 5","A",70,28,"ANTONIO BRAS GOMES(SPEN)",6505988
+2,25,"Zona 5","A",72,0,"Família zero",6898087
 2,25,"Zona 5","A",72,4,"ROMISIO SA",-28822
 2,25,"Zona 5","A",72,7,"ODETE TE",-28825
 2,25,"Zona 5","A",72,8,"Mamadu Side Ba",-28826
@@ -7490,11 +7498,12 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,25,"Zona 5","B",33,10,"ERMELINDA CO",-28282
 2,25,"Zona 5","B",33,12,"SULEIMANE SOW",4176505
 2,25,"Zona 5","B",34,1,"ANTONIO LOPES JUNIOR",-28283
-2,25,"Zona 5","B",35,0,"Família zero",6795329
+2,25,"Zona 5","B",35,0,"Família zero",5048506
 2,25,"Zona 5","B",35,4,"MANUEL FERNANDES",-28289
 2,25,"Zona 5","B",35,5,"Mariama Sow",-28290
 2,25,"Zona 5","B",38,0,"Família zero",6292236
 2,25,"Zona 5","B",38,1,"PAULO FAIA AMONA",-28307
+2,25,"Zona 5","B",68,0,"Família zero",6891136
 2,25,"Zona 5","B",68,1,"ALFREDO MANUEL GOMES",-28781
 2,25,"Zona 5","B",69,6,"Martinho M. Da Silva",2052699
 2,25,"Zona 5","B",74,1,"INSANDE MENA(INSAP)",-28833
@@ -7596,7 +7605,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,25,"Zona 5","D",9,1,"ISMAEL DA SILVA (NDO)",-28059
 2,25,"Zona 5","D",9,15,"Silvestre Nanque",6486473
 2,25,"Zona 5","D",9,16,"Ito Mango",6486587
-2,25,"Zona 5","D",10,1,"ROSA SOARES DA GAMA",-28067
+2,25,"Zona 5","D",10,1,"BASILIO G. FERNANDES",-28067
 2,25,"Zona 5","D",10,6,"Ali Djop",6488671
 2,25,"Zona 5","D",13,1,"MIGUEL DOS ANJOS GOMES",-28096
 2,25,"Zona 5","D",13,20,"EDU SOARES DA GAMA",-28114
@@ -7624,8 +7633,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,25,"Zona 5","D",73,11,"Isabel Mane",6852888
 2,25,"Zona 5","D",75,1,"DJAMILA SA",-28840
 2,25,"Zona 5","D",75,4,"GUERRA MENDES (NUTCHU)",450003
-2,25,"Zona 5","D",80,0,"Família zero",6799496
-2,25,"Zona 5","D",80,14,"SATAM SUSSO",2064664
+2,25,"Zona 5","D",80,0,"Família zero",6799579
 2,25,"Zona 5","D",80,15,"BADUCA DOMINGOS DA SILVA",3102874
 2,25,"Zona 5","D",80,16,"Suleimane Sal",6802313
 2,25,"Zona 5","D",80,17,"Mamadu Saliu Djalo",6853693
@@ -7875,7 +7883,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,27,"Zona 7","A",66,1,"CRISTINA FERNANDES",-30357
 2,27,"Zona 7","A",66,8,"MURIDA CA",-30364
 2,27,"Zona 7","A",66,10,"Agostinho Nanque (Nfata)",5120211
-2,27,"Zona 7","A",66,11,"Falta informação",6878943
+2,27,"Zona 7","A",66,11,"Nene Co",6878943
 2,27,"Zona 7","A",67,1,"FELIX ONCAMPO NANQUE",-30366
 2,27,"Zona 7","A",67,3,"ARMINDO CO",-30368
 2,27,"Zona 7","A",69,1,"MUI NANQUE",-30379
@@ -7912,7 +7920,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,27,"Zona 7","B",59,1,"Narcisa Da Goia-Oda",-30296
 2,27,"Zona 7","B",61,1,"FRANCISCA GOMES",-30313
 2,27,"Zona 7","B",61,2,"ROSA DA COSTA",-30314
-2,27,"Zona 7","B",61,3,"Falta informação",-30315
+2,27,"Zona 7","B",61,3,"Jose Da Veiga",-30315
 2,27,"Zona 7","B",75,1,"MARIA ISABEL INDI",-30439
 2,27,"Zona 7","B",77,1,"MARIA TERESA GOMES",-30455
 2,27,"Zona 7","B",77,3,"ADELIA PEREIRA",-30457
@@ -7939,7 +7947,9 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,27,"Zona 7","B",93,10,"Mamadu Djau Ba",6511332
 2,27,"Zona 7","B",97,3,"ISABEL IE",-30544
 2,27,"Zona 7","B",97,8,"FIDALGO TE",-30549
-2,27,"Zona 7","B",97,9,"Falta informação",6880557
+2,27,"Zona 7","B",97,9,"Serifo Balde",6880557
+2,27,"Zona 7","B",97,10,"Lucinda Ca",6880683
+2,27,"Zona 7","B",97,11,"AUA A. DA SILVA",6880865
 2,27,"Zona 7","C",22,20,"Rosa Nmonde",-29970
 2,27,"Zona 7","C",22,21,"Leonel Feindirongai",5225125
 2,27,"Zona 7","C",22,22,"Nene Campos",6514529
@@ -7969,7 +7979,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,27,"Zona 7","C",55,17,"Bubacar Ture",5133536
 2,27,"Zona 7","C",55,18,"Adama Djalo",6524776
 2,27,"Zona 7","C",55,19,"AURISA MARIA CA",6524963
-2,27,"Zona 7","C",55,20,"Falta informação",6877857
+2,27,"Zona 7","C",55,20,"NADIA NAMIR MENDES LOPES",6877857
 2,27,"Zona 7","C",56,1,"ANTONIO INDI(TONI)",-30249
 2,27,"Zona 7","C",56,9,"Tele Uri Sane",5138886
 2,27,"Zona 7","C",56,10,"Bubacar Sane",6525967
@@ -7996,13 +8006,13 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,27,"Zona 7","D",1,29,"Amadu Djalo",6516800
 2,27,"Zona 7","D",1,30,"Fatumata Fadima Djalo",6516949
 2,27,"Zona 7","D",2,2,"FATU CAMARA",-29707
-2,27,"Zona 7","D",2,3,"Falta informação",-29708
+2,27,"Zona 7","D",2,3,"Dauda Djalo",-29708
 2,27,"Zona 7","D",3,1,"BINTA TURE",-29717
 2,27,"Zona 7","D",3,18,"ADUL DJALO",2193112
 2,27,"Zona 7","D",3,20,"Adama Djalo",6520274
 2,27,"Zona 7","D",3,21,"Umaro Farou Li",6520731
 2,27,"Zona 7","D",3,22,"BINTA TURE",6521222
-2,27,"Zona 7","D",3,23,"Falta informação",6872805
+2,27,"Zona 7","D",3,23,"Alassana Djalo",6872805
 2,27,"Zona 7","D",4,5,"CIVIRINO G.DE PINA",-29737
 2,27,"Zona 7","D",4,7,"BASILIO ALVES",-29739
 2,27,"Zona 7","D",4,12,"Maudo Sen",6521178
@@ -8029,9 +8039,9 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,27,"Zona 7","D",7,29,"Adramane Djalo",6524821
 2,27,"Zona 7","D",7,30,"Mamudu",6524868
 2,27,"Zona 7","D",7,31,"Amamadu Bobo Djalo",6525340
-2,27,"Zona 7","D",7,32,"Falta informação",6874045
+2,27,"Zona 7","D",7,32,"Pele Djalo",6874045
 2,27,"Zona 7","D",8,14,"MAMADU BOI DJALO",-29819
-2,27,"Zona 7","D",8,15,"Falta informação",6874261
+2,27,"Zona 7","D",8,15,"Mariama Samate",6874261
 2,27,"Zona 7","D",31,1,"SEGUNDA EMBANA",-30015
 2,27,"Zona 7","D",31,3,"MARIO GOMES",-30017
 2,27,"Zona 7","D",31,4,"Duarte Imbumba(Reuniao)",-30018
@@ -8052,7 +8062,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,27,"Zona 7","D",38,4,"QUINTINO DJATA",-30052
 2,27,"Zona 7","D",73,9,"ISSA DJIMIGA",-30406
 2,27,"Zona 7","D",73,14,"IDJATO BARRI",-30411
-2,27,"Zona 7","D",73,15,"Falta informação",-30412
+2,27,"Zona 7","D",73,15,"Ibraima Djalo",-30412
 2,27,"Zona 7","D",79,1,"ILCA F. PENDA DJAU",-30466
 2,27,"Zona 7","D",79,17,"Mustafa Djen",6526067
 2,27,"Zona 7","D",79,18,"Abulai Ba",6526313
@@ -8087,13 +8097,13 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,27,"Zona 7","E",19,19,"Madiu Djalo",6516759
 2,27,"Zona 7","E",19,20,"Mamadu Sow",6518456
 2,27,"Zona 7","E",19,21,"MAMADU ALIU SOW",6518534
-2,27,"Zona 7","E",19,22,"Falta informação",6875090
+2,27,"Zona 7","E",19,22,"Tcherno Moawiato Sow",6875090
 2,27,"Zona 7","E",20,1,"ELISABETE MONTEIRO (BETY)",-29942
 2,27,"Zona 7","E",21,2,"MARIO AMONA",-29944
 2,27,"Zona 7","E",21,9,"DUARTE J.AMONA",6517140
 2,27,"Zona 7","E",74,5,"HELENA MALU",-30419
 2,27,"Zona 7","E",74,23,"MAMADU ALFA BA",-30437
-2,27,"Zona 7","E",74,24,"LINDA NAINCA",-30438
+2,27,"Zona 7","E",74,24,"Linda Naenca",-30438
 2,27,"Zona 7","E",74,25,"Uri Ba",6515951
 2,27,"Zona 7","E",90,1,"SELDO SOW",-30508
 2,27,"Zona 7","E",98,1,"PABLO JEOVANO O.MONTEIRO",-30550
@@ -8110,6 +8120,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,28,"Zona 8","A",20,21,"Bubacar Ba",5105113
 2,28,"Zona 8","A",20,22,"Mama Saliu Balde",6523584
 2,28,"Zona 8","A",21,1,"SAMBA BALDE",-30822
+2,28,"Zona 8","A",21,2,"Tcherno Balde",-30823
+2,28,"Zona 8","A",21,3,"Seco Camara",-30824
 2,28,"Zona 8","A",22,1,"Alexandre M. Da Costa",-30839
 2,28,"Zona 8","A",22,2,"DOMINGOS NOSOLINE II (JR)",-30840
 2,28,"Zona 8","A",22,5,"AUSTILIO NUSOLINE",-30843
@@ -8123,6 +8135,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,28,"Zona 8","A",24,7,"DOMINGAS CA",-30883
 2,28,"Zona 8","A",24,15,"MAMADU SALIU DJALO",-30891
 2,28,"Zona 8","A",25,14,"JOSEFA GOMES SANTOS(CEPA)",-30905
+2,28,"Zona 8","A",25,15,"Floriano Co",-30906
 2,28,"Zona 8","A",26,0,"Família zero",6040109
 2,28,"Zona 8","A",26,1,"SABADO NUSOLINE",-30919
 2,28,"Zona 8","A",26,8,"SULEIMANE BA",-30926
@@ -8130,6 +8143,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,28,"Zona 8","A",27,11,"Alfadjo Ba-Alfa Bubacr",-30938
 2,28,"Zona 8","A",27,13,"SULEIMANE BA",2163781
 2,28,"Zona 8","A",27,14,"Domingos Co",5110791
+2,28,"Zona 8","A",27,15,"Pape Mane",6886007
+2,28,"Zona 8","A",27,16,"Jose Antonio One-Onamba",6886039
 2,28,"Zona 8","A",28,0,"Família zero",6834646
 2,28,"Zona 8","A",28,1,"Emiliano G. Santos-Puntchu",-30940
 2,28,"Zona 8","A",28,3,"Abubacar Seide",6521816
@@ -8156,7 +8171,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,28,"Zona 8","A",48,1,"INACIO NENE NOSOLINE",-31047
 2,28,"Zona 8","A",49,1,"DOMINGOS GOMES DOS SANTOS",-31048
 2,28,"Zona 8","A",49,3,"Segunda Da Silva",6524727
-2,28,"Zona 8","A",57,0,"Família zero",6877800
+2,28,"Zona 8","A",57,0,"Família zero",6834404
 2,28,"Zona 8","B",8,19,"AIDA INDI",2148022
 2,28,"Zona 8","B",8,20,"Alfadjo Djalo",5108181
 2,28,"Zona 8","B",8,21,"NENE DABO",6513700
@@ -8180,6 +8195,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,28,"Zona 8","B",11,14,"Victor Na Quidama",6523987
 2,28,"Zona 8","B",11,15,"Januario Co",6524067
 2,28,"Zona 8","B",11,16,"Junior Sa",6524158
+2,28,"Zona 8","B",11,17,"Ivone Co",6882434
 2,28,"Zona 8","B",12,0,"Família zero",6858753
 2,28,"Zona 8","B",12,3,"CANDIDO DA SILVA",-30700
 2,28,"Zona 8","B",12,13,"CARLOS ALBERTO TAVARES",-30710
@@ -8198,6 +8214,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,28,"Zona 8","B",15,27,"Mamadu Boi Ba",5109754
 2,28,"Zona 8","B",15,28,"Tcherno Amadu Djalo",6525402
 2,28,"Zona 8","B",15,29,"Adul Barri",6525531
+2,28,"Zona 8","B",15,30,"Mamadu Djalo",6883109
+2,28,"Zona 8","B",15,31,"Negro Co",6883364
 2,28,"Zona 8","B",16,6,"DINO A. UTEIO",-30748
 2,28,"Zona 8","B",16,18,"Quintino Fernandes",6515982
 2,28,"Zona 8","B",16,19,"Jose Cabral",6516526
@@ -8206,6 +8224,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,28,"Zona 8","B",17,3,"Romana Lopes (Edi)",-30762
 2,28,"Zona 8","B",17,19,"MALAM CORREIA",-30778
 2,28,"Zona 8","B",17,27,"Celeste Te (Le)",2153109
+2,28,"Zona 8","B",17,28,"DELFINA SEIDE",6883804
 2,28,"Zona 8","B",33,10,"Abulai Sow",6518026
 2,28,"Zona 8","B",33,11,"Zeca Co",6518040
 2,28,"Zona 8","B",33,12,"Mamadi Darame",6518412
@@ -8220,12 +8239,17 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,28,"Zona 8","B",38,1,"BERTA SA",-31002
 2,28,"Zona 8","B",39,1,"JUSTINO SAQUE",-31011
 2,28,"Zona 8","B",39,6,"Ussumane Djalo",6518488
+2,28,"Zona 8","B",39,7,"Mamadu Adi Barri",6886459
 2,28,"Zona 8","B",44,1,"Quito Nanque",-31029
+2,28,"Zona 8","B",51,0,"Família zero",6892378
 2,28,"Zona 8","B",51,3,"MATILDA GOMES",-31056
 2,28,"Zona 8","B",51,6,"Jose Co",6517116
 2,28,"Zona 8","B",52,6,"IVONE GOMES",2294538
 2,28,"Zona 8","B",52,7,"PAULO A. DA SILVA",6516726
 2,28,"Zona 8","B",54,1,"Ibraima Ba",6517440
+2,28,"Zona 8","B",54,2,"Laur G. Te",6886774
+2,28,"Zona 8","B",54,3,"Tino Co",6886843
+2,28,"Zona 8","B",54,4,"Edi Da Silva Indi",6886888
 2,28,"Zona 8","B",55,0,"Família zero",6860531
 2,28,"Zona 8","B",55,1,"Silverio Te (Nene)",2296272
 2,28,"Zona 8","B",55,2,"Americo Correia (Ndapas)",2296498
@@ -8243,11 +8267,11 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 2,28,"Zona 8","C",4,2,"ROSA CA",-30592
 2,28,"Zona 8","C",4,3,"JANAUARIO DJU",-30593
 2,28,"Zona 8","C",4,9,"Valdumar Ca",6525158
+2,28,"Zona 8","C",4,10,"Augusta Da Silva Co",6881874
 2,28,"Zona 8","C",5,1,"NUNA NANQUE",-30599
 2,28,"Zona 8","C",5,11,"CARLITOS J.DA SILVA",-30609
 2,28,"Zona 8","C",5,14,"Ricardo Ca",6520926
 2,28,"Zona 8","C",5,15,"MAMADU DUMBIA",6521252
-2,28,"Zona 8","C",6,0,"Família zero",6349534
 2,28,"Zona 8","C",6,4,"Djenabu Saar",-30614
 2,28,"Zona 8","C",6,9,"JOSE DA SILVA(MUSSA)",-30619
 2,28,"Zona 8","C",6,13,"Maria De Fatima Da Silva",-30623
@@ -8367,7 +8391,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,92,"Zona 2","D",1,1,"JOSE CARLOS CORREIA",-52286
 9,92,"Zona 2","D",2,0,"Família zero",4181812
 9,92,"Zona 2","D",2,1,"SADJO COROBO",-52292
-9,92,"Zona 2","D",2,7,"BRAIMA COROBO",4181812
+9,92,"Zona 2","D",2,7,"BRAIMA COROBO",-52298
 9,92,"Zona 2","D",2,9,"ARAMATA MANAFA",-52300
 9,92,"Zona 2","D",2,14,"BRAIMA INDJAI",5541072
 9,92,"Zona 2","D",2,15,"Samba Culubali",5541220
@@ -8538,7 +8562,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,92,"Zona 2","G",87,7,"Gachu L, Gomes",1164812
 9,92,"Zona 2","G",87,8,"Tcherno Djalo",6140830
 9,92,"Zona 2","G",87,9,"Mama Saliu Djalo",6140975
-9,92,"Zona 2","G",87,10,"MAMADU URY BA",5893440
+9,92,"Zona 2","G",87,10,"MAMADU URY BA",6141231
 9,92,"Zona 2","G",88,3,"SIRIFO FATI",-52917
 9,92,"Zona 2","G",89,0,"Família zero",5409958
 9,92,"Zona 2","G",89,2,"MALAM TURE",-52925
@@ -8554,8 +8578,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,92,"Zona 2","G",92,8,"IBRAIMA BARRY",-52957
 9,92,"Zona 2","G",92,93,"BUBACAR DJALO",1167598
 9,92,"Zona 2","G",92,95,"Umo Djalo",6354743
-9,92,"Zona 2","G",92,96,"Bubacar Djalo",6081979
-9,92,"Zona 2","G",92,97,"Amadu Djau Djalo",6355430
+9,92,"Zona 2","G",92,96,"Bubacar Djalo",6354844
+9,92,"Zona 2","G",92,97,"Amadu Djau Djalo",5093472
 9,92,"Zona 2","G",92,98,"Mamadudjan Ba",6657812
 9,92,"Zona 2","G",92,99,"Falta informação",6657936
 9,92,"Zona 2","G",92,100,"Bilisso Djalo",6657995
@@ -8574,7 +8598,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,92,"Zona 2","H",70,8,"Mamadu Aliu Djalo",5188966
 9,92,"Zona 2","H",71,0,"Família zero",6268192
 9,92,"Zona 2","H",71,1,"MAMADU SILA",-52781
-9,92,"Zona 2","H",71,23,"Mamadu Saliu Ba",6276374
+9,92,"Zona 2","H",71,23,"Mamadu Saliu Ba",6268192
 9,92,"Zona 2","H",72,11,"USSUMANE SANE",-52810
 9,92,"Zona 2","H",72,14,"LAMINE DJALO",-52813
 9,92,"Zona 2","H",72,18,"Demba Balde",756744
@@ -8605,7 +8629,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,92,"Zona 2","H",83,21,"Mustafa Faty",760299
 9,92,"Zona 2","H",83,23,"Amadu Djassi",6298669
 9,92,"Zona 2","H",83,24,"Aladje Fati",6298718
-9,92,"Zona 2","H",83,25,"Djanaina Irene Rozenda Gomes",5712541
+9,92,"Zona 2","H",83,25,"Djanaina Irene Rozenda Gomes",6298786
 9,92,"Zona 2","H",83,26,"Mamadu Uri Camara",6637438
 9,92,"Zona 2","H",83,27,"Flavio P.Mendonca",6637504
 9,92,"Zona 2","H",120,11,"Aliu Fati",6140905
@@ -8613,7 +8637,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,92,"Zona 2","H",120,13,"Modji Batchili",6141138
 9,92,"Zona 2","H",120,14,"Abdulai Cande",6644335
 9,92,"Zona 2","H",120,15,"Mamadu Corca Ba",6644396
-9,92,"Zona 2","H",123,1,"SUMAILA SONCO",-53184
+9,92,"Zona 2","H",123,1,"SUMAILA SONCO",2957402
 9,92,"Zona 2","H",123,18,"JULIO CASSAMA",-53201
 9,92,"Zona 2","H",123,19,"Umaro Mane",6356401
 9,92,"Zona 2","H",123,20,"MAMADU MANE",6356491
@@ -8683,10 +8707,10 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,92,"Zona 2","I",202,12,"Danilson Ie",6141875
 9,92,"Zona 2","I",202,13,"Sadibo Camara",6141898
 9,92,"Zona 2","I",202,14,"Aida Adipa Ie",6662009
-9,92,"Zona 2","I",203,1,"ANTONIO M.MONTEIRO (TO)",6291746
+9,92,"Zona 2","I",203,1,"ANTONIO M.MONTEIRO (TO)",-53779
 9,92,"Zona 2","I",203,5,"JAIME SA",-53783
 9,92,"Zona 2","I",203,6,"ANTONIO M.MONTEIRO (TO)",6291746
-9,92,"Zona 2","I",203,7,"Amadu Sadjo Djalo",6291919
+9,92,"Zona 2","I",203,7,"Amadu Sadjo Djalo",4968151
 9,92,"Zona 2","I",203,8,"Braima Djalo",6721663
 9,92,"Zona 2","I",204,1,"NIDIA F.NUNES",-53784
 9,92,"Zona 2","I",204,8,"ALFA DJALO",-53791
@@ -8713,7 +8737,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,92,"Zona 2","J",111,10,"Ussumane Darame",344240
 9,92,"Zona 2","J",112,1,"BOLAR DJAU",-53106
 9,92,"Zona 2","J",112,2,"ASSANA BALDE",-53107
-9,92,"Zona 2","J",112,10,"NINA ANSUMANE DA SILVA",5723179
+9,92,"Zona 2","J",112,10,"NINA ANSUMANE DA SILVA",5194242
 9,92,"Zona 2","J",113,1,"MARIA MANE",-53115
 9,92,"Zona 2","J",114,0,"Família zero",5952987
 9,92,"Zona 2","J",114,1,"QUELUNTAM INJAI",-53117
@@ -8752,7 +8776,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,92,"Zona 2","J",133,1,"ALBINO NANQUE",-53272
 9,92,"Zona 2","J",133,5,"TCHICO NANQUE (TCHOMDOM)",-53276
 9,92,"Zona 2","J",133,10,"Bubacar Djalo",4400461
-9,92,"Zona 2","J",133,12,"Mamasaliu Djalo",6294490
+9,92,"Zona 2","J",133,12,"Mamasaliu Djalo",5067606
 9,92,"Zona 2","J",134,8,"MAMA SALIU BARRI",-53288
 9,92,"Zona 2","J",134,12,"ALIU COTE",-53292
 9,92,"Zona 2","J",135,0,"Família zero",4398770
@@ -8842,7 +8866,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,92,"Zona 2","L",170,15,"Ussumane Balde",6198688
 9,92,"Zona 2","L",170,16,"Umaro Dabo",6198713
 9,92,"Zona 2","L",170,17,"Adulai Djalo",6198758
-9,92,"Zona 2","L",171,1,"LAURENCO L.CORREIA",1307916
+9,92,"Zona 2","L",171,1,"LAURENCO L.CORREIA",-53539
 9,92,"Zona 2","L",171,3,"Suleimane Ba",6279422
 9,92,"Zona 2","L",171,4,"Raul Sanha",6279455
 9,92,"Zona 2","L",172,1,"IAIA MANE",-53541
@@ -8900,7 +8924,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,92,"Zona 2","M",198,15,"Fidel Antonio Nautan",6353017
 9,92,"Zona 2","M",198,16,"Ana Mane",5798370
 9,92,"Zona 2","M",198,17,"Helder Antonio",6653391
-9,92,"Zona 2","M",199,0,"Família zero",5798221
+9,92,"Zona 2","M",199,0,"Família zero",5269908
 9,92,"Zona 2","M",199,8,"AMARILDO GOMES",-53744
 9,92,"Zona 2","M",199,11,"Isaura Balde",6220411
 9,92,"Zona 2","M",199,12,"Cadidjato Dafe",6220493
@@ -8955,7 +8979,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","A",101,8,"Saico Sow",890226
 9,93,"Zona 3","A",102,1,"MAIMUNA CULUBALI",-54689
 9,93,"Zona 3","A",102,26,"Idrissa Zala",6293465
-9,93,"Zona 3","A",102,27,"Algassimo Djalo",6208067
+9,93,"Zona 3","A",102,27,"Algassimo Djalo",6293535
 9,93,"Zona 3","A",105,16,"MAMADU BILO DJALO",-54749
 9,93,"Zona 3","A",105,18,"Issaga Djalo",893452
 9,93,"Zona 3","A",105,19,"Abibu Djalo",893584
@@ -9016,7 +9040,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","B",117,0,"Família zero",6207789
 9,93,"Zona 3","B",117,1,"FILICIANA CORREIA",-54830
 9,93,"Zona 3","B",117,2,"Suleimane Embalo",6716355
-9,93,"Zona 3","B",118,0,"Família zero",3303871
+9,93,"Zona 3","B",118,0,"Família zero",4313263
 9,93,"Zona 3","B",118,6,"FATUMATA DJALO",-54836
 9,93,"Zona 3","B",118,8,"Seco Iaia Barri",6454853
 9,93,"Zona 3","B",118,9,"Mamadu Sow",6454885
@@ -9028,6 +9052,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","B",121,0,"Família zero",6449781
 9,93,"Zona 3","B",121,1,"AMADEU JOSE GOMES",-54843
 9,93,"Zona 3","B",121,2,"OLGA CARDOSO",-54844
+9,93,"Zona 3","B",121,3,"Clarice",-54845
 9,93,"Zona 3","B",122,8,"PAULA INDEQUE",6449996
 9,93,"Zona 3","B",122,9,"Augusto Sa",6674359
 9,93,"Zona 3","B",122,10,"Augusto Sa",6727341
@@ -9062,7 +9087,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","C",133,2,"AUGUSTO DA SILVA",-54915
 9,93,"Zona 3","C",133,6,"Flavio Oliveira",908236
 9,93,"Zona 3","C",133,7,"Ibraima Djalo",6714963
-9,93,"Zona 3","C",143,1,"BENJAMIM NA DIAM",-54988
+9,93,"Zona 3","C",143,1,"BENJAMIM NA DIAM",6410280
 9,93,"Zona 3","C",143,9,"Suleimane Djalo",5814547
 9,93,"Zona 3","C",143,10,"ALBINO NA DIAM (BEBE)",6410280
 9,93,"Zona 3","C",143,11,"LEOMPER NA DIAM",6410567
@@ -9121,7 +9146,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","D",172,12,"Maira Debo Mane",5856192
 9,93,"Zona 3","D",173,1,"NHIMA SANHA",-55181
 9,93,"Zona 3","D",174,1,"RAMALHANO NANCASSA",-55187
-9,93,"Zona 3","D",174,10,"FLORIANO NANCASSA(N`DUBA)",6414068
+9,93,"Zona 3","D",174,10,"FLORIANO NANCASSA(N`DUBA)",-55187
 9,93,"Zona 3","D",175,0,"Família zero",5992250
 9,93,"Zona 3","D",175,1,"ADIMIR MENDONCA",-55196
 9,93,"Zona 3","D",175,5,"Abdu Camara",6670906
@@ -9193,6 +9218,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","E",162,4,"Domingos Correia",126173
 9,93,"Zona 3","E",162,5,"Sankare Abdoulaye",6419676
 9,93,"Zona 3","E",162,6,"Saco Danfam",6709892
+9,93,"Zona 3","E",162,7,"BOTO MONTEIRO (SACO)",6890038
 9,93,"Zona 3","E",164,9,"Mussa Cande",5873754
 9,93,"Zona 3","E",164,10,"DULCE QUADE",6417935
 9,93,"Zona 3","E",165,0,"Família zero",2982761
@@ -9316,7 +9342,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","G",225,1,"INACIA DA SILVA",-55560
 9,93,"Zona 3","G",225,4,"DOMINGOS INDEQUE",-55563
 9,93,"Zona 3","G",225,5,"CONSTANTINO MARTINS",-55564
-9,93,"Zona 3","G",225,7,"BOTO MONTEIRO (SACO)",-55566
 9,93,"Zona 3","G",225,10,"Kenedi Jose Dama",6437556
 9,93,"Zona 3","G",226,1,"MARCELINO D.SAMBA",-55567
 9,93,"Zona 3","G",226,9,"Guilherme A. Da Costa",5869261
@@ -9329,7 +9354,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","G",238,7,"ELISABETE GOMES (BETY)",-55681
 9,93,"Zona 3","G",238,8,"Braima Mane (Tombom)",-55682
 9,93,"Zona 3","G",238,9,"Arafam Seide",-55683
-9,93,"Zona 3","G",238,16,"ALADJE MANE",-55690
+9,93,"Zona 3","G",238,16,"ALADJE MANE",6720841
 9,93,"Zona 3","G",238,17,"SULEIMANE BA",-55691
 9,93,"Zona 3","G",238,18,"ARUNA MANE",-55692
 9,93,"Zona 3","G",238,19,"BAIO SANO",5814408
@@ -9438,7 +9463,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","I",277,14,"ALADJE MANE",-55984
 9,93,"Zona 3","I",286,4,"EUSEBIO A. ETIGONA",-56028
 9,93,"Zona 3","I",287,2,"JOSEFA LIMA GOMES",-56030
-9,93,"Zona 3","I",287,6,"Josefa Gomes (Midana)",-56034
 9,93,"Zona 3","I",287,7,"Djulde Balde",1134182
 9,93,"Zona 3","I",288,1,"ROSETE J.M.NHAGA",-56035
 9,93,"Zona 3","I",288,10,"Elsa M. Pinengete",6416362
@@ -9538,7 +9562,6 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","K",283,4,"ANDRESA DA COSTA",-56020
 9,93,"Zona 3","K",283,6,"NELSON FERNANDES",5822372
 9,93,"Zona 3","K",283,8,"Mamasaliu Djalo",5823011
-9,93,"Zona 3","K",283,9,"Mama Saliu Djalo",5856944
 9,93,"Zona 3","K",283,10,"Mamadu Djalo",6405796
 9,93,"Zona 3","K",284,1,"QUINTA CA",-56021
 9,93,"Zona 3","K",284,3,"TERESA NFINDA",-56023
@@ -9694,7 +9717,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","N",64,2,"WAGNA M'BANA NABISSIF",-54443
 9,93,"Zona 3","N",64,5,"UMO SOW",-54446
 9,93,"Zona 3","N",64,6,"ABDU NBANA",-54447
-9,93,"Zona 3","N",65,2,"FATIMA L.PEREIRA",6435643
+9,93,"Zona 3","N",65,2,"FATIMA L.PEREIRA",-54449
 9,93,"Zona 3","N",65,9,"Adriano Vieira Co",877358
 9,93,"Zona 3","N",65,12,"Jesus",6435599
 9,93,"Zona 3","N",65,13,"EDUARDO C. MENDES",6435643
@@ -9766,7 +9789,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","O",83,11,"Mama Saliu Sidibe",6408808
 9,93,"Zona 3","O",84,0,"Família zero",5798500
 9,93,"Zona 3","O",84,3,"CAETANO CASSAMA",-54557
-9,93,"Zona 3","O",84,9,"ABULAI SAMBU",-54563
+9,93,"Zona 3","O",84,9,"ABULAI SAMBU",6697772
 9,93,"Zona 3","O",84,11,"SULEIMANE BA",-54565
 9,93,"Zona 3","O",84,12,"USSUMANE MANE",-54566
 9,93,"Zona 3","O",84,13,"Amido Mane",6407182
@@ -9827,7 +9850,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,93,"Zona 3","Q",2,11,"Lamine Sonco",6423666
 9,93,"Zona 3","Q",2,12,"Dauda Sonco",6423752
 9,93,"Zona 3","Q",2,13,"Demba Injai",6423892
-9,93,"Zona 3","Q",3,0,"Família zero",3664670
+9,93,"Zona 3","Q",3,0,"Família zero",6339925
 9,93,"Zona 3","Q",3,3,"ANTONIO JOSE GOMES",-53988
 9,93,"Zona 3","Q",3,7,"Lebuar Djata",6427848
 9,93,"Zona 3","Q",4,0,"Família zero",4313223
@@ -9981,7 +10004,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,94,"Zona 4","C",137,1,"ALASSANA DARAME",-57219
 9,94,"Zona 4","C",138,6,"Osias Oliveira Dos Santos",1179684
 9,94,"Zona 4","C",138,8,"Flaviano G.Cabuquena",6752098
-9,94,"Zona 4","C",139,1,"Fatumata Cisse",-57225
+9,94,"Zona 4","C",139,1,"Fatumata Darame",-57225
 9,94,"Zona 4","C",139,2,"MADEMBO CISSE",-57226
 9,94,"Zona 4","C",139,3,"BRAIMA CISSE",-57227
 9,94,"Zona 4","C",140,12,"Djabu Danso",-57239
@@ -10023,7 +10046,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,94,"Zona 4","D",121,1,"LUIS BIAGUE",-57135
 9,94,"Zona 4","D",121,4,"PAULO R.G. FERNANDES",6477511
 9,94,"Zona 4","D",121,5,"Helio Veira Mendes",6477696
-9,94,"Zona 4","D",121,6,"Quintino M. Ntunque",6750621
+9,94,"Zona 4","D",121,6,"Luisa Luis Toze",6750621
 9,94,"Zona 4","D",122,10,"Malam Camara",5476144
 9,94,"Zona 4","D",122,11,"Carlos Pedro Gomes",5476216
 9,94,"Zona 4","D",122,12,"Samito E.B. Correia",6465041
@@ -10038,7 +10061,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,94,"Zona 4","D",125,10,"Bernal Charles Caly Npass",6450738
 9,94,"Zona 4","D",125,11,"Felismina Gomes Ramos",6452293
 9,94,"Zona 4","D",126,2,"LIDIA M.DOS SANTOS(LILICA",-57161
-9,94,"Zona 4","D",148,5,"ALADJE B. SIDIBE",-57295
+9,94,"Zona 4","D",148,5,"ALADJE B. SIDIBE",6445393
 9,94,"Zona 4","D",148,6,"ALADJE B. SIDIBE",6445393
 9,94,"Zona 4","D",148,7,"Fatumata Sidibe",6445500
 9,94,"Zona 4","D",148,8,"Mbemba Jabi",6445697
@@ -10136,8 +10159,8 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,94,"Zona 4","F",52,30,"Amadu Djalo",6452960
 9,94,"Zona 4","F",52,31,"Suncar Sane",6478989
 9,94,"Zona 4","F",52,32,"MAMADU M. DJALO",6742388
-9,94,"Zona 4","F",78,1,"SEGUNDA MENDONCA",-56827
-9,94,"Zona 4","F",78,13,"DJONES DE OLIVEIRA",-56839
+9,94,"Zona 4","F",78,1,"SEGUNDA MENDONCA",6430023
+9,94,"Zona 4","F",78,13,"DJONES DE OLIVEIRA",6421535
 9,94,"Zona 4","F",78,16,"Mutaro Camara",765895
 9,94,"Zona 4","F",78,17,"Mariana Lima",6421535
 9,94,"Zona 4","F",78,18,"Naziana Aissato Bocu",6421725
@@ -10338,6 +10361,7 @@ bairro,tabz,zone,housegrp,camo,fam,chefefam,hhoid
 9,94,"Zona 4","J",11,9,"BENEDITA CORREIA",-56356
 9,94,"Zona 4","J",14,4,"JOANA LOPES DOS SANTOS",-56374
 9,94,"Zona 4","J",14,5,"MARCELINA DE BARROS",936969
+9,94,"Zona 4","J",15,0,"Família zero",6927433
 9,94,"Zona 4","J",15,9,"CABIRO TURE",-56383
 9,94,"Zona 4","J",15,21,"Mamudo Djalo",829063
 9,94,"Zona 4","J",15,22,"Alexi",829133
