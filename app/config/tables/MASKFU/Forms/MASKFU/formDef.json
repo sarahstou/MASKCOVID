@@ -2224,6 +2224,19 @@
         "_row_num": 16
       },
       {
+        "choice_list_name": "Assistant",
+        "data_value": "SUZ",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Suzete",
+              "default": "Suzete"
+            }
+          }
+        },
+        "_row_num": 17
+      },
+      {
         "choice_list_name": "NoInterview",
         "data_value": "1",
         "display": {
@@ -2234,7 +2247,7 @@
             }
           }
         },
-        "_row_num": 18
+        "_row_num": 19
       },
       {
         "choice_list_name": "NoInterview",
@@ -2247,7 +2260,7 @@
             }
           }
         },
-        "_row_num": 19
+        "_row_num": 20
       },
       {
         "choice_list_name": "NoInterview",
@@ -2260,7 +2273,7 @@
             }
           }
         },
-        "_row_num": 20
+        "_row_num": 21
       },
       {
         "choice_list_name": "NoInterview",
@@ -2273,7 +2286,7 @@
             }
           }
         },
-        "_row_num": 21
+        "_row_num": 22
       },
       {
         "choice_list_name": "NoInterview",
@@ -2286,7 +2299,7 @@
             }
           }
         },
-        "_row_num": 22
+        "_row_num": 23
       },
       {
         "choice_list_name": "YesNo",
@@ -2299,7 +2312,7 @@
             }
           }
         },
-        "_row_num": 24
+        "_row_num": 25
       },
       {
         "choice_list_name": "YesNo",
@@ -2312,7 +2325,7 @@
             }
           }
         },
-        "_row_num": 25
+        "_row_num": 26
       },
       {
         "choice_list_name": "relation",
@@ -2325,7 +2338,7 @@
             }
           }
         },
-        "_row_num": 27
+        "_row_num": 28
       },
       {
         "choice_list_name": "relation",
@@ -2338,7 +2351,7 @@
             }
           }
         },
-        "_row_num": 28
+        "_row_num": 29
       },
       {
         "choice_list_name": "relation",
@@ -2351,7 +2364,7 @@
             }
           }
         },
-        "_row_num": 29
+        "_row_num": 30
       },
       {
         "choice_list_name": "relation",
@@ -2364,7 +2377,7 @@
             }
           }
         },
-        "_row_num": 30
+        "_row_num": 31
       },
       {
         "choice_list_name": "relation",
@@ -2377,7 +2390,7 @@
             }
           }
         },
-        "_row_num": 31
+        "_row_num": 32
       },
       {
         "choice_list_name": "relation",
@@ -2390,7 +2403,7 @@
             }
           }
         },
-        "_row_num": 32
+        "_row_num": 33
       },
       {
         "choice_list_name": "relation",
@@ -2403,7 +2416,7 @@
             }
           }
         },
-        "_row_num": 33
+        "_row_num": 34
       },
       {
         "choice_list_name": "vitalstatus",
@@ -2416,7 +2429,7 @@
             }
           }
         },
-        "_row_num": 35
+        "_row_num": 36
       },
       {
         "choice_list_name": "vitalstatus",
@@ -2429,7 +2442,7 @@
             }
           }
         },
-        "_row_num": 36
+        "_row_num": 37
       },
       {
         "choice_list_name": "vitalstatus",
@@ -2442,7 +2455,7 @@
             }
           }
         },
-        "_row_num": 37
+        "_row_num": 38
       },
       {
         "choice_list_name": "vitalstatus",
@@ -2455,7 +2468,7 @@
             }
           }
         },
-        "_row_num": 38
+        "_row_num": 39
       },
       {
         "choice_list_name": "vitalstatus",
@@ -2468,7 +2481,7 @@
             }
           }
         },
-        "_row_num": 39
+        "_row_num": 40
       },
       {
         "choice_list_name": "YesNoDontknow",
@@ -2481,7 +2494,7 @@
             }
           }
         },
-        "_row_num": 41
+        "_row_num": 42
       },
       {
         "choice_list_name": "YesNoDontknow",
@@ -2494,7 +2507,7 @@
             }
           }
         },
-        "_row_num": 42
+        "_row_num": 43
       },
       {
         "choice_list_name": "YesNoDontknow",
@@ -2507,7 +2520,7 @@
             }
           }
         },
-        "_row_num": 43
+        "_row_num": 44
       },
       {
         "choice_list_name": "dontknowdate",
@@ -2520,7 +2533,7 @@
             }
           }
         },
-        "_row_num": 45
+        "_row_num": 46
       },
       {
         "choice_list_name": "TestResult",
@@ -2533,7 +2546,7 @@
             }
           }
         },
-        "_row_num": 47
+        "_row_num": 48
       },
       {
         "choice_list_name": "TestResult",
@@ -2546,7 +2559,7 @@
             }
           }
         },
-        "_row_num": 48
+        "_row_num": 49
       },
       {
         "choice_list_name": "TestResult",
@@ -2559,7 +2572,7 @@
             }
           }
         },
-        "_row_num": 49
+        "_row_num": 50
       },
       {
         "choice_list_name": "HC",
@@ -2572,7 +2585,7 @@
             }
           }
         },
-        "_row_num": 51
+        "_row_num": 52
       },
       {
         "choice_list_name": "HC",
@@ -2585,7 +2598,7 @@
             }
           }
         },
-        "_row_num": 52
+        "_row_num": 53
       },
       {
         "choice_list_name": "HC",
@@ -2598,7 +2611,7 @@
             }
           }
         },
-        "_row_num": 53
+        "_row_num": 54
       },
       {
         "choice_list_name": "HC",
@@ -2611,7 +2624,7 @@
             }
           }
         },
-        "_row_num": 54
+        "_row_num": 55
       },
       {
         "choice_list_name": "HC",
@@ -2624,7 +2637,7 @@
             }
           }
         },
-        "_row_num": 55
+        "_row_num": 56
       },
       {
         "choice_list_name": "HC",
@@ -2637,7 +2650,7 @@
             }
           }
         },
-        "_row_num": 56
+        "_row_num": 57
       },
       {
         "choice_list_name": "HC",
@@ -2650,7 +2663,7 @@
             }
           }
         },
-        "_row_num": 57
+        "_row_num": 58
       },
       {
         "choice_list_name": "HC",
@@ -2663,7 +2676,7 @@
             }
           }
         },
-        "_row_num": 58
+        "_row_num": 59
       },
       {
         "choice_list_name": "HC",
@@ -2676,7 +2689,7 @@
             }
           }
         },
-        "_row_num": 59
+        "_row_num": 60
       },
       {
         "choice_list_name": "HC",
@@ -2689,7 +2702,7 @@
             }
           }
         },
-        "_row_num": 60
+        "_row_num": 61
       },
       {
         "choice_list_name": "HC",
@@ -2702,7 +2715,7 @@
             }
           }
         },
-        "_row_num": 61
+        "_row_num": 62
       },
       {
         "choice_list_name": "HC",
@@ -2715,7 +2728,7 @@
             }
           }
         },
-        "_row_num": 62
+        "_row_num": 63
       },
       {
         "choice_list_name": "HC",
@@ -2728,7 +2741,7 @@
             }
           }
         },
-        "_row_num": 63
+        "_row_num": 64
       },
       {
         "choice_list_name": "HC",
@@ -2741,7 +2754,7 @@
             }
           }
         },
-        "_row_num": 64
+        "_row_num": 65
       },
       {
         "choice_list_name": "HC",
@@ -2754,7 +2767,7 @@
             }
           }
         },
-        "_row_num": 65
+        "_row_num": 66
       },
       {
         "choice_list_name": "HC",
@@ -2767,7 +2780,7 @@
             }
           }
         },
-        "_row_num": 66
+        "_row_num": 67
       },
       {
         "choice_list_name": "HC",
@@ -2780,7 +2793,7 @@
             }
           }
         },
-        "_row_num": 67
+        "_row_num": 68
       },
       {
         "choice_list_name": "HC",
@@ -2793,7 +2806,7 @@
             }
           }
         },
-        "_row_num": 68
+        "_row_num": 69
       },
       {
         "choice_list_name": "HC",
@@ -2806,7 +2819,7 @@
             }
           }
         },
-        "_row_num": 69
+        "_row_num": 70
       },
       {
         "choice_list_name": "HC",
@@ -2819,7 +2832,7 @@
             }
           }
         },
-        "_row_num": 70
+        "_row_num": 71
       },
       {
         "choice_list_name": "HC",
@@ -2832,7 +2845,7 @@
             }
           }
         },
-        "_row_num": 71
+        "_row_num": 72
       },
       {
         "choice_list_name": "HC",
@@ -2845,7 +2858,7 @@
             }
           }
         },
-        "_row_num": 72
+        "_row_num": 73
       },
       {
         "choice_list_name": "HC",
@@ -2858,7 +2871,7 @@
             }
           }
         },
-        "_row_num": 73
+        "_row_num": 74
       },
       {
         "choice_list_name": "Events",
@@ -2871,7 +2884,7 @@
             }
           }
         },
-        "_row_num": 75
+        "_row_num": 76
       },
       {
         "choice_list_name": "Events",
@@ -2884,7 +2897,7 @@
             }
           }
         },
-        "_row_num": 76
+        "_row_num": 77
       },
       {
         "choice_list_name": "Events",
@@ -2897,7 +2910,7 @@
             }
           }
         },
-        "_row_num": 77
+        "_row_num": 78
       },
       {
         "choice_list_name": "Events",
@@ -2910,7 +2923,7 @@
             }
           }
         },
-        "_row_num": 78
+        "_row_num": 79
       },
       {
         "choice_list_name": "Events",
@@ -2923,7 +2936,7 @@
             }
           }
         },
-        "_row_num": 79
+        "_row_num": 80
       },
       {
         "choice_list_name": "Events",
@@ -2936,7 +2949,7 @@
             }
           }
         },
-        "_row_num": 80
+        "_row_num": 81
       },
       {
         "choice_list_name": "Events",
@@ -2949,7 +2962,7 @@
             }
           }
         },
-        "_row_num": 81
+        "_row_num": 82
       },
       {
         "choice_list_name": "Events",
@@ -2962,7 +2975,7 @@
             }
           }
         },
-        "_row_num": 82
+        "_row_num": 83
       },
       {
         "choice_list_name": "Events",
@@ -2975,7 +2988,7 @@
             }
           }
         },
-        "_row_num": 83
+        "_row_num": 84
       },
       {
         "choice_list_name": "Events",
@@ -2988,7 +3001,7 @@
             }
           }
         },
-        "_row_num": 84
+        "_row_num": 85
       },
       {
         "choice_list_name": "Events",
@@ -3001,7 +3014,7 @@
             }
           }
         },
-        "_row_num": 85
+        "_row_num": 86
       },
       {
         "choice_list_name": "Events",
@@ -3014,7 +3027,7 @@
             }
           }
         },
-        "_row_num": 86
+        "_row_num": 87
       },
       {
         "choice_list_name": "NumberEvent",
@@ -3027,7 +3040,7 @@
             }
           }
         },
-        "_row_num": 88
+        "_row_num": 89
       },
       {
         "choice_list_name": "NumberEvent",
@@ -3040,7 +3053,7 @@
             }
           }
         },
-        "_row_num": 89
+        "_row_num": 90
       },
       {
         "choice_list_name": "NumberEvent",
@@ -3053,7 +3066,7 @@
             }
           }
         },
-        "_row_num": 90
+        "_row_num": 91
       },
       {
         "choice_list_name": "NumberEvent",
@@ -3066,7 +3079,7 @@
             }
           }
         },
-        "_row_num": 91
+        "_row_num": 92
       },
       {
         "choice_list_name": "NumberEvent",
@@ -3079,7 +3092,7 @@
             }
           }
         },
-        "_row_num": 92
+        "_row_num": 93
       },
       {
         "choice_list_name": "PlaceEvent",
@@ -3092,7 +3105,7 @@
             }
           }
         },
-        "_row_num": 94
+        "_row_num": 95
       },
       {
         "choice_list_name": "PlaceEvent",
@@ -3105,7 +3118,7 @@
             }
           }
         },
-        "_row_num": 95
+        "_row_num": 96
       },
       {
         "choice_list_name": "PartiEvent",
@@ -3118,7 +3131,7 @@
             }
           }
         },
-        "_row_num": 97
+        "_row_num": 98
       },
       {
         "choice_list_name": "PartiEvent",
@@ -3131,7 +3144,7 @@
             }
           }
         },
-        "_row_num": 98
+        "_row_num": 99
       },
       {
         "choice_list_name": "PartiEvent",
@@ -3144,7 +3157,7 @@
             }
           }
         },
-        "_row_num": 99
+        "_row_num": 100
       },
       {
         "choice_list_name": "TypeMask",
@@ -3157,7 +3170,7 @@
             }
           }
         },
-        "_row_num": 101
+        "_row_num": 102
       },
       {
         "choice_list_name": "TypeMask",
@@ -3170,7 +3183,7 @@
             }
           }
         },
-        "_row_num": 102
+        "_row_num": 103
       },
       {
         "choice_list_name": "TypeMask",
@@ -3183,7 +3196,7 @@
             }
           }
         },
-        "_row_num": 103
+        "_row_num": 104
       },
       {
         "choice_list_name": "TypeMask2",
@@ -3196,7 +3209,7 @@
             }
           }
         },
-        "_row_num": 105
+        "_row_num": 106
       },
       {
         "choice_list_name": "TypeMask2",
@@ -3209,7 +3222,7 @@
             }
           }
         },
-        "_row_num": 106
+        "_row_num": 107
       },
       {
         "choice_list_name": "TypeMask2",
@@ -3222,7 +3235,7 @@
             }
           }
         },
-        "_row_num": 107
+        "_row_num": 108
       },
       {
         "choice_list_name": "TypeMask2",
@@ -3235,7 +3248,7 @@
             }
           }
         },
-        "_row_num": 108
+        "_row_num": 109
       },
       {
         "choice_list_name": "TypeMask3",
@@ -3248,7 +3261,7 @@
             }
           }
         },
-        "_row_num": 110
+        "_row_num": 111
       },
       {
         "choice_list_name": "TypeMask3",
@@ -3261,7 +3274,7 @@
             }
           }
         },
-        "_row_num": 111
+        "_row_num": 112
       },
       {
         "choice_list_name": "TypeMask3",
@@ -3274,7 +3287,7 @@
             }
           }
         },
-        "_row_num": 112
+        "_row_num": 113
       },
       {
         "choice_list_name": "WhenMask",
@@ -3287,7 +3300,7 @@
             }
           }
         },
-        "_row_num": 114
+        "_row_num": 115
       },
       {
         "choice_list_name": "WhenMask",
@@ -3300,7 +3313,7 @@
             }
           }
         },
-        "_row_num": 115
+        "_row_num": 116
       },
       {
         "choice_list_name": "WhenMask",
@@ -3313,7 +3326,7 @@
             }
           }
         },
-        "_row_num": 116
+        "_row_num": 117
       },
       {
         "choice_list_name": "WhenMask",
@@ -3326,7 +3339,7 @@
             }
           }
         },
-        "_row_num": 117
+        "_row_num": 118
       }
     ],
     "prompt_types": [
@@ -4139,6 +4152,19 @@
             }
           },
           "_row_num": 16
+        },
+        {
+          "choice_list_name": "Assistant",
+          "data_value": "SUZ",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Suzete",
+                "default": "Suzete"
+              }
+            }
+          },
+          "_row_num": 17
         }
       ],
       "NoInterview": [
@@ -4153,7 +4179,7 @@
               }
             }
           },
-          "_row_num": 18
+          "_row_num": 19
         },
         {
           "choice_list_name": "NoInterview",
@@ -4166,7 +4192,7 @@
               }
             }
           },
-          "_row_num": 19
+          "_row_num": 20
         },
         {
           "choice_list_name": "NoInterview",
@@ -4179,7 +4205,7 @@
               }
             }
           },
-          "_row_num": 20
+          "_row_num": 21
         },
         {
           "choice_list_name": "NoInterview",
@@ -4192,7 +4218,7 @@
               }
             }
           },
-          "_row_num": 21
+          "_row_num": 22
         },
         {
           "choice_list_name": "NoInterview",
@@ -4205,7 +4231,7 @@
               }
             }
           },
-          "_row_num": 22
+          "_row_num": 23
         }
       ],
       "YesNo": [
@@ -4220,7 +4246,7 @@
               }
             }
           },
-          "_row_num": 24
+          "_row_num": 25
         },
         {
           "choice_list_name": "YesNo",
@@ -4233,7 +4259,7 @@
               }
             }
           },
-          "_row_num": 25
+          "_row_num": 26
         }
       ],
       "relation": [
@@ -4248,7 +4274,7 @@
               }
             }
           },
-          "_row_num": 27
+          "_row_num": 28
         },
         {
           "choice_list_name": "relation",
@@ -4261,7 +4287,7 @@
               }
             }
           },
-          "_row_num": 28
+          "_row_num": 29
         },
         {
           "choice_list_name": "relation",
@@ -4274,7 +4300,7 @@
               }
             }
           },
-          "_row_num": 29
+          "_row_num": 30
         },
         {
           "choice_list_name": "relation",
@@ -4287,7 +4313,7 @@
               }
             }
           },
-          "_row_num": 30
+          "_row_num": 31
         },
         {
           "choice_list_name": "relation",
@@ -4300,7 +4326,7 @@
               }
             }
           },
-          "_row_num": 31
+          "_row_num": 32
         },
         {
           "choice_list_name": "relation",
@@ -4313,7 +4339,7 @@
               }
             }
           },
-          "_row_num": 32
+          "_row_num": 33
         },
         {
           "choice_list_name": "relation",
@@ -4326,7 +4352,7 @@
               }
             }
           },
-          "_row_num": 33
+          "_row_num": 34
         }
       ],
       "vitalstatus": [
@@ -4341,7 +4367,7 @@
               }
             }
           },
-          "_row_num": 35
+          "_row_num": 36
         },
         {
           "choice_list_name": "vitalstatus",
@@ -4354,7 +4380,7 @@
               }
             }
           },
-          "_row_num": 36
+          "_row_num": 37
         },
         {
           "choice_list_name": "vitalstatus",
@@ -4367,7 +4393,7 @@
               }
             }
           },
-          "_row_num": 37
+          "_row_num": 38
         },
         {
           "choice_list_name": "vitalstatus",
@@ -4380,7 +4406,7 @@
               }
             }
           },
-          "_row_num": 38
+          "_row_num": 39
         },
         {
           "choice_list_name": "vitalstatus",
@@ -4393,7 +4419,7 @@
               }
             }
           },
-          "_row_num": 39
+          "_row_num": 40
         }
       ],
       "YesNoDontknow": [
@@ -4408,7 +4434,7 @@
               }
             }
           },
-          "_row_num": 41
+          "_row_num": 42
         },
         {
           "choice_list_name": "YesNoDontknow",
@@ -4421,7 +4447,7 @@
               }
             }
           },
-          "_row_num": 42
+          "_row_num": 43
         },
         {
           "choice_list_name": "YesNoDontknow",
@@ -4434,7 +4460,7 @@
               }
             }
           },
-          "_row_num": 43
+          "_row_num": 44
         }
       ],
       "dontknowdate": [
@@ -4449,7 +4475,7 @@
               }
             }
           },
-          "_row_num": 45
+          "_row_num": 46
         }
       ],
       "TestResult": [
@@ -4464,7 +4490,7 @@
               }
             }
           },
-          "_row_num": 47
+          "_row_num": 48
         },
         {
           "choice_list_name": "TestResult",
@@ -4477,7 +4503,7 @@
               }
             }
           },
-          "_row_num": 48
+          "_row_num": 49
         },
         {
           "choice_list_name": "TestResult",
@@ -4490,7 +4516,7 @@
               }
             }
           },
-          "_row_num": 49
+          "_row_num": 50
         }
       ],
       "HC": [
@@ -4505,7 +4531,7 @@
               }
             }
           },
-          "_row_num": 51
+          "_row_num": 52
         },
         {
           "choice_list_name": "HC",
@@ -4518,7 +4544,7 @@
               }
             }
           },
-          "_row_num": 52
+          "_row_num": 53
         },
         {
           "choice_list_name": "HC",
@@ -4531,7 +4557,7 @@
               }
             }
           },
-          "_row_num": 53
+          "_row_num": 54
         },
         {
           "choice_list_name": "HC",
@@ -4544,7 +4570,7 @@
               }
             }
           },
-          "_row_num": 54
+          "_row_num": 55
         },
         {
           "choice_list_name": "HC",
@@ -4557,7 +4583,7 @@
               }
             }
           },
-          "_row_num": 55
+          "_row_num": 56
         },
         {
           "choice_list_name": "HC",
@@ -4570,7 +4596,7 @@
               }
             }
           },
-          "_row_num": 56
+          "_row_num": 57
         },
         {
           "choice_list_name": "HC",
@@ -4583,7 +4609,7 @@
               }
             }
           },
-          "_row_num": 57
+          "_row_num": 58
         },
         {
           "choice_list_name": "HC",
@@ -4596,7 +4622,7 @@
               }
             }
           },
-          "_row_num": 58
+          "_row_num": 59
         },
         {
           "choice_list_name": "HC",
@@ -4609,7 +4635,7 @@
               }
             }
           },
-          "_row_num": 59
+          "_row_num": 60
         },
         {
           "choice_list_name": "HC",
@@ -4622,7 +4648,7 @@
               }
             }
           },
-          "_row_num": 60
+          "_row_num": 61
         },
         {
           "choice_list_name": "HC",
@@ -4635,7 +4661,7 @@
               }
             }
           },
-          "_row_num": 61
+          "_row_num": 62
         },
         {
           "choice_list_name": "HC",
@@ -4648,7 +4674,7 @@
               }
             }
           },
-          "_row_num": 62
+          "_row_num": 63
         },
         {
           "choice_list_name": "HC",
@@ -4661,7 +4687,7 @@
               }
             }
           },
-          "_row_num": 63
+          "_row_num": 64
         },
         {
           "choice_list_name": "HC",
@@ -4674,7 +4700,7 @@
               }
             }
           },
-          "_row_num": 64
+          "_row_num": 65
         },
         {
           "choice_list_name": "HC",
@@ -4687,7 +4713,7 @@
               }
             }
           },
-          "_row_num": 65
+          "_row_num": 66
         },
         {
           "choice_list_name": "HC",
@@ -4700,7 +4726,7 @@
               }
             }
           },
-          "_row_num": 66
+          "_row_num": 67
         },
         {
           "choice_list_name": "HC",
@@ -4713,7 +4739,7 @@
               }
             }
           },
-          "_row_num": 67
+          "_row_num": 68
         },
         {
           "choice_list_name": "HC",
@@ -4726,7 +4752,7 @@
               }
             }
           },
-          "_row_num": 68
+          "_row_num": 69
         },
         {
           "choice_list_name": "HC",
@@ -4739,7 +4765,7 @@
               }
             }
           },
-          "_row_num": 69
+          "_row_num": 70
         },
         {
           "choice_list_name": "HC",
@@ -4752,7 +4778,7 @@
               }
             }
           },
-          "_row_num": 70
+          "_row_num": 71
         },
         {
           "choice_list_name": "HC",
@@ -4765,7 +4791,7 @@
               }
             }
           },
-          "_row_num": 71
+          "_row_num": 72
         },
         {
           "choice_list_name": "HC",
@@ -4778,7 +4804,7 @@
               }
             }
           },
-          "_row_num": 72
+          "_row_num": 73
         },
         {
           "choice_list_name": "HC",
@@ -4791,7 +4817,7 @@
               }
             }
           },
-          "_row_num": 73
+          "_row_num": 74
         }
       ],
       "Events": [
@@ -4806,7 +4832,7 @@
               }
             }
           },
-          "_row_num": 75
+          "_row_num": 76
         },
         {
           "choice_list_name": "Events",
@@ -4819,7 +4845,7 @@
               }
             }
           },
-          "_row_num": 76
+          "_row_num": 77
         },
         {
           "choice_list_name": "Events",
@@ -4832,7 +4858,7 @@
               }
             }
           },
-          "_row_num": 77
+          "_row_num": 78
         },
         {
           "choice_list_name": "Events",
@@ -4845,7 +4871,7 @@
               }
             }
           },
-          "_row_num": 78
+          "_row_num": 79
         },
         {
           "choice_list_name": "Events",
@@ -4858,7 +4884,7 @@
               }
             }
           },
-          "_row_num": 79
+          "_row_num": 80
         },
         {
           "choice_list_name": "Events",
@@ -4871,7 +4897,7 @@
               }
             }
           },
-          "_row_num": 80
+          "_row_num": 81
         },
         {
           "choice_list_name": "Events",
@@ -4884,7 +4910,7 @@
               }
             }
           },
-          "_row_num": 81
+          "_row_num": 82
         },
         {
           "choice_list_name": "Events",
@@ -4897,7 +4923,7 @@
               }
             }
           },
-          "_row_num": 82
+          "_row_num": 83
         },
         {
           "choice_list_name": "Events",
@@ -4910,7 +4936,7 @@
               }
             }
           },
-          "_row_num": 83
+          "_row_num": 84
         },
         {
           "choice_list_name": "Events",
@@ -4923,7 +4949,7 @@
               }
             }
           },
-          "_row_num": 84
+          "_row_num": 85
         },
         {
           "choice_list_name": "Events",
@@ -4936,7 +4962,7 @@
               }
             }
           },
-          "_row_num": 85
+          "_row_num": 86
         },
         {
           "choice_list_name": "Events",
@@ -4949,7 +4975,7 @@
               }
             }
           },
-          "_row_num": 86
+          "_row_num": 87
         }
       ],
       "NumberEvent": [
@@ -4964,7 +4990,7 @@
               }
             }
           },
-          "_row_num": 88
+          "_row_num": 89
         },
         {
           "choice_list_name": "NumberEvent",
@@ -4977,7 +5003,7 @@
               }
             }
           },
-          "_row_num": 89
+          "_row_num": 90
         },
         {
           "choice_list_name": "NumberEvent",
@@ -4990,7 +5016,7 @@
               }
             }
           },
-          "_row_num": 90
+          "_row_num": 91
         },
         {
           "choice_list_name": "NumberEvent",
@@ -5003,7 +5029,7 @@
               }
             }
           },
-          "_row_num": 91
+          "_row_num": 92
         },
         {
           "choice_list_name": "NumberEvent",
@@ -5016,7 +5042,7 @@
               }
             }
           },
-          "_row_num": 92
+          "_row_num": 93
         }
       ],
       "PlaceEvent": [
@@ -5031,7 +5057,7 @@
               }
             }
           },
-          "_row_num": 94
+          "_row_num": 95
         },
         {
           "choice_list_name": "PlaceEvent",
@@ -5044,7 +5070,7 @@
               }
             }
           },
-          "_row_num": 95
+          "_row_num": 96
         }
       ],
       "PartiEvent": [
@@ -5059,7 +5085,7 @@
               }
             }
           },
-          "_row_num": 97
+          "_row_num": 98
         },
         {
           "choice_list_name": "PartiEvent",
@@ -5072,7 +5098,7 @@
               }
             }
           },
-          "_row_num": 98
+          "_row_num": 99
         },
         {
           "choice_list_name": "PartiEvent",
@@ -5085,7 +5111,7 @@
               }
             }
           },
-          "_row_num": 99
+          "_row_num": 100
         }
       ],
       "TypeMask": [
@@ -5100,7 +5126,7 @@
               }
             }
           },
-          "_row_num": 101
+          "_row_num": 102
         },
         {
           "choice_list_name": "TypeMask",
@@ -5113,7 +5139,7 @@
               }
             }
           },
-          "_row_num": 102
+          "_row_num": 103
         },
         {
           "choice_list_name": "TypeMask",
@@ -5126,7 +5152,7 @@
               }
             }
           },
-          "_row_num": 103
+          "_row_num": 104
         }
       ],
       "TypeMask2": [
@@ -5141,7 +5167,7 @@
               }
             }
           },
-          "_row_num": 105
+          "_row_num": 106
         },
         {
           "choice_list_name": "TypeMask2",
@@ -5154,7 +5180,7 @@
               }
             }
           },
-          "_row_num": 106
+          "_row_num": 107
         },
         {
           "choice_list_name": "TypeMask2",
@@ -5167,7 +5193,7 @@
               }
             }
           },
-          "_row_num": 107
+          "_row_num": 108
         },
         {
           "choice_list_name": "TypeMask2",
@@ -5180,7 +5206,7 @@
               }
             }
           },
-          "_row_num": 108
+          "_row_num": 109
         }
       ],
       "TypeMask3": [
@@ -5195,7 +5221,7 @@
               }
             }
           },
-          "_row_num": 110
+          "_row_num": 111
         },
         {
           "choice_list_name": "TypeMask3",
@@ -5208,7 +5234,7 @@
               }
             }
           },
-          "_row_num": 111
+          "_row_num": 112
         },
         {
           "choice_list_name": "TypeMask3",
@@ -5221,7 +5247,7 @@
               }
             }
           },
-          "_row_num": 112
+          "_row_num": 113
         }
       ],
       "WhenMask": [
@@ -5236,7 +5262,7 @@
               }
             }
           },
-          "_row_num": 114
+          "_row_num": 115
         },
         {
           "choice_list_name": "WhenMask",
@@ -5249,7 +5275,7 @@
               }
             }
           },
-          "_row_num": 115
+          "_row_num": 116
         },
         {
           "choice_list_name": "WhenMask",
@@ -5262,7 +5288,7 @@
               }
             }
           },
-          "_row_num": 116
+          "_row_num": 117
         },
         {
           "choice_list_name": "WhenMask",
@@ -5275,7 +5301,7 @@
               }
             }
           },
-          "_row_num": 117
+          "_row_num": 118
         }
       ]
     },
@@ -10948,259 +10974,259 @@
         "_aspect": "ASSISTENTE",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAL\",\"display\":{\"title\":{\"text\":{\"english\":\"Malam\",\"default\":\"Malam\"}}},\"_row_num\":2},{\"choice_list_name\":\"Assistant\",\"data_value\":\"NEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Nene Mario\",\"default\":\"Nene Mario\"}}},\"_row_num\":3},{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAU\",\"display\":{\"title\":{\"text\":{\"english\":\"Maudu\",\"default\":\"Maudu\"}}},\"_row_num\":4},{\"choice_list_name\":\"Assistant\",\"data_value\":\"DEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Demba\",\"default\":\"Demba\"}}},\"_row_num\":5},{\"choice_list_name\":\"Assistant\",\"data_value\":\"WIL\",\"display\":{\"title\":{\"text\":{\"english\":\"William\",\"default\":\"William\"}}},\"_row_num\":6},{\"choice_list_name\":\"Assistant\",\"data_value\":\"IAI\",\"display\":{\"title\":{\"text\":{\"english\":\"Iaia\",\"default\":\"Iaia\"}}},\"_row_num\":7},{\"choice_list_name\":\"Assistant\",\"data_value\":\"EDU\",\"display\":{\"title\":{\"text\":{\"english\":\"Eduardo\",\"default\":\"Eduardo\"}}},\"_row_num\":8},{\"choice_list_name\":\"Assistant\",\"data_value\":\"ARM\",\"display\":{\"title\":{\"text\":{\"english\":\"Armando\",\"default\":\"Armando\"}}},\"_row_num\":9},{\"choice_list_name\":\"Assistant\",\"data_value\":\"OID\",\"display\":{\"title\":{\"text\":{\"english\":\"Oides\",\"default\":\"Oides\"}}},\"_row_num\":10},{\"choice_list_name\":\"Assistant\",\"data_value\":\"KEL\",\"display\":{\"title\":{\"text\":{\"english\":\"Kelbit\",\"default\":\"Kelbit\"}}},\"_row_num\":11},{\"choice_list_name\":\"Assistant\",\"data_value\":\"SIM\",\"display\":{\"title\":{\"text\":{\"english\":\"Simonio\",\"default\":\"Simonio\"}}},\"_row_num\":12},{\"choice_list_name\":\"Assistant\",\"data_value\":\"LAN\",\"display\":{\"title\":{\"text\":{\"english\":\"Lanica\",\"default\":\"Lanica\"}}},\"_row_num\":13},{\"choice_list_name\":\"Assistant\",\"data_value\":\"LEO\",\"display\":{\"title\":{\"text\":{\"english\":\"Leo\",\"default\":\"Leo\"}}},\"_row_num\":14},{\"choice_list_name\":\"Assistant\",\"data_value\":\"JAN\",\"display\":{\"title\":{\"text\":{\"english\":\"Janistella\",\"default\":\"Janistella\"}}},\"_row_num\":15},{\"choice_list_name\":\"Assistant\",\"data_value\":\"MIN\",\"display\":{\"title\":{\"text\":{\"english\":\"Wilhemina\",\"default\":\"Wilhemina\"}}},\"_row_num\":16}]"
+        "_value": "[{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAL\",\"display\":{\"title\":{\"text\":{\"english\":\"Malam\",\"default\":\"Malam\"}}},\"_row_num\":2},{\"choice_list_name\":\"Assistant\",\"data_value\":\"NEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Nene Mario\",\"default\":\"Nene Mario\"}}},\"_row_num\":3},{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAU\",\"display\":{\"title\":{\"text\":{\"english\":\"Maudu\",\"default\":\"Maudu\"}}},\"_row_num\":4},{\"choice_list_name\":\"Assistant\",\"data_value\":\"DEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Demba\",\"default\":\"Demba\"}}},\"_row_num\":5},{\"choice_list_name\":\"Assistant\",\"data_value\":\"WIL\",\"display\":{\"title\":{\"text\":{\"english\":\"William\",\"default\":\"William\"}}},\"_row_num\":6},{\"choice_list_name\":\"Assistant\",\"data_value\":\"IAI\",\"display\":{\"title\":{\"text\":{\"english\":\"Iaia\",\"default\":\"Iaia\"}}},\"_row_num\":7},{\"choice_list_name\":\"Assistant\",\"data_value\":\"EDU\",\"display\":{\"title\":{\"text\":{\"english\":\"Eduardo\",\"default\":\"Eduardo\"}}},\"_row_num\":8},{\"choice_list_name\":\"Assistant\",\"data_value\":\"ARM\",\"display\":{\"title\":{\"text\":{\"english\":\"Armando\",\"default\":\"Armando\"}}},\"_row_num\":9},{\"choice_list_name\":\"Assistant\",\"data_value\":\"OID\",\"display\":{\"title\":{\"text\":{\"english\":\"Oides\",\"default\":\"Oides\"}}},\"_row_num\":10},{\"choice_list_name\":\"Assistant\",\"data_value\":\"KEL\",\"display\":{\"title\":{\"text\":{\"english\":\"Kelbit\",\"default\":\"Kelbit\"}}},\"_row_num\":11},{\"choice_list_name\":\"Assistant\",\"data_value\":\"SIM\",\"display\":{\"title\":{\"text\":{\"english\":\"Simonio\",\"default\":\"Simonio\"}}},\"_row_num\":12},{\"choice_list_name\":\"Assistant\",\"data_value\":\"LAN\",\"display\":{\"title\":{\"text\":{\"english\":\"Lanica\",\"default\":\"Lanica\"}}},\"_row_num\":13},{\"choice_list_name\":\"Assistant\",\"data_value\":\"LEO\",\"display\":{\"title\":{\"text\":{\"english\":\"Leo\",\"default\":\"Leo\"}}},\"_row_num\":14},{\"choice_list_name\":\"Assistant\",\"data_value\":\"JAN\",\"display\":{\"title\":{\"text\":{\"english\":\"Janistella\",\"default\":\"Janistella\"}}},\"_row_num\":15},{\"choice_list_name\":\"Assistant\",\"data_value\":\"MIN\",\"display\":{\"title\":{\"text\":{\"english\":\"Wilhemina\",\"default\":\"Wilhemina\"}}},\"_row_num\":16},{\"choice_list_name\":\"Assistant\",\"data_value\":\"SUZ\",\"display\":{\"title\":{\"text\":{\"english\":\"Suzete\",\"default\":\"Suzete\"}}},\"_row_num\":17}]"
       },
       {
         "_partition": "Column",
         "_aspect": "ATTCOVID",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CANSERA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CONS",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CONSDIAG",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CONSONDE",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"HC\",\"data_value\":\"301\",\"display\":{\"title\":{\"text\":{\"english\":\"HNSM\",\"default\":\"HNSM\"}}},\"_row_num\":51},{\"choice_list_name\":\"HC\",\"data_value\":\"304\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Bandim\",\"default\":\"CS Bandim\"}}},\"_row_num\":52},{\"choice_list_name\":\"HC\",\"data_value\":\"305\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Belem\",\"default\":\"CS Belem\"}}},\"_row_num\":53},{\"choice_list_name\":\"HC\",\"data_value\":\"306\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Cuntum. Sobrada\",\"default\":\"CS Cuntum. Sobrada\"}}},\"_row_num\":54},{\"choice_list_name\":\"HC\",\"data_value\":\"307\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Cuntum Madina\",\"default\":\"CS Cuntum Madina\"}}},\"_row_num\":55},{\"choice_list_name\":\"HC\",\"data_value\":\"308\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Plak\",\"default\":\"CS Plak\"}}},\"_row_num\":56},{\"choice_list_name\":\"HC\",\"data_value\":\"309\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Quelele\",\"default\":\"CS Quelele\"}}},\"_row_num\":57},{\"choice_list_name\":\"HC\",\"data_value\":\"310\",\"display\":{\"title\":{\"text\":{\"english\":\"Ceu e Terra\",\"default\":\"Ceu e Terra\"}}},\"_row_num\":58},{\"choice_list_name\":\"HC\",\"data_value\":\"311\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica de Bra. Seminario de Padre\",\"default\":\"Clinica de Bra. Seminario de Padre\"}}},\"_row_num\":59},{\"choice_list_name\":\"HC\",\"data_value\":\"312\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Bairro Militar\",\"default\":\"CS Bairro Militar\"}}},\"_row_num\":60},{\"choice_list_name\":\"HC\",\"data_value\":\"313\",\"display\":{\"title\":{\"text\":{\"english\":\"Hospital Militar. Chines\",\"default\":\"Hospital Militar. Chines\"}}},\"_row_num\":61},{\"choice_list_name\":\"HC\",\"data_value\":\"314\",\"display\":{\"title\":{\"text\":{\"english\":\"Casa Emanuel\",\"default\":\"Casa Emanuel\"}}},\"_row_num\":62},{\"choice_list_name\":\"HC\",\"data_value\":\"315\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Ajuda\",\"default\":\"CS Ajuda\"}}},\"_row_num\":63},{\"choice_list_name\":\"HC\",\"data_value\":\"316\",\"display\":{\"title\":{\"text\":{\"english\":\"Raul Follerau\",\"default\":\"Raul Follerau\"}}},\"_row_num\":64},{\"choice_list_name\":\"HC\",\"data_value\":\"317\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica Sissoko. Mindara\",\"default\":\"Clinica Sissoko. Mindara\"}}},\"_row_num\":65},{\"choice_list_name\":\"HC\",\"data_value\":\"318\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica 3 di Augusto\",\"default\":\"Clinica 3 di Augusto\"}}},\"_row_num\":66},{\"choice_list_name\":\"HC\",\"data_value\":\"319\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Antula\",\"default\":\"CS Antula\"}}},\"_row_num\":67},{\"choice_list_name\":\"HC\",\"data_value\":\"320\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Gã Beafada\",\"default\":\"CS Gã Beafada\"}}},\"_row_num\":68},{\"choice_list_name\":\"HC\",\"data_value\":\"321\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Pefine\",\"default\":\"CS Pefine\"}}},\"_row_num\":69},{\"choice_list_name\":\"HC\",\"data_value\":\"322\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Santa Luzia\",\"default\":\"CS Santa Luzia\"}}},\"_row_num\":70},{\"choice_list_name\":\"HC\",\"data_value\":\"323\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Luanda\",\"default\":\"CS Luanda\"}}},\"_row_num\":71},{\"choice_list_name\":\"HC\",\"data_value\":\"324\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Missará\",\"default\":\"CS Missará\"}}},\"_row_num\":72},{\"choice_list_name\":\"HC\",\"data_value\":\"325\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Centro\",\"default\":\"CS Centro\"}}},\"_row_num\":73}]"
+        "_value": "[{\"choice_list_name\":\"HC\",\"data_value\":\"301\",\"display\":{\"title\":{\"text\":{\"english\":\"HNSM\",\"default\":\"HNSM\"}}},\"_row_num\":52},{\"choice_list_name\":\"HC\",\"data_value\":\"304\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Bandim\",\"default\":\"CS Bandim\"}}},\"_row_num\":53},{\"choice_list_name\":\"HC\",\"data_value\":\"305\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Belem\",\"default\":\"CS Belem\"}}},\"_row_num\":54},{\"choice_list_name\":\"HC\",\"data_value\":\"306\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Cuntum. Sobrada\",\"default\":\"CS Cuntum. Sobrada\"}}},\"_row_num\":55},{\"choice_list_name\":\"HC\",\"data_value\":\"307\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Cuntum Madina\",\"default\":\"CS Cuntum Madina\"}}},\"_row_num\":56},{\"choice_list_name\":\"HC\",\"data_value\":\"308\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Plak\",\"default\":\"CS Plak\"}}},\"_row_num\":57},{\"choice_list_name\":\"HC\",\"data_value\":\"309\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Quelele\",\"default\":\"CS Quelele\"}}},\"_row_num\":58},{\"choice_list_name\":\"HC\",\"data_value\":\"310\",\"display\":{\"title\":{\"text\":{\"english\":\"Ceu e Terra\",\"default\":\"Ceu e Terra\"}}},\"_row_num\":59},{\"choice_list_name\":\"HC\",\"data_value\":\"311\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica de Bra. Seminario de Padre\",\"default\":\"Clinica de Bra. Seminario de Padre\"}}},\"_row_num\":60},{\"choice_list_name\":\"HC\",\"data_value\":\"312\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Bairro Militar\",\"default\":\"CS Bairro Militar\"}}},\"_row_num\":61},{\"choice_list_name\":\"HC\",\"data_value\":\"313\",\"display\":{\"title\":{\"text\":{\"english\":\"Hospital Militar. Chines\",\"default\":\"Hospital Militar. Chines\"}}},\"_row_num\":62},{\"choice_list_name\":\"HC\",\"data_value\":\"314\",\"display\":{\"title\":{\"text\":{\"english\":\"Casa Emanuel\",\"default\":\"Casa Emanuel\"}}},\"_row_num\":63},{\"choice_list_name\":\"HC\",\"data_value\":\"315\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Ajuda\",\"default\":\"CS Ajuda\"}}},\"_row_num\":64},{\"choice_list_name\":\"HC\",\"data_value\":\"316\",\"display\":{\"title\":{\"text\":{\"english\":\"Raul Follerau\",\"default\":\"Raul Follerau\"}}},\"_row_num\":65},{\"choice_list_name\":\"HC\",\"data_value\":\"317\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica Sissoko. Mindara\",\"default\":\"Clinica Sissoko. Mindara\"}}},\"_row_num\":66},{\"choice_list_name\":\"HC\",\"data_value\":\"318\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica 3 di Augusto\",\"default\":\"Clinica 3 di Augusto\"}}},\"_row_num\":67},{\"choice_list_name\":\"HC\",\"data_value\":\"319\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Antula\",\"default\":\"CS Antula\"}}},\"_row_num\":68},{\"choice_list_name\":\"HC\",\"data_value\":\"320\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Gã Beafada\",\"default\":\"CS Gã Beafada\"}}},\"_row_num\":69},{\"choice_list_name\":\"HC\",\"data_value\":\"321\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Pefine\",\"default\":\"CS Pefine\"}}},\"_row_num\":70},{\"choice_list_name\":\"HC\",\"data_value\":\"322\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Santa Luzia\",\"default\":\"CS Santa Luzia\"}}},\"_row_num\":71},{\"choice_list_name\":\"HC\",\"data_value\":\"323\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Luanda\",\"default\":\"CS Luanda\"}}},\"_row_num\":72},{\"choice_list_name\":\"HC\",\"data_value\":\"324\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Missará\",\"default\":\"CS Missará\"}}},\"_row_num\":73},{\"choice_list_name\":\"HC\",\"data_value\":\"325\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Centro\",\"default\":\"CS Centro\"}}},\"_row_num\":74}]"
       },
       {
         "_partition": "Column",
         "_aspect": "CONSTI",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "COVID",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "COVIDTEST",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "DISPNE",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "DOENCA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "ESTADO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"vitalstatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":35},{\"choice_list_name\":\"vitalstatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":36},{\"choice_list_name\":\"vitalstatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":37},{\"choice_list_name\":\"vitalstatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved\",\"default\":\"Mudou\"}}},\"_row_num\":38},{\"choice_list_name\":\"vitalstatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Died\",\"default\":\"Faleceu\"}}},\"_row_num\":39}]"
+        "_value": "[{\"choice_list_name\":\"vitalstatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":36},{\"choice_list_name\":\"vitalstatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":37},{\"choice_list_name\":\"vitalstatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":38},{\"choice_list_name\":\"vitalstatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved\",\"default\":\"Mudou\"}}},\"_row_num\":39},{\"choice_list_name\":\"vitalstatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Died\",\"default\":\"Faleceu\"}}},\"_row_num\":40}]"
       },
       {
         "_partition": "Column",
         "_aspect": "EVENT",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "EVENTLOCAL",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"PlaceEvent\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Outside\",\"default\":\"Fora\"}}},\"_row_num\":94},{\"choice_list_name\":\"PlaceEvent\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Inside\",\"default\":\"Dentro\"}}},\"_row_num\":95}]"
+        "_value": "[{\"choice_list_name\":\"PlaceEvent\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Outside\",\"default\":\"Fora\"}}},\"_row_num\":95},{\"choice_list_name\":\"PlaceEvent\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Inside\",\"default\":\"Dentro\"}}},\"_row_num\":96}]"
       },
       {
         "_partition": "Column",
         "_aspect": "EVENTPART",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"PartiEvent\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"20-30\",\"default\":\"20-30\"}}},\"_row_num\":97},{\"choice_list_name\":\"PartiEvent\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"31-50\",\"default\":\"31-50\"}}},\"_row_num\":98},{\"choice_list_name\":\"PartiEvent\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\">50\",\"default\":\">50\"}}},\"_row_num\":99}]"
+        "_value": "[{\"choice_list_name\":\"PartiEvent\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"20-30\",\"default\":\"20-30\"}}},\"_row_num\":98},{\"choice_list_name\":\"PartiEvent\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"31-50\",\"default\":\"31-50\"}}},\"_row_num\":99},{\"choice_list_name\":\"PartiEvent\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\">50\",\"default\":\">50\"}}},\"_row_num\":100}]"
       },
       {
         "_partition": "Column",
         "_aspect": "EVENTQUAL",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Events\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Lunch\",\"default\":\"Almoso\"}}},\"_row_num\":75},{\"choice_list_name\":\"Events\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Funeral\",\"default\":\"Funeral\"}}},\"_row_num\":76},{\"choice_list_name\":\"Events\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Choro\",\"default\":\"Choro\"}}},\"_row_num\":77},{\"choice_list_name\":\"Events\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Marriage\",\"default\":\"Casamento\"}}},\"_row_num\":78},{\"choice_list_name\":\"Events\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Birthday\",\"default\":\"Anivarsario\"}}},\"_row_num\":79},{\"choice_list_name\":\"Events\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Ceremony\",\"default\":\"Ceremonia\"}}},\"_row_num\":80},{\"choice_list_name\":\"Events\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Market\",\"default\":\"Fera\"}}},\"_row_num\":81},{\"choice_list_name\":\"Events\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Pray\",\"default\":\"Reza\"}}},\"_row_num\":82},{\"choice_list_name\":\"Events\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Family meeting\",\"default\":\"Reunião famíliar\"}}},\"_row_num\":83},{\"choice_list_name\":\"Events\",\"data_value\":\"11\",\"display\":{\"title\":{\"text\":{\"english\":\"School\",\"default\":\"Escola\"}}},\"_row_num\":84},{\"choice_list_name\":\"Events\",\"data_value\":\"12\",\"display\":{\"title\":{\"text\":{\"english\":\"Work\",\"default\":\"Trabalho\"}}},\"_row_num\":85},{\"choice_list_name\":\"Events\",\"data_value\":\"10\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":86}]"
+        "_value": "[{\"choice_list_name\":\"Events\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Lunch\",\"default\":\"Almoso\"}}},\"_row_num\":76},{\"choice_list_name\":\"Events\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Funeral\",\"default\":\"Funeral\"}}},\"_row_num\":77},{\"choice_list_name\":\"Events\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Choro\",\"default\":\"Choro\"}}},\"_row_num\":78},{\"choice_list_name\":\"Events\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Marriage\",\"default\":\"Casamento\"}}},\"_row_num\":79},{\"choice_list_name\":\"Events\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Birthday\",\"default\":\"Anivarsario\"}}},\"_row_num\":80},{\"choice_list_name\":\"Events\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Ceremony\",\"default\":\"Ceremonia\"}}},\"_row_num\":81},{\"choice_list_name\":\"Events\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Market\",\"default\":\"Fera\"}}},\"_row_num\":82},{\"choice_list_name\":\"Events\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Pray\",\"default\":\"Reza\"}}},\"_row_num\":83},{\"choice_list_name\":\"Events\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Family meeting\",\"default\":\"Reunião famíliar\"}}},\"_row_num\":84},{\"choice_list_name\":\"Events\",\"data_value\":\"11\",\"display\":{\"title\":{\"text\":{\"english\":\"School\",\"default\":\"Escola\"}}},\"_row_num\":85},{\"choice_list_name\":\"Events\",\"data_value\":\"12\",\"display\":{\"title\":{\"text\":{\"english\":\"Work\",\"default\":\"Trabalho\"}}},\"_row_num\":86},{\"choice_list_name\":\"Events\",\"data_value\":\"10\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":87}]"
       },
       {
         "_partition": "Column",
         "_aspect": "EVENTQUAN",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"NumberEvent\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"1 time\",\"default\":\"1 veze\"}}},\"_row_num\":88},{\"choice_list_name\":\"NumberEvent\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"2-10 times\",\"default\":\"2-10 vezes\"}}},\"_row_num\":89},{\"choice_list_name\":\"NumberEvent\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"2-3 times a week\",\"default\":\"2-3 vezes por semana\"}}},\"_row_num\":90},{\"choice_list_name\":\"NumberEvent\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Almost every day\",\"default\":\"Quas tudo dia\"}}},\"_row_num\":91},{\"choice_list_name\":\"NumberEvent\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Every day\",\"default\":\"Tudo dia\"}}},\"_row_num\":92}]"
+        "_value": "[{\"choice_list_name\":\"NumberEvent\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"1 time\",\"default\":\"1 veze\"}}},\"_row_num\":89},{\"choice_list_name\":\"NumberEvent\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"2-10 times\",\"default\":\"2-10 vezes\"}}},\"_row_num\":90},{\"choice_list_name\":\"NumberEvent\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"2-3 times a week\",\"default\":\"2-3 vezes por semana\"}}},\"_row_num\":91},{\"choice_list_name\":\"NumberEvent\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Almost every day\",\"default\":\"Quas tudo dia\"}}},\"_row_num\":92},{\"choice_list_name\":\"NumberEvent\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Every day\",\"default\":\"Tudo dia\"}}},\"_row_num\":93}]"
       },
       {
         "_partition": "Column",
         "_aspect": "FEBRE",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "HOSP",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "HOSPDIAG",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "HOSPONDE",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"HC\",\"data_value\":\"301\",\"display\":{\"title\":{\"text\":{\"english\":\"HNSM\",\"default\":\"HNSM\"}}},\"_row_num\":51},{\"choice_list_name\":\"HC\",\"data_value\":\"304\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Bandim\",\"default\":\"CS Bandim\"}}},\"_row_num\":52},{\"choice_list_name\":\"HC\",\"data_value\":\"305\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Belem\",\"default\":\"CS Belem\"}}},\"_row_num\":53},{\"choice_list_name\":\"HC\",\"data_value\":\"306\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Cuntum. Sobrada\",\"default\":\"CS Cuntum. Sobrada\"}}},\"_row_num\":54},{\"choice_list_name\":\"HC\",\"data_value\":\"307\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Cuntum Madina\",\"default\":\"CS Cuntum Madina\"}}},\"_row_num\":55},{\"choice_list_name\":\"HC\",\"data_value\":\"308\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Plak\",\"default\":\"CS Plak\"}}},\"_row_num\":56},{\"choice_list_name\":\"HC\",\"data_value\":\"309\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Quelele\",\"default\":\"CS Quelele\"}}},\"_row_num\":57},{\"choice_list_name\":\"HC\",\"data_value\":\"310\",\"display\":{\"title\":{\"text\":{\"english\":\"Ceu e Terra\",\"default\":\"Ceu e Terra\"}}},\"_row_num\":58},{\"choice_list_name\":\"HC\",\"data_value\":\"311\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica de Bra. Seminario de Padre\",\"default\":\"Clinica de Bra. Seminario de Padre\"}}},\"_row_num\":59},{\"choice_list_name\":\"HC\",\"data_value\":\"312\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Bairro Militar\",\"default\":\"CS Bairro Militar\"}}},\"_row_num\":60},{\"choice_list_name\":\"HC\",\"data_value\":\"313\",\"display\":{\"title\":{\"text\":{\"english\":\"Hospital Militar. Chines\",\"default\":\"Hospital Militar. Chines\"}}},\"_row_num\":61},{\"choice_list_name\":\"HC\",\"data_value\":\"314\",\"display\":{\"title\":{\"text\":{\"english\":\"Casa Emanuel\",\"default\":\"Casa Emanuel\"}}},\"_row_num\":62},{\"choice_list_name\":\"HC\",\"data_value\":\"315\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Ajuda\",\"default\":\"CS Ajuda\"}}},\"_row_num\":63},{\"choice_list_name\":\"HC\",\"data_value\":\"316\",\"display\":{\"title\":{\"text\":{\"english\":\"Raul Follerau\",\"default\":\"Raul Follerau\"}}},\"_row_num\":64},{\"choice_list_name\":\"HC\",\"data_value\":\"317\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica Sissoko. Mindara\",\"default\":\"Clinica Sissoko. Mindara\"}}},\"_row_num\":65},{\"choice_list_name\":\"HC\",\"data_value\":\"318\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica 3 di Augusto\",\"default\":\"Clinica 3 di Augusto\"}}},\"_row_num\":66},{\"choice_list_name\":\"HC\",\"data_value\":\"319\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Antula\",\"default\":\"CS Antula\"}}},\"_row_num\":67},{\"choice_list_name\":\"HC\",\"data_value\":\"320\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Gã Beafada\",\"default\":\"CS Gã Beafada\"}}},\"_row_num\":68},{\"choice_list_name\":\"HC\",\"data_value\":\"321\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Pefine\",\"default\":\"CS Pefine\"}}},\"_row_num\":69},{\"choice_list_name\":\"HC\",\"data_value\":\"322\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Santa Luzia\",\"default\":\"CS Santa Luzia\"}}},\"_row_num\":70},{\"choice_list_name\":\"HC\",\"data_value\":\"323\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Luanda\",\"default\":\"CS Luanda\"}}},\"_row_num\":71},{\"choice_list_name\":\"HC\",\"data_value\":\"324\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Missará\",\"default\":\"CS Missará\"}}},\"_row_num\":72},{\"choice_list_name\":\"HC\",\"data_value\":\"325\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Centro\",\"default\":\"CS Centro\"}}},\"_row_num\":73}]"
+        "_value": "[{\"choice_list_name\":\"HC\",\"data_value\":\"301\",\"display\":{\"title\":{\"text\":{\"english\":\"HNSM\",\"default\":\"HNSM\"}}},\"_row_num\":52},{\"choice_list_name\":\"HC\",\"data_value\":\"304\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Bandim\",\"default\":\"CS Bandim\"}}},\"_row_num\":53},{\"choice_list_name\":\"HC\",\"data_value\":\"305\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Belem\",\"default\":\"CS Belem\"}}},\"_row_num\":54},{\"choice_list_name\":\"HC\",\"data_value\":\"306\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Cuntum. Sobrada\",\"default\":\"CS Cuntum. Sobrada\"}}},\"_row_num\":55},{\"choice_list_name\":\"HC\",\"data_value\":\"307\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Cuntum Madina\",\"default\":\"CS Cuntum Madina\"}}},\"_row_num\":56},{\"choice_list_name\":\"HC\",\"data_value\":\"308\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Plak\",\"default\":\"CS Plak\"}}},\"_row_num\":57},{\"choice_list_name\":\"HC\",\"data_value\":\"309\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Quelele\",\"default\":\"CS Quelele\"}}},\"_row_num\":58},{\"choice_list_name\":\"HC\",\"data_value\":\"310\",\"display\":{\"title\":{\"text\":{\"english\":\"Ceu e Terra\",\"default\":\"Ceu e Terra\"}}},\"_row_num\":59},{\"choice_list_name\":\"HC\",\"data_value\":\"311\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica de Bra. Seminario de Padre\",\"default\":\"Clinica de Bra. Seminario de Padre\"}}},\"_row_num\":60},{\"choice_list_name\":\"HC\",\"data_value\":\"312\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Bairro Militar\",\"default\":\"CS Bairro Militar\"}}},\"_row_num\":61},{\"choice_list_name\":\"HC\",\"data_value\":\"313\",\"display\":{\"title\":{\"text\":{\"english\":\"Hospital Militar. Chines\",\"default\":\"Hospital Militar. Chines\"}}},\"_row_num\":62},{\"choice_list_name\":\"HC\",\"data_value\":\"314\",\"display\":{\"title\":{\"text\":{\"english\":\"Casa Emanuel\",\"default\":\"Casa Emanuel\"}}},\"_row_num\":63},{\"choice_list_name\":\"HC\",\"data_value\":\"315\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Ajuda\",\"default\":\"CS Ajuda\"}}},\"_row_num\":64},{\"choice_list_name\":\"HC\",\"data_value\":\"316\",\"display\":{\"title\":{\"text\":{\"english\":\"Raul Follerau\",\"default\":\"Raul Follerau\"}}},\"_row_num\":65},{\"choice_list_name\":\"HC\",\"data_value\":\"317\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica Sissoko. Mindara\",\"default\":\"Clinica Sissoko. Mindara\"}}},\"_row_num\":66},{\"choice_list_name\":\"HC\",\"data_value\":\"318\",\"display\":{\"title\":{\"text\":{\"english\":\"Clinica 3 di Augusto\",\"default\":\"Clinica 3 di Augusto\"}}},\"_row_num\":67},{\"choice_list_name\":\"HC\",\"data_value\":\"319\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Antula\",\"default\":\"CS Antula\"}}},\"_row_num\":68},{\"choice_list_name\":\"HC\",\"data_value\":\"320\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Gã Beafada\",\"default\":\"CS Gã Beafada\"}}},\"_row_num\":69},{\"choice_list_name\":\"HC\",\"data_value\":\"321\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Pefine\",\"default\":\"CS Pefine\"}}},\"_row_num\":70},{\"choice_list_name\":\"HC\",\"data_value\":\"322\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Santa Luzia\",\"default\":\"CS Santa Luzia\"}}},\"_row_num\":71},{\"choice_list_name\":\"HC\",\"data_value\":\"323\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Luanda\",\"default\":\"CS Luanda\"}}},\"_row_num\":72},{\"choice_list_name\":\"HC\",\"data_value\":\"324\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Missará\",\"default\":\"CS Missará\"}}},\"_row_num\":73},{\"choice_list_name\":\"HC\",\"data_value\":\"325\",\"display\":{\"title\":{\"text\":{\"english\":\"CS Centro\",\"default\":\"CS Centro\"}}},\"_row_num\":74}]"
       },
       {
         "_partition": "Column",
         "_aspect": "INF",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":24},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":25}]"
+        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":25},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":26}]"
       },
       {
         "_partition": "Column",
         "_aspect": "INFOU",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"relation\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Husband\",\"default\":\"Marido\"}}},\"_row_num\":27},{\"choice_list_name\":\"relation\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Wife\",\"default\":\"Esposa\"}}},\"_row_num\":28},{\"choice_list_name\":\"relation\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Sister\",\"default\":\"Irmã\"}}},\"_row_num\":29},{\"choice_list_name\":\"relation\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Brother\",\"default\":\"Irmão\"}}},\"_row_num\":30},{\"choice_list_name\":\"relation\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Child\",\"default\":\"Criança\"}}},\"_row_num\":31},{\"choice_list_name\":\"relation\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Father\",\"default\":\"Pai\"}}},\"_row_num\":32},{\"choice_list_name\":\"relation\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Mother\",\"default\":\"Mãe\"}}},\"_row_num\":33}]"
+        "_value": "[{\"choice_list_name\":\"relation\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Husband\",\"default\":\"Marido\"}}},\"_row_num\":28},{\"choice_list_name\":\"relation\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Wife\",\"default\":\"Esposa\"}}},\"_row_num\":29},{\"choice_list_name\":\"relation\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Sister\",\"default\":\"Irmã\"}}},\"_row_num\":30},{\"choice_list_name\":\"relation\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Brother\",\"default\":\"Irmão\"}}},\"_row_num\":31},{\"choice_list_name\":\"relation\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Child\",\"default\":\"Criança\"}}},\"_row_num\":32},{\"choice_list_name\":\"relation\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Father\",\"default\":\"Pai\"}}},\"_row_num\":33},{\"choice_list_name\":\"relation\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Mother\",\"default\":\"Mãe\"}}},\"_row_num\":34}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MASC",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MASCOU",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Surgery\",\"default\":\"Cirúrgia\"}}},\"_row_num\":105},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Cloth\",\"default\":\"Pano\"}}},\"_row_num\":106},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Surgery / Cloth\",\"default\":\"Cirúrgia / Pano\"}}},\"_row_num\":107},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":108}]"
+        "_value": "[{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Surgery\",\"default\":\"Cirúrgia\"}}},\"_row_num\":106},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Cloth\",\"default\":\"Pano\"}}},\"_row_num\":107},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Surgery / Cloth\",\"default\":\"Cirúrgia / Pano\"}}},\"_row_num\":108},{\"choice_list_name\":\"TypeMask2\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":109}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MASCOU2",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"TypeMask3\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Mask\",\"default\":\"So mascara di estudo\"}}},\"_row_num\":110},{\"choice_list_name\":\"TypeMask3\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Mask / Cloth\",\"default\":\"Mascara di estudo  / Pano\"}}},\"_row_num\":111},{\"choice_list_name\":\"TypeMask3\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Mask / Surgery\",\"default\":\"Mascara di estudo  / Cirúrgia\"}}},\"_row_num\":112}]"
+        "_value": "[{\"choice_list_name\":\"TypeMask3\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Mask\",\"default\":\"So mascara di estudo\"}}},\"_row_num\":111},{\"choice_list_name\":\"TypeMask3\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Mask / Cloth\",\"default\":\"Mascara di estudo  / Pano\"}}},\"_row_num\":112},{\"choice_list_name\":\"TypeMask3\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Mask / Surgery\",\"default\":\"Mascara di estudo  / Cirúrgia\"}}},\"_row_num\":113}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MASCQUAN",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"WhenMask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"When I go out\",\"default\":\"Quando sai\"}}},\"_row_num\":114},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Always\",\"default\":\"Sempre\"}}},\"_row_num\":115},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Occasionally\",\"default\":\"Nem sempre\"}}},\"_row_num\":116},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":117}]"
+        "_value": "[{\"choice_list_name\":\"WhenMask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"When I go out\",\"default\":\"Quando sai\"}}},\"_row_num\":115},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Always\",\"default\":\"Sempre\"}}},\"_row_num\":116},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Occasionally\",\"default\":\"Nem sempre\"}}},\"_row_num\":117},{\"choice_list_name\":\"WhenMask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":118}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MASCTIPO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"TypeMask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Mask from study\",\"default\":\"Mascara di estudo\"}}},\"_row_num\":101},{\"choice_list_name\":\"TypeMask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":102},{\"choice_list_name\":\"TypeMask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":103}]"
+        "_value": "[{\"choice_list_name\":\"TypeMask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Mask from study\",\"default\":\"Mascara di estudo\"}}},\"_row_num\":102},{\"choice_list_name\":\"TypeMask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Other\",\"default\":\"Outro\"}}},\"_row_num\":103},{\"choice_list_name\":\"TypeMask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":104}]"
       },
       {
         "_partition": "Column",
         "_aspect": "OLFATO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "OUTRO1",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "OUTRO2",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "PALADAR",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "POSSIVEL",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":24},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":25}]"
+        "_value": "[{\"choice_list_name\":\"YesNo\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":25},{\"choice_list_name\":\"YesNo\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":26}]"
       },
       {
         "_partition": "Column",
         "_aspect": "RAZAO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"NoInterview\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Answer - Person could not provide information\",\"default\":\"Resposta - A pessoa não pôde fornecer informações\"}}},\"_row_num\":18},{\"choice_list_name\":\"NoInterview\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No answer\",\"default\":\"Sem resposta\"}}},\"_row_num\":19},{\"choice_list_name\":\"NoInterview\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"No network or off\",\"default\":\"Sem rede ou desativado\"}}},\"_row_num\":20},{\"choice_list_name\":\"NoInterview\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Not possible to call person (no number / wrong number)\",\"default\":\"Não é possível ligar para a pessoa (sem número / número errado)\"}}},\"_row_num\":21},{\"choice_list_name\":\"NoInterview\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Refused to participate in study\",\"default\":\"Recusou-se a participar do estudo\"}}},\"_row_num\":22}]"
+        "_value": "[{\"choice_list_name\":\"NoInterview\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Answer - Person could not provide information\",\"default\":\"Resposta - A pessoa não pôde fornecer informações\"}}},\"_row_num\":19},{\"choice_list_name\":\"NoInterview\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No answer\",\"default\":\"Sem resposta\"}}},\"_row_num\":20},{\"choice_list_name\":\"NoInterview\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"No network or off\",\"default\":\"Sem rede ou desativado\"}}},\"_row_num\":21},{\"choice_list_name\":\"NoInterview\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Not possible to call person (no number / wrong number)\",\"default\":\"Não é possível ligar para a pessoa (sem número / número errado)\"}}},\"_row_num\":22},{\"choice_list_name\":\"NoInterview\",\"data_value\":\"7\",\"display\":{\"title\":{\"text\":{\"english\":\"Refused to participate in study\",\"default\":\"Recusou-se a participar do estudo\"}}},\"_row_num\":23}]"
       },
       {
         "_partition": "Column",
         "_aspect": "TESTGARGA",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "Column",
         "_aspect": "TESTRESUL",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"TestResult\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Positive\",\"default\":\"Positivo\"}}},\"_row_num\":47},{\"choice_list_name\":\"TestResult\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Negative\",\"default\":\"Negativo\"}}},\"_row_num\":48},{\"choice_list_name\":\"TestResult\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know yet\",\"default\":\"Ainda não sabe\"}}},\"_row_num\":49}]"
+        "_value": "[{\"choice_list_name\":\"TestResult\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Positive\",\"default\":\"Positivo\"}}},\"_row_num\":48},{\"choice_list_name\":\"TestResult\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Negative\",\"default\":\"Negativo\"}}},\"_row_num\":49},{\"choice_list_name\":\"TestResult\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know yet\",\"default\":\"Ainda não sabe\"}}},\"_row_num\":50}]"
       },
       {
         "_partition": "Column",
         "_aspect": "TOSSE",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":41},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":43}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":42},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":43},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":44}]"
       },
       {
         "_partition": "FormType",
