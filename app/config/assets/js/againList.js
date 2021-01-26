@@ -148,7 +148,7 @@ function openForm(person) {
         odkTables.editRowWithSurvey(
             null,
             "MASKAGAIN",
-            rowId,
+            person.rowId,
             "MASKAGAIN",
             null,);
         } else {
