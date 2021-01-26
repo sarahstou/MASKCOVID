@@ -29,6 +29,11 @@ function initButtons() {
     btnFU.on("click", function() {
         odkTables.launchHTML(null, 'config/assets/fuBairroList.html');
     });
+    // Again
+    var btnFU = $('#btnAgain');
+    btnFU.on("click", function() {
+        odkTables.launchHTML(null, 'config/assets/againBairroList.html');
+    });
     // Sync
     var btnSync = $('#btnSync');
     btnSync.on("click", function() {
