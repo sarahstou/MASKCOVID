@@ -36,9 +36,10 @@ function getMasterList(data) {
     for (var row = 1; row < allRows.length; row++) {  // start at row = 1 to skip header
             allRows[row] = allRows[row].replace(/"/g,""); // remove quotes from strings
             var rowValues = allRows[row].split(",");
-            var p = {bairro: rowValues[0], tabz: rowValues[1], zone: rowValues[2], houseGroup: rowValues[3], camo: rowValues[4], fam: rowValues[5], famName: rowValues[6]};
+            var p = {bairro: rowValues[0], tabz: rowValues[1], zone: rowValues[2], houseGroup: rowValues[3], camo: rowValues[4], fam: rowValues[5], famName: rowValues[6], randomGroup: rowValues[8]};
             masterFamList.push(p);
     }
+    console.log(masterFamList)
 }
 
 function getList() {
@@ -95,7 +96,8 @@ function initButtons() {
                     bairro: item.bairro,
                     tabz: item.tabz,
                     zone: item.zone,
-                    houseGroup: item.houseGroup
+                    houseGroup: item.houseGroup,
+                    randomGroup: item.randomGroup
                 });
             }
         }
@@ -106,7 +108,7 @@ function initButtons() {
     $.each(listFromMaster, function() {
         var that = this;
         // list
-        ul.append($("<li />").append($("<button />").attr('id',this.houseGroup).attr('class','btn' + this.bairro).append(this.houseGroup).append(" " + getCount(this.houseGroup))));
+        ul.append($("<li />").append($("<button />").attr('id',this.houseGroup).attr('class','btn' + this.bairro).append(this.houseGroup + " - " + this.randomGroup).append(" " + getCount(this.houseGroup))));
         
         // Buttons
         var btn = ul.find('#' + this.houseGroup);
