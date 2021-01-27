@@ -43,7 +43,7 @@ function getMasterList(data) {
 function getList() {
     // SQL to get participants
     var varNamesMaskTablet = "I.BAIRRO, I.TABZ, ";
-    var varNamesAgain = "A._savepoint_type, A.DATSEG";
+    var varNamesAgain = "A._savepoint_type, A.ESTADO";
     var sql = "SELECT " + varNamesMaskTablet + varNamesAgain + 
         " FROM MASKTABLET AS I" + 
         " LEFT JOIN MASKAGAIN AS A ON I.POID = A.POID" +
@@ -60,9 +60,9 @@ function getList() {
             var BAIRRO = result.getData(row,"BAIRRO");
             var TABZ = result.getData(row,"TABZ");
 
-            var DATSEG = result.getData(row,"DATSEG");
+            var ESTADO = result.getData(row,"ESTADO");
             
-            var p = {type: 'participant', savepoint, BAIRRO, TABZ, DATSEG};
+            var p = {type: 'participant', savepoint, BAIRRO, TABZ, ESTADO};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -118,7 +118,7 @@ function initButtons() {
 function getCount(tabz) {
     var totalList = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz);
     var total = totalList.length;
-    var checked = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.DATSEG != null & person.savepoint == "COMPLETE").length;
+    var checked = participants.filter(person => person.BAIRRO == bairro & person.TABZ == tabz & person.ESTADO != null & person.savepoint == "COMPLETE").length;
     var count = "(" + checked + "/" + total + ")";
     return count;
 }

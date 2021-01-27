@@ -8,7 +8,7 @@
       },
       {
         "setting_name": "form_version",
-        "value": 60120,
+        "value": 270121,
         "_row_num": 3
       },
       {
@@ -21,8 +21,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Round two of field",
-              "default": "Round two of field"
+              "english": "MASKCOVID - Round two",
+              "default": "MASKCOVID - Segunda volta"
             }
           }
         },
@@ -69,6 +69,195 @@
         "_row_num": 2
       },
       {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Name: <b>{{data.NOME}}</b>",
+              "default": "Nome: <b>{{data.NOME}}</b>"
+            }
+          }
+        },
+        "_row_num": 3
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Mother: <b>{{data.NOMEMAE}}</b>",
+              "default": "Mae: <b>{{data.NOMEMAE}}</b>"
+            }
+          }
+        },
+        "_row_num": 4
+      },
+      {
+        "clause": "if",
+        "condition": "data(\"SEX\") == \"1\"",
+        "_row_num": 5
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Sex: <b>Male</b>",
+              "default": "Sexo: <b>Masculino</b>"
+            }
+          }
+        },
+        "_row_num": 6
+      },
+      {
+        "clause": "else",
+        "_row_num": 7
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Sex: <b>Female</b>",
+              "default": "Sexo: <b>Feminino</b>"
+            }
+          }
+        },
+        "_row_num": 8
+      },
+      {
+        "clause": "end if",
+        "_row_num": 9
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Date of birth: <b>{{calculates.displayDOB}}</b>",
+              "default": "Nascimento: <b>{{calculates.displayDOB}}</b>"
+            }
+          }
+        },
+        "_row_num": 10
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Inclusion day: <b>{{calculates.displayDATEX}}</b>",
+              "default": "Inclusão: <b>{{calculates.displayDATEX}}</b>"
+            }
+          }
+        },
+        "_row_num": 11
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Room: <b>{{data.ROOM}}</b>",
+              "default": "Quarto: <b>{{data.ROOM}}</b>"
+            }
+          }
+        },
+        "_row_num": 12
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Bed: <b>{{data.BED}}</b>",
+              "default": "Cama: C:<b>{{data.BED}}</b>"
+            }
+          }
+        },
+        "_row_num": 13
+      },
+      {
+        "clause": "if",
+        "condition": "data(\"RANGROUP\") == \"1\"",
+        "_row_num": 14
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Group in study: <b>Intervention</b>",
+              "default": "Grupo de estudo: <b>Intervenção</b>"
+            }
+          }
+        },
+        "_row_num": 15
+      },
+      {
+        "clause": "else",
+        "_row_num": 16
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Group in study: <b>Controle</b>",
+              "default": "Grupo de estudo: <b>Controle</b>"
+            }
+          }
+        },
+        "_row_num": 17
+      },
+      {
+        "clause": "end if",
+        "_row_num": 18
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 19
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 20
+      },
+      {
+        "type": "adate",
+        "name": "DATSEG",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Date of visit",
+              "default": "Data de visita"
+            }
+          }
+        },
+        "_row_num": 21
+      },
+      {
+        "type": "select_one_with_other",
+        "values_list": "Assistant",
+        "name": "PREENCHIDO",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Assistant",
+              "default": "Assistente"
+            }
+          }
+        },
+        "_row_num": 22
+      },
+      {
+        "clause": "end screen",
+        "_row_num": 23
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 24
+      },
+      {
         "type": "select_one",
         "values_list": "VitalStatus",
         "name": "ESTADO",
@@ -80,12 +269,13 @@
             }
           }
         },
-        "_row_num": 3
+        "constraint": "data(\"ESTADO\") != null",
+        "_row_num": 25
       },
       {
         "clause": "if",
         "condition": "data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"5\"",
-        "_row_num": 4
+        "_row_num": 26
       },
       {
         "type": "adate",
@@ -96,40 +286,36 @@
               "english": "When?",
               "default": "Quando?"
             }
-          },
-          "constraint_message": {
-            "text": {
-              "english": false
-            }
           }
         },
-        "_row_num": 5
+        "constraint": "data(\"DATASAI\") != null || data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
+        "_row_num": 27
       },
       {
         "type": "select_multiple",
         "values_list": "dontKnowDate",
         "name": "datasains",
-        "_row_num": 6
+        "_row_num": 28
       },
       {
         "clause": "if",
         "condition": "data(\"datasains\") != null",
-        "_row_num": 7
+        "_row_num": 29
       },
       {
         "type": "assign",
         "name": "DATASAI",
         "calculation": "data(\"datasains\")",
-        "_row_num": 8
+        "_row_num": 30
       },
       {
         "clause": "end if",
-        "_row_num": 9
+        "_row_num": 31
       },
       {
         "clause": "if",
         "condition": "data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"5\"",
-        "_row_num": 10
+        "_row_num": 32
       },
       {
         "type": "text",
@@ -142,20 +328,20 @@
             }
           }
         },
-        "_row_num": 11
+        "_row_num": 33
       },
       {
         "clause": "end if",
-        "_row_num": 12
+        "_row_num": 34
       },
       {
         "clause": "end if",
-        "_row_num": 13
+        "_row_num": 35
       },
       {
         "clause": "if",
         "condition": "data(\"ESTADO\") == \"8\"",
-        "_row_num": 14
+        "_row_num": 36
       },
       {
         "type": "text",
@@ -168,24 +354,25 @@
             }
           }
         },
-        "_row_num": 15
+        "constraint": "data(\"DUPLO\") != null || data(\"ESTADO\") != \"8\"",
+        "_row_num": 37
       },
       {
         "clause": "end if",
-        "_row_num": 16
+        "_row_num": 38
       },
       {
         "clause": "end screen",
-        "_row_num": 17
+        "_row_num": 39
       },
       {
         "clause": "if",
-        "condition": "(data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"5\"  || data(\"ESTADO\") == \"99\") && data(\"RANGROUP\") == 2",
-        "_row_num": 18
+        "condition": "(data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"5\") && data(\"RANGROUP\") == 2",
+        "_row_num": 40
       },
       {
         "clause": "begin screen",
-        "_row_num": 19
+        "_row_num": 41
       },
       {
         "type": "select_one",
@@ -199,15 +386,16 @@
             }
           }
         },
-        "_row_num": 20
+        "constraint": "data(\"ACCEPT\") != null || data(\"RANGROUP\") != 2 || data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
+        "_row_num": 42
       },
       {
         "clause": "end screen",
-        "_row_num": 21
+        "_row_num": 43
       },
       {
         "clause": "begin screen",
-        "_row_num": 22
+        "_row_num": 44
       },
       {
         "type": "select_one",
@@ -221,12 +409,13 @@
             }
           }
         },
-        "_row_num": 23
+        "constraint": "data(\"MASC\") != null || data(\"RANGROUP\") != 2 || data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
+        "_row_num": 45
       },
       {
         "clause": "if",
         "condition": "data(\"MASC\") == \"2\"",
-        "_row_num": 24
+        "_row_num": 46
       },
       {
         "type": "select_one",
@@ -240,289 +429,60 @@
             }
           }
         },
-        "_row_num": 25
+        "_row_num": 47
       },
       {
         "clause": "end if",
-        "_row_num": 26
+        "_row_num": 48
       },
       {
         "clause": "end screen",
-        "_row_num": 27
+        "_row_num": 49
+      },
+      {
+        "clause": "end if",
+        "_row_num": 50
+      },
+      {
+        "clause": "begin screen",
+        "_row_num": 51
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": {
+              "english": "Remember to use masks and wash hands",
+              "default": "Lembre-se de usar máscaras e lavar as mãos"
+            }
+          }
+        },
+        "_row_num": 52
       },
       {
         "clause": "if",
         "condition": "data(\"id_RECEB_QUEM\") != null",
-        "_row_num": 28
+        "_row_num": 53
       },
       {
         "type": "async_assign_single_string",
         "values_list": "person_name",
         "name": "RECEB_QUEM",
         "display": {
-          "constraint_message": {
-            "text": true
-          }
+          "hide_adate": true
         },
-        "_row_num": 29
+        "_row_num": 54
       },
       {
         "clause": "end if",
-        "_row_num": 30
+        "_row_num": 55
       },
       {
-        "clause": "end if",
-        "_row_num": 31
+        "clause": "end screen",
+        "_row_num": 56
       }
     ],
     "choices": [
-      {
-        "choice_list_name": "YesNo",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Yes",
-              "default": "Sim"
-            }
-          }
-        },
-        "_row_num": 2
-      },
-      {
-        "choice_list_name": "YesNo",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "english": "No",
-              "default": "Não"
-            }
-          }
-        },
-        "_row_num": 3
-      },
-      {
-        "choice_list_name": "YesNo",
-        "data_value": "9",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Missing information",
-              "default": "Falta informação"
-            }
-          }
-        },
-        "_row_num": 4
-      },
-      {
-        "choice_list_name": "YesNoDontknow",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Yes",
-              "default": "Sim"
-            }
-          }
-        },
-        "_row_num": 6
-      },
-      {
-        "choice_list_name": "YesNoDontknow",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "english": "No",
-              "default": "Não"
-            }
-          }
-        },
-        "_row_num": 7
-      },
-      {
-        "choice_list_name": "YesNoDontknow",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Don't know",
-              "default": "Não sabe"
-            }
-          }
-        },
-        "_row_num": 8
-      },
-      {
-        "choice_list_name": "YesNoDontknow",
-        "data_value": "9",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Missing information",
-              "default": "Falta informação"
-            }
-          }
-        },
-        "_row_num": 9
-      },
-      {
-        "choice_list_name": "VitalStatus",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Moved",
-              "default": "Mudou"
-            }
-          }
-        },
-        "_row_num": 11
-      },
-      {
-        "choice_list_name": "VitalStatus",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Dead",
-              "default": "Faleceu"
-            }
-          }
-        },
-        "_row_num": 12
-      },
-      {
-        "choice_list_name": "VitalStatus",
-        "data_value": "4",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Absent",
-              "default": "Ausente"
-            }
-          }
-        },
-        "_row_num": 13
-      },
-      {
-        "choice_list_name": "VitalStatus",
-        "data_value": "5",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Travelling",
-              "default": "Viagem"
-            }
-          }
-        },
-        "_row_num": 14
-      },
-      {
-        "choice_list_name": "VitalStatus",
-        "data_value": "6",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Unknown",
-              "default": "Desconhecido"
-            }
-          }
-        },
-        "_row_num": 15
-      },
-      {
-        "choice_list_name": "VitalStatus",
-        "data_value": "8",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Double",
-              "default": "Duplo"
-            }
-          }
-        },
-        "_row_num": 16
-      },
-      {
-        "choice_list_name": "VitalStatus",
-        "data_value": "99",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Missing information",
-              "default": "Falta informação"
-            }
-          }
-        },
-        "_row_num": 17
-      },
-      {
-        "choice_list_name": "Mask",
-        "data_value": "1",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Yes",
-              "default": "Sim"
-            }
-          }
-        },
-        "_row_num": 19
-      },
-      {
-        "choice_list_name": "Mask",
-        "data_value": "2",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Absent, left with other household member",
-              "default": "Ausente, foi deixada com outro/a"
-            }
-          }
-        },
-        "_row_num": 20
-      },
-      {
-        "choice_list_name": "Mask",
-        "data_value": "3",
-        "display": {
-          "title": {
-            "text": {
-              "english": "No, refused",
-              "default": "Não, recusou"
-            }
-          }
-        },
-        "_row_num": 21
-      },
-      {
-        "choice_list_name": "Mask",
-        "data_value": "8",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Not applicable",
-              "default": "Não aplicavel"
-            }
-          }
-        },
-        "_row_num": 22
-      },
-      {
-        "choice_list_name": "Mask",
-        "data_value": "9",
-        "display": {
-          "title": {
-            "text": {
-              "english": "Missing information",
-              "default": "Falta informação"
-            }
-          }
-        },
-        "_row_num": 23
-      },
       {
         "choice_list_name": "Assistant",
         "data_value": "MAL",
@@ -534,7 +494,7 @@
             }
           }
         },
-        "_row_num": 25
+        "_row_num": 2
       },
       {
         "choice_list_name": "Assistant",
@@ -547,7 +507,7 @@
             }
           }
         },
-        "_row_num": 26
+        "_row_num": 3
       },
       {
         "choice_list_name": "Assistant",
@@ -560,7 +520,7 @@
             }
           }
         },
-        "_row_num": 27
+        "_row_num": 4
       },
       {
         "choice_list_name": "Assistant",
@@ -573,7 +533,7 @@
             }
           }
         },
-        "_row_num": 28
+        "_row_num": 5
       },
       {
         "choice_list_name": "Assistant",
@@ -586,7 +546,7 @@
             }
           }
         },
-        "_row_num": 29
+        "_row_num": 6
       },
       {
         "choice_list_name": "Assistant",
@@ -599,7 +559,7 @@
             }
           }
         },
-        "_row_num": 30
+        "_row_num": 7
       },
       {
         "choice_list_name": "Assistant",
@@ -612,7 +572,7 @@
             }
           }
         },
-        "_row_num": 31
+        "_row_num": 8
       },
       {
         "choice_list_name": "Assistant",
@@ -625,7 +585,7 @@
             }
           }
         },
-        "_row_num": 32
+        "_row_num": 9
       },
       {
         "choice_list_name": "Assistant",
@@ -638,7 +598,7 @@
             }
           }
         },
-        "_row_num": 33
+        "_row_num": 10
       },
       {
         "choice_list_name": "Assistant",
@@ -651,7 +611,202 @@
             }
           }
         },
-        "_row_num": 34
+        "_row_num": 11
+      },
+      {
+        "choice_list_name": "Assistant",
+        "data_value": "SIM",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Simonio",
+              "default": "Simonio"
+            }
+          }
+        },
+        "_row_num": 12
+      },
+      {
+        "choice_list_name": "Assistant",
+        "data_value": "LAN",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Lanica",
+              "default": "Lanica"
+            }
+          }
+        },
+        "_row_num": 13
+      },
+      {
+        "choice_list_name": "Assistant",
+        "data_value": "LEO",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Leo",
+              "default": "Leo"
+            }
+          }
+        },
+        "_row_num": 14
+      },
+      {
+        "choice_list_name": "Assistant",
+        "data_value": "JAN",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Janistella",
+              "default": "Janistella"
+            }
+          }
+        },
+        "_row_num": 15
+      },
+      {
+        "choice_list_name": "Assistant",
+        "data_value": "MIN",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Wilhemina",
+              "default": "Wilhemina"
+            }
+          }
+        },
+        "_row_num": 16
+      },
+      {
+        "choice_list_name": "Assistant",
+        "data_value": "SUZ",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Suzete",
+              "default": "Suzete"
+            }
+          }
+        },
+        "_row_num": 17
+      },
+      {
+        "choice_list_name": "Assistant",
+        "data_value": "AS1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Assistente 1",
+              "default": "Assistente 1"
+            }
+          }
+        },
+        "_row_num": 18
+      },
+      {
+        "choice_list_name": "Assistant",
+        "data_value": "AS2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Assistente 2",
+              "default": "Assistente 2"
+            }
+          }
+        },
+        "_row_num": 19
+      },
+      {
+        "choice_list_name": "VitalStatus",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Present",
+              "default": "Presente"
+            }
+          }
+        },
+        "_row_num": 21
+      },
+      {
+        "choice_list_name": "VitalStatus",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Moved",
+              "default": "Mudou"
+            }
+          }
+        },
+        "_row_num": 22
+      },
+      {
+        "choice_list_name": "VitalStatus",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Dead",
+              "default": "Faleceu"
+            }
+          }
+        },
+        "_row_num": 23
+      },
+      {
+        "choice_list_name": "VitalStatus",
+        "data_value": "4",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Absent",
+              "default": "Ausente"
+            }
+          }
+        },
+        "_row_num": 24
+      },
+      {
+        "choice_list_name": "VitalStatus",
+        "data_value": "5",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Travelling",
+              "default": "Viagem"
+            }
+          }
+        },
+        "_row_num": 25
+      },
+      {
+        "choice_list_name": "VitalStatus",
+        "data_value": "6",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Unknown",
+              "default": "Desconhecido"
+            }
+          }
+        },
+        "_row_num": 26
+      },
+      {
+        "choice_list_name": "VitalStatus",
+        "data_value": "8",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Double",
+              "default": "Duplo"
+            }
+          }
+        },
+        "_row_num": 27
       },
       {
         "choice_list_name": "dontKnowDate",
@@ -664,20 +819,122 @@
             }
           }
         },
-        "_row_num": 36
+        "_row_num": 29
       },
       {
-        "choice_list_name": "dontKnowDate",
-        "data_value": "D:1,M:1,Y:1955",
+        "choice_list_name": "YesNoDontknow",
+        "data_value": "1",
         "display": {
           "title": {
             "text": {
-              "english": "Missing information",
-              "default": "Falta informação"
+              "english": "Yes",
+              "default": "Sim"
+            }
+          }
+        },
+        "_row_num": 31
+      },
+      {
+        "choice_list_name": "YesNoDontknow",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "No",
+              "default": "Não"
+            }
+          }
+        },
+        "_row_num": 32
+      },
+      {
+        "choice_list_name": "YesNoDontknow",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Don't know",
+              "default": "Não sabe"
+            }
+          }
+        },
+        "_row_num": 33
+      },
+      {
+        "choice_list_name": "Mask",
+        "data_value": "1",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Yes",
+              "default": "Sim"
+            }
+          }
+        },
+        "_row_num": 35
+      },
+      {
+        "choice_list_name": "Mask",
+        "data_value": "2",
+        "display": {
+          "title": {
+            "text": {
+              "english": "Absent, left with other household member",
+              "default": "Ausente, foi deixada com outro/a"
+            }
+          }
+        },
+        "_row_num": 36
+      },
+      {
+        "choice_list_name": "Mask",
+        "data_value": "3",
+        "display": {
+          "title": {
+            "text": {
+              "english": "No, refused",
+              "default": "Não, recusou"
             }
           }
         },
         "_row_num": 37
+      }
+    ],
+    "queries": [
+      {
+        "query_name": "persons",
+        "query_type": "linked_table",
+        "linked_form_id": "MASKTABLET",
+        "linked_table_id": "MASKTABLET",
+        "selection": "HHOID = ?",
+        "selectionArgs": "[data('HHOID')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "_row_num": 2
+      },
+      {
+        "query_name": "person_name",
+        "query_type": "linked_table",
+        "linked_form_id": "MASKTABLET",
+        "linked_table_id": "MASKTABLET",
+        "selection": "_id = ?",
+        "selectionArgs": "[data('id_RECEB_QUEM')]",
+        "newRowInitialElementKeyToValueMap": "{}",
+        "openRowInitialElementKeyToValueMap": "{}",
+        "fieldName": "FNO",
+        "_row_num": 3
+      }
+    ],
+    "calculates": [
+      {
+        "calculation_name": "displayDOB",
+        "calculation": "adate.display(data(\"DOB\"))",
+        "_row_num": 2
+      },
+      {
+        "calculation_name": "displayDATEX",
+        "calculation": "adate.display(data(\"DATEX\"))",
+        "_row_num": 3
       }
     ],
     "prompt_types": [
@@ -691,6 +948,7 @@
       {
         "prompt_type_name": "async_assign_single_string",
         "type": "string",
+        "elementType": "string",
         "_row_num": 3
       }
     ],
@@ -708,14 +966,14 @@
         "_row_num": 3
       },
       {
-        "name": "CAMO",
-        "type": "integer",
+        "name": "HOUSEGRP",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 4
       },
       {
-        "name": "HOUSEGRP",
-        "type": "text",
+        "name": "CAMO",
+        "type": "integer",
         "isSessionVariable": false,
         "_row_num": 5
       },
@@ -726,55 +984,148 @@
         "_row_num": 6
       },
       {
-        "name": "RANGROUP",
+        "name": "FNO",
         "type": "integer",
         "isSessionVariable": false,
-        "comment": "Randomization variable",
         "_row_num": 7
       },
       {
-        "name": "DATEX",
-        "type": "adate",
+        "name": "ROOM",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 8
+      },
+      {
+        "name": "BED",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 9
       },
       {
-        "name": "PREENCHIDO",
-        "type": "select_one_with_other",
+        "name": "NOME",
+        "type": "text",
         "isSessionVariable": false,
         "_row_num": 10
+      },
+      {
+        "name": "NOMEMAE",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 11
+      },
+      {
+        "name": "SEX",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 12
+      },
+      {
+        "name": "DOB",
+        "type": "adate",
+        "isSessionVariable": false,
+        "_row_num": 13
+      },
+      {
+        "name": "HHOID",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 14
       },
       {
         "name": "ID",
         "type": "text",
         "isSessionVariable": false,
-        "comment": "id",
-        "_row_num": 12
-      }
-    ],
-    "queries": [
-      {
-        "query_name": "persons",
-        "query_type": "linked_table",
-        "linked_form_id": "MASKINCL",
-        "linked_table_id": "MASKINCL",
-        "selection": "HHOID = ?",
-        "selectionArgs": "[data('HHOID')]",
-        "newRowInitialElementKeyToValueMap": "{}",
-        "openRowInitialElementKeyToValueMap": "{}",
-        "_row_num": 2
+        "_row_num": 15
       },
       {
-        "query_name": "person_name",
-        "query_type": "linked_table",
-        "linked_form_id": "MASKINCL",
-        "linked_table_id": "MASKINCL",
-        "selection": "_id = ?",
-        "selectionArgs": "[data('id_RECEB_QUEM')]",
-        "newRowInitialElementKeyToValueMap": "{}",
-        "openRowInitialElementKeyToValueMap": "{}",
-        "fieldName": "FNO",
-        "_row_num": 3
+        "name": "IDOID",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 16
+      },
+      {
+        "name": "POID",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 17
+      },
+      {
+        "name": "DATEX",
+        "type": "adate",
+        "isSessionVariable": false,
+        "_row_num": 18
+      },
+      {
+        "name": "RANGROUP",
+        "type": "integer",
+        "isSessionVariable": false,
+        "_row_num": 19
+      },
+      {
+        "name": "DATSEG",
+        "type": "adate",
+        "isSessionVariable": false,
+        "_row_num": 21
+      },
+      {
+        "name": "PREENCHIDO",
+        "type": "select_one_with_other",
+        "isSessionVariable": false,
+        "_row_num": 22
+      },
+      {
+        "name": "ESTADO",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 24
+      },
+      {
+        "name": "DATASAI",
+        "type": "adate",
+        "isSessionVariable": false,
+        "_row_num": 25
+      },
+      {
+        "name": "datasains",
+        "type": "select_multiple",
+        "isSessionVariable": true,
+        "_row_num": 26
+      },
+      {
+        "name": "ONDE",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 27
+      },
+      {
+        "name": "DUPLO",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 28
+      },
+      {
+        "name": "ACCEPT",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 29
+      },
+      {
+        "name": "MASC",
+        "type": "select_one",
+        "isSessionVariable": false,
+        "_row_num": 30
+      },
+      {
+        "name": "id_RECEB_QUEM",
+        "type": "text",
+        "isSessionVariable": true,
+        "_row_num": 31
+      },
+      {
+        "name": "RECEB_QUEM",
+        "type": "text",
+        "isSessionVariable": false,
+        "_row_num": 32
       }
     ]
   },
@@ -802,7 +1153,7 @@
       },
       "form_version": {
         "setting_name": "form_version",
-        "value": 60120,
+        "value": 270121,
         "_row_num": 3
       },
       "table_id": {
@@ -815,8 +1166,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Round two of field",
-              "default": "Round two of field"
+              "english": "MASKCOVID - Round two",
+              "default": "MASKCOVID - Segunda volta"
             }
           }
         },
@@ -896,8 +1247,8 @@
         "display": {
           "title": {
             "text": {
-              "english": "Round two of field",
-              "default": "Round two of field"
+              "english": "MASKCOVID - Round two",
+              "default": "MASKCOVID - Segunda volta"
             }
           }
         },
@@ -905,261 +1256,6 @@
       }
     },
     "choices": {
-      "YesNo": [
-        {
-          "choice_list_name": "YesNo",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Yes",
-                "default": "Sim"
-              }
-            }
-          },
-          "_row_num": 2
-        },
-        {
-          "choice_list_name": "YesNo",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "english": "No",
-                "default": "Não"
-              }
-            }
-          },
-          "_row_num": 3
-        },
-        {
-          "choice_list_name": "YesNo",
-          "data_value": "9",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Missing information",
-                "default": "Falta informação"
-              }
-            }
-          },
-          "_row_num": 4
-        }
-      ],
-      "YesNoDontknow": [
-        {
-          "choice_list_name": "YesNoDontknow",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Yes",
-                "default": "Sim"
-              }
-            }
-          },
-          "_row_num": 6
-        },
-        {
-          "choice_list_name": "YesNoDontknow",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "english": "No",
-                "default": "Não"
-              }
-            }
-          },
-          "_row_num": 7
-        },
-        {
-          "choice_list_name": "YesNoDontknow",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Don't know",
-                "default": "Não sabe"
-              }
-            }
-          },
-          "_row_num": 8
-        },
-        {
-          "choice_list_name": "YesNoDontknow",
-          "data_value": "9",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Missing information",
-                "default": "Falta informação"
-              }
-            }
-          },
-          "_row_num": 9
-        }
-      ],
-      "VitalStatus": [
-        {
-          "choice_list_name": "VitalStatus",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Moved",
-                "default": "Mudou"
-              }
-            }
-          },
-          "_row_num": 11
-        },
-        {
-          "choice_list_name": "VitalStatus",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Dead",
-                "default": "Faleceu"
-              }
-            }
-          },
-          "_row_num": 12
-        },
-        {
-          "choice_list_name": "VitalStatus",
-          "data_value": "4",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Absent",
-                "default": "Ausente"
-              }
-            }
-          },
-          "_row_num": 13
-        },
-        {
-          "choice_list_name": "VitalStatus",
-          "data_value": "5",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Travelling",
-                "default": "Viagem"
-              }
-            }
-          },
-          "_row_num": 14
-        },
-        {
-          "choice_list_name": "VitalStatus",
-          "data_value": "6",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Unknown",
-                "default": "Desconhecido"
-              }
-            }
-          },
-          "_row_num": 15
-        },
-        {
-          "choice_list_name": "VitalStatus",
-          "data_value": "8",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Double",
-                "default": "Duplo"
-              }
-            }
-          },
-          "_row_num": 16
-        },
-        {
-          "choice_list_name": "VitalStatus",
-          "data_value": "99",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Missing information",
-                "default": "Falta informação"
-              }
-            }
-          },
-          "_row_num": 17
-        }
-      ],
-      "Mask": [
-        {
-          "choice_list_name": "Mask",
-          "data_value": "1",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Yes",
-                "default": "Sim"
-              }
-            }
-          },
-          "_row_num": 19
-        },
-        {
-          "choice_list_name": "Mask",
-          "data_value": "2",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Absent, left with other household member",
-                "default": "Ausente, foi deixada com outro/a"
-              }
-            }
-          },
-          "_row_num": 20
-        },
-        {
-          "choice_list_name": "Mask",
-          "data_value": "3",
-          "display": {
-            "title": {
-              "text": {
-                "english": "No, refused",
-                "default": "Não, recusou"
-              }
-            }
-          },
-          "_row_num": 21
-        },
-        {
-          "choice_list_name": "Mask",
-          "data_value": "8",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Not applicable",
-                "default": "Não aplicavel"
-              }
-            }
-          },
-          "_row_num": 22
-        },
-        {
-          "choice_list_name": "Mask",
-          "data_value": "9",
-          "display": {
-            "title": {
-              "text": {
-                "english": "Missing information",
-                "default": "Falta informação"
-              }
-            }
-          },
-          "_row_num": 23
-        }
-      ],
       "Assistant": [
         {
           "choice_list_name": "Assistant",
@@ -1172,7 +1268,7 @@
               }
             }
           },
-          "_row_num": 25
+          "_row_num": 2
         },
         {
           "choice_list_name": "Assistant",
@@ -1185,7 +1281,7 @@
               }
             }
           },
-          "_row_num": 26
+          "_row_num": 3
         },
         {
           "choice_list_name": "Assistant",
@@ -1198,7 +1294,7 @@
               }
             }
           },
-          "_row_num": 27
+          "_row_num": 4
         },
         {
           "choice_list_name": "Assistant",
@@ -1211,7 +1307,7 @@
               }
             }
           },
-          "_row_num": 28
+          "_row_num": 5
         },
         {
           "choice_list_name": "Assistant",
@@ -1224,7 +1320,7 @@
               }
             }
           },
-          "_row_num": 29
+          "_row_num": 6
         },
         {
           "choice_list_name": "Assistant",
@@ -1237,7 +1333,7 @@
               }
             }
           },
-          "_row_num": 30
+          "_row_num": 7
         },
         {
           "choice_list_name": "Assistant",
@@ -1250,7 +1346,7 @@
               }
             }
           },
-          "_row_num": 31
+          "_row_num": 8
         },
         {
           "choice_list_name": "Assistant",
@@ -1263,7 +1359,7 @@
               }
             }
           },
-          "_row_num": 32
+          "_row_num": 9
         },
         {
           "choice_list_name": "Assistant",
@@ -1276,7 +1372,7 @@
               }
             }
           },
-          "_row_num": 33
+          "_row_num": 10
         },
         {
           "choice_list_name": "Assistant",
@@ -1289,7 +1385,204 @@
               }
             }
           },
-          "_row_num": 34
+          "_row_num": 11
+        },
+        {
+          "choice_list_name": "Assistant",
+          "data_value": "SIM",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Simonio",
+                "default": "Simonio"
+              }
+            }
+          },
+          "_row_num": 12
+        },
+        {
+          "choice_list_name": "Assistant",
+          "data_value": "LAN",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Lanica",
+                "default": "Lanica"
+              }
+            }
+          },
+          "_row_num": 13
+        },
+        {
+          "choice_list_name": "Assistant",
+          "data_value": "LEO",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Leo",
+                "default": "Leo"
+              }
+            }
+          },
+          "_row_num": 14
+        },
+        {
+          "choice_list_name": "Assistant",
+          "data_value": "JAN",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Janistella",
+                "default": "Janistella"
+              }
+            }
+          },
+          "_row_num": 15
+        },
+        {
+          "choice_list_name": "Assistant",
+          "data_value": "MIN",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Wilhemina",
+                "default": "Wilhemina"
+              }
+            }
+          },
+          "_row_num": 16
+        },
+        {
+          "choice_list_name": "Assistant",
+          "data_value": "SUZ",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Suzete",
+                "default": "Suzete"
+              }
+            }
+          },
+          "_row_num": 17
+        },
+        {
+          "choice_list_name": "Assistant",
+          "data_value": "AS1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Assistente 1",
+                "default": "Assistente 1"
+              }
+            }
+          },
+          "_row_num": 18
+        },
+        {
+          "choice_list_name": "Assistant",
+          "data_value": "AS2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Assistente 2",
+                "default": "Assistente 2"
+              }
+            }
+          },
+          "_row_num": 19
+        }
+      ],
+      "VitalStatus": [
+        {
+          "choice_list_name": "VitalStatus",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Present",
+                "default": "Presente"
+              }
+            }
+          },
+          "_row_num": 21
+        },
+        {
+          "choice_list_name": "VitalStatus",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Moved",
+                "default": "Mudou"
+              }
+            }
+          },
+          "_row_num": 22
+        },
+        {
+          "choice_list_name": "VitalStatus",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Dead",
+                "default": "Faleceu"
+              }
+            }
+          },
+          "_row_num": 23
+        },
+        {
+          "choice_list_name": "VitalStatus",
+          "data_value": "4",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Absent",
+                "default": "Ausente"
+              }
+            }
+          },
+          "_row_num": 24
+        },
+        {
+          "choice_list_name": "VitalStatus",
+          "data_value": "5",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Travelling",
+                "default": "Viagem"
+              }
+            }
+          },
+          "_row_num": 25
+        },
+        {
+          "choice_list_name": "VitalStatus",
+          "data_value": "6",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Unknown",
+                "default": "Desconhecido"
+              }
+            }
+          },
+          "_row_num": 26
+        },
+        {
+          "choice_list_name": "VitalStatus",
+          "data_value": "8",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Double",
+                "default": "Duplo"
+              }
+            }
+          },
+          "_row_num": 27
         }
       ],
       "dontKnowDate": [
@@ -1304,16 +1597,85 @@
               }
             }
           },
-          "_row_num": 36
-        },
+          "_row_num": 29
+        }
+      ],
+      "YesNoDontknow": [
         {
-          "choice_list_name": "dontKnowDate",
-          "data_value": "D:1,M:1,Y:1955",
+          "choice_list_name": "YesNoDontknow",
+          "data_value": "1",
           "display": {
             "title": {
               "text": {
-                "english": "Missing information",
-                "default": "Falta informação"
+                "english": "Yes",
+                "default": "Sim"
+              }
+            }
+          },
+          "_row_num": 31
+        },
+        {
+          "choice_list_name": "YesNoDontknow",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "No",
+                "default": "Não"
+              }
+            }
+          },
+          "_row_num": 32
+        },
+        {
+          "choice_list_name": "YesNoDontknow",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Don't know",
+                "default": "Não sabe"
+              }
+            }
+          },
+          "_row_num": 33
+        }
+      ],
+      "Mask": [
+        {
+          "choice_list_name": "Mask",
+          "data_value": "1",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Yes",
+                "default": "Sim"
+              }
+            }
+          },
+          "_row_num": 35
+        },
+        {
+          "choice_list_name": "Mask",
+          "data_value": "2",
+          "display": {
+            "title": {
+              "text": {
+                "english": "Absent, left with other household member",
+                "default": "Ausente, foi deixada com outro/a"
+              }
+            }
+          },
+          "_row_num": 36
+        },
+        {
+          "choice_list_name": "Mask",
+          "data_value": "3",
+          "display": {
+            "title": {
+              "text": {
+                "english": "No, refused",
+                "default": "Não, recusou"
               }
             }
           },
@@ -1328,8 +1690,8 @@
       "persons": {
         "query_name": "persons",
         "query_type": "linked_table",
-        "linked_form_id": "MASKINCL",
-        "linked_table_id": "MASKINCL",
+        "linked_form_id": "MASKTABLET",
+        "linked_table_id": "MASKTABLET",
         "selection": "HHOID = ?",
         "selectionArgs": "[data('HHOID')]",
         "newRowInitialElementKeyToValueMap": "{}",
@@ -1339,8 +1701,8 @@
       "person_name": {
         "query_name": "person_name",
         "query_type": "linked_table",
-        "linked_form_id": "MASKINCL",
-        "linked_table_id": "MASKINCL",
+        "linked_form_id": "MASKTABLET",
+        "linked_table_id": "MASKTABLET",
         "selection": "_id = ?",
         "selectionArgs": "[data('id_RECEB_QUEM')]",
         "newRowInitialElementKeyToValueMap": "{}",
@@ -1349,7 +1711,18 @@
         "_row_num": 3
       }
     },
-    "calculates": {},
+    "calculates": {
+      "displayDOB": {
+        "calculation_name": "displayDOB",
+        "calculation": "adate.display(data(\"DOB\"))",
+        "_row_num": 2
+      },
+      "displayDATEX": {
+        "calculation_name": "displayDATEX",
+        "calculation": "adate.display(data(\"DATEX\"))",
+        "_row_num": 3
+      }
+    },
     "model": {
       "BAIRRO": {
         "type": "integer",
@@ -1373,8 +1746,8 @@
         "isSessionVariable": false,
         "elementKey": "TABZ"
       },
-      "CAMO": {
-        "type": "integer",
+      "HOUSEGRP": {
+        "type": "string",
         "_defn": [
           {
             "_row_num": 4,
@@ -1382,10 +1755,10 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "CAMO"
+        "elementKey": "HOUSEGRP"
       },
-      "HOUSEGRP": {
-        "type": "string",
+      "CAMO": {
+        "type": "integer",
         "_defn": [
           {
             "_row_num": 5,
@@ -1393,7 +1766,7 @@
           }
         ],
         "isSessionVariable": false,
-        "elementKey": "HOUSEGRP"
+        "elementKey": "CAMO"
       },
       "FAM": {
         "type": "integer",
@@ -1406,7 +1779,7 @@
         "isSessionVariable": false,
         "elementKey": "FAM"
       },
-      "RANGROUP": {
+      "FNO": {
         "type": "integer",
         "_defn": [
           {
@@ -1415,8 +1788,122 @@
           }
         ],
         "isSessionVariable": false,
-        "comment": "Randomization variable",
-        "elementKey": "RANGROUP"
+        "elementKey": "FNO"
+      },
+      "ROOM": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ROOM"
+      },
+      "BED": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "BED"
+      },
+      "NOME": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NOME"
+      },
+      "NOMEMAE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NOMEMAE"
+      },
+      "SEX": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "SEX"
+      },
+      "DOB": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DOB"
+      },
+      "HHOID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "HHOID"
+      },
+      "ID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID"
+      },
+      "IDOID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 16,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDOID"
+      },
+      "POID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "POID"
       },
       "DATEX": {
         "prompt_type_name": "adate",
@@ -1427,138 +1914,210 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 9,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "DATEX"
       },
-      "PREENCHIDO": {
-        "type": "string",
+      "RANGROUP": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "RANGROUP"
+      },
+      "DATSEG": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 21,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DATSEG"
+      },
+      "PREENCHIDO": {
+        "type": "string",
+        "valuesList": "Assistant",
+        "_defn": [
+          {
+            "_row_num": 22,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
         "elementKey": "PREENCHIDO"
       },
-      "ID": {
+      "ESTADO": {
         "type": "string",
+        "valuesList": "VitalStatus",
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 25,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "comment": "id",
-        "elementKey": "ID"
-      },
-      "ESTADO": {
-        "_defn": [
-          {
-            "_row_num": 3,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "VitalStatus",
         "elementKey": "ESTADO"
       },
       "DATASAI": {
-        "_defn": [
-          {
-            "_row_num": 5,
-            "section_name": "survey"
-          }
-        ],
         "prompt_type_name": "adate",
         "type": "string",
         "elementType": "string",
         "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 27,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 25,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "DATASAI"
       },
       "datasains": {
-        "_defn": [
-          {
-            "_row_num": 6,
-            "section_name": "survey"
-          }
-        ],
         "type": "array",
         "items": {
           "type": "string",
           "elementKey": "datasains_items"
         },
         "valuesList": "dontKnowDate",
+        "_defn": [
+          {
+            "_row_num": 28,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
         "elementKey": "datasains"
       },
       "ONDE": {
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 33,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 27,
+            "section_name": "model"
           }
         ],
-        "type": "string",
+        "isSessionVariable": false,
         "elementKey": "ONDE"
       },
       "DUPLO": {
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 37,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 28,
+            "section_name": "model"
           }
         ],
-        "type": "string",
+        "isSessionVariable": false,
         "elementKey": "DUPLO"
       },
       "ACCEPT": {
-        "_defn": [
-          {
-            "_row_num": 20,
-            "section_name": "survey"
-          }
-        ],
         "type": "string",
         "valuesList": "YesNoDontknow",
+        "_defn": [
+          {
+            "_row_num": 42,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 29,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "ACCEPT"
       },
       "MASC": {
-        "_defn": [
-          {
-            "_row_num": 23,
-            "section_name": "survey"
-          }
-        ],
         "type": "string",
         "valuesList": "Mask",
+        "_defn": [
+          {
+            "_row_num": 45,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 30,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "MASC"
       },
       "id_RECEB_QUEM": {
-        "_defn": [
-          {
-            "_row_num": 25,
-            "section_name": "survey"
-          }
-        ],
         "type": "string",
         "valuesList": "persons",
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 31,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
         "elementKey": "id_RECEB_QUEM"
       },
       "RECEB_QUEM": {
-        "_defn": [
-          {
-            "_row_num": 29,
-            "section_name": "survey"
-          }
-        ],
         "prompt_type_name": "async_assign_single_string",
         "type": "string",
+        "elementType": "string",
         "valuesList": "person_name",
+        "_defn": [
+          {
+            "_row_num": 54,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 32,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "RECEB_QUEM"
       }
     },
@@ -1573,6 +2132,213 @@
         "reachable_sections": {},
         "prompts": [
           {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Name: <b>{{data.NOME}}</b>",
+                  "default": "Nome: <b>{{data.NOME}}</b>"
+                }
+              }
+            },
+            "_row_num": 3,
+            "__rowNum__": 2,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 0
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Mother: <b>{{data.NOMEMAE}}</b>",
+                  "default": "Mae: <b>{{data.NOMEMAE}}</b>"
+                }
+              }
+            },
+            "_row_num": 4,
+            "__rowNum__": 3,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 1
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Sex: <b>Male</b>",
+                  "default": "Sexo: <b>Masculino</b>"
+                }
+              }
+            },
+            "_row_num": 6,
+            "__rowNum__": 5,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 2
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Sex: <b>Female</b>",
+                  "default": "Sexo: <b>Feminino</b>"
+                }
+              }
+            },
+            "_row_num": 8,
+            "__rowNum__": 7,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 3
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Date of birth: <b>{{calculates.displayDOB}}</b>",
+                  "default": "Nascimento: <b>{{calculates.displayDOB}}</b>"
+                }
+              }
+            },
+            "_row_num": 10,
+            "__rowNum__": 9,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 4
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Inclusion day: <b>{{calculates.displayDATEX}}</b>",
+                  "default": "Inclusão: <b>{{calculates.displayDATEX}}</b>"
+                }
+              }
+            },
+            "_row_num": 11,
+            "__rowNum__": 10,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 5
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Room: <b>{{data.ROOM}}</b>",
+                  "default": "Quarto: <b>{{data.ROOM}}</b>"
+                }
+              }
+            },
+            "_row_num": 12,
+            "__rowNum__": 11,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 6
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Bed: <b>{{data.BED}}</b>",
+                  "default": "Cama: C:<b>{{data.BED}}</b>"
+                }
+              }
+            },
+            "_row_num": 13,
+            "__rowNum__": 12,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 7
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Group in study: <b>Intervention</b>",
+                  "default": "Grupo de estudo: <b>Intervenção</b>"
+                }
+              }
+            },
+            "_row_num": 15,
+            "__rowNum__": 14,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 8
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Group in study: <b>Controle</b>",
+                  "default": "Grupo de estudo: <b>Controle</b>"
+                }
+              }
+            },
+            "_row_num": 17,
+            "__rowNum__": 16,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 9
+          },
+          {
+            "type": "adate",
+            "name": "DATSEG",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Date of visit",
+                  "default": "Data de visita"
+                }
+              }
+            },
+            "_row_num": 21,
+            "__rowNum__": 20,
+            "_token_type": "prompt",
+            "_type": "adate",
+            "_branch_label_enclosing_screen": "survey/_screen20",
+            "promptIdx": 10
+          },
+          {
+            "type": "select_one_with_other",
+            "values_list": "Assistant",
+            "name": "PREENCHIDO",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Assistant",
+                  "default": "Assistente"
+                }
+              }
+            },
+            "_row_num": 22,
+            "__rowNum__": 21,
+            "_token_type": "prompt",
+            "_type": "select_one_with_other",
+            "_branch_label_enclosing_screen": "survey/_screen20",
+            "promptIdx": 11
+          },
+          {
             "type": "select_one",
             "values_list": "VitalStatus",
             "name": "ESTADO",
@@ -1584,12 +2350,13 @@
                 }
               }
             },
-            "_row_num": 3,
-            "__rowNum__": 2,
+            "constraint": "data(\"ESTADO\") != null",
+            "_row_num": 25,
+            "__rowNum__": 24,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 0
+            "_branch_label_enclosing_screen": "survey/_screen24",
+            "promptIdx": 12
           },
           {
             "type": "adate",
@@ -1600,30 +2367,26 @@
                   "english": "When?",
                   "default": "Quando?"
                 }
-              },
-              "constraint_message": {
-                "text": {
-                  "english": false
-                }
               }
             },
-            "_row_num": 5,
-            "__rowNum__": 4,
+            "constraint": "data(\"DATASAI\") != null || data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
+            "_row_num": 27,
+            "__rowNum__": 26,
             "_token_type": "prompt",
             "_type": "adate",
-            "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 1
+            "_branch_label_enclosing_screen": "survey/_screen24",
+            "promptIdx": 13
           },
           {
             "type": "select_multiple",
             "values_list": "dontKnowDate",
             "name": "datasains",
-            "_row_num": 6,
-            "__rowNum__": 5,
+            "_row_num": 28,
+            "__rowNum__": 27,
             "_token_type": "prompt",
             "_type": "select_multiple",
-            "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 2
+            "_branch_label_enclosing_screen": "survey/_screen24",
+            "promptIdx": 14
           },
           {
             "type": "text",
@@ -1636,12 +2399,12 @@
                 }
               }
             },
-            "_row_num": 11,
-            "__rowNum__": 10,
+            "_row_num": 33,
+            "__rowNum__": 32,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 3
+            "_branch_label_enclosing_screen": "survey/_screen24",
+            "promptIdx": 15
           },
           {
             "type": "text",
@@ -1654,12 +2417,13 @@
                 }
               }
             },
-            "_row_num": 15,
-            "__rowNum__": 14,
+            "constraint": "data(\"DUPLO\") != null || data(\"ESTADO\") != \"8\"",
+            "_row_num": 37,
+            "__rowNum__": 36,
             "_token_type": "prompt",
             "_type": "text",
-            "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 4
+            "_branch_label_enclosing_screen": "survey/_screen24",
+            "promptIdx": 16
           },
           {
             "type": "select_one",
@@ -1673,12 +2437,13 @@
                 }
               }
             },
-            "_row_num": 20,
-            "__rowNum__": 19,
+            "constraint": "data(\"ACCEPT\") != null || data(\"RANGROUP\") != 2 || data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
+            "_row_num": 42,
+            "__rowNum__": 41,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen19",
-            "promptIdx": 5
+            "_branch_label_enclosing_screen": "survey/_screen41",
+            "promptIdx": 17
           },
           {
             "type": "select_one",
@@ -1692,12 +2457,13 @@
                 }
               }
             },
-            "_row_num": 23,
-            "__rowNum__": 22,
+            "constraint": "data(\"MASC\") != null || data(\"RANGROUP\") != 2 || data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
+            "_row_num": 45,
+            "__rowNum__": 44,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen22",
-            "promptIdx": 6
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 18
           },
           {
             "type": "select_one",
@@ -1711,40 +2477,61 @@
                 }
               }
             },
-            "_row_num": 25,
-            "__rowNum__": 24,
+            "_row_num": 47,
+            "__rowNum__": 46,
             "_token_type": "prompt",
             "_type": "select_one",
-            "_branch_label_enclosing_screen": "survey/_screen22",
-            "promptIdx": 7
+            "_branch_label_enclosing_screen": "survey/_screen44",
+            "promptIdx": 19
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": {
+                  "english": "Remember to use masks and wash hands",
+                  "default": "Lembre-se de usar máscaras e lavar as mãos"
+                }
+              }
+            },
+            "_row_num": 52,
+            "__rowNum__": 51,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen51",
+            "promptIdx": 20
           },
           {
             "type": "async_assign_single_string",
             "values_list": "person_name",
             "name": "RECEB_QUEM",
             "display": {
-              "constraint_message": {
-                "text": true
-              }
+              "hide_adate": true
             },
-            "_row_num": 29,
-            "__rowNum__": 28,
+            "_row_num": 54,
+            "__rowNum__": 53,
             "_token_type": "prompt",
             "_type": "async_assign_single_string",
-            "_branch_label_enclosing_screen": "survey/_screen29",
-            "promptIdx": 8
+            "_branch_label_enclosing_screen": "survey/_screen51",
+            "promptIdx": 21
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 32,
-            "_branch_label_enclosing_screen": "survey/_screen32",
-            "promptIdx": 9
+            "_row_num": 57,
+            "_branch_label_enclosing_screen": "survey/_screen57",
+            "promptIdx": 22
           }
         ],
         "validation_tag_map": {
-          "finalize": []
+          "finalize": [
+            12,
+            13,
+            16,
+            17,
+            18
+          ]
         },
         "operations": [
           {
@@ -1754,128 +2541,140 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 17,
-              "__rowNum__": 16,
+              "_row_num": 19,
+              "__rowNum__": 18,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nif (data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"5\") {\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\nif (data(\"datasains\") != null) {\nassign('DATASAI', data(\"datasains\"));\n}\nif (data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"5\") {\nactivePromptIndicies.push(3);\n}\n}\nif (data(\"ESTADO\") == \"8\") {\nactivePromptIndicies.push(4);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\nif (data(\"SEX\") == \"1\") {\nactivePromptIndicies.push(2);\n}\nelse {\nactivePromptIndicies.push(3);\n}\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nif (data(\"RANGROUP\") == \"1\") {\nactivePromptIndicies.push(8);\n}\nelse {\nactivePromptIndicies.push(9);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 0
           },
           {
-            "clause": "if",
-            "condition": "(data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"5\"  || data(\"ESTADO\") == \"99\") && data(\"RANGROUP\") == 2",
-            "_row_num": 18,
-            "__rowNum__": 17,
-            "_token_type": "goto_label",
-            "_branch_label": "_then18",
+            "clause": "begin screen",
+            "_row_num": 20,
+            "__rowNum__": 19,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 23,
+              "__rowNum__": 22,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 1
           },
           {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_else31",
-            "_row_num": 31,
+            "clause": "begin screen",
+            "_row_num": 24,
+            "__rowNum__": 23,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 39,
+              "__rowNum__": 38,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(12);\nif (data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"5\") {\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nif (data(\"datasains\") != null) {\nassign('DATASAI', data(\"datasains\"));\n}\nif (data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"5\") {\nactivePromptIndicies.push(15);\n}\n}\nif (data(\"ESTADO\") == \"8\") {\nactivePromptIndicies.push(16);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 2
           },
           {
-            "clause": "begin screen",
-            "_row_num": 19,
-            "__rowNum__": 18,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 21,
-              "__rowNum__": 20,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(5);\n\nreturn activePromptIndicies;\n}\n",
+            "clause": "if",
+            "condition": "(data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"5\") && data(\"RANGROUP\") == 2",
+            "_row_num": 40,
+            "__rowNum__": 39,
+            "_token_type": "goto_label",
+            "_branch_label": "_then40",
             "operationIdx": 3
           },
           {
-            "clause": "begin screen",
-            "_row_num": 22,
-            "__rowNum__": 21,
-            "_token_type": "begin_screen",
-            "_end_screen_clause": {
-              "clause": "end screen",
-              "_row_num": 27,
-              "__rowNum__": 26,
-              "_token_type": "end_screen"
-            },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(6);\nif (data(\"MASC\") == \"2\") {\nactivePromptIndicies.push(7);\n}\n\nreturn activePromptIndicies;\n}\n",
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_else50",
+            "_row_num": 50,
             "operationIdx": 4
           },
           {
-            "clause": "if",
-            "condition": "data(\"id_RECEB_QUEM\") != null",
-            "_row_num": 28,
-            "__rowNum__": 27,
-            "_token_type": "goto_label",
-            "_branch_label": "_then28",
+            "clause": "begin screen",
+            "_row_num": 41,
+            "__rowNum__": 40,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 43,
+              "__rowNum__": 42,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(17);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 5
           },
           {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_else30",
-            "_row_num": 30,
+            "clause": "begin screen",
+            "_row_num": 44,
+            "__rowNum__": 43,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 49,
+              "__rowNum__": 48,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(18);\nif (data(\"MASC\") == \"2\") {\nactivePromptIndicies.push(19);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 6
           },
           {
-            "_row_num": 29,
-            "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(8);\n\nreturn activePromptIndicies;\n}\n",
+            "clause": "end if",
+            "_token_type": "goto_label",
+            "_branch_label": "_endif50",
+            "_row_num": 50,
             "operationIdx": 7
           },
           {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_endif30",
-            "_row_num": 30,
+            "clause": "begin screen",
+            "_row_num": 51,
+            "__rowNum__": 50,
+            "_token_type": "begin_screen",
+            "_end_screen_clause": {
+              "clause": "end screen",
+              "_row_num": 56,
+              "__rowNum__": 55,
+              "_token_type": "end_screen"
+            },
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(20);\nif (data(\"id_RECEB_QUEM\") != null) {\nactivePromptIndicies.push(21);\n}\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 8
-          },
-          {
-            "clause": "end if",
-            "_token_type": "goto_label",
-            "_branch_label": "_endif31",
-            "_row_num": 31,
-            "operationIdx": 9
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 32,
-            "operationIdx": 10
+            "_row_num": 57,
+            "operationIdx": 9
           },
           {
-            "_row_num": 32,
+            "_row_num": 57,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(9);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(22);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 11
+            "operationIdx": 10
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 32,
-            "operationIdx": 12
+            "_row_num": 57,
+            "operationIdx": 11
           }
         ],
         "branch_label_map": {
           "_screen2": 0,
-          "_then18": 3,
-          "_screen19": 3,
-          "_screen22": 4,
-          "_then28": 7,
-          "_screen29": 7,
-          "_else30": 9,
-          "_endif30": 9,
-          "_else31": 10,
-          "_endif31": 10,
-          "_contents": 11,
-          "_screen32": 11
+          "_screen20": 1,
+          "_screen24": 2,
+          "_then40": 5,
+          "_screen41": 5,
+          "_screen44": 6,
+          "_else50": 8,
+          "_endif50": 8,
+          "_screen51": 8,
+          "_contents": 10,
+          "_screen57": 10
         }
       },
       "initial": {
@@ -1908,8 +2707,8 @@
             "display": {
               "title": {
                 "text": {
-                  "english": "Round two of field",
-                  "default": "Round two of field"
+                  "english": "MASKCOVID - Round two",
+                  "default": "MASKCOVID - Segunda volta"
                 }
               }
             },
@@ -2088,25 +2887,11 @@
         "elementSet": "data",
         "elementPath": "TABZ"
       },
-      "CAMO": {
-        "type": "integer",
-        "_defn": [
-          {
-            "_row_num": 4,
-            "section_name": "model"
-          }
-        ],
-        "isSessionVariable": false,
-        "elementKey": "CAMO",
-        "elementName": "CAMO",
-        "elementSet": "data",
-        "elementPath": "CAMO"
-      },
       "HOUSEGRP": {
         "type": "string",
         "_defn": [
           {
-            "_row_num": 5,
+            "_row_num": 4,
             "section_name": "model"
           }
         ],
@@ -2115,6 +2900,20 @@
         "elementName": "HOUSEGRP",
         "elementSet": "data",
         "elementPath": "HOUSEGRP"
+      },
+      "CAMO": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 5,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "CAMO",
+        "elementName": "CAMO",
+        "elementSet": "data",
+        "elementPath": "CAMO"
       },
       "FAM": {
         "type": "integer",
@@ -2130,7 +2929,7 @@
         "elementSet": "data",
         "elementPath": "FAM"
       },
-      "RANGROUP": {
+      "FNO": {
         "type": "integer",
         "_defn": [
           {
@@ -2139,11 +2938,155 @@
           }
         ],
         "isSessionVariable": false,
-        "comment": "Randomization variable",
-        "elementKey": "RANGROUP",
-        "elementName": "RANGROUP",
+        "elementKey": "FNO",
+        "elementName": "FNO",
         "elementSet": "data",
-        "elementPath": "RANGROUP"
+        "elementPath": "FNO"
+      },
+      "ROOM": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 8,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ROOM",
+        "elementName": "ROOM",
+        "elementSet": "data",
+        "elementPath": "ROOM"
+      },
+      "BED": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 9,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "BED",
+        "elementName": "BED",
+        "elementSet": "data",
+        "elementPath": "BED"
+      },
+      "NOME": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 10,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NOME",
+        "elementName": "NOME",
+        "elementSet": "data",
+        "elementPath": "NOME"
+      },
+      "NOMEMAE": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 11,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "NOMEMAE",
+        "elementName": "NOMEMAE",
+        "elementSet": "data",
+        "elementPath": "NOMEMAE"
+      },
+      "SEX": {
+        "type": "integer",
+        "_defn": [
+          {
+            "_row_num": 12,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "SEX",
+        "elementName": "SEX",
+        "elementSet": "data",
+        "elementPath": "SEX"
+      },
+      "DOB": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 13,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DOB",
+        "elementName": "DOB",
+        "elementSet": "data",
+        "elementPath": "DOB"
+      },
+      "HHOID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 14,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "HHOID",
+        "elementName": "HHOID",
+        "elementSet": "data",
+        "elementPath": "HHOID"
+      },
+      "ID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 15,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "ID",
+        "elementName": "ID",
+        "elementSet": "data",
+        "elementPath": "ID"
+      },
+      "IDOID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 16,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "IDOID",
+        "elementName": "IDOID",
+        "elementSet": "data",
+        "elementPath": "IDOID"
+      },
+      "POID": {
+        "type": "string",
+        "_defn": [
+          {
+            "_row_num": 17,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "POID",
+        "elementName": "POID",
+        "elementSet": "data",
+        "elementPath": "POID"
       },
       "DATEX": {
         "prompt_type_name": "adate",
@@ -2154,7 +3097,7 @@
         "__rowNum__": 1,
         "_defn": [
           {
-            "_row_num": 9,
+            "_row_num": 18,
             "section_name": "model"
           }
         ],
@@ -2164,11 +3107,53 @@
         "elementSet": "data",
         "elementPath": "DATEX"
       },
-      "PREENCHIDO": {
-        "type": "string",
+      "RANGROUP": {
+        "type": "integer",
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 19,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "RANGROUP",
+        "elementName": "RANGROUP",
+        "elementSet": "data",
+        "elementPath": "RANGROUP"
+      },
+      "DATSEG": {
+        "prompt_type_name": "adate",
+        "type": "string",
+        "elementType": "string",
+        "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 21,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 21,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
+        "elementKey": "DATSEG",
+        "elementName": "DATSEG",
+        "elementSet": "data",
+        "elementPath": "DATSEG"
+      },
+      "PREENCHIDO": {
+        "type": "string",
+        "valuesList": "Assistant",
+        "_defn": [
+          {
+            "_row_num": 22,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 22,
             "section_name": "model"
           }
         ],
@@ -2178,58 +3163,49 @@
         "elementSet": "data",
         "elementPath": "PREENCHIDO"
       },
-      "ID": {
+      "ESTADO": {
         "type": "string",
+        "valuesList": "VitalStatus",
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 25,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 24,
             "section_name": "model"
           }
         ],
         "isSessionVariable": false,
-        "comment": "id",
-        "elementKey": "ID",
-        "elementName": "ID",
-        "elementSet": "data",
-        "elementPath": "ID"
-      },
-      "ESTADO": {
-        "_defn": [
-          {
-            "_row_num": 3,
-            "section_name": "survey"
-          }
-        ],
-        "type": "string",
-        "valuesList": "VitalStatus",
         "elementKey": "ESTADO",
         "elementName": "ESTADO",
         "elementSet": "data",
         "elementPath": "ESTADO"
       },
       "DATASAI": {
-        "_defn": [
-          {
-            "_row_num": 5,
-            "section_name": "survey"
-          }
-        ],
         "prompt_type_name": "adate",
         "type": "string",
         "elementType": "string",
         "comment": "Save only mm.dd.yyyy with support for ?? at all positions",
+        "_row_num": 2,
+        "__rowNum__": 1,
+        "_defn": [
+          {
+            "_row_num": 27,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 25,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "DATASAI",
         "elementName": "DATASAI",
         "elementSet": "data",
         "elementPath": "DATASAI"
       },
       "datasains": {
-        "_defn": [
-          {
-            "_row_num": 6,
-            "section_name": "survey"
-          }
-        ],
         "type": "array",
         "items": {
           "type": "string",
@@ -2237,9 +3213,21 @@
           "elementName": "items",
           "elementSet": "data",
           "elementPath": "datasains.items",
+          "isSessionVariable": true,
           "notUnitOfRetention": true
         },
         "valuesList": "dontKnowDate",
+        "_defn": [
+          {
+            "_row_num": 28,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 26,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
         "elementKey": "datasains",
         "elementName": "datasains",
         "elementSet": "data",
@@ -2249,83 +3237,114 @@
         ]
       },
       "ONDE": {
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 33,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 27,
+            "section_name": "model"
           }
         ],
-        "type": "string",
+        "isSessionVariable": false,
         "elementKey": "ONDE",
         "elementName": "ONDE",
         "elementSet": "data",
         "elementPath": "ONDE"
       },
       "DUPLO": {
+        "type": "string",
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 37,
             "section_name": "survey"
+          },
+          {
+            "_row_num": 28,
+            "section_name": "model"
           }
         ],
-        "type": "string",
+        "isSessionVariable": false,
         "elementKey": "DUPLO",
         "elementName": "DUPLO",
         "elementSet": "data",
         "elementPath": "DUPLO"
       },
       "ACCEPT": {
-        "_defn": [
-          {
-            "_row_num": 20,
-            "section_name": "survey"
-          }
-        ],
         "type": "string",
         "valuesList": "YesNoDontknow",
+        "_defn": [
+          {
+            "_row_num": 42,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 29,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "ACCEPT",
         "elementName": "ACCEPT",
         "elementSet": "data",
         "elementPath": "ACCEPT"
       },
       "MASC": {
-        "_defn": [
-          {
-            "_row_num": 23,
-            "section_name": "survey"
-          }
-        ],
         "type": "string",
         "valuesList": "Mask",
+        "_defn": [
+          {
+            "_row_num": 45,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 30,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "MASC",
         "elementName": "MASC",
         "elementSet": "data",
         "elementPath": "MASC"
       },
       "id_RECEB_QUEM": {
-        "_defn": [
-          {
-            "_row_num": 25,
-            "section_name": "survey"
-          }
-        ],
         "type": "string",
         "valuesList": "persons",
+        "_defn": [
+          {
+            "_row_num": 47,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 31,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": true,
         "elementKey": "id_RECEB_QUEM",
         "elementName": "id_RECEB_QUEM",
         "elementSet": "data",
         "elementPath": "id_RECEB_QUEM"
       },
       "RECEB_QUEM": {
-        "_defn": [
-          {
-            "_row_num": 29,
-            "section_name": "survey"
-          }
-        ],
         "prompt_type_name": "async_assign_single_string",
         "type": "string",
+        "elementType": "string",
         "valuesList": "person_name",
+        "_defn": [
+          {
+            "_row_num": 54,
+            "section_name": "survey"
+          },
+          {
+            "_row_num": 32,
+            "section_name": "model"
+          }
+        ],
+        "isSessionVariable": false,
         "elementKey": "RECEB_QUEM",
         "elementName": "RECEB_QUEM",
         "elementSet": "data",
@@ -2337,6 +3356,7 @@
         "elementName": "items",
         "elementSet": "data",
         "elementPath": "datasains.items",
+        "isSessionVariable": true,
         "notUnitOfRetention": true
       },
       "_id": {
@@ -2458,28 +3478,28 @@
         "_aspect": "ACCEPT",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":6},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":7},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":8},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":9}]"
+        "_value": "[{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":31},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"No\",\"default\":\"Não\"}}},\"_row_num\":32},{\"choice_list_name\":\"YesNoDontknow\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know\",\"default\":\"Não sabe\"}}},\"_row_num\":33}]"
       },
       {
         "_partition": "Column",
         "_aspect": "ESTADO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved\",\"default\":\"Mudou\"}}},\"_row_num\":11},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":12},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":13},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":14},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Unknown\",\"default\":\"Desconhecido\"}}},\"_row_num\":15},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Double\",\"default\":\"Duplo\"}}},\"_row_num\":16},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"99\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":17}]"
+        "_value": "[{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Present\",\"default\":\"Presente\"}}},\"_row_num\":21},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Moved\",\"default\":\"Mudou\"}}},\"_row_num\":22},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"Dead\",\"default\":\"Faleceu\"}}},\"_row_num\":23},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"4\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent\",\"default\":\"Ausente\"}}},\"_row_num\":24},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"5\",\"display\":{\"title\":{\"text\":{\"english\":\"Travelling\",\"default\":\"Viagem\"}}},\"_row_num\":25},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"6\",\"display\":{\"title\":{\"text\":{\"english\":\"Unknown\",\"default\":\"Desconhecido\"}}},\"_row_num\":26},{\"choice_list_name\":\"VitalStatus\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Double\",\"default\":\"Duplo\"}}},\"_row_num\":27}]"
       },
       {
         "_partition": "Column",
         "_aspect": "MASC",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"Mask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":19},{\"choice_list_name\":\"Mask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent, left with other household member\",\"default\":\"Ausente, foi deixada com outro/a\"}}},\"_row_num\":20},{\"choice_list_name\":\"Mask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"No, refused\",\"default\":\"Não, recusou\"}}},\"_row_num\":21},{\"choice_list_name\":\"Mask\",\"data_value\":\"8\",\"display\":{\"title\":{\"text\":{\"english\":\"Not applicable\",\"default\":\"Não aplicavel\"}}},\"_row_num\":22},{\"choice_list_name\":\"Mask\",\"data_value\":\"9\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":23}]"
+        "_value": "[{\"choice_list_name\":\"Mask\",\"data_value\":\"1\",\"display\":{\"title\":{\"text\":{\"english\":\"Yes\",\"default\":\"Sim\"}}},\"_row_num\":35},{\"choice_list_name\":\"Mask\",\"data_value\":\"2\",\"display\":{\"title\":{\"text\":{\"english\":\"Absent, left with other household member\",\"default\":\"Ausente, foi deixada com outro/a\"}}},\"_row_num\":36},{\"choice_list_name\":\"Mask\",\"data_value\":\"3\",\"display\":{\"title\":{\"text\":{\"english\":\"No, refused\",\"default\":\"Não, recusou\"}}},\"_row_num\":37}]"
       },
       {
         "_partition": "Column",
-        "_aspect": "datasains",
+        "_aspect": "PREENCHIDO",
         "_key": "displayChoicesList",
         "_type": "object",
-        "_value": "[{\"choice_list_name\":\"dontKnowDate\",\"data_value\":\"D:NS,M:NS,Y:NS\",\"display\":{\"title\":{\"text\":{\"english\":\"Don't know the date\",\"default\":\"Não sabe a data\"}}},\"_row_num\":36},{\"choice_list_name\":\"dontKnowDate\",\"data_value\":\"D:1,M:1,Y:1955\",\"display\":{\"title\":{\"text\":{\"english\":\"Missing information\",\"default\":\"Falta informação\"}}},\"_row_num\":37}]"
+        "_value": "[{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAL\",\"display\":{\"title\":{\"text\":{\"english\":\"Malam\",\"default\":\"Malam\"}}},\"_row_num\":2},{\"choice_list_name\":\"Assistant\",\"data_value\":\"NEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Nene Mario\",\"default\":\"Nene Mario\"}}},\"_row_num\":3},{\"choice_list_name\":\"Assistant\",\"data_value\":\"MAU\",\"display\":{\"title\":{\"text\":{\"english\":\"Maudu\",\"default\":\"Maudu\"}}},\"_row_num\":4},{\"choice_list_name\":\"Assistant\",\"data_value\":\"DEM\",\"display\":{\"title\":{\"text\":{\"english\":\"Demba\",\"default\":\"Demba\"}}},\"_row_num\":5},{\"choice_list_name\":\"Assistant\",\"data_value\":\"WIL\",\"display\":{\"title\":{\"text\":{\"english\":\"William\",\"default\":\"William\"}}},\"_row_num\":6},{\"choice_list_name\":\"Assistant\",\"data_value\":\"IAI\",\"display\":{\"title\":{\"text\":{\"english\":\"Iaia\",\"default\":\"Iaia\"}}},\"_row_num\":7},{\"choice_list_name\":\"Assistant\",\"data_value\":\"EDU\",\"display\":{\"title\":{\"text\":{\"english\":\"Eduardo\",\"default\":\"Eduardo\"}}},\"_row_num\":8},{\"choice_list_name\":\"Assistant\",\"data_value\":\"ARM\",\"display\":{\"title\":{\"text\":{\"english\":\"Armando\",\"default\":\"Armando\"}}},\"_row_num\":9},{\"choice_list_name\":\"Assistant\",\"data_value\":\"OID\",\"display\":{\"title\":{\"text\":{\"english\":\"Oides\",\"default\":\"Oides\"}}},\"_row_num\":10},{\"choice_list_name\":\"Assistant\",\"data_value\":\"KEL\",\"display\":{\"title\":{\"text\":{\"english\":\"Kelbit\",\"default\":\"Kelbit\"}}},\"_row_num\":11},{\"choice_list_name\":\"Assistant\",\"data_value\":\"SIM\",\"display\":{\"title\":{\"text\":{\"english\":\"Simonio\",\"default\":\"Simonio\"}}},\"_row_num\":12},{\"choice_list_name\":\"Assistant\",\"data_value\":\"LAN\",\"display\":{\"title\":{\"text\":{\"english\":\"Lanica\",\"default\":\"Lanica\"}}},\"_row_num\":13},{\"choice_list_name\":\"Assistant\",\"data_value\":\"LEO\",\"display\":{\"title\":{\"text\":{\"english\":\"Leo\",\"default\":\"Leo\"}}},\"_row_num\":14},{\"choice_list_name\":\"Assistant\",\"data_value\":\"JAN\",\"display\":{\"title\":{\"text\":{\"english\":\"Janistella\",\"default\":\"Janistella\"}}},\"_row_num\":15},{\"choice_list_name\":\"Assistant\",\"data_value\":\"MIN\",\"display\":{\"title\":{\"text\":{\"english\":\"Wilhemina\",\"default\":\"Wilhemina\"}}},\"_row_num\":16},{\"choice_list_name\":\"Assistant\",\"data_value\":\"SUZ\",\"display\":{\"title\":{\"text\":{\"english\":\"Suzete\",\"default\":\"Suzete\"}}},\"_row_num\":17},{\"choice_list_name\":\"Assistant\",\"data_value\":\"AS1\",\"display\":{\"title\":{\"text\":{\"english\":\"Assistente 1\",\"default\":\"Assistente 1\"}}},\"_row_num\":18},{\"choice_list_name\":\"Assistant\",\"data_value\":\"AS2\",\"display\":{\"title\":{\"text\":{\"english\":\"Assistente 2\",\"default\":\"Assistente 2\"}}},\"_row_num\":19}]"
       },
       {
         "_partition": "FormType",
@@ -2507,7 +3527,7 @@
         "_aspect": "default",
         "_key": "displayName",
         "_type": "object",
-        "_value": "{\"text\":{\"english\":\"Round two of field\",\"default\":\"Round two of field\"}}"
+        "_value": "{\"text\":{\"english\":\"MASKCOVID - Round two\",\"default\":\"MASKCOVID - Segunda volta\"}}"
       }
     ]
   }

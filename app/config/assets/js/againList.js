@@ -29,8 +29,8 @@ function doSanityCheck() {
 
 function loadPersons() {
     // SQL to get persons
-    var varNamesMaskTablet = "I.BAIRRO, I.CAMO, I.DOB, I.FAM, I.FNO, I.HHOID, I.HOUSEGRP, I.ID, I.IDOID, I.NOME, I.POID, I.RANGROUP, I.SEX, I.TABZ, ";
-    var varNamesAgain = "A._id, A._savepoint_type, A.DATSEG";
+    var varNamesMaskTablet = "I.BAIRRO, I.BED, I.CAMO, I.DATEX, I.DOB, I.FAM, I.FNO, I.HHOID, I.HOUSEGRP, I.ID, I.IDOID, I.NOME, I.NOMEMAE, I.POID, I.RANGROUP, I.ROOM, I.SEX, I.TABZ, ";
+    var varNamesAgain = "A._id, A._savepoint_type, A.DATSEG, A.ESTADO";
     var sql = "SELECT " + varNamesMaskTablet + varNamesAgain + 
         " FROM MASKTABLET AS I" + 
         " LEFT JOIN MASKAGAIN AS A ON I.POID = A.POID" + 
@@ -46,7 +46,9 @@ function loadPersons() {
             var savepoint = result.getData(row,"_savepoint_type")
             
             var BAIRRO = result.getData(row,"BAIRRO");
+            var BED = result.getData(row,"BED");
             var CAMO = result.getData(row,"CAMO");
+            var DATEX = result.getData(row,"DATEX");
             var DOB = result.getData(row,"DOB");
             var FAM = result.getData(row,"FAM");
             var FNO = result.getData(row,"FNO");
@@ -55,14 +57,17 @@ function loadPersons() {
             var ID = Number(result.getData(row,"ID"));
             var IDOID = result.getData(row,"IDOID");
             var NOME = titleCase(result.getData(row,"NOME"));
+            var NOMEMAE = result.getData(row,"NOMEMAE");
             var POID = result.getData(row,"POID");
             var RANGROUP = result.getData(row,"RANGROUP");
+            var ROOM = result.getData(row,"ROOM");
             var SEX = result.getData(row,"SEX");
             var TABZ = result.getData(row,"TABZ");
 
             var DATSEG = result.getData(row,"DATSEG");
+            var ESTADO = result.getData(row,"ESTADO");
 
-            var p = {type: 'participant', rowId, savepoint, BAIRRO, CAMO, DOB, FAM, FNO, HHOID, HOUSEGRP, ID, IDOID, NOME, POID, RANGROUP, SEX, TABZ, DATSEG};
+            var p = {type: 'participant', rowId, savepoint, BAIRRO, BED, CAMO, DATEX, DOB, FAM, FNO, HHOID, HOUSEGRP, ID, IDOID, NOME, NOMEMAE, POID, RANGROUP, ROOM, SEX, TABZ, DATSEG, ESTADO};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -86,7 +91,7 @@ function populateView() {
 
         // Check if called today
         var called = '';
-        if (this.DATSEG != null & this.savepoint == "COMPLETE") {
+        if (this.ESTADO != null & this.savepoint == "COMPLETE") {
             called = "visited";
         };
         
@@ -118,6 +123,13 @@ function setDisplayText(person) {
     } else {
         dob = formatDate(person.DOB);
     }
+
+    var inc;
+    if (person.DATEX == "D:NS,M:NS,Y:NS" | person.DATEX === null) {
+        inc = "Não Sabe";
+    } else {
+        inc = formatDate(person.DATEX);
+    }
     
     var fam;
     if (person.FAM == null) {
@@ -125,11 +137,27 @@ function setDisplayText(person) {
     } else {
         fam = person.FAM;
     }
+
+    var room;
+    if (person.ROOM == null) {
+        room = "Não Sabe";
+    } else {
+        room = person.ROOM;
+    }
+    
+    var bed;
+    if (person.BED == null) {
+        bed = "Não Sabe";
+    } else {
+        bed = person.BED;
+    }
     
     var displayText = "Nome: " + person.NOME + "<br />" + 
         "Sexo: " + sex + "<br />" +
         "Nacimento: " + dob + "<br />" +
-        "Fam:" + fam;
+        "Inclusão: " + inc + "<br />" +
+        "Fam:" + fam + "<br />" +
+        "Quarto: " + room + " Camo: " + bed;
     return displayText
 }
 
@@ -171,7 +199,9 @@ function toAdate(date) {
 function getDefaults(person) {
     var defaults = {};  
     defaults['BAIRRO'] = person.BAIRRO;
+    defaults['BED'] = person.BED;
     defaults['CAMO'] = person.CAMO;
+    defaults['DATEX'] = person.DATEX;
     defaults['DOB'] = person.DOB;
     defaults['FAM'] = person.FAM;
     defaults['FNO'] = person.FNO;
@@ -180,12 +210,14 @@ function getDefaults(person) {
     defaults['ID'] = person.ID;
     defaults['IDOID'] = person.IDOID
     defaults['NOME'] = person.NOME;
+    defaults['NOMEMAE'] = person.NOMEMAE;
     defaults['POID'] = person.POID;
     defaults['RANGROUP'] = person.RANGROUP;
+    defaults['ROOM'] = person.ROOM;
     defaults['SEX'] = person.SEX;
     defaults['TABZ'] = person.TABZ;
 
-    defaults['ASSISTENTE'] = assistant;
+    defaults['PREENCHIDO'] = assistant;
     defaults['DATSEG'] = toAdate(date);
     return defaults;
 }

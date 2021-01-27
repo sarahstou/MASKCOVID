@@ -38,7 +38,7 @@ function getAssistants(data) {
 function getList() {
     // SQL to get persons
     var varNamesMaskTablet = "I.BAIRRO, ";
-    var varNamesAgain = "A._savepoint_type, A.DATSEG";
+    var varNamesAgain = "A._savepoint_type, A.ESTADO";
     var sql = "SELECT " + varNamesMaskTablet + varNamesAgain + 
         " FROM MASKTABLET AS I" + 
         " LEFT JOIN MASKAGAIN AS A ON I.POID = A.POID" +
@@ -53,9 +53,9 @@ function getList() {
             
             var BAIRRO = result.getData(row,"BAIRRO");
 
-            var DATSEG = result.getData(row,"DATSEG");
+            var ESTADO = result.getData(row,"ESTADO");
             
-            var p = {type: 'participant', savepoint, BAIRRO, DATSEG};
+            var p = {type: 'participant', savepoint, BAIRRO, ESTADO};
             participants.push(p);
         }
         console.log("Participants:", participants)
@@ -204,7 +204,7 @@ function initButtons() {
 function getCount(bairro) {
     var totalList = participants.filter(person => person.BAIRRO == bairro);
     var total = totalList.length;
-    var checked = participants.filter(person => person.BAIRRO == bairro & person.DATSEG != null & person.savepoint == "COMPLETE").length;
+    var checked = participants.filter(person => person.BAIRRO == bairro & person.ESTADO != null & person.savepoint == "COMPLETE").length;
     var count = "(" + checked + "/" + total + ")";
     return count;
 }
