@@ -288,7 +288,6 @@
             }
           }
         },
-        "constraint": "data(\"DATASAI\") != null || data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
         "_row_num": 27
       },
       {
@@ -354,7 +353,6 @@
             }
           }
         },
-        "constraint": "data(\"DUPLO\") != null || data(\"ESTADO\") != \"8\"",
         "_row_num": 37
       },
       {
@@ -386,7 +384,6 @@
             }
           }
         },
-        "constraint": "data(\"ACCEPT\") != null || data(\"RANGROUP\") != 2 || data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
         "_row_num": 42
       },
       {
@@ -409,7 +406,6 @@
             }
           }
         },
-        "constraint": "data(\"MASC\") != null || data(\"RANGROUP\") != 2 || data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
         "_row_num": 45
       },
       {
@@ -2369,7 +2365,6 @@
                 }
               }
             },
-            "constraint": "data(\"DATASAI\") != null || data(\"ESTADO\") == \"1\" || data(\"ESTADO\") == \"4\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
             "_row_num": 27,
             "__rowNum__": 26,
             "_token_type": "prompt",
@@ -2417,7 +2412,6 @@
                 }
               }
             },
-            "constraint": "data(\"DUPLO\") != null || data(\"ESTADO\") != \"8\"",
             "_row_num": 37,
             "__rowNum__": 36,
             "_token_type": "prompt",
@@ -2437,7 +2431,6 @@
                 }
               }
             },
-            "constraint": "data(\"ACCEPT\") != null || data(\"RANGROUP\") != 2 || data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
             "_row_num": 42,
             "__rowNum__": 41,
             "_token_type": "prompt",
@@ -2457,7 +2450,6 @@
                 }
               }
             },
-            "constraint": "data(\"MASC\") != null || data(\"RANGROUP\") != 2 || data(\"ESTADO\") == \"2\" || data(\"ESTADO\") == \"3\" || data(\"ESTADO\") == \"6\" || data(\"ESTADO\") == \"8\"",
             "_row_num": 45,
             "__rowNum__": 44,
             "_token_type": "prompt",
@@ -2526,11 +2518,7 @@
         ],
         "validation_tag_map": {
           "finalize": [
-            12,
-            13,
-            16,
-            17,
-            18
+            12
           ]
         },
         "operations": [
