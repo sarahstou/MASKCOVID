@@ -116,7 +116,7 @@ function initButtons() {
         var btn = ul.find('#' + this.camo);
         btn.on("click", function() {
             var queryParams = util.setQuerystringParams(date, that.bairro, that.tabz, that.zone, that.houseGroup, that.camo, null, null, null, assistant);
-            odkTables.launchHTML(null, 'config/assets/againList.html' + queryParams);
+            odkTables.launchHTML(null, 'config/assets/againFamList.html' + queryParams);
         })        
     });
 }
