@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var participants, date, bairro, tabz, zone, houseGroup, camo, assistant;
+var participants, date, bairro, tabz, zone, houseGroup, camo, fam, famName, assistant;
 function display() {
     console.log("TABZ list loading");
     date = util.getQueryParameter('date');
@@ -12,10 +12,12 @@ function display() {
     zone = util.getQueryParameter('zone');
     houseGroup = util.getQueryParameter('houseGroup');
     camo = util.getQueryParameter('camo');
+    fam = util.getQueryParameter('fam');
+    famName = util.getQueryParameter('famName');
     assistant = util.getQueryParameter('assistant');
     
     var head = $('#main');
-    head.prepend("<h1>" + tabz + " - " + houseGroup + " - " + camo + " </br> <h3> Pessoas");
+    head.prepend("<h1>" + tabz + " - " + houseGroup + " - " + camo + " - " + fam + " </br> <h3> " + famName);
     
     // populate list
     doSanityCheck();
@@ -124,18 +126,27 @@ function setDisplayText(person) {
         dob = formatDate(person.DOB);
     }
 
+    var idade;
+    if (person.DOB == "D:NS,M:NS,Y:NS" | person.DOB === null) {
+        idade = 999;
+    } else {
+        var dobD = Number(person.DOB.slice(2, person.DOB.search("M")-1));
+        var dobM = person.DOB.slice(person.DOB.search("M")+2, person.DOB.search("Y")-1);
+        var dobY = person.DOB.slice(person.DOB.search("Y")+2);
+        var dobDate = new Date(dobY, dobM-1, dobD);
+        var today = new Date(date);
+
+        // calculate difference
+        var diff = today - dobDate;
+        var ageDate = new Date(diff); // miliseconds from epoch
+        idade = Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+    
     var inc;
     if (person.DATEX == "D:NS,M:NS,Y:NS" | person.DATEX === null) {
         inc = "Não Sabe";
     } else {
         inc = formatDate(person.DATEX);
-    }
-    
-    var fam;
-    if (person.FAM == null) {
-        fam = "Não Sabe";
-    } else {
-        fam = person.FAM;
     }
 
     var room;
@@ -154,10 +165,10 @@ function setDisplayText(person) {
     
     var displayText = "Nome: " + person.NOME + "<br />" + 
         "Sexo: " + sex + "<br />" +
-        "Nacimento: " + dob + "<br />" +
+        "Nacimento: " + dob + "  (" + idade + " anos) " + "<br />" +
         "Inclusão: " + inc + "<br />" +
-        "Fam:" + fam + "<br />" +
-        "Quarto: " + room + " Camo: " + bed;
+        "ID:" + person.ID + "<br />" +
+        "Quarto: " + room + " - Camo: " + bed;
     return displayText
 }
 
