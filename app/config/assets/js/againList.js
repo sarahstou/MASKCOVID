@@ -36,7 +36,7 @@ function loadPersons() {
     var sql = "SELECT " + varNamesMaskTablet + varNamesAgain + 
         " FROM MASKTABLET AS I" + 
         " LEFT JOIN MASKAGAIN AS A ON I.POID = A.POID" + 
-        " WHERE I.TABZ = " + tabz + " AND I.CAMO = " + camo +
+        " WHERE I.TABZ = " + tabz + " AND I.CAMO = " + camo + " AND I.FAM = " + fam +
         " ORDER BY I.FAM, I.FNO";
     participants = [];
     console.log("Querying database for participants...");
