@@ -50,7 +50,7 @@ function getList() {
     var sql = "SELECT " + varNamesMaskTablet + varNamesAgain + 
         " FROM MASKTABLET AS I" + 
         " LEFT JOIN MASKAGAIN AS A ON I.POID = A.POID" +
-        " WHERE I.TABZ = " + tabz + " AND I.HOUSEGRP = '" + houseGroup + "'" +
+        " WHERE I.TABZ = " + tabz + " AND I.HOUSEGRP = '" + houseGroup + "'" + " AND I.CAMO = " + camo +
         " ORDER BY I.FAM, I.FNO";
     participants = [];
     console.log("Querying database for participants...");
@@ -92,8 +92,8 @@ function initButtons() {
     // Buttons
     var btn = ul.find('#' + "OU");
     btn.on("click", function() {
-        var queryParams = util.setQuerystringParams(date, bairro, tabz, zone, houseGroup, camo, "0", "Outro famílias", null, assistant, random);
-        odkTables.launchHTML(null, 'config/assets/fuList.html' + queryParams);
+        var queryParams = util.setQuerystringParams(date, bairro, tabz, zone, houseGroup, camo, "0", "Outro famílias", null, assistant);
+        odkTables.launchHTML(null, 'config/assets/againList.html' + queryParams);
     })        
 
 
