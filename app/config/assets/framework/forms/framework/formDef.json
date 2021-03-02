@@ -76,6 +76,19 @@
           }
         },
         "_row_num": 2
+      },
+      {
+        "choice_list_name": "forms",
+        "data_value": "MASKINCL",
+        "display": {
+          "title": {
+            "text": {
+              "english": "MASKCOVID - Inclusion",
+              "default": "MASKCOVID  - Inclusão"
+            }
+          }
+        },
+        "_row_num": 3
       }
     ],
     "survey": [
@@ -132,6 +145,24 @@
       {
         "clause": "exit section",
         "_row_num": 10
+      },
+      {
+        "branch_label": "MASKINCL",
+        "_row_num": 11
+      },
+      {
+        "url": "'?' + odkSurvey.getHashString('MASKINCL')",
+        "type": "external_link",
+        "display": {
+          "prompt": {
+            "text": "Open form"
+          }
+        },
+        "_row_num": 12
+      },
+      {
+        "clause": "exit section",
+        "_row_num": 13
       }
     ],
     "framework_translations": [
@@ -719,6 +750,19 @@
             }
           },
           "_row_num": 2
+        },
+        {
+          "choice_list_name": "forms",
+          "data_value": "MASKINCL",
+          "display": {
+            "title": {
+              "text": {
+                "english": "MASKCOVID - Inclusion",
+                "default": "MASKCOVID  - Inclusão"
+              }
+            }
+          },
+          "_row_num": 3
         }
       ]
     },
@@ -1372,12 +1416,27 @@
             "promptIdx": 2
           },
           {
+            "url": "'?' + odkSurvey.getHashString('MASKINCL')",
+            "type": "external_link",
+            "display": {
+              "prompt": {
+                "text": "Open form"
+              }
+            },
+            "_row_num": 12,
+            "__rowNum__": 11,
+            "_token_type": "prompt",
+            "_type": "external_link",
+            "_branch_label_enclosing_screen": "survey/_screen12",
+            "promptIdx": 3
+          },
+          {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 11,
-            "_branch_label_enclosing_screen": "survey/_screen11",
-            "promptIdx": 3
+            "_row_num": 14,
+            "_branch_label_enclosing_screen": "survey/_screen14",
+            "promptIdx": 4
           }
         ],
         "validation_tag_map": {
@@ -1440,25 +1499,38 @@
             "operationIdx": 7
           },
           {
-            "_token_type": "exit_section",
-            "clause": "exit section",
-            "_row_num": 11,
+            "_row_num": 12,
+            "_token_type": "begin_screen",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 8
           },
           {
-            "_row_num": 11,
+            "clause": "exit section",
+            "_row_num": 13,
+            "__rowNum__": 12,
+            "_token_type": "exit_section",
+            "operationIdx": 9
+          },
+          {
+            "_token_type": "exit_section",
+            "clause": "exit section",
+            "_row_num": 14,
+            "operationIdx": 10
+          },
+          {
+            "_row_num": 14,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(3);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(4);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
-            "operationIdx": 9
+            "operationIdx": 11
           },
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 11,
-            "operationIdx": 10
+            "_row_num": 14,
+            "operationIdx": 12
           }
         ],
         "branch_label_map": {
@@ -1469,8 +1541,10 @@
           "_endif6": 5,
           "MASKCOVID": 6,
           "_screen9": 6,
-          "_contents": 9,
-          "_screen11": 9
+          "MASKINCL": 8,
+          "_screen12": 8,
+          "_contents": 11,
+          "_screen14": 11
         }
       }
     },

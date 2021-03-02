@@ -1,8 +1,8 @@
 build/
 *.~lock.*
 app/output/props/*
-app/config/assets/csv/*
 tempZipDir
 .idea/*
 app/output/*
 ~*.xlsx*
+*.db
